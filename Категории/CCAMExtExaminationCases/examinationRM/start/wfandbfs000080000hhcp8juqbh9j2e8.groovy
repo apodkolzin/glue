@@ -1,0 +1,1 @@
+(new ru.naumen.fcntp.examination.workflow.ChangeTaskStageScript( "ExamTaskRMExpertLetter/Title","ExamTaskRMExpertLetter/Body")).send(workflowInstance, oldState, newState, session);

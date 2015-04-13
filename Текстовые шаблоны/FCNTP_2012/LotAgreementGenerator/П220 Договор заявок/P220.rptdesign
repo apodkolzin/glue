@@ -1,0 +1,2795 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<report xmlns="http://www.eclipse.org/birt/2005/design" version="3.2.23" id="1">
+    <property name="createdBy">Eclipse BIRT Designer Version 4.3.2.v20140211-1400 Build &lt;4.3.2.v20140218-1056></property>
+    <property name="units">in</property>
+    <property name="iconFile">/templates/blank_report.gif</property>
+    <property name="bidiLayoutOrientation">ltr</property>
+    <property name="imageDPI">96</property>
+    <data-sources>
+        <oda-data-source extensionID="org.eclipse.datatools.enablement.oda.xml" name="Data Source" id="206">
+            <property name="FILELIST">/home/ayakovlev/Downloads/data (25).xml</property>
+        </oda-data-source>
+    </data-sources>
+    <data-sets>
+        <oda-data-set extensionID="org.eclipse.datatools.enablement.oda.xml.dataSet" name="GeneralDataSet" id="208">
+            <list-property name="columnHints">
+                <structure>
+                    <property name="columnName">documentNumber</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">documentNumber</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">taskBeginDate</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">taskBeginDate</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">expert</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">expert</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">demands</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">demands</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">taskEndDate</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">taskEndDate</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">postalCode</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">postalCode</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">region</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">region</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">city</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">city</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">street</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">street</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">houseNumber</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">houseNumber</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">houseUnitNumber</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">houseUnitNumber</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">flatNumber</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">flatNumber</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">passportSeries</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">passportSeries</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">passportNumber</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">passportNumber</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">passportIssuer</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">passportIssuer</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">passportIssuerInfo</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">passportIssuerInfo</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">passportIssueDate</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">passportIssueDate</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">dateOfBirth</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">dateOfBirth</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">expertInn</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">expertInn</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">pensionInsuranceNumber</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">pensionInsuranceNumber</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">personalAccount</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">personalAccount</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">expertFirstName</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">expertFirstName</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">expertMiddleName</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">expertMiddleName</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">expertLastName</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">expertLastName</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">bankCity</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">bankCity</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">bankInn</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">bankInn</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">bankBik</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">bankBik</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">bankAccount</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">bankAccount</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">__documentDate</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">__documentDate</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">performer</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">performer</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">contract__id</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">contract__id</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">contract__sign__date</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">contract__sign__date</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">projectInitiator</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="heading">projectInitiator</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">school</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="heading">school</text-property>
+                </structure>
+            </list-property>
+            <list-property name="parameters"/>
+            <structure name="cachedMetaData">
+                <list-property name="resultSet">
+                    <structure>
+                        <property name="position">1</property>
+                        <property name="name">documentNumber</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">2</property>
+                        <property name="name">taskBeginDate</property>
+                        <property name="dataType">date</property>
+                    </structure>
+                    <structure>
+                        <property name="position">3</property>
+                        <property name="name">expert</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">4</property>
+                        <property name="name">demands</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">5</property>
+                        <property name="name">taskEndDate</property>
+                        <property name="dataType">date</property>
+                    </structure>
+                    <structure>
+                        <property name="position">6</property>
+                        <property name="name">postalCode</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">7</property>
+                        <property name="name">region</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">8</property>
+                        <property name="name">city</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">9</property>
+                        <property name="name">street</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">10</property>
+                        <property name="name">houseNumber</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">11</property>
+                        <property name="name">houseUnitNumber</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">12</property>
+                        <property name="name">flatNumber</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">13</property>
+                        <property name="name">passportSeries</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">14</property>
+                        <property name="name">passportNumber</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">15</property>
+                        <property name="name">passportIssuer</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">16</property>
+                        <property name="name">passportIssuerInfo</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">17</property>
+                        <property name="name">passportIssueDate</property>
+                        <property name="dataType">date</property>
+                    </structure>
+                    <structure>
+                        <property name="position">18</property>
+                        <property name="name">dateOfBirth</property>
+                        <property name="dataType">date</property>
+                    </structure>
+                    <structure>
+                        <property name="position">19</property>
+                        <property name="name">expertInn</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">20</property>
+                        <property name="name">pensionInsuranceNumber</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">21</property>
+                        <property name="name">personalAccount</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">22</property>
+                        <property name="name">expertFirstName</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">23</property>
+                        <property name="name">expertMiddleName</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">24</property>
+                        <property name="name">expertLastName</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">25</property>
+                        <property name="name">bankCity</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">26</property>
+                        <property name="name">bankInn</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">27</property>
+                        <property name="name">bankBik</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">28</property>
+                        <property name="name">bankAccount</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">29</property>
+                        <property name="name">__documentDate</property>
+                        <property name="dataType">date</property>
+                    </structure>
+                    <structure>
+                        <property name="position">30</property>
+                        <property name="name">performer</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">31</property>
+                        <property name="name">contract__id</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">32</property>
+                        <property name="name">contract__sign__date</property>
+                        <property name="dataType">date</property>
+                    </structure>
+                    <structure>
+                        <property name="position">33</property>
+                        <property name="name">projectInitiator</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">34</property>
+                        <property name="name">school</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                </list-property>
+            </structure>
+            <property name="dataSource">Data Source</property>
+            <list-property name="resultSet">
+                <structure>
+                    <property name="position">1</property>
+                    <property name="name">documentNumber</property>
+                    <property name="nativeName">documentNumber</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">2</property>
+                    <property name="name">taskBeginDate</property>
+                    <property name="nativeName">taskBeginDate</property>
+                    <property name="dataType">date</property>
+                    <property name="nativeDataType">91</property>
+                </structure>
+                <structure>
+                    <property name="position">3</property>
+                    <property name="name">expert</property>
+                    <property name="nativeName">expert</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">4</property>
+                    <property name="name">demands</property>
+                    <property name="nativeName">demands</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">5</property>
+                    <property name="name">taskEndDate</property>
+                    <property name="nativeName">taskEndDate</property>
+                    <property name="dataType">date</property>
+                    <property name="nativeDataType">91</property>
+                </structure>
+                <structure>
+                    <property name="position">6</property>
+                    <property name="name">postalCode</property>
+                    <property name="nativeName">postalCode</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">7</property>
+                    <property name="name">region</property>
+                    <property name="nativeName">region</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">8</property>
+                    <property name="name">city</property>
+                    <property name="nativeName">city</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">9</property>
+                    <property name="name">street</property>
+                    <property name="nativeName">street</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">10</property>
+                    <property name="name">houseNumber</property>
+                    <property name="nativeName">houseNumber</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">11</property>
+                    <property name="name">houseUnitNumber</property>
+                    <property name="nativeName">houseUnitNumber</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">12</property>
+                    <property name="name">flatNumber</property>
+                    <property name="nativeName">flatNumber</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">13</property>
+                    <property name="name">passportSeries</property>
+                    <property name="nativeName">passportSeries</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">14</property>
+                    <property name="name">passportNumber</property>
+                    <property name="nativeName">passportNumber</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">15</property>
+                    <property name="name">passportIssuer</property>
+                    <property name="nativeName">passportIssuer</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">16</property>
+                    <property name="name">passportIssuerInfo</property>
+                    <property name="nativeName">passportIssuerInfo</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">17</property>
+                    <property name="name">passportIssueDate</property>
+                    <property name="nativeName">passportIssueDate</property>
+                    <property name="dataType">date</property>
+                    <property name="nativeDataType">91</property>
+                </structure>
+                <structure>
+                    <property name="position">18</property>
+                    <property name="name">dateOfBirth</property>
+                    <property name="nativeName">dateOfBirth</property>
+                    <property name="dataType">date</property>
+                    <property name="nativeDataType">91</property>
+                </structure>
+                <structure>
+                    <property name="position">19</property>
+                    <property name="name">expertInn</property>
+                    <property name="nativeName">expertInn</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">20</property>
+                    <property name="name">pensionInsuranceNumber</property>
+                    <property name="nativeName">pensionInsuranceNumber</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">21</property>
+                    <property name="name">personalAccount</property>
+                    <property name="nativeName">personalAccount</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">22</property>
+                    <property name="name">expertFirstName</property>
+                    <property name="nativeName">expertFirstName</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">23</property>
+                    <property name="name">expertMiddleName</property>
+                    <property name="nativeName">expertMiddleName</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">24</property>
+                    <property name="name">expertLastName</property>
+                    <property name="nativeName">expertLastName</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">25</property>
+                    <property name="name">bankCity</property>
+                    <property name="nativeName">bankCity</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">26</property>
+                    <property name="name">bankInn</property>
+                    <property name="nativeName">bankInn</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">27</property>
+                    <property name="name">bankBik</property>
+                    <property name="nativeName">bankBik</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">28</property>
+                    <property name="name">bankAccount</property>
+                    <property name="nativeName">bankAccount</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">29</property>
+                    <property name="name">__documentDate</property>
+                    <property name="nativeName">__documentDate</property>
+                    <property name="dataType">date</property>
+                    <property name="nativeDataType">91</property>
+                </structure>
+                <structure>
+                    <property name="position">30</property>
+                    <property name="name">performer</property>
+                    <property name="nativeName">performer</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">31</property>
+                    <property name="name">contract__id</property>
+                    <property name="nativeName">contract__id</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">32</property>
+                    <property name="name">contract__sign__date</property>
+                    <property name="nativeName">contract__sign__date</property>
+                    <property name="dataType">date</property>
+                    <property name="nativeDataType">91</property>
+                </structure>
+                <structure>
+                    <property name="position">33</property>
+                    <property name="name">projectInitiator</property>
+                    <property name="nativeName">projectInitiator</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">34</property>
+                    <property name="name">school</property>
+                    <property name="nativeName">school</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+            </list-property>
+            <xml-property name="queryText"><![CDATA[table0#-TNAME-#table0#:#[/datasource/variables]#:#{documentNumber;STRING;/task/__agreement/__documentNumber},{taskBeginDate;DATE;/task/__beginDate},{expert;STRING;/expert/__title},{demands;STRING;/demands},{taskEndDate;DATE;/task/__endDate},{postalCode;STRING;/expert/__address/__postalCode},{region;STRING;/expert/__address/__region/__title},{city;STRING;/expert/__address/__city/__title},{street;STRING;/expert/__address/__street/__title},{houseNumber;STRING;/expert/__address/__houseNumber},{houseUnitNumber;STRING;/expert/__address/__houseUnitNumber},{flatNumber;STRING;/expert/__address/__flatNumber},{passportSeries;STRING;/expert/__passportData/__series},{passportNumber;STRING;/expert/__passportData/__number},{passportIssuer;STRING;/expert/__passportData/__issuer},{passportIssuerInfo;STRING;/expert/__passportData/__issuerInfo},{passportIssueDate;DATE;/expert/__passportData/__issueDate},{dateOfBirth;DATE;/expert/__dateOfBirth},{expertInn;STRING;/expert/__inn},{pensionInsuranceNumber;STRING;/expert/__pensionInsuranceNumber},{personalAccount;STRING;/expert/__expertData/__personalAccount},{expertFirstName;STRING;/expert/__firstName},{expertMiddleName;STRING;/expert/__middleName},{expertLastName;STRING;/expert/__lastName},{bankCity;STRING;/expert/__expertData/__bank/__city},{bankInn;STRING;/expert/__expertData/__bank/__inn},{bankBik;STRING;/expert/__expertData/__bank/__bik},{bankAccount;STRING;/expert/__expertData/__bank/__account},{__documentDate;DATE;/task/__agreement/__documentDate},{performer;STRING;/performer},{contract__id;STRING;/contract__id},{contract__sign__date;DATE;/contract__sign__date},{projectInitiator;STRING;/projectInitiator},{school;STRING;/school}]]></xml-property>
+            <xml-property name="designerValues"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<model:DesignValues xmlns:design="http://www.eclipse.org/datatools/connectivity/oda/design" xmlns:model="http://www.eclipse.org/birt/report/model/adapter/odaModel">
+  <Version>2.0</Version>
+  <design:ResultSets derivedMetaData="true">
+    <design:resultSetDefinitions>
+      <design:resultSetColumns>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>documentNumber</design:name>
+              <design:position>1</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>documentNumber</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>taskBeginDate</design:name>
+              <design:position>2</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>taskBeginDate</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>expert</design:name>
+              <design:position>3</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>expert</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>demands</design:name>
+              <design:position>4</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>demands</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>taskEndDate</design:name>
+              <design:position>5</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>taskEndDate</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+      </design:resultSetColumns>
+      <design:criteria/>
+    </design:resultSetDefinitions>
+  </design:ResultSets>
+</model:DesignValues>]]></xml-property>
+            <list-property name="privateDriverProperties">
+                <ex-property>
+                    <name>MAX_ROW</name>
+                    <value>-1</value>
+                </ex-property>
+                <ex-property>
+                    <name>XML_FILE</name>
+                </ex-property>
+            </list-property>
+        </oda-data-set>
+    </data-sets>
+    <styles>
+        <style name="report" id="4">
+            <property name="fontFamily">sans-serif</property>
+            <property name="fontSize">10pt</property>
+        </style>
+        <style name="crosstab-cell" id="5">
+            <property name="borderBottomColor">#CCCCCC</property>
+            <property name="borderBottomStyle">solid</property>
+            <property name="borderBottomWidth">1pt</property>
+            <property name="borderLeftColor">#CCCCCC</property>
+            <property name="borderLeftStyle">solid</property>
+            <property name="borderLeftWidth">1pt</property>
+            <property name="borderRightColor">#CCCCCC</property>
+            <property name="borderRightStyle">solid</property>
+            <property name="borderRightWidth">1pt</property>
+            <property name="borderTopColor">#CCCCCC</property>
+            <property name="borderTopStyle">solid</property>
+            <property name="borderTopWidth">1pt</property>
+        </style>
+        <style name="crosstab" id="6">
+            <property name="borderBottomColor">#CCCCCC</property>
+            <property name="borderBottomStyle">solid</property>
+            <property name="borderBottomWidth">1pt</property>
+            <property name="borderLeftColor">#CCCCCC</property>
+            <property name="borderLeftStyle">solid</property>
+            <property name="borderLeftWidth">1pt</property>
+            <property name="borderRightColor">#CCCCCC</property>
+            <property name="borderRightStyle">solid</property>
+            <property name="borderRightWidth">1pt</property>
+            <property name="borderTopColor">#CCCCCC</property>
+            <property name="borderTopStyle">solid</property>
+            <property name="borderTopWidth">1pt</property>
+        </style>
+    </styles>
+    <page-setup>
+        <simple-master-page name="Simple MasterPage" id="2">
+            <property name="leftMargin">0.625in</property>
+            <property name="rightMargin">0.6354166666666666in</property>
+        </simple-master-page>
+    </page-setup>
+    <body>
+        <text id="7">
+            <property name="fontFamily">"Times New Roman"</property>
+            <property name="fontSize">14pt</property>
+            <property name="fontWeight">bold</property>
+            <property name="textAlign">center</property>
+            <property name="dataSet">GeneralDataSet</property>
+            <list-property name="boundDataColumns">
+                <structure>
+                    <property name="name">documentNumber</property>
+                    <text-property name="displayName">documentNumber</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["documentNumber"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">taskBeginDate</property>
+                    <text-property name="displayName">taskBeginDate</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["taskBeginDate"]</expression>
+                    <property name="dataType">date</property>
+                </structure>
+                <structure>
+                    <property name="name">expert</property>
+                    <text-property name="displayName">expert</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["expert"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">demands</property>
+                    <text-property name="displayName">demands</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["demands"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">taskEndDate</property>
+                    <text-property name="displayName">taskEndDate</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["taskEndDate"]</expression>
+                    <property name="dataType">date</property>
+                </structure>
+                <structure>
+                    <property name="name">postalCode</property>
+                    <text-property name="displayName">postalCode</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["postalCode"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">region</property>
+                    <text-property name="displayName">region</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["region"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">city</property>
+                    <text-property name="displayName">city</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["city"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">street</property>
+                    <text-property name="displayName">street</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["street"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">houseNumber</property>
+                    <text-property name="displayName">houseNumber</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["houseNumber"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">houseUnitNumber</property>
+                    <text-property name="displayName">houseUnitNumber</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["houseUnitNumber"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">flatNumber</property>
+                    <text-property name="displayName">flatNumber</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["flatNumber"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">passportSeries</property>
+                    <text-property name="displayName">passportSeries</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["passportSeries"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">passportNumber</property>
+                    <text-property name="displayName">passportNumber</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["passportNumber"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">passportIssuer</property>
+                    <text-property name="displayName">passportIssuer</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["passportIssuer"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">passportIssuerInfo</property>
+                    <text-property name="displayName">passportIssuerInfo</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["passportIssuerInfo"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">passportIssueDate</property>
+                    <text-property name="displayName">passportIssueDate</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["passportIssueDate"]</expression>
+                    <property name="dataType">date</property>
+                </structure>
+                <structure>
+                    <property name="name">dateOfBirth</property>
+                    <text-property name="displayName">dateOfBirth</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["dateOfBirth"]</expression>
+                    <property name="dataType">date</property>
+                </structure>
+                <structure>
+                    <property name="name">expertInn</property>
+                    <text-property name="displayName">expertInn</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["expertInn"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">pensionInsuranceNumber</property>
+                    <text-property name="displayName">pensionInsuranceNumber</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["pensionInsuranceNumber"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">personalAccount</property>
+                    <text-property name="displayName">personalAccount</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["personalAccount"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">expertFirstName</property>
+                    <text-property name="displayName">expertFirstName</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["expertFirstName"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">expertMiddleName</property>
+                    <text-property name="displayName">expertMiddleName</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["expertMiddleName"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">expertLastName</property>
+                    <text-property name="displayName">expertLastName</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["expertLastName"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">bankCity</property>
+                    <text-property name="displayName">bankCity</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["bankCity"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">bankInn</property>
+                    <text-property name="displayName">bankInn</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["bankInn"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">bankBik</property>
+                    <text-property name="displayName">bankBik</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["bankBik"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">bankAccount</property>
+                    <text-property name="displayName">bankAccount</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["bankAccount"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+            </list-property>
+            <property name="contentType">html</property>
+            <text-property name="content"><![CDATA[Договор № <VALUE-OF>row["documentNumber"]</VALUE-OF>-ОМ
+
+<VALUE-OF>
+function checkField(field)
+{
+if ((field == null) || (field.length == 0))
+return ""
+else return(field + ", ")
+}
+</VALUE-OF>]]></text-property>
+        </text>
+        <label id="85">
+            <property name="fontFamily">"Times New Roman"</property>
+            <property name="fontSize">14pt</property>
+            <property name="fontWeight">bold</property>
+            <property name="paddingTop">0pt</property>
+            <property name="paddingLeft">0pt</property>
+            <property name="paddingBottom">0pt</property>
+            <property name="paddingRight">0pt</property>
+            <property name="textAlign">center</property>
+            <text-property name="text">возмездного оказания услуг</text-property>
+        </label>
+        <label id="221"/>
+        <label id="220"/>
+        <grid id="88">
+            <property name="dataSet">GeneralDataSet</property>
+            <list-property name="boundDataColumns">
+                <structure>
+                    <property name="name">documentNumber</property>
+                    <text-property name="displayName">documentNumber</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["documentNumber"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">taskBeginDate</property>
+                    <text-property name="displayName">taskBeginDate</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["taskBeginDate"]</expression>
+                    <property name="dataType">date</property>
+                </structure>
+                <structure>
+                    <property name="name">expert</property>
+                    <text-property name="displayName">expert</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["expert"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">demands</property>
+                    <text-property name="displayName">demands</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["demands"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">taskEndDate</property>
+                    <text-property name="displayName">taskEndDate</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["taskEndDate"]</expression>
+                    <property name="dataType">date</property>
+                </structure>
+                <structure>
+                    <property name="name">postalCode</property>
+                    <text-property name="displayName">postalCode</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["postalCode"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">region</property>
+                    <text-property name="displayName">region</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["region"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">city</property>
+                    <text-property name="displayName">city</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["city"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">street</property>
+                    <text-property name="displayName">street</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["street"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">houseNumber</property>
+                    <text-property name="displayName">houseNumber</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["houseNumber"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">houseUnitNumber</property>
+                    <text-property name="displayName">houseUnitNumber</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["houseUnitNumber"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">flatNumber</property>
+                    <text-property name="displayName">flatNumber</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["flatNumber"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">passportSeries</property>
+                    <text-property name="displayName">passportSeries</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["passportSeries"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">passportNumber</property>
+                    <text-property name="displayName">passportNumber</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["passportNumber"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">passportIssuer</property>
+                    <text-property name="displayName">passportIssuer</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["passportIssuer"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">passportIssuerInfo</property>
+                    <text-property name="displayName">passportIssuerInfo</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["passportIssuerInfo"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">passportIssueDate</property>
+                    <text-property name="displayName">passportIssueDate</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["passportIssueDate"]</expression>
+                    <property name="dataType">date</property>
+                </structure>
+                <structure>
+                    <property name="name">dateOfBirth</property>
+                    <text-property name="displayName">dateOfBirth</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["dateOfBirth"]</expression>
+                    <property name="dataType">date</property>
+                </structure>
+                <structure>
+                    <property name="name">expertInn</property>
+                    <text-property name="displayName">expertInn</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["expertInn"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">pensionInsuranceNumber</property>
+                    <text-property name="displayName">pensionInsuranceNumber</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["pensionInsuranceNumber"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">personalAccount</property>
+                    <text-property name="displayName">personalAccount</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["personalAccount"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">expertFirstName</property>
+                    <text-property name="displayName">expertFirstName</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["expertFirstName"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">expertMiddleName</property>
+                    <text-property name="displayName">expertMiddleName</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["expertMiddleName"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">expertLastName</property>
+                    <text-property name="displayName">expertLastName</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["expertLastName"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">bankCity</property>
+                    <text-property name="displayName">bankCity</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["bankCity"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">bankInn</property>
+                    <text-property name="displayName">bankInn</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["bankInn"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">bankBik</property>
+                    <text-property name="displayName">bankBik</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["bankBik"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">bankAccount</property>
+                    <text-property name="displayName">bankAccount</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["bankAccount"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+            </list-property>
+            <column id="89"/>
+            <column id="90"/>
+            <row id="91">
+                <cell id="92">
+                    <text id="205">
+                        <property name="fontFamily">"Times New Roman"</property>
+                        <property name="fontSize">12pt</property>
+                        <property name="textAlign">left</property>
+                        <property name="contentType">html</property>
+                        <text-property name="content"><![CDATA[г. Москва]]></text-property>
+                    </text>
+                </cell>
+                <cell id="93">
+                    <text id="209">
+                        <property name="fontFamily">"Times New Roman"</property>
+                        <property name="fontSize">12pt</property>
+                        <property name="textAlign">right</property>
+                        <property name="contentType">html</property>
+                        <text-property name="content"><![CDATA[<VALUE-OF format="Long Date">row["taskBeginDate"]</VALUE-OF>]]></text-property>
+                    </text>
+                </cell>
+            </row>
+        </grid>
+        <label id="128"/>
+        <text id="127">
+            <property name="fontFamily">"Times New Roman"</property>
+            <property name="fontSize">12pt</property>
+            <property name="textAlign">justify</property>
+            <property name="dataSet">GeneralDataSet</property>
+            <list-property name="boundDataColumns">
+                <structure>
+                    <property name="name">documentNumber</property>
+                    <text-property name="displayName">documentNumber</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["documentNumber"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">taskBeginDate</property>
+                    <text-property name="displayName">taskBeginDate</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["taskBeginDate"]</expression>
+                    <property name="dataType">date</property>
+                </structure>
+                <structure>
+                    <property name="name">expert</property>
+                    <text-property name="displayName">expert</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["expert"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">demands</property>
+                    <text-property name="displayName">demands</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["demands"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">taskEndDate</property>
+                    <text-property name="displayName">taskEndDate</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["taskEndDate"]</expression>
+                    <property name="dataType">date</property>
+                </structure>
+                <structure>
+                    <property name="name">postalCode</property>
+                    <text-property name="displayName">postalCode</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["postalCode"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">region</property>
+                    <text-property name="displayName">region</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["region"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">city</property>
+                    <text-property name="displayName">city</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["city"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">street</property>
+                    <text-property name="displayName">street</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["street"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">houseNumber</property>
+                    <text-property name="displayName">houseNumber</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["houseNumber"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">houseUnitNumber</property>
+                    <text-property name="displayName">houseUnitNumber</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["houseUnitNumber"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">flatNumber</property>
+                    <text-property name="displayName">flatNumber</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["flatNumber"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">passportSeries</property>
+                    <text-property name="displayName">passportSeries</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["passportSeries"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">passportNumber</property>
+                    <text-property name="displayName">passportNumber</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["passportNumber"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">passportIssuer</property>
+                    <text-property name="displayName">passportIssuer</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["passportIssuer"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">passportIssuerInfo</property>
+                    <text-property name="displayName">passportIssuerInfo</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["passportIssuerInfo"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">passportIssueDate</property>
+                    <text-property name="displayName">passportIssueDate</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["passportIssueDate"]</expression>
+                    <property name="dataType">date</property>
+                </structure>
+                <structure>
+                    <property name="name">dateOfBirth</property>
+                    <text-property name="displayName">dateOfBirth</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["dateOfBirth"]</expression>
+                    <property name="dataType">date</property>
+                </structure>
+                <structure>
+                    <property name="name">expertInn</property>
+                    <text-property name="displayName">expertInn</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["expertInn"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">pensionInsuranceNumber</property>
+                    <text-property name="displayName">pensionInsuranceNumber</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["pensionInsuranceNumber"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">personalAccount</property>
+                    <text-property name="displayName">personalAccount</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["personalAccount"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">expertFirstName</property>
+                    <text-property name="displayName">expertFirstName</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["expertFirstName"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">expertMiddleName</property>
+                    <text-property name="displayName">expertMiddleName</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["expertMiddleName"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">expertLastName</property>
+                    <text-property name="displayName">expertLastName</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["expertLastName"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">bankCity</property>
+                    <text-property name="displayName">bankCity</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["bankCity"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">bankInn</property>
+                    <text-property name="displayName">bankInn</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["bankInn"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">bankBik</property>
+                    <text-property name="displayName">bankBik</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["bankBik"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">bankAccount</property>
+                    <text-property name="displayName">bankAccount</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["bankAccount"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+            </list-property>
+            <property name="contentType">html</property>
+            <text-property name="content"><![CDATA[&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;ООО «Инконсалт К», именуемое в дальнейшем «Заказчик», в лице генерального директора Коротковой Ирины Владимировны, действующей на основании устава, с одной стороны, и <VALUE-OF>row["expert"]</VALUE-OF>, именуемый в дальнейшем «Эксперт», с другой стороны, заключили настоящий договор о нижеследующем:]]></text-property>
+        </text>
+        <label id="129"/>
+        <label id="130">
+            <property name="fontFamily">"Times New Roman"</property>
+            <property name="fontSize">12pt</property>
+            <property name="fontWeight">bold</property>
+            <property name="textAlign">center</property>
+            <text-property name="text">1. Предмет договора</text-property>
+        </label>
+        <text id="131">
+            <property name="backgroundAttachment">scroll</property>
+            <property name="backgroundPositionX">0%</property>
+            <property name="backgroundPositionY">0%</property>
+            <property name="backgroundRepeat">repeat</property>
+            <property name="fontFamily">"Times New Roman"</property>
+            <property name="fontSize">12pt</property>
+            <property name="fontWeight">normal</property>
+            <property name="fontStyle">normal</property>
+            <property name="fontVariant">normal</property>
+            <property name="color">black</property>
+            <property name="textLineThrough">none</property>
+            <property name="textOverline">none</property>
+            <property name="textUnderline">none</property>
+            <property name="borderBottomColor">black</property>
+            <property name="borderBottomStyle">none</property>
+            <property name="borderBottomWidth">medium</property>
+            <property name="borderLeftColor">black</property>
+            <property name="borderLeftStyle">none</property>
+            <property name="borderLeftWidth">medium</property>
+            <property name="borderRightColor">black</property>
+            <property name="borderRightStyle">none</property>
+            <property name="borderRightWidth">medium</property>
+            <property name="borderTopColor">black</property>
+            <property name="borderTopStyle">none</property>
+            <property name="borderTopWidth">medium</property>
+            <property name="marginTop">0pt</property>
+            <property name="marginLeft">0pt</property>
+            <property name="marginBottom">0pt</property>
+            <property name="marginRight">0pt</property>
+            <property name="paddingTop">1pt</property>
+            <property name="paddingLeft">1pt</property>
+            <property name="paddingBottom">1pt</property>
+            <property name="paddingRight">1pt</property>
+            <property name="textAlign">justify</property>
+            <property name="textIndent">0em</property>
+            <property name="letterSpacing">normal</property>
+            <property name="lineHeight">normal</property>
+            <property name="orphans">2</property>
+            <property name="textTransform">none</property>
+            <property name="whiteSpace">normal</property>
+            <property name="widows">2</property>
+            <property name="wordSpacing">normal</property>
+            <property name="display">inline</property>
+            <property name="pageBreakAfter">auto</property>
+            <property name="pageBreakBefore">auto</property>
+            <property name="pageBreakInside">auto</property>
+            <property name="showIfBlank">false</property>
+            <property name="canShrink">false</property>
+            <property name="overflow">hidden</property>
+            <property name="dataSet">GeneralDataSet</property>
+            <list-property name="boundDataColumns">
+                <structure>
+                    <property name="name">documentNumber</property>
+                    <text-property name="displayName">documentNumber</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["documentNumber"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">taskBeginDate</property>
+                    <text-property name="displayName">taskBeginDate</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["taskBeginDate"]</expression>
+                    <property name="dataType">date</property>
+                </structure>
+                <structure>
+                    <property name="name">expert</property>
+                    <text-property name="displayName">expert</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["expert"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">demands</property>
+                    <text-property name="displayName">demands</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["demands"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">taskEndDate</property>
+                    <text-property name="displayName">taskEndDate</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["taskEndDate"]</expression>
+                    <property name="dataType">date</property>
+                </structure>
+                <structure>
+                    <property name="name">postalCode</property>
+                    <text-property name="displayName">postalCode</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["postalCode"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">region</property>
+                    <text-property name="displayName">region</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["region"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">city</property>
+                    <text-property name="displayName">city</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["city"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">street</property>
+                    <text-property name="displayName">street</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["street"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">houseNumber</property>
+                    <text-property name="displayName">houseNumber</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["houseNumber"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">houseUnitNumber</property>
+                    <text-property name="displayName">houseUnitNumber</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["houseUnitNumber"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">flatNumber</property>
+                    <text-property name="displayName">flatNumber</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["flatNumber"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">passportSeries</property>
+                    <text-property name="displayName">passportSeries</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["passportSeries"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">passportNumber</property>
+                    <text-property name="displayName">passportNumber</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["passportNumber"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">passportIssuer</property>
+                    <text-property name="displayName">passportIssuer</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["passportIssuer"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">passportIssuerInfo</property>
+                    <text-property name="displayName">passportIssuerInfo</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["passportIssuerInfo"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">passportIssueDate</property>
+                    <text-property name="displayName">passportIssueDate</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["passportIssueDate"]</expression>
+                    <property name="dataType">date</property>
+                </structure>
+                <structure>
+                    <property name="name">dateOfBirth</property>
+                    <text-property name="displayName">dateOfBirth</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["dateOfBirth"]</expression>
+                    <property name="dataType">date</property>
+                </structure>
+                <structure>
+                    <property name="name">expertInn</property>
+                    <text-property name="displayName">expertInn</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["expertInn"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">pensionInsuranceNumber</property>
+                    <text-property name="displayName">pensionInsuranceNumber</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["pensionInsuranceNumber"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">personalAccount</property>
+                    <text-property name="displayName">personalAccount</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["personalAccount"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">expertFirstName</property>
+                    <text-property name="displayName">expertFirstName</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["expertFirstName"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">expertMiddleName</property>
+                    <text-property name="displayName">expertMiddleName</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["expertMiddleName"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">expertLastName</property>
+                    <text-property name="displayName">expertLastName</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["expertLastName"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">bankCity</property>
+                    <text-property name="displayName">bankCity</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["bankCity"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">bankInn</property>
+                    <text-property name="displayName">bankInn</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["bankInn"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">bankBik</property>
+                    <text-property name="displayName">bankBik</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["bankBik"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">bankAccount</property>
+                    <text-property name="displayName">bankAccount</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["bankAccount"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">__documentDate</property>
+                    <text-property name="displayName">__documentDate</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["__documentDate"]</expression>
+                    <property name="dataType">date</property>
+                </structure>
+                <structure>
+                    <property name="name">performer</property>
+                    <text-property name="displayName">performer</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["performer"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">contract__id</property>
+                    <text-property name="displayName">contract__id</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["contract__id"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">contract__sign__date</property>
+                    <text-property name="displayName">contract__sign__date</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["contract__sign__date"]</expression>
+                    <property name="dataType">date</property>
+                </structure>
+                <structure>
+                    <property name="name">projectInitiator</property>
+                    <text-property name="displayName">projectInitiator</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["projectInitiator"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">school</property>
+                    <text-property name="displayName">school</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["school"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+            </list-property>
+            <property name="contentType">html</property>
+            <text-property name="content"><![CDATA[<div align="justify">&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;1.1.	Эксперт обязуется по заданию Заказчика провести в установленном порядке экспертизу заявки с регистрационным номером  № <VALUE-OF>row["contract__id"]</VALUE-OF> от <VALUE-OF format="Long Date">row["contract__sign__date"]</VALUE-OF> на участие в пятой очереди конкурса по отбору организаций на право получения субсидий на реализацию комплексных проектов по созданию высокотехнологичного производства, объявленного Министерством образования и науки Российской Федерации в целях реализации Постановления Правительства Российской Федерации от 09 апреля 2010 года № 218 (далее по тексту – заявка на участие в конкурсе), а Заказчик обязуется оплатить оказанные Экспертом услуги..<br>
+
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;1.2. Срок проведения экспертизы: с <VALUE-OF  format="Medium Date">row["taskBeginDate"]</VALUE-OF> по <VALUE-OF format="Medium Date">row["taskEndDate"]</VALUE-OF>
+</div>]]></text-property>
+        </text>
+        <label id="132"/>
+        <label id="133">
+            <property name="fontFamily">"Times New Roman"</property>
+            <property name="fontSize">12pt</property>
+            <property name="fontWeight">bold</property>
+            <property name="textAlign">center</property>
+            <text-property name="text">2. Права и обязанности сторон</text-property>
+        </label>
+        <text id="134">
+            <property name="backgroundAttachment">scroll</property>
+            <property name="backgroundPositionX">0%</property>
+            <property name="backgroundPositionY">0%</property>
+            <property name="backgroundRepeat">repeat</property>
+            <property name="fontFamily">"Times New Roman"</property>
+            <property name="fontSize">12pt</property>
+            <property name="fontWeight">normal</property>
+            <property name="fontStyle">normal</property>
+            <property name="fontVariant">normal</property>
+            <property name="color">black</property>
+            <property name="textLineThrough">none</property>
+            <property name="textOverline">none</property>
+            <property name="textUnderline">none</property>
+            <property name="borderBottomColor">black</property>
+            <property name="borderBottomStyle">none</property>
+            <property name="borderBottomWidth">medium</property>
+            <property name="borderLeftColor">black</property>
+            <property name="borderLeftStyle">none</property>
+            <property name="borderLeftWidth">medium</property>
+            <property name="borderRightColor">black</property>
+            <property name="borderRightStyle">none</property>
+            <property name="borderRightWidth">medium</property>
+            <property name="borderTopColor">black</property>
+            <property name="borderTopStyle">none</property>
+            <property name="borderTopWidth">medium</property>
+            <property name="marginTop">0pt</property>
+            <property name="marginLeft">0pt</property>
+            <property name="marginBottom">0pt</property>
+            <property name="marginRight">0pt</property>
+            <property name="paddingTop">1pt</property>
+            <property name="paddingLeft">1pt</property>
+            <property name="paddingBottom">1pt</property>
+            <property name="paddingRight">1pt</property>
+            <property name="textAlign">justify</property>
+            <property name="textIndent">0em</property>
+            <property name="letterSpacing">normal</property>
+            <property name="lineHeight">normal</property>
+            <property name="orphans">2</property>
+            <property name="textTransform">none</property>
+            <property name="whiteSpace">normal</property>
+            <property name="widows">2</property>
+            <property name="wordSpacing">normal</property>
+            <property name="display">inline</property>
+            <property name="pageBreakAfter">auto</property>
+            <property name="pageBreakBefore">auto</property>
+            <property name="pageBreakInside">auto</property>
+            <property name="showIfBlank">false</property>
+            <property name="canShrink">false</property>
+            <property name="overflow">hidden</property>
+            <property name="dataSet">GeneralDataSet</property>
+            <list-property name="boundDataColumns">
+                <structure>
+                    <property name="name">documentNumber</property>
+                    <text-property name="displayName">documentNumber</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["documentNumber"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">taskBeginDate</property>
+                    <text-property name="displayName">taskBeginDate</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["taskBeginDate"]</expression>
+                    <property name="dataType">date</property>
+                </structure>
+                <structure>
+                    <property name="name">expert</property>
+                    <text-property name="displayName">expert</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["expert"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">demands</property>
+                    <text-property name="displayName">demands</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["demands"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">taskEndDate</property>
+                    <text-property name="displayName">taskEndDate</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["taskEndDate"]</expression>
+                    <property name="dataType">date</property>
+                </structure>
+                <structure>
+                    <property name="name">postalCode</property>
+                    <text-property name="displayName">postalCode</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["postalCode"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">region</property>
+                    <text-property name="displayName">region</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["region"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">city</property>
+                    <text-property name="displayName">city</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["city"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">street</property>
+                    <text-property name="displayName">street</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["street"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">houseNumber</property>
+                    <text-property name="displayName">houseNumber</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["houseNumber"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">houseUnitNumber</property>
+                    <text-property name="displayName">houseUnitNumber</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["houseUnitNumber"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">flatNumber</property>
+                    <text-property name="displayName">flatNumber</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["flatNumber"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">passportSeries</property>
+                    <text-property name="displayName">passportSeries</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["passportSeries"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">passportNumber</property>
+                    <text-property name="displayName">passportNumber</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["passportNumber"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">passportIssuer</property>
+                    <text-property name="displayName">passportIssuer</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["passportIssuer"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">passportIssuerInfo</property>
+                    <text-property name="displayName">passportIssuerInfo</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["passportIssuerInfo"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">passportIssueDate</property>
+                    <text-property name="displayName">passportIssueDate</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["passportIssueDate"]</expression>
+                    <property name="dataType">date</property>
+                </structure>
+                <structure>
+                    <property name="name">dateOfBirth</property>
+                    <text-property name="displayName">dateOfBirth</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["dateOfBirth"]</expression>
+                    <property name="dataType">date</property>
+                </structure>
+                <structure>
+                    <property name="name">expertInn</property>
+                    <text-property name="displayName">expertInn</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["expertInn"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">pensionInsuranceNumber</property>
+                    <text-property name="displayName">pensionInsuranceNumber</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["pensionInsuranceNumber"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">personalAccount</property>
+                    <text-property name="displayName">personalAccount</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["personalAccount"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">expertFirstName</property>
+                    <text-property name="displayName">expertFirstName</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["expertFirstName"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">expertMiddleName</property>
+                    <text-property name="displayName">expertMiddleName</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["expertMiddleName"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">expertLastName</property>
+                    <text-property name="displayName">expertLastName</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["expertLastName"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">bankCity</property>
+                    <text-property name="displayName">bankCity</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["bankCity"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">bankInn</property>
+                    <text-property name="displayName">bankInn</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["bankInn"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">bankBik</property>
+                    <text-property name="displayName">bankBik</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["bankBik"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">bankAccount</property>
+                    <text-property name="displayName">bankAccount</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["bankAccount"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+            </list-property>
+            <property name="contentType">html</property>
+            <text-property name="content"><![CDATA[<div align="justify">&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;2.1.	Заказчик обязуется:<br>
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;2.1.1.	Разместить в электронном виде документы, представленные в составе заявки на участие в конкурсе, а также перечень вопросов для проведения экспертизы в специализированной компьютерной системе «Электронная система конкурсных заявок и исполнения контрактов», имеющей интерфейс в информационно-телекоммуникационной сети «Интернет» по адресу https:// sstp.ru/fx.<br>
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;2.1.2.	Предоставить Эксперту доступ в «Электронную систему конкурсных заявок и исполнения контрактов» в целях проведения экспертизы заявки на участие в конкурсе и подготовки экспертного заключения.<br>
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;2.1.3.	Обеспечить анонимность при проведении экспертизы.<br>
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;2.2.	Заказчик вправе в любое время осуществлять проверку хода оказания Экспертом услуг по настоящему договору.<br>
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;2.3.	Заказчик не вправе давать Эксперту указания, предрешающие содержание выводов по экспертизе заявки на участие в конкурсе.<br>
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;2.4.	Эксперт обязуется:<br>
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;2.4.1.	Лично провести полное исследование документов в составе заявки на участие в конкурсе, представленной для проведения экспертизы, и дать обоснованное и объективное заключение по поставленным перед ним вопросам.<br>
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;2.4.2.	Не разглашать третьим лицам без письменного согласия Заказчика данные персональной учетной записи для авторизованного доступа в специализированную  компьютерную систему «Электронная система конкурсных заявок и исполнения  контрактов», а также информацию, содержащуюся в заявке на участие в конкурсе и подготовленному по результатам экспертизы экспертному заключению.<br>
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;2.4.3.	Своевременно письменно уведомлять Заказчика о наступлении обстоятельств, препятствующих проведению экспертизы заявки на участие в конкурсе в установленном порядке и в установленный срок.<br>
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;2.4.4.	Своевременно письменно уведомлять Заказчика о наличии конфликта интересов при выполнении услуг по настоящему договору с указанием обстоятельств. Конфликт интересов, в частности, возникает в случаях, если Эксперт:<br>
+•	принимал участие в подготовке заявки на участие в конкурсе, представленной для проведения экспертизы;<br>
+•	состоял в трудовых отношениях, привлекался к выполнению работ, оказанию услуг участником конкурса, заявка на участие в конкурсе которого представлена для проведения экспертизы;<br>
+•	может получить непосредственную выгоду в случае, если заявка на участие в конкурсе будет одобрена к финансированию;<br>
+•	является членом семьи, близким родственником лица, состоящего в трудовых отношениях с участником конкурса, заявка на участие в конкурсе которого представлена для проведения экспертизы;<br>
+•	находится под влиянием иных обстоятельств, препятствующих объективно оценить заявку на участие в конкурсе, представленную для проведения экспертизы.<br>
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;2.4.5.	Не вступать в ходе проведения конкурса в переписку или какие-либо иные формы контактов с участником конкурса, представившим заявку на участие в конкурсе.<br>
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;2.4.6.	Своевременно письменно уведомлять Заказчика об изменении личных данных, указанных в настоящем договоре (место жительства, платежные реквизиты и т.п.).<br>
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;2.5. Эксперт вправе ознакомиться с оригиналами документов входящих в состав заявки на участие в конкурсе (в бумажном виде) по месту нахождения Заказчика.<br>
+</div>]]></text-property>
+        </text>
+        <text id="210"/>
+        <label id="136">
+            <property name="fontFamily">"Times New Roman"</property>
+            <property name="fontSize">12pt</property>
+            <property name="fontWeight">bold</property>
+            <property name="textAlign">center</property>
+            <text-property name="text">3. Оформление результатов экспертизы</text-property>
+        </label>
+        <text id="137">
+            <property name="backgroundAttachment">scroll</property>
+            <property name="backgroundPositionX">0%</property>
+            <property name="backgroundPositionY">0%</property>
+            <property name="backgroundRepeat">repeat</property>
+            <property name="fontFamily">"Times New Roman"</property>
+            <property name="fontSize">12pt</property>
+            <property name="fontWeight">normal</property>
+            <property name="fontStyle">normal</property>
+            <property name="fontVariant">normal</property>
+            <property name="color">black</property>
+            <property name="textLineThrough">none</property>
+            <property name="textOverline">none</property>
+            <property name="textUnderline">none</property>
+            <property name="borderBottomColor">black</property>
+            <property name="borderBottomStyle">none</property>
+            <property name="borderBottomWidth">medium</property>
+            <property name="borderLeftColor">black</property>
+            <property name="borderLeftStyle">none</property>
+            <property name="borderLeftWidth">medium</property>
+            <property name="borderRightColor">black</property>
+            <property name="borderRightStyle">none</property>
+            <property name="borderRightWidth">medium</property>
+            <property name="borderTopColor">black</property>
+            <property name="borderTopStyle">none</property>
+            <property name="borderTopWidth">medium</property>
+            <property name="marginTop">0pt</property>
+            <property name="marginLeft">0pt</property>
+            <property name="marginBottom">0pt</property>
+            <property name="marginRight">0pt</property>
+            <property name="paddingTop">1pt</property>
+            <property name="paddingLeft">1pt</property>
+            <property name="paddingBottom">1pt</property>
+            <property name="paddingRight">1pt</property>
+            <property name="textAlign">justify</property>
+            <property name="textIndent">0em</property>
+            <property name="letterSpacing">normal</property>
+            <property name="lineHeight">normal</property>
+            <property name="orphans">2</property>
+            <property name="textTransform">none</property>
+            <property name="whiteSpace">normal</property>
+            <property name="widows">2</property>
+            <property name="wordSpacing">normal</property>
+            <property name="display">inline</property>
+            <property name="pageBreakAfter">auto</property>
+            <property name="pageBreakBefore">auto</property>
+            <property name="pageBreakInside">auto</property>
+            <property name="showIfBlank">false</property>
+            <property name="canShrink">false</property>
+            <property name="overflow">hidden</property>
+            <property name="dataSet">GeneralDataSet</property>
+            <list-property name="boundDataColumns">
+                <structure>
+                    <property name="name">documentNumber</property>
+                    <text-property name="displayName">documentNumber</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["documentNumber"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">taskBeginDate</property>
+                    <text-property name="displayName">taskBeginDate</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["taskBeginDate"]</expression>
+                    <property name="dataType">date</property>
+                </structure>
+                <structure>
+                    <property name="name">expert</property>
+                    <text-property name="displayName">expert</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["expert"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">demands</property>
+                    <text-property name="displayName">demands</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["demands"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">taskEndDate</property>
+                    <text-property name="displayName">taskEndDate</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["taskEndDate"]</expression>
+                    <property name="dataType">date</property>
+                </structure>
+                <structure>
+                    <property name="name">postalCode</property>
+                    <text-property name="displayName">postalCode</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["postalCode"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">region</property>
+                    <text-property name="displayName">region</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["region"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">city</property>
+                    <text-property name="displayName">city</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["city"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">street</property>
+                    <text-property name="displayName">street</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["street"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">houseNumber</property>
+                    <text-property name="displayName">houseNumber</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["houseNumber"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">houseUnitNumber</property>
+                    <text-property name="displayName">houseUnitNumber</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["houseUnitNumber"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">flatNumber</property>
+                    <text-property name="displayName">flatNumber</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["flatNumber"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">passportSeries</property>
+                    <text-property name="displayName">passportSeries</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["passportSeries"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">passportNumber</property>
+                    <text-property name="displayName">passportNumber</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["passportNumber"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">passportIssuer</property>
+                    <text-property name="displayName">passportIssuer</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["passportIssuer"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">passportIssuerInfo</property>
+                    <text-property name="displayName">passportIssuerInfo</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["passportIssuerInfo"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">passportIssueDate</property>
+                    <text-property name="displayName">passportIssueDate</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["passportIssueDate"]</expression>
+                    <property name="dataType">date</property>
+                </structure>
+                <structure>
+                    <property name="name">dateOfBirth</property>
+                    <text-property name="displayName">dateOfBirth</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["dateOfBirth"]</expression>
+                    <property name="dataType">date</property>
+                </structure>
+                <structure>
+                    <property name="name">expertInn</property>
+                    <text-property name="displayName">expertInn</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["expertInn"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">pensionInsuranceNumber</property>
+                    <text-property name="displayName">pensionInsuranceNumber</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["pensionInsuranceNumber"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">personalAccount</property>
+                    <text-property name="displayName">personalAccount</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["personalAccount"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">expertFirstName</property>
+                    <text-property name="displayName">expertFirstName</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["expertFirstName"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">expertMiddleName</property>
+                    <text-property name="displayName">expertMiddleName</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["expertMiddleName"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">expertLastName</property>
+                    <text-property name="displayName">expertLastName</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["expertLastName"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">bankCity</property>
+                    <text-property name="displayName">bankCity</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["bankCity"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">bankInn</property>
+                    <text-property name="displayName">bankInn</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["bankInn"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">bankBik</property>
+                    <text-property name="displayName">bankBik</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["bankBik"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">bankAccount</property>
+                    <text-property name="displayName">bankAccount</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["bankAccount"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+            </list-property>
+            <property name="contentType">html</property>
+            <text-property name="content"><![CDATA[<div align="justify">&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;3.1.	По результатам экспертизы заявки на участие в конкурсе Эксперт готовит экспертное заключение с использованием формы, размещенной в специализированной компьютерной системе «Электронная система конкурсных заявок и исполнения контрактов».<br>
+Экспертное заключение печатается на бумаге, заверяется подписью Эксперта и представляется Заказчику в срок, установленный для проведения экспертизы.<br>
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;3.2.	Совместно с экспертным заключением Эксперт передает Заказчику два экземпляра подписанного со своей стороны акта об исполнении договора.
+</div>]]></text-property>
+        </text>
+        <label id="138"/>
+        <label id="139">
+            <property name="fontFamily">"Times New Roman"</property>
+            <property name="fontSize">12pt</property>
+            <property name="fontWeight">bold</property>
+            <property name="textAlign">center</property>
+            <text-property name="text">4. Стоимость услуг и порядок расчетов</text-property>
+        </label>
+        <text id="140">
+            <property name="backgroundAttachment">scroll</property>
+            <property name="backgroundPositionX">0%</property>
+            <property name="backgroundPositionY">0%</property>
+            <property name="backgroundRepeat">repeat</property>
+            <property name="fontFamily">"Times New Roman"</property>
+            <property name="fontSize">12pt</property>
+            <property name="fontWeight">normal</property>
+            <property name="fontStyle">normal</property>
+            <property name="fontVariant">normal</property>
+            <property name="color">black</property>
+            <property name="textLineThrough">none</property>
+            <property name="textOverline">none</property>
+            <property name="textUnderline">none</property>
+            <property name="borderBottomColor">black</property>
+            <property name="borderBottomStyle">none</property>
+            <property name="borderBottomWidth">medium</property>
+            <property name="borderLeftColor">black</property>
+            <property name="borderLeftStyle">none</property>
+            <property name="borderLeftWidth">medium</property>
+            <property name="borderRightColor">black</property>
+            <property name="borderRightStyle">none</property>
+            <property name="borderRightWidth">medium</property>
+            <property name="borderTopColor">black</property>
+            <property name="borderTopStyle">none</property>
+            <property name="borderTopWidth">medium</property>
+            <property name="marginTop">0pt</property>
+            <property name="marginLeft">0pt</property>
+            <property name="marginBottom">0pt</property>
+            <property name="marginRight">0pt</property>
+            <property name="paddingTop">1pt</property>
+            <property name="paddingLeft">1pt</property>
+            <property name="paddingBottom">1pt</property>
+            <property name="paddingRight">1pt</property>
+            <property name="textAlign">justify</property>
+            <property name="textIndent">0em</property>
+            <property name="letterSpacing">normal</property>
+            <property name="lineHeight">normal</property>
+            <property name="orphans">2</property>
+            <property name="textTransform">none</property>
+            <property name="whiteSpace">normal</property>
+            <property name="widows">2</property>
+            <property name="wordSpacing">normal</property>
+            <property name="display">inline</property>
+            <property name="pageBreakAfter">auto</property>
+            <property name="pageBreakBefore">auto</property>
+            <property name="pageBreakInside">auto</property>
+            <property name="showIfBlank">false</property>
+            <property name="canShrink">false</property>
+            <property name="overflow">hidden</property>
+            <property name="dataSet">GeneralDataSet</property>
+            <list-property name="boundDataColumns">
+                <structure>
+                    <property name="name">documentNumber</property>
+                    <text-property name="displayName">documentNumber</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["documentNumber"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">taskBeginDate</property>
+                    <text-property name="displayName">taskBeginDate</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["taskBeginDate"]</expression>
+                    <property name="dataType">date</property>
+                </structure>
+                <structure>
+                    <property name="name">expert</property>
+                    <text-property name="displayName">expert</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["expert"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">demands</property>
+                    <text-property name="displayName">demands</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["demands"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">taskEndDate</property>
+                    <text-property name="displayName">taskEndDate</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["taskEndDate"]</expression>
+                    <property name="dataType">date</property>
+                </structure>
+                <structure>
+                    <property name="name">postalCode</property>
+                    <text-property name="displayName">postalCode</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["postalCode"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">region</property>
+                    <text-property name="displayName">region</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["region"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">city</property>
+                    <text-property name="displayName">city</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["city"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">street</property>
+                    <text-property name="displayName">street</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["street"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">houseNumber</property>
+                    <text-property name="displayName">houseNumber</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["houseNumber"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">houseUnitNumber</property>
+                    <text-property name="displayName">houseUnitNumber</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["houseUnitNumber"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">flatNumber</property>
+                    <text-property name="displayName">flatNumber</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["flatNumber"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">passportSeries</property>
+                    <text-property name="displayName">passportSeries</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["passportSeries"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">passportNumber</property>
+                    <text-property name="displayName">passportNumber</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["passportNumber"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">passportIssuer</property>
+                    <text-property name="displayName">passportIssuer</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["passportIssuer"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">passportIssuerInfo</property>
+                    <text-property name="displayName">passportIssuerInfo</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["passportIssuerInfo"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">passportIssueDate</property>
+                    <text-property name="displayName">passportIssueDate</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["passportIssueDate"]</expression>
+                    <property name="dataType">date</property>
+                </structure>
+                <structure>
+                    <property name="name">dateOfBirth</property>
+                    <text-property name="displayName">dateOfBirth</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["dateOfBirth"]</expression>
+                    <property name="dataType">date</property>
+                </structure>
+                <structure>
+                    <property name="name">expertInn</property>
+                    <text-property name="displayName">expertInn</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["expertInn"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">pensionInsuranceNumber</property>
+                    <text-property name="displayName">pensionInsuranceNumber</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["pensionInsuranceNumber"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">personalAccount</property>
+                    <text-property name="displayName">personalAccount</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["personalAccount"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">expertFirstName</property>
+                    <text-property name="displayName">expertFirstName</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["expertFirstName"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">expertMiddleName</property>
+                    <text-property name="displayName">expertMiddleName</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["expertMiddleName"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">expertLastName</property>
+                    <text-property name="displayName">expertLastName</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["expertLastName"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">bankCity</property>
+                    <text-property name="displayName">bankCity</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["bankCity"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">bankInn</property>
+                    <text-property name="displayName">bankInn</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["bankInn"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">bankBik</property>
+                    <text-property name="displayName">bankBik</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["bankBik"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">bankAccount</property>
+                    <text-property name="displayName">bankAccount</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["bankAccount"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+            </list-property>
+            <property name="contentType">html</property>
+            <text-property name="content"><![CDATA[<div align="justify">&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;4.1.		Стоимость экспертизы заявки на участие в конкурсе составляет  10 000 (десять тысяч) рублей 00 копеек.<br>
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;4.2.	Услуги Эксперта оплачиваются Заказчиком после подписания сторонами акта об исполнении договора из средств, поступающих от Министерства образования и науки по договору между Министерством образования и науки Российской Федерации и обществом с ограниченной ответственностью «Инконсалт К» об условиях предоставления и использования субсидии из федерального бюджета № 13.G26.31.0001 от 01 июля 2010 года.<br>
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;4.3.	Оплата услуг производится в безналичном порядке путем перечисления денежных средств на счет Эксперта в кредитной организации, указанный в настоящем договоре, либо, по соглашению сторон, наличными денежными средствами через кассу Заказчика.<br>
+</div>]]></text-property>
+        </text>
+        <label id="141"/>
+        <label id="142">
+            <property name="fontFamily">"Times New Roman"</property>
+            <property name="fontSize">12pt</property>
+            <property name="fontWeight">bold</property>
+            <property name="textAlign">center</property>
+            <text-property name="text">5. Заключительные положения</text-property>
+        </label>
+        <text id="143">
+            <property name="fontFamily">"Times New Roman"</property>
+            <property name="fontSize">12pt</property>
+            <property name="textAlign">center</property>
+            <property name="contentType">html</property>
+            <text-property name="content"><![CDATA[Настоящий договор составлен в 2-х экземплярах, по одному для каждой из сторон]]></text-property>
+        </text>
+        <label id="217"/>
+        <text id="39">
+            <property name="fontFamily">"Times New Roman"</property>
+            <property name="fontSize">12pt</property>
+            <property name="display">inline</property>
+            <property name="dataSet">GeneralDataSet</property>
+            <list-property name="boundDataColumns">
+                <structure>
+                    <property name="name">documentNumber</property>
+                    <text-property name="displayName">documentNumber</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["documentNumber"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">taskBeginDate</property>
+                    <text-property name="displayName">taskBeginDate</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["taskBeginDate"]</expression>
+                    <property name="dataType">date</property>
+                </structure>
+                <structure>
+                    <property name="name">expert</property>
+                    <text-property name="displayName">expert</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["expert"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">demands</property>
+                    <text-property name="displayName">demands</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["demands"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">taskEndDate</property>
+                    <text-property name="displayName">taskEndDate</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["taskEndDate"]</expression>
+                    <property name="dataType">date</property>
+                </structure>
+                <structure>
+                    <property name="name">postalCode</property>
+                    <text-property name="displayName">postalCode</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["postalCode"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">region</property>
+                    <text-property name="displayName">region</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["region"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">city</property>
+                    <text-property name="displayName">city</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["city"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">street</property>
+                    <text-property name="displayName">street</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["street"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">houseNumber</property>
+                    <text-property name="displayName">houseNumber</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["houseNumber"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">houseUnitNumber</property>
+                    <text-property name="displayName">houseUnitNumber</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["houseUnitNumber"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">flatNumber</property>
+                    <text-property name="displayName">flatNumber</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["flatNumber"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">passportSeries</property>
+                    <text-property name="displayName">passportSeries</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["passportSeries"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">passportNumber</property>
+                    <text-property name="displayName">passportNumber</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["passportNumber"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">passportIssuer</property>
+                    <text-property name="displayName">passportIssuer</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["passportIssuer"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">passportIssuerInfo</property>
+                    <text-property name="displayName">passportIssuerInfo</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["passportIssuerInfo"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">passportIssueDate</property>
+                    <text-property name="displayName">passportIssueDate</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["passportIssueDate"]</expression>
+                    <property name="dataType">date</property>
+                </structure>
+                <structure>
+                    <property name="name">dateOfBirth</property>
+                    <text-property name="displayName">dateOfBirth</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["dateOfBirth"]</expression>
+                    <property name="dataType">date</property>
+                </structure>
+                <structure>
+                    <property name="name">expertInn</property>
+                    <text-property name="displayName">expertInn</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["expertInn"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">pensionInsuranceNumber</property>
+                    <text-property name="displayName">pensionInsuranceNumber</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["pensionInsuranceNumber"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">personalAccount</property>
+                    <text-property name="displayName">personalAccount</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["personalAccount"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">expertFirstName</property>
+                    <text-property name="displayName">expertFirstName</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["expertFirstName"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">expertMiddleName</property>
+                    <text-property name="displayName">expertMiddleName</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["expertMiddleName"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">expertLastName</property>
+                    <text-property name="displayName">expertLastName</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["expertLastName"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">bankCity</property>
+                    <text-property name="displayName">bankCity</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["bankCity"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">bankInn</property>
+                    <text-property name="displayName">bankInn</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["bankInn"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">bankBik</property>
+                    <text-property name="displayName">bankBik</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["bankBik"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">bankAccount</property>
+                    <text-property name="displayName">bankAccount</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["bankAccount"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+            </list-property>
+            <property name="contentType">html</property>
+            <text-property name="content"><![CDATA[6. Адреса и реквизиты сторон <br>
+<B>6.1. Заказчик:</B><br>
+ООО «Инконсалт К»<br>
+Адрес: 115035, г. Москва, 3-й Кадашевский пер., д.6, стр.2<br>
+Тел./факс (495)951-10-20/989-73-72<br>
+ИНН 7706005130,<br>
+КПП 770601001<br>
+р/с 40702810938250122124 в Сбербанке России ОАО г. Москва,<br>
+Люблинское отделение № 7977 г. Москва<br>
+к/с 30101810400000000225,<br>
+БИК 044525225<br>
+<br>
+<B>6.2. Эксперт:</B><br>
+ФИО: <VALUE-OF>row["expert"]</VALUE-OF><br>
+Адрес регистрации (с указанием индекса): <VALUE-OF>checkField(row["postalCode"]) + checkField(row["region"]) +  checkField(row["city"]) +  checkField(row["street"]) + checkField(row["houseNumber"]) + checkField(row["houseUnitNumber"]) + checkField(row["flatNumber"])</VALUE-OF><br>
+Паспортные данные: <VALUE-OF>row["passportSeries"] + "-" + row["passportNumber"]</VALUE-OF>, выдан <VALUE-OF format="Long Date">row["passportIssueDate"]</VALUE-OF><br>
+код подразделения <VALUE-OF>row["passportIssuerInfo"]</VALUE-OF> <br>
+Дата рождения: <VALUE-OF format="Long Date">row["dateOfBirth"]</VALUE-OF><br>
+ИНН: <VALUE-OF>row["expertInn"]</VALUE-OF> <br>
+№ свидетельства о государственном пенсионном страховании: <VALUE-OF>row["pensionInsuranceNumber"]</VALUE-OF><br>
+Банковские реквизиты:<br>
+Банк: ОАО "СБЕРБАНК РОССИИ", г.<VALUE-OF>row["bankCity"]</VALUE-OF><br>
+ИНН: <VALUE-OF>row["bankInn"]</VALUE-OF><br>
+БИК: <VALUE-OF>row["bankBik"]</VALUE-OF><br>
+корр/с: <VALUE-OF>row["bankAccount"]</VALUE-OF><br>
+лиц/с: <VALUE-OF>row["personalAccount"]</VALUE-OF> <br>
+<br>]]></text-property>
+        </text>
+        <grid id="144">
+            <property name="dataSet">GeneralDataSet</property>
+            <list-property name="boundDataColumns">
+                <structure>
+                    <property name="name">documentNumber</property>
+                    <text-property name="displayName">documentNumber</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["documentNumber"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">taskBeginDate</property>
+                    <text-property name="displayName">taskBeginDate</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["taskBeginDate"]</expression>
+                    <property name="dataType">date</property>
+                </structure>
+                <structure>
+                    <property name="name">expert</property>
+                    <text-property name="displayName">expert</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["expert"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">demands</property>
+                    <text-property name="displayName">demands</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["demands"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">taskEndDate</property>
+                    <text-property name="displayName">taskEndDate</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["taskEndDate"]</expression>
+                    <property name="dataType">date</property>
+                </structure>
+                <structure>
+                    <property name="name">postalCode</property>
+                    <text-property name="displayName">postalCode</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["postalCode"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">region</property>
+                    <text-property name="displayName">region</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["region"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">city</property>
+                    <text-property name="displayName">city</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["city"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">street</property>
+                    <text-property name="displayName">street</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["street"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">houseNumber</property>
+                    <text-property name="displayName">houseNumber</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["houseNumber"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">houseUnitNumber</property>
+                    <text-property name="displayName">houseUnitNumber</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["houseUnitNumber"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">flatNumber</property>
+                    <text-property name="displayName">flatNumber</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["flatNumber"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">passportSeries</property>
+                    <text-property name="displayName">passportSeries</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["passportSeries"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">passportNumber</property>
+                    <text-property name="displayName">passportNumber</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["passportNumber"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">passportIssuer</property>
+                    <text-property name="displayName">passportIssuer</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["passportIssuer"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">passportIssuerInfo</property>
+                    <text-property name="displayName">passportIssuerInfo</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["passportIssuerInfo"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">passportIssueDate</property>
+                    <text-property name="displayName">passportIssueDate</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["passportIssueDate"]</expression>
+                    <property name="dataType">date</property>
+                </structure>
+                <structure>
+                    <property name="name">dateOfBirth</property>
+                    <text-property name="displayName">dateOfBirth</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["dateOfBirth"]</expression>
+                    <property name="dataType">date</property>
+                </structure>
+                <structure>
+                    <property name="name">expertInn</property>
+                    <text-property name="displayName">expertInn</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["expertInn"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">pensionInsuranceNumber</property>
+                    <text-property name="displayName">pensionInsuranceNumber</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["pensionInsuranceNumber"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">personalAccount</property>
+                    <text-property name="displayName">personalAccount</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["personalAccount"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">expertFirstName</property>
+                    <text-property name="displayName">expertFirstName</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["expertFirstName"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">expertMiddleName</property>
+                    <text-property name="displayName">expertMiddleName</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["expertMiddleName"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">expertLastName</property>
+                    <text-property name="displayName">expertLastName</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["expertLastName"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">bankCity</property>
+                    <text-property name="displayName">bankCity</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["bankCity"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">bankInn</property>
+                    <text-property name="displayName">bankInn</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["bankInn"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">bankBik</property>
+                    <text-property name="displayName">bankBik</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["bankBik"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">bankAccount</property>
+                    <text-property name="displayName">bankAccount</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["bankAccount"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">__documentDate</property>
+                    <text-property name="displayName">__documentDate</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["__documentDate"]</expression>
+                    <property name="dataType">date</property>
+                </structure>
+                <structure>
+                    <property name="name">performer</property>
+                    <text-property name="displayName">performer</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["performer"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+            </list-property>
+            <column id="145"/>
+            <column id="146"/>
+            <row id="147">
+                <cell id="148">
+                    <label id="192">
+                        <property name="fontFamily">"Times New Roman"</property>
+                        <property name="fontSize">12pt</property>
+                        <property name="fontWeight">bold</property>
+                        <text-property name="text">Эксперт:</text-property>
+                    </label>
+                </cell>
+                <cell id="149">
+                    <label id="193">
+                        <property name="fontFamily">"Times New Roman"</property>
+                        <property name="fontSize">12pt</property>
+                        <property name="fontWeight">bold</property>
+                        <text-property name="text">От Заказчика:</text-property>
+                    </label>
+                </cell>
+            </row>
+            <row id="150">
+                <cell id="151">
+                    <label id="204"/>
+                    <label id="203"/>
+                    <label id="202"/>
+                    <text id="197">
+                        <property name="fontFamily">"Times New Roman"</property>
+                        <property name="fontSize">12pt</property>
+                        <property name="contentType">html</property>
+                        <text-property name="content"><![CDATA[____________________ <VALUE-OF>var arr = new Array();arr = row["expert"].split(' ');arr[1].charAt(0) + ". " + arr[2].charAt(0) + "." + " "  + arr[0]</VALUE-OF>]]></text-property>
+                    </text>
+                </cell>
+                <cell id="152">
+                    <label id="201">
+                        <property name="fontFamily">"Times New Roman"</property>
+                        <property name="fontSize">12pt</property>
+                        <text-property name="text">Генеральный директор
+ООО «Инконсалт К»
+
+____________________ И.В. Короткова</text-property>
+                    </label>
+                </cell>
+            </row>
+        </grid>
+    </body>
+</report>

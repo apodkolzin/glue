@@ -1,0 +1,1 @@
+ ru.naumen.fcntp.bobject.demand.workflow.RemoveLotScript.run(workflowInstance, session);

@@ -1,0 +1,1868 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<report xmlns="http://www.eclipse.org/birt/2005/design" version="3.2.23" id="1">
+    <property name="createdBy">Eclipse BIRT Designer Version 3.7.2.v20120213 Build &lt;3.7.2.v20120214-1408></property>
+    <property name="units">in</property>
+    <property name="iconFile">/templates/blank_report.gif</property>
+    <property name="layoutPreference">auto layout</property>
+    <property name="bidiLayoutOrientation">ltr</property>
+    <property name="imageDPI">96</property>
+    <data-sources>
+        <oda-data-source extensionID="org.eclipse.datatools.enablement.oda.xml" name="Data Source" id="126">
+            <property name="FILELIST">D:\work\data_sstp.xml</property>
+        </oda-data-source>
+    </data-sources>
+    <data-sets>
+        <oda-data-set extensionID="org.eclipse.datatools.enablement.oda.xml.dataSet" name="vars" id="179">
+            <list-property name="columnHints">
+                <structure>
+                    <property name="columnName">orgTitle</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">orgTitle</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">orgShortTitle</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">orgShortTitle</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">orgOKOPF</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">orgOKOPF</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">orgINN</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">orgINN</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">orgKPP</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">orgKPP</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">orgOKPO</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">orgOKPO</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">orgPhoneNumber</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">orgPhoneNumber</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">juridical_federalRegion</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">juridical_federalRegion</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">juridical_region</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">juridical_region</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">juridical_city</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">juridical_city</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">juridical_street</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">juridical_street</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">juridical_postalCode</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">juridical_postalCode</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">juridical_houseNumber</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">juridical_houseNumber</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">juridical_houseUnitNumber</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">juridical_houseUnitNumber</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">fact_federalRegion</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">fact_federalRegion</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">fact_region</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">fact_region</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">fact_city</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">fact_city</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">fact_street</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">fact_street</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">fact_postalCode</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">fact_postalCode</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">fact_houseNumber</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">fact_houseNumber</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">fact_houseUnitNumber</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">fact_houseUnitNumber</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">post_federalRegion</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">post_federalRegion</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">post_region</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">post_region</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">post_city</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">post_city</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">post_street</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">post_street</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">post_postalCode</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">post_postalCode</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">post_houseNumber</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">post_houseNumber</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">post_houseUnitNumber</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">post_houseUnitNumber</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">orgChief</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="heading">orgChief</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">orgChiefPost</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="heading">orgChiefPost</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">orgChiefPhone</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="heading">orgChiefPhone</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">orgChiefEmail</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="heading">orgChiefEmail</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">payment_titleOFK</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="heading">payment_titleOFK</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">payment_address</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="heading">payment_address</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">payment_settlementAccount</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="heading">payment_settlementAccount</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">payment_inn</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="heading">payment_inn</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">payment_bik</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="heading">payment_bik</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">payment_correspondentAccount</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="heading">payment_correspondentAccount</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">payment_title</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="heading">payment_title</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">contractNumber</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="heading">contractNumber</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">demandNumber</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="heading">demandNumber</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">offerNumber</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="heading">offerNumber</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">contractStage</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="heading">contractStage</text-property>
+                </structure>
+            </list-property>
+            <list-property name="parameters"/>
+            <structure name="cachedMetaData">
+                <list-property name="resultSet">
+                    <structure>
+                        <property name="position">1</property>
+                        <property name="name">orgTitle</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">2</property>
+                        <property name="name">orgShortTitle</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">3</property>
+                        <property name="name">orgOKOPF</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">4</property>
+                        <property name="name">orgINN</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">5</property>
+                        <property name="name">orgKPP</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">6</property>
+                        <property name="name">orgOKPO</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">7</property>
+                        <property name="name">orgPhoneNumber</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">8</property>
+                        <property name="name">juridical_federalRegion</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">9</property>
+                        <property name="name">juridical_region</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">10</property>
+                        <property name="name">juridical_city</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">11</property>
+                        <property name="name">juridical_street</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">12</property>
+                        <property name="name">juridical_postalCode</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">13</property>
+                        <property name="name">juridical_houseNumber</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">14</property>
+                        <property name="name">juridical_houseUnitNumber</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">15</property>
+                        <property name="name">fact_federalRegion</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">16</property>
+                        <property name="name">fact_region</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">17</property>
+                        <property name="name">fact_city</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">18</property>
+                        <property name="name">fact_street</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">19</property>
+                        <property name="name">fact_postalCode</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">20</property>
+                        <property name="name">fact_houseNumber</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">21</property>
+                        <property name="name">fact_houseUnitNumber</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">22</property>
+                        <property name="name">post_federalRegion</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">23</property>
+                        <property name="name">post_region</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">24</property>
+                        <property name="name">post_city</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">25</property>
+                        <property name="name">post_street</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">26</property>
+                        <property name="name">post_postalCode</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">27</property>
+                        <property name="name">post_houseNumber</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">28</property>
+                        <property name="name">post_houseUnitNumber</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">29</property>
+                        <property name="name">orgChief</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">30</property>
+                        <property name="name">orgChiefPost</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">31</property>
+                        <property name="name">orgChiefPhone</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">32</property>
+                        <property name="name">orgChiefEmail</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">33</property>
+                        <property name="name">payment_titleOFK</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">34</property>
+                        <property name="name">payment_address</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">35</property>
+                        <property name="name">payment_settlementAccount</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">36</property>
+                        <property name="name">payment_inn</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">37</property>
+                        <property name="name">payment_bik</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">38</property>
+                        <property name="name">payment_correspondentAccount</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">39</property>
+                        <property name="name">payment_title</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">40</property>
+                        <property name="name">contractNumber</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">41</property>
+                        <property name="name">demandNumber</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">42</property>
+                        <property name="name">offerNumber</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">43</property>
+                        <property name="name">contractStage</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                </list-property>
+            </structure>
+            <property name="dataSource">Data Source</property>
+            <list-property name="resultSet">
+                <structure>
+                    <property name="position">1</property>
+                    <property name="name">orgTitle</property>
+                    <property name="nativeName">orgTitle</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">2</property>
+                    <property name="name">orgShortTitle</property>
+                    <property name="nativeName">orgShortTitle</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">3</property>
+                    <property name="name">orgOKOPF</property>
+                    <property name="nativeName">orgOKOPF</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">4</property>
+                    <property name="name">orgINN</property>
+                    <property name="nativeName">orgINN</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">5</property>
+                    <property name="name">orgKPP</property>
+                    <property name="nativeName">orgKPP</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">6</property>
+                    <property name="name">orgOKPO</property>
+                    <property name="nativeName">orgOKPO</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">7</property>
+                    <property name="name">orgPhoneNumber</property>
+                    <property name="nativeName">orgPhoneNumber</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">8</property>
+                    <property name="name">juridical_federalRegion</property>
+                    <property name="nativeName">juridical_federalRegion</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">9</property>
+                    <property name="name">juridical_region</property>
+                    <property name="nativeName">juridical_region</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">10</property>
+                    <property name="name">juridical_city</property>
+                    <property name="nativeName">juridical_city</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">11</property>
+                    <property name="name">juridical_street</property>
+                    <property name="nativeName">juridical_street</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">12</property>
+                    <property name="name">juridical_postalCode</property>
+                    <property name="nativeName">juridical_postalCode</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">13</property>
+                    <property name="name">juridical_houseNumber</property>
+                    <property name="nativeName">juridical_houseNumber</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">14</property>
+                    <property name="name">juridical_houseUnitNumber</property>
+                    <property name="nativeName">juridical_houseUnitNumber</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">15</property>
+                    <property name="name">fact_federalRegion</property>
+                    <property name="nativeName">fact_federalRegion</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">16</property>
+                    <property name="name">fact_region</property>
+                    <property name="nativeName">fact_region</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">17</property>
+                    <property name="name">fact_city</property>
+                    <property name="nativeName">fact_city</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">18</property>
+                    <property name="name">fact_street</property>
+                    <property name="nativeName">fact_street</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">19</property>
+                    <property name="name">fact_postalCode</property>
+                    <property name="nativeName">fact_postalCode</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">20</property>
+                    <property name="name">fact_houseNumber</property>
+                    <property name="nativeName">fact_houseNumber</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">21</property>
+                    <property name="name">fact_houseUnitNumber</property>
+                    <property name="nativeName">fact_houseUnitNumber</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">22</property>
+                    <property name="name">post_federalRegion</property>
+                    <property name="nativeName">post_federalRegion</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">23</property>
+                    <property name="name">post_region</property>
+                    <property name="nativeName">post_region</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">24</property>
+                    <property name="name">post_city</property>
+                    <property name="nativeName">post_city</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">25</property>
+                    <property name="name">post_street</property>
+                    <property name="nativeName">post_street</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">26</property>
+                    <property name="name">post_postalCode</property>
+                    <property name="nativeName">post_postalCode</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">27</property>
+                    <property name="name">post_houseNumber</property>
+                    <property name="nativeName">post_houseNumber</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">28</property>
+                    <property name="name">post_houseUnitNumber</property>
+                    <property name="nativeName">post_houseUnitNumber</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">29</property>
+                    <property name="name">orgChief</property>
+                    <property name="nativeName">orgChief</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">30</property>
+                    <property name="name">orgChiefPost</property>
+                    <property name="nativeName">orgChiefPost</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">31</property>
+                    <property name="name">orgChiefPhone</property>
+                    <property name="nativeName">orgChiefPhone</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">32</property>
+                    <property name="name">orgChiefEmail</property>
+                    <property name="nativeName">orgChiefEmail</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">33</property>
+                    <property name="name">payment_titleOFK</property>
+                    <property name="nativeName">payment_titleOFK</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">34</property>
+                    <property name="name">payment_address</property>
+                    <property name="nativeName">payment_address</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">35</property>
+                    <property name="name">payment_settlementAccount</property>
+                    <property name="nativeName">payment_settlementAccount</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">36</property>
+                    <property name="name">payment_inn</property>
+                    <property name="nativeName">payment_inn</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">37</property>
+                    <property name="name">payment_bik</property>
+                    <property name="nativeName">payment_bik</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">38</property>
+                    <property name="name">payment_correspondentAccount</property>
+                    <property name="nativeName">payment_correspondentAccount</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">39</property>
+                    <property name="name">payment_title</property>
+                    <property name="nativeName">payment_title</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">40</property>
+                    <property name="name">contractNumber</property>
+                    <property name="nativeName">contractNumber</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">41</property>
+                    <property name="name">demandNumber</property>
+                    <property name="nativeName">demandNumber</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">42</property>
+                    <property name="name">offerNumber</property>
+                    <property name="nativeName">offerNumber</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">43</property>
+                    <property name="name">contractStage</property>
+                    <property name="nativeName">contractStage</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+            </list-property>
+            <xml-property name="queryText"><![CDATA[table0#-TNAME-#table0#:#[/datasource/variables/entries/ContractReportEntry]#:#{orgTitle;STRING;/orgTitle},{orgShortTitle;STRING;/orgShortTitle},{orgOKOPF;STRING;/orgOKOPF},{orgINN;STRING;/orgINN},{orgKPP;STRING;/orgKPP},{orgOKPO;STRING;/orgOKPO},{orgPhoneNumber;STRING;/orgPhoneNumber},{juridical_federalRegion;STRING;/orgJuridicalAddress/federalRegion},{juridical_region;STRING;/orgJuridicalAddress/region},{juridical_city;STRING;/orgJuridicalAddress/city},{juridical_street;STRING;/orgJuridicalAddress/street},{juridical_postalCode;STRING;/orgJuridicalAddress/postalCode},{juridical_houseNumber;STRING;/orgJuridicalAddress/houseNumber},{juridical_houseUnitNumber;STRING;/orgJuridicalAddress/houseUnitNumber},{fact_federalRegion;STRING;/orgFactAddress/federalRegion},{fact_region;STRING;/orgFactAddress/region},{fact_city;STRING;/orgFactAddress/city},{fact_street;STRING;/orgFactAddress/street},{fact_postalCode;STRING;/orgFactAddress/postalCode},{fact_houseNumber;STRING;/orgFactAddress/houseNumber},{fact_houseUnitNumber;STRING;/orgFactAddress/houseUnitNumber},{post_federalRegion;STRING;/orgPostAddress/federalRegion},{post_region;STRING;/orgPostAddress/region},{post_city;STRING;/orgPostAddress/city},{post_street;STRING;/orgPostAddress/street},{post_postalCode;STRING;/orgPostAddress/postalCode},{post_houseNumber;STRING;/orgPostAddress/houseNumber},{post_houseUnitNumber;STRING;/orgPostAddress/houseUnitNumber},{orgChief;STRING;/orgChief},{orgChiefPost;STRING;/orgChiefPost},{orgChiefPhone;STRING;/orgChiefPhone},{orgChiefEmail;STRING;/orgChiefEmail},{payment_titleOFK;STRING;/titleOFK},{payment_address;STRING;/paymentRequisites/__address},{payment_settlementAccount;STRING;/paymentRequisites/__settlementAccount},{payment_inn;STRING;/paymentRequisites/__INN},{payment_bik;STRING;/paymentRequisites/__BIK},{payment_correspondentAccount;STRING;/paymentRequisites/__correspondentAccount},{payment_title;STRING;/paymentRequisites/__title},{contractNumber;STRING;/contractNumber},{demandNumber;STRING;/demandNumber},{offerNumber;STRING;/offerNumber},{contractStage;STRING;/contractStage}]]></xml-property>
+            <xml-property name="designerValues"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<model:DesignValues xmlns:design="http://www.eclipse.org/datatools/connectivity/oda/design" xmlns:model="http://www.eclipse.org/birt/report/model/adapter/odaModel">
+  <Version>2.0</Version>
+  <design:ResultSets derivedMetaData="true">
+    <design:resultSetDefinitions>
+      <design:resultSetColumns>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>inn</design:name>
+              <design:position>1</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>inn</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>contractNumber</design:name>
+              <design:position>2</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>contractNumber</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>demandNumber</design:name>
+              <design:position>3</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>demandNumber</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>offerNumber</design:name>
+              <design:position>4</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>offerNumber</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>contractStage</design:name>
+              <design:position>5</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>contractStage</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>address</design:name>
+              <design:position>6</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>address</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+      </design:resultSetColumns>
+      <design:criteria/>
+    </design:resultSetDefinitions>
+  </design:ResultSets>
+</model:DesignValues>]]></xml-property>
+            <list-property name="privateDriverProperties">
+                <ex-property>
+                    <name>MAX_ROW</name>
+                    <value>-1</value>
+                </ex-property>
+                <ex-property>
+                    <name>XML_FILE</name>
+                </ex-property>
+            </list-property>
+        </oda-data-set>
+    </data-sets>
+    <styles>
+        <style name="report" id="4">
+            <property name="fontFamily">sans-serif</property>
+            <property name="fontSize">10pt</property>
+        </style>
+        <style name="crosstab-cell" id="5">
+            <property name="borderBottomColor">#CCCCCC</property>
+            <property name="borderBottomStyle">solid</property>
+            <property name="borderBottomWidth">1pt</property>
+            <property name="borderLeftColor">#CCCCCC</property>
+            <property name="borderLeftStyle">solid</property>
+            <property name="borderLeftWidth">1pt</property>
+            <property name="borderRightColor">#CCCCCC</property>
+            <property name="borderRightStyle">solid</property>
+            <property name="borderRightWidth">1pt</property>
+            <property name="borderTopColor">#CCCCCC</property>
+            <property name="borderTopStyle">solid</property>
+            <property name="borderTopWidth">1pt</property>
+        </style>
+        <style name="crosstab" id="6">
+            <property name="borderBottomColor">#CCCCCC</property>
+            <property name="borderBottomStyle">solid</property>
+            <property name="borderBottomWidth">1pt</property>
+            <property name="borderLeftColor">#CCCCCC</property>
+            <property name="borderLeftStyle">solid</property>
+            <property name="borderLeftWidth">1pt</property>
+            <property name="borderRightColor">#CCCCCC</property>
+            <property name="borderRightStyle">solid</property>
+            <property name="borderRightWidth">1pt</property>
+            <property name="borderTopColor">#CCCCCC</property>
+            <property name="borderTopStyle">solid</property>
+            <property name="borderTopWidth">1pt</property>
+        </style>
+    </styles>
+    <page-setup>
+        <simple-master-page name="Simple MasterPage" id="2"/>
+    </page-setup>
+    <body>
+        <table id="1078">
+            <property name="width">46.395833333333336in</property>
+            <property name="dataSet">vars</property>
+            <list-property name="boundDataColumns">
+                <structure>
+                    <property name="name">orgTitle</property>
+                    <text-property name="displayName">orgTitle</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["orgTitle"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">orgShortTitle</property>
+                    <text-property name="displayName">orgShortTitle</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["orgShortTitle"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">orgOKOPF</property>
+                    <text-property name="displayName">orgOKOPF</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["orgOKOPF"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">orgINN</property>
+                    <text-property name="displayName">orgINN</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["orgINN"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">orgKPP</property>
+                    <text-property name="displayName">orgKPP</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["orgKPP"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">orgOKPO</property>
+                    <text-property name="displayName">orgOKPO</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["orgOKPO"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">orgPhoneNumber</property>
+                    <text-property name="displayName">orgPhoneNumber</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["orgPhoneNumber"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">juridical_federalRegion</property>
+                    <text-property name="displayName">juridical_federalRegion</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["juridical_federalRegion"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">juridical_region</property>
+                    <text-property name="displayName">juridical_region</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["juridical_region"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">juridical_city</property>
+                    <text-property name="displayName">juridical_city</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["juridical_city"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">juridical_street</property>
+                    <text-property name="displayName">juridical_street</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["juridical_street"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">juridical_postalCode</property>
+                    <text-property name="displayName">juridical_postalCode</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["juridical_postalCode"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">juridical_houseNumber</property>
+                    <text-property name="displayName">juridical_houseNumber</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["juridical_houseNumber"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">juridical_houseUnitNumber</property>
+                    <text-property name="displayName">juridical_houseUnitNumber</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["juridical_houseUnitNumber"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">fact_federalRegion</property>
+                    <text-property name="displayName">fact_federalRegion</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["fact_federalRegion"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">fact_region</property>
+                    <text-property name="displayName">fact_region</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["fact_region"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">fact_city</property>
+                    <text-property name="displayName">fact_city</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["fact_city"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">fact_street</property>
+                    <text-property name="displayName">fact_street</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["fact_street"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">fact_postalCode</property>
+                    <text-property name="displayName">fact_postalCode</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["fact_postalCode"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">fact_houseNumber</property>
+                    <text-property name="displayName">fact_houseNumber</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["fact_houseNumber"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">fact_houseUnitNumber</property>
+                    <text-property name="displayName">fact_houseUnitNumber</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["fact_houseUnitNumber"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">post_federalRegion</property>
+                    <text-property name="displayName">post_federalRegion</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["post_federalRegion"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">post_region</property>
+                    <text-property name="displayName">post_region</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["post_region"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">post_city</property>
+                    <text-property name="displayName">post_city</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["post_city"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">post_street</property>
+                    <text-property name="displayName">post_street</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["post_street"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">post_postalCode</property>
+                    <text-property name="displayName">post_postalCode</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["post_postalCode"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">post_houseNumber</property>
+                    <text-property name="displayName">post_houseNumber</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["post_houseNumber"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">post_houseUnitNumber</property>
+                    <text-property name="displayName">post_houseUnitNumber</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["post_houseUnitNumber"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">orgChief</property>
+                    <text-property name="displayName">orgChief</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["orgChief"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">orgChiefPost</property>
+                    <text-property name="displayName">orgChiefPost</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["orgChiefPost"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">orgChiefPhone</property>
+                    <text-property name="displayName">orgChiefPhone</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["orgChiefPhone"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">orgChiefEmail</property>
+                    <text-property name="displayName">orgChiefEmail</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["orgChiefEmail"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">payment_titleOFK</property>
+                    <text-property name="displayName">payment_title</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["payment_title"]</expression>
+                    <property name="dataType">string</property>
+                    <property name="allowExport">true</property>
+                </structure>
+                <structure>
+                    <property name="name">payment_address</property>
+                    <text-property name="displayName">payment_address</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["payment_address"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">payment_settlementAccount</property>
+                    <text-property name="displayName">payment_settlementAccount</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["payment_settlementAccount"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">payment_inn</property>
+                    <text-property name="displayName">payment_inn</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["payment_inn"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">payment_bik</property>
+                    <text-property name="displayName">payment_bik</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["payment_bik"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">payment_correspondentAccount</property>
+                    <text-property name="displayName">payment_correspondentAccount</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["payment_correspondentAccount"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">payment_title</property>
+                    <text-property name="displayName">payment_titleOFK</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["payment_titleOFK"]</expression>
+                    <property name="dataType">string</property>
+                    <property name="allowExport">true</property>
+                </structure>
+                <structure>
+                    <property name="name">contractNumber</property>
+                    <text-property name="displayName">contractNumber</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["contractNumber"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">demandNumber</property>
+                    <text-property name="displayName">demandNumber</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["demandNumber"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">offerNumber</property>
+                    <text-property name="displayName">offerNumber</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["offerNumber"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">contractStage</property>
+                    <text-property name="displayName">contractStage</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["contractStage"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+            </list-property>
+            <column id="1297">
+                <property name="width">1.0729166666666667in</property>
+            </column>
+            <column id="1298">
+                <property name="width">1.0416666666666667in</property>
+            </column>
+            <column id="1299">
+                <property name="width">0.8541666666666666in</property>
+            </column>
+            <column id="1300">
+                <property name="width">0.59375in</property>
+            </column>
+            <column id="1301">
+                <property name="width">0.65625in</property>
+            </column>
+            <column id="1302">
+                <property name="width">0.7708333333333334in</property>
+            </column>
+            <column id="1303">
+                <property name="width">1.2291666666666667in</property>
+            </column>
+            <column id="1304">
+                <property name="width">1.2083333333333333in</property>
+            </column>
+            <column id="1305">
+                <property name="width">1.0833333333333333in</property>
+            </column>
+            <column id="1306">
+                <property name="width">0.9375in</property>
+            </column>
+            <column id="1307">
+                <property name="width">1.0625in</property>
+            </column>
+            <column id="1308">
+                <property name="width">1.2083333333333333in</property>
+            </column>
+            <column id="1309">
+                <property name="width">1.3020833333333333in</property>
+            </column>
+            <column id="1310">
+                <property name="width">1.3020833333333333in</property>
+            </column>
+            <column id="1311">
+                <property name="width">1.2916666666666667in</property>
+            </column>
+            <column id="1312">
+                <property name="width">0.84375in</property>
+            </column>
+            <column id="1313">
+                <property name="width">0.6979166666666666in</property>
+            </column>
+            <column id="1314">
+                <property name="width">0.8229166666666666in</property>
+            </column>
+            <column id="1315">
+                <property name="width">1.15625in</property>
+            </column>
+            <column id="1316">
+                <property name="width">1.3125in</property>
+            </column>
+            <column id="1317">
+                <property name="width">1.375in</property>
+            </column>
+            <column id="1318">
+                <property name="width">1.3333333333333333in</property>
+            </column>
+            <column id="1319">
+                <property name="width">0.8854166666666666in</property>
+            </column>
+            <column id="1320">
+                <property name="width">0.7395833333333334in</property>
+            </column>
+            <column id="1321">
+                <property name="width">0.8645833333333334in</property>
+            </column>
+            <column id="1322">
+                <property name="width">1.1979166666666667in</property>
+            </column>
+            <column id="1323">
+                <property name="width">1.3541666666666667in</property>
+            </column>
+            <column id="1324">
+                <property name="width">1.4166666666666667in</property>
+            </column>
+            <column id="1325">
+                <property name="width">1.0208333333333333in</property>
+            </column>
+            <column id="1326">
+                <property name="width">1in</property>
+            </column>
+            <column id="1327">
+                <property name="width">1.0625in</property>
+            </column>
+            <column id="1328">
+                <property name="width">1.0208333333333333in</property>
+            </column>
+            <column id="1329">
+                <property name="width">1.0625in</property>
+            </column>
+            <column id="1330">
+                <property name="width">1.2604166666666667in</property>
+            </column>
+            <column id="1331">
+                <property name="width">1.4270833333333333in</property>
+            </column>
+            <column id="1332">
+                <property name="width">0.9583333333333334in</property>
+            </column>
+            <column id="1333">
+                <property name="width">0.9583333333333334in</property>
+            </column>
+            <column id="1334">
+                <property name="width">1.4270833333333333in</property>
+            </column>
+            <column id="1335">
+                <property name="width">1.28125in</property>
+            </column>
+            <column id="1336">
+                <property name="width">1.1458333333333333in</property>
+            </column>
+            <column id="1337">
+                <property name="width">1.1354166666666667in</property>
+            </column>
+            <column id="1338">
+                <property name="width">0.90625in</property>
+            </column>
+            <column id="1339">
+                <property name="width">1.1145833333333333in</property>
+            </column>
+            <header>
+                <row id="1340">
+                    <cell id="1341">
+                        <label id="1081">
+                            <text-property name="text">Наименование организации</text-property>
+                        </label>
+                    </cell>
+                    <cell id="1342">
+                        <label id="1083">
+                            <text-property name="text">Сокращенное наименование</text-property>
+                        </label>
+                    </cell>
+                    <cell id="1343">
+                        <label id="1085">
+                            <text-property name="text">ОКОПФ</text-property>
+                        </label>
+                    </cell>
+                    <cell id="1344">
+                        <label id="1087">
+                            <text-property name="text">ИНН</text-property>
+                        </label>
+                    </cell>
+                    <cell id="1345">
+                        <label id="1089">
+                            <text-property name="text">КПП</text-property>
+                        </label>
+                    </cell>
+                    <cell id="1346">
+                        <label id="1091">
+                            <text-property name="text">ОКПО</text-property>
+                        </label>
+                    </cell>
+                    <cell id="1347">
+                        <label id="1093">
+                            <text-property name="text">телефон организации</text-property>
+                        </label>
+                    </cell>
+                    <cell id="1348">
+                        <property name="colSpan">7</property>
+                        <property name="rowSpan">1</property>
+                        <label id="1384">
+                            <text-property name="text">Юридический адрес</text-property>
+                        </label>
+                    </cell>
+                    <cell id="1355">
+                        <property name="colSpan">7</property>
+                        <property name="rowSpan">1</property>
+                        <label id="1385">
+                            <text-property name="text">Фактический адрес</text-property>
+                        </label>
+                    </cell>
+                    <cell id="1362">
+                        <property name="colSpan">7</property>
+                        <property name="rowSpan">1</property>
+                        <label id="1386">
+                            <text-property name="text">Почтовый адрес</text-property>
+                        </label>
+                    </cell>
+                    <cell id="1369">
+                        <label id="1137">
+                            <text-property name="text">Руководитель орг-ции ФИО</text-property>
+                        </label>
+                    </cell>
+                    <cell id="1370">
+                        <label id="1139">
+                            <text-property name="text">Должность руководителя</text-property>
+                        </label>
+                    </cell>
+                    <cell id="1371">
+                        <label id="1141">
+                            <text-property name="text">Телефон руководителя</text-property>
+                        </label>
+                    </cell>
+                    <cell id="1372">
+                        <label id="1143">
+                            <text-property name="text">Адрес электронной почты</text-property>
+                        </label>
+                    </cell>
+                    <cell id="1373">
+                        <label id="1145">
+                            <text-property name="text">Наименование банка получателя</text-property>
+                        </label>
+                    </cell>
+                    <cell id="1374">
+                        <label id="1147">
+                            <text-property name="text">адрес банка</text-property>
+                        </label>
+                    </cell>
+                    <cell id="1375">
+                        <label id="1149">
+                            <text-property name="text">расчетный счет</text-property>
+                        </label>
+                    </cell>
+                    <cell id="1376">
+                        <label id="1151">
+                            <text-property name="text">ИНН</text-property>
+                        </label>
+                    </cell>
+                    <cell id="1377">
+                        <label id="1153">
+                            <text-property name="text">БИК</text-property>
+                        </label>
+                    </cell>
+                    <cell id="1378">
+                        <label id="1155">
+                            <text-property name="text">к/сч</text-property>
+                        </label>
+                    </cell>
+                    <cell id="1379">
+                        <label id="1157">
+                            <text-property name="text">наимен. Банка</text-property>
+                        </label>
+                    </cell>
+                    <cell id="1380">
+                        <label id="1159">
+                            <text-property name="text">№ Договора</text-property>
+                        </label>
+                    </cell>
+                    <cell id="1381">
+                        <label id="1161">
+                            <text-property name="text">№ заявки</text-property>
+                        </label>
+                    </cell>
+                    <cell id="1382">
+                        <label id="1163">
+                            <text-property name="text">№ очереди</text-property>
+                        </label>
+                    </cell>
+                    <cell id="1383">
+                        <label id="1165">
+                            <text-property name="text">состояние контракта</text-property>
+                        </label>
+                    </cell>
+                </row>
+                <row id="1079">
+                    <cell id="1080"/>
+                    <cell id="1082"/>
+                    <cell id="1084"/>
+                    <cell id="1086"/>
+                    <cell id="1088"/>
+                    <cell id="1090"/>
+                    <cell id="1092"/>
+                    <cell id="1094">
+                        <label id="1095">
+                            <text-property name="text">Федеральный округ</text-property>
+                        </label>
+                    </cell>
+                    <cell id="1096">
+                        <label id="1097">
+                            <text-property name="text">Регион</text-property>
+                        </label>
+                    </cell>
+                    <cell id="1098">
+                        <label id="1099">
+                            <text-property name="text">Город</text-property>
+                        </label>
+                    </cell>
+                    <cell id="1100">
+                        <label id="1101">
+                            <text-property name="text">Улица</text-property>
+                        </label>
+                    </cell>
+                    <cell id="1102">
+                        <label id="1103">
+                            <text-property name="text">Почтовый индекс</text-property>
+                        </label>
+                    </cell>
+                    <cell id="1104">
+                        <label id="1105">
+                            <text-property name="text">Дом</text-property>
+                        </label>
+                    </cell>
+                    <cell id="1106">
+                        <label id="1107">
+                            <text-property name="text">Корпус</text-property>
+                        </label>
+                    </cell>
+                    <cell id="1108">
+                        <label id="1109">
+                            <text-property name="text">Федеральный округ</text-property>
+                        </label>
+                    </cell>
+                    <cell id="1110">
+                        <label id="1111">
+                            <text-property name="text">Регион</text-property>
+                        </label>
+                    </cell>
+                    <cell id="1112">
+                        <label id="1113">
+                            <text-property name="text">Город</text-property>
+                        </label>
+                    </cell>
+                    <cell id="1114">
+                        <label id="1115">
+                            <text-property name="text">Улица</text-property>
+                        </label>
+                    </cell>
+                    <cell id="1116">
+                        <label id="1117">
+                            <text-property name="text">Почтовый индекс</text-property>
+                        </label>
+                    </cell>
+                    <cell id="1118">
+                        <label id="1119">
+                            <text-property name="text">Дом</text-property>
+                        </label>
+                    </cell>
+                    <cell id="1120">
+                        <label id="1121">
+                            <text-property name="text">Корпус</text-property>
+                        </label>
+                    </cell>
+                    <cell id="1122">
+                        <label id="1123">
+                            <text-property name="text">Федеральный округ</text-property>
+                        </label>
+                    </cell>
+                    <cell id="1124">
+                        <label id="1125">
+                            <text-property name="text">Регион</text-property>
+                        </label>
+                    </cell>
+                    <cell id="1126">
+                        <label id="1127">
+                            <text-property name="text">Город</text-property>
+                        </label>
+                    </cell>
+                    <cell id="1128">
+                        <label id="1129">
+                            <text-property name="text">Улица</text-property>
+                        </label>
+                    </cell>
+                    <cell id="1130">
+                        <label id="1131">
+                            <text-property name="text">Почтовый индекс</text-property>
+                        </label>
+                    </cell>
+                    <cell id="1132">
+                        <label id="1133">
+                            <text-property name="text">Дом</text-property>
+                        </label>
+                    </cell>
+                    <cell id="1134">
+                        <label id="1135">
+                            <text-property name="text">Корпус</text-property>
+                        </label>
+                    </cell>
+                    <cell id="1136"/>
+                    <cell id="1138"/>
+                    <cell id="1140"/>
+                    <cell id="1142"/>
+                    <cell id="1144"/>
+                    <cell id="1146"/>
+                    <cell id="1148"/>
+                    <cell id="1150"/>
+                    <cell id="1152"/>
+                    <cell id="1154"/>
+                    <cell id="1156"/>
+                    <cell id="1158"/>
+                    <cell id="1160"/>
+                    <cell id="1162"/>
+                    <cell id="1164"/>
+                </row>
+            </header>
+            <detail>
+                <row id="1166">
+                    <cell id="1167">
+                        <data id="1168">
+                            <property name="resultSetColumn">orgTitle</property>
+                        </data>
+                    </cell>
+                    <cell id="1169">
+                        <data id="1170">
+                            <property name="resultSetColumn">orgShortTitle</property>
+                        </data>
+                    </cell>
+                    <cell id="1171">
+                        <data id="1172">
+                            <property name="resultSetColumn">orgOKOPF</property>
+                        </data>
+                    </cell>
+                    <cell id="1173">
+                        <data id="1174">
+                            <property name="resultSetColumn">orgINN</property>
+                        </data>
+                    </cell>
+                    <cell id="1175">
+                        <data id="1176">
+                            <property name="resultSetColumn">orgKPP</property>
+                        </data>
+                    </cell>
+                    <cell id="1177">
+                        <data id="1178">
+                            <property name="resultSetColumn">orgOKPO</property>
+                        </data>
+                    </cell>
+                    <cell id="1179">
+                        <data id="1180">
+                            <property name="resultSetColumn">orgPhoneNumber</property>
+                        </data>
+                    </cell>
+                    <cell id="1181">
+                        <data id="1182">
+                            <property name="resultSetColumn">juridical_federalRegion</property>
+                        </data>
+                    </cell>
+                    <cell id="1183">
+                        <data id="1184">
+                            <property name="resultSetColumn">juridical_region</property>
+                        </data>
+                    </cell>
+                    <cell id="1185">
+                        <data id="1186">
+                            <property name="resultSetColumn">juridical_city</property>
+                        </data>
+                    </cell>
+                    <cell id="1187">
+                        <data id="1188">
+                            <property name="resultSetColumn">juridical_street</property>
+                        </data>
+                    </cell>
+                    <cell id="1189">
+                        <data id="1190">
+                            <property name="resultSetColumn">juridical_postalCode</property>
+                        </data>
+                    </cell>
+                    <cell id="1191">
+                        <data id="1192">
+                            <property name="resultSetColumn">juridical_houseNumber</property>
+                        </data>
+                    </cell>
+                    <cell id="1193">
+                        <data id="1194">
+                            <property name="resultSetColumn">juridical_houseUnitNumber</property>
+                        </data>
+                    </cell>
+                    <cell id="1195">
+                        <data id="1196">
+                            <property name="resultSetColumn">fact_federalRegion</property>
+                        </data>
+                    </cell>
+                    <cell id="1197">
+                        <data id="1198">
+                            <property name="resultSetColumn">fact_region</property>
+                        </data>
+                    </cell>
+                    <cell id="1199">
+                        <data id="1200">
+                            <property name="resultSetColumn">fact_city</property>
+                        </data>
+                    </cell>
+                    <cell id="1201">
+                        <data id="1202">
+                            <property name="resultSetColumn">fact_street</property>
+                        </data>
+                    </cell>
+                    <cell id="1203">
+                        <data id="1204">
+                            <property name="resultSetColumn">fact_postalCode</property>
+                        </data>
+                    </cell>
+                    <cell id="1205">
+                        <data id="1206">
+                            <property name="resultSetColumn">fact_houseNumber</property>
+                        </data>
+                    </cell>
+                    <cell id="1207">
+                        <data id="1208">
+                            <property name="resultSetColumn">fact_houseUnitNumber</property>
+                        </data>
+                    </cell>
+                    <cell id="1209">
+                        <data id="1210">
+                            <property name="resultSetColumn">post_federalRegion</property>
+                        </data>
+                    </cell>
+                    <cell id="1211">
+                        <data id="1212">
+                            <property name="resultSetColumn">post_region</property>
+                        </data>
+                    </cell>
+                    <cell id="1213">
+                        <data id="1214">
+                            <property name="resultSetColumn">post_city</property>
+                        </data>
+                    </cell>
+                    <cell id="1215">
+                        <data id="1216">
+                            <property name="resultSetColumn">post_street</property>
+                        </data>
+                    </cell>
+                    <cell id="1217">
+                        <data id="1218">
+                            <property name="resultSetColumn">post_postalCode</property>
+                        </data>
+                    </cell>
+                    <cell id="1219">
+                        <data id="1220">
+                            <property name="resultSetColumn">post_houseNumber</property>
+                        </data>
+                    </cell>
+                    <cell id="1221">
+                        <data id="1222">
+                            <property name="resultSetColumn">post_houseUnitNumber</property>
+                        </data>
+                    </cell>
+                    <cell id="1223">
+                        <data id="1224">
+                            <property name="resultSetColumn">orgChief</property>
+                        </data>
+                    </cell>
+                    <cell id="1225">
+                        <data id="1226">
+                            <property name="resultSetColumn">orgChiefPost</property>
+                        </data>
+                    </cell>
+                    <cell id="1227">
+                        <data id="1228">
+                            <property name="resultSetColumn">orgChiefPhone</property>
+                        </data>
+                    </cell>
+                    <cell id="1229">
+                        <data id="1230">
+                            <property name="resultSetColumn">orgChiefEmail</property>
+                        </data>
+                    </cell>
+                    <cell id="1231">
+                        <data id="1232">
+                            <property name="resultSetColumn">payment_titleOFK</property>
+                        </data>
+                    </cell>
+                    <cell id="1233">
+                        <data id="1234">
+                            <property name="resultSetColumn">payment_address</property>
+                        </data>
+                    </cell>
+                    <cell id="1235">
+                        <data id="1236">
+                            <property name="resultSetColumn">payment_settlementAccount</property>
+                        </data>
+                    </cell>
+                    <cell id="1237">
+                        <data id="1238">
+                            <property name="resultSetColumn">payment_inn</property>
+                        </data>
+                    </cell>
+                    <cell id="1239">
+                        <data id="1240">
+                            <property name="resultSetColumn">payment_bik</property>
+                        </data>
+                    </cell>
+                    <cell id="1241">
+                        <data id="1242">
+                            <property name="resultSetColumn">payment_correspondentAccount</property>
+                        </data>
+                    </cell>
+                    <cell id="1243">
+                        <data id="1244">
+                            <property name="resultSetColumn">payment_title</property>
+                        </data>
+                    </cell>
+                    <cell id="1245">
+                        <data id="1246">
+                            <property name="resultSetColumn">contractNumber</property>
+                        </data>
+                    </cell>
+                    <cell id="1247">
+                        <data id="1248">
+                            <property name="resultSetColumn">demandNumber</property>
+                        </data>
+                    </cell>
+                    <cell id="1249">
+                        <data id="1250">
+                            <property name="resultSetColumn">offerNumber</property>
+                        </data>
+                    </cell>
+                    <cell id="1251">
+                        <data id="1252">
+                            <property name="resultSetColumn">contractStage</property>
+                        </data>
+                    </cell>
+                </row>
+            </detail>
+            <footer>
+                <row id="1253">
+                    <cell id="1254"/>
+                    <cell id="1255"/>
+                    <cell id="1256"/>
+                    <cell id="1257"/>
+                    <cell id="1258"/>
+                    <cell id="1259"/>
+                    <cell id="1260"/>
+                    <cell id="1261"/>
+                    <cell id="1262"/>
+                    <cell id="1263"/>
+                    <cell id="1264"/>
+                    <cell id="1265"/>
+                    <cell id="1266"/>
+                    <cell id="1267"/>
+                    <cell id="1268"/>
+                    <cell id="1269"/>
+                    <cell id="1270"/>
+                    <cell id="1271"/>
+                    <cell id="1272"/>
+                    <cell id="1273"/>
+                    <cell id="1274"/>
+                    <cell id="1275"/>
+                    <cell id="1276"/>
+                    <cell id="1277"/>
+                    <cell id="1278"/>
+                    <cell id="1279"/>
+                    <cell id="1280"/>
+                    <cell id="1281"/>
+                    <cell id="1282"/>
+                    <cell id="1283"/>
+                    <cell id="1284"/>
+                    <cell id="1285"/>
+                    <cell id="1286"/>
+                    <cell id="1287"/>
+                    <cell id="1288"/>
+                    <cell id="1289"/>
+                    <cell id="1290"/>
+                    <cell id="1291"/>
+                    <cell id="1292"/>
+                    <cell id="1293"/>
+                    <cell id="1294"/>
+                    <cell id="1295"/>
+                    <cell id="1296"/>
+                </row>
+            </footer>
+        </table>
+    </body>
+</report>

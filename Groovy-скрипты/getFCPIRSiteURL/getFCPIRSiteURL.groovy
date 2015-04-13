@@ -1,0 +1,1 @@
+return "http://fcpir.b.adv.ru/_sys/import_xml.php"

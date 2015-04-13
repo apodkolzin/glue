@@ -1,0 +1,1 @@
+new ru.naumen.fcntp.bobject.examination.workflow.CreateResultActScript().create(workflowInstance ,oldState,newState,session);

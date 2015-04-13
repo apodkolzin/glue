@@ -1,0 +1,1611 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<report xmlns="http://www.eclipse.org/birt/2005/design" version="3.2.23" id="1">
+    <property name="createdBy">Eclipse BIRT Designer Version 3.7.2.v20120213 Build &lt;3.7.2.v20120214-1408></property>
+    <property name="units">in</property>
+    <property name="iconFile">/templates/blank_report.gif</property>
+    <property name="layoutPreference">fixed layout</property>
+    <property name="bidiLayoutOrientation">ltr</property>
+    <property name="imageDPI">96</property>
+    <data-sources>
+        <oda-data-source extensionID="org.eclipse.datatools.enablement.oda.xml" name="Data Source" id="126">
+            <property name="FILELIST">/home/anton/Downloads/data (70).xml</property>
+        </oda-data-source>
+    </data-sources>
+    <data-sets>
+        <oda-data-set extensionID="org.eclipse.datatools.enablement.oda.xml.dataSet" name="vars" id="127">
+            <list-property name="columnHints">
+                <structure>
+                    <property name="columnName">exp_firstName</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">exp_firstName</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">exp_middleName</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">exp_middleName</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">exp_lastName</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">exp_lastName</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">bank_title</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">bank_title</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">bank_headTitle</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">bank_headTitle</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">bank_inn</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">bank_inn</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">bank_account</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">bank_account</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">bank_bik</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">bank_bik</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">documentNumber</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="heading">documentNumber</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">inspector_fioInAgreement</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">inspector_fioInAgreement</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">inspector_signature</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">inspector_signature</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">beginDate</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">beginDate</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">demand_declension</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">demand_declension</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">endDate</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">endDate</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">lotNumber</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">lotNumber</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">cost</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">cost</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">addr_postalCode</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">addr_postalCode</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">addr_houseNumber</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">addr_houseNumber</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">addr_houseUnitNumber</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">addr_houseUnitNumber</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">addr_flatNumber</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">addr_flatNumber</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">addr_street</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">addr_street</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">addr_street_type</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">addr_street_type</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">addr_city</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">addr_city</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">addr_city_type</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">addr_city_type</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">addr_region</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">addr_region</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">addr_federalRegion</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">addr_federalRegion</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">passport_series</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">passport_series</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">passport_number</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">passport_number</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">passport_issuer</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">passport_issuer</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">passport_issuerInfo</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">passport_issuerInfo</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">passport_issueDate</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">passport_issueDate</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">exp_inn</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">exp_inn</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">exp_dateOfBirth</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">exp_dateOfBirth</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">bank_personalAccount</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">bank_personalAccount</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">exp_pensionInsuranceNumber</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">exp_pensionInsuranceNumber</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">task_identifier</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">task_identifier</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">bank_city</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">bank_city</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">exp_sex</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">exp_sex</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">documentDate</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">documentDate</text-property>
+                </structure>
+            </list-property>
+            <list-property name="parameters"/>
+            <structure name="cachedMetaData">
+                <list-property name="resultSet">
+                    <structure>
+                        <property name="position">1</property>
+                        <property name="name">exp_firstName</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">2</property>
+                        <property name="name">exp_middleName</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">3</property>
+                        <property name="name">exp_lastName</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">4</property>
+                        <property name="name">bank_title</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">5</property>
+                        <property name="name">bank_headTitle</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">6</property>
+                        <property name="name">bank_inn</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">7</property>
+                        <property name="name">bank_account</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">8</property>
+                        <property name="name">bank_bik</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">9</property>
+                        <property name="name">documentNumber</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">10</property>
+                        <property name="name">inspector_fioInAgreement</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">11</property>
+                        <property name="name">inspector_signature</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">12</property>
+                        <property name="name">beginDate</property>
+                        <property name="dataType">date</property>
+                    </structure>
+                    <structure>
+                        <property name="position">13</property>
+                        <property name="name">demand_declension</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">14</property>
+                        <property name="name">endDate</property>
+                        <property name="dataType">date</property>
+                    </structure>
+                    <structure>
+                        <property name="position">15</property>
+                        <property name="name">lotNumber</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">16</property>
+                        <property name="name">cost</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">17</property>
+                        <property name="name">addr_postalCode</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">18</property>
+                        <property name="name">addr_houseNumber</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">19</property>
+                        <property name="name">addr_houseUnitNumber</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">20</property>
+                        <property name="name">addr_flatNumber</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">21</property>
+                        <property name="name">addr_street</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">22</property>
+                        <property name="name">addr_street_type</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">23</property>
+                        <property name="name">addr_city</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">24</property>
+                        <property name="name">addr_city_type</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">25</property>
+                        <property name="name">addr_region</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">26</property>
+                        <property name="name">addr_federalRegion</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">27</property>
+                        <property name="name">passport_series</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">28</property>
+                        <property name="name">passport_number</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">29</property>
+                        <property name="name">passport_issuer</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">30</property>
+                        <property name="name">passport_issuerInfo</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">31</property>
+                        <property name="name">passport_issueDate</property>
+                        <property name="dataType">date</property>
+                    </structure>
+                    <structure>
+                        <property name="position">32</property>
+                        <property name="name">exp_inn</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">33</property>
+                        <property name="name">exp_dateOfBirth</property>
+                        <property name="dataType">date</property>
+                    </structure>
+                    <structure>
+                        <property name="position">34</property>
+                        <property name="name">bank_personalAccount</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">35</property>
+                        <property name="name">exp_pensionInsuranceNumber</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">36</property>
+                        <property name="name">task_identifier</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">37</property>
+                        <property name="name">bank_city</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">38</property>
+                        <property name="name">exp_sex</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">39</property>
+                        <property name="name">documentDate</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                </list-property>
+            </structure>
+            <property name="dataSource">Data Source</property>
+            <list-property name="resultSet">
+                <structure>
+                    <property name="position">1</property>
+                    <property name="name">exp_firstName</property>
+                    <property name="nativeName">exp_firstName</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">2</property>
+                    <property name="name">exp_middleName</property>
+                    <property name="nativeName">exp_middleName</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">3</property>
+                    <property name="name">exp_lastName</property>
+                    <property name="nativeName">exp_lastName</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">4</property>
+                    <property name="name">bank_title</property>
+                    <property name="nativeName">bank_title</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">5</property>
+                    <property name="name">bank_headTitle</property>
+                    <property name="nativeName">bank_headTitle</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">6</property>
+                    <property name="name">bank_inn</property>
+                    <property name="nativeName">bank_inn</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">7</property>
+                    <property name="name">bank_account</property>
+                    <property name="nativeName">bank_account</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">8</property>
+                    <property name="name">bank_bik</property>
+                    <property name="nativeName">bank_bik</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">9</property>
+                    <property name="name">documentNumber</property>
+                    <property name="nativeName">documentNumber</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">10</property>
+                    <property name="name">inspector_fioInAgreement</property>
+                    <property name="nativeName">inspector_fioInAgreement</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">11</property>
+                    <property name="name">inspector_signature</property>
+                    <property name="nativeName">inspector_signature</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">12</property>
+                    <property name="name">beginDate</property>
+                    <property name="nativeName">beginDate</property>
+                    <property name="dataType">date</property>
+                    <property name="nativeDataType">91</property>
+                </structure>
+                <structure>
+                    <property name="position">13</property>
+                    <property name="name">demand_declension</property>
+                    <property name="nativeName">demand_declension</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">14</property>
+                    <property name="name">endDate</property>
+                    <property name="nativeName">endDate</property>
+                    <property name="dataType">date</property>
+                    <property name="nativeDataType">91</property>
+                </structure>
+                <structure>
+                    <property name="position">15</property>
+                    <property name="name">lotNumber</property>
+                    <property name="nativeName">lotNumber</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">16</property>
+                    <property name="name">cost</property>
+                    <property name="nativeName">cost</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">17</property>
+                    <property name="name">addr_postalCode</property>
+                    <property name="nativeName">addr_postalCode</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">18</property>
+                    <property name="name">addr_houseNumber</property>
+                    <property name="nativeName">addr_houseNumber</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">19</property>
+                    <property name="name">addr_houseUnitNumber</property>
+                    <property name="nativeName">addr_houseUnitNumber</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">20</property>
+                    <property name="name">addr_flatNumber</property>
+                    <property name="nativeName">addr_flatNumber</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">21</property>
+                    <property name="name">addr_street</property>
+                    <property name="nativeName">addr_street</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">22</property>
+                    <property name="name">addr_street_type</property>
+                    <property name="nativeName">addr_street_type</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">23</property>
+                    <property name="name">addr_city</property>
+                    <property name="nativeName">addr_city</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">24</property>
+                    <property name="name">addr_city_type</property>
+                    <property name="nativeName">addr_city_type</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">25</property>
+                    <property name="name">addr_region</property>
+                    <property name="nativeName">addr_region</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">26</property>
+                    <property name="name">addr_federalRegion</property>
+                    <property name="nativeName">addr_federalRegion</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">27</property>
+                    <property name="name">passport_series</property>
+                    <property name="nativeName">passport_series</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">28</property>
+                    <property name="name">passport_number</property>
+                    <property name="nativeName">passport_number</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">29</property>
+                    <property name="name">passport_issuer</property>
+                    <property name="nativeName">passport_issuer</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">30</property>
+                    <property name="name">passport_issuerInfo</property>
+                    <property name="nativeName">passport_issuerInfo</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">31</property>
+                    <property name="name">passport_issueDate</property>
+                    <property name="nativeName">passport_issueDate</property>
+                    <property name="dataType">date</property>
+                    <property name="nativeDataType">91</property>
+                </structure>
+                <structure>
+                    <property name="position">32</property>
+                    <property name="name">exp_inn</property>
+                    <property name="nativeName">exp_inn</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">33</property>
+                    <property name="name">exp_dateOfBirth</property>
+                    <property name="nativeName">exp_dateOfBirth</property>
+                    <property name="dataType">date</property>
+                    <property name="nativeDataType">91</property>
+                </structure>
+                <structure>
+                    <property name="position">34</property>
+                    <property name="name">bank_personalAccount</property>
+                    <property name="nativeName">bank_personalAccount</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">35</property>
+                    <property name="name">exp_pensionInsuranceNumber</property>
+                    <property name="nativeName">exp_pensionInsuranceNumber</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">36</property>
+                    <property name="name">task_identifier</property>
+                    <property name="nativeName">task_identifier</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">37</property>
+                    <property name="name">bank_city</property>
+                    <property name="nativeName">bank_city</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">38</property>
+                    <property name="name">exp_sex</property>
+                    <property name="nativeName">exp_sex</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">39</property>
+                    <property name="name">documentDate</property>
+                    <property name="nativeName">documentDate</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">91</property>
+                </structure>
+            </list-property>
+            <xml-property name="queryText"><![CDATA[table0#-TNAME-#table0#:#[/datasource/variables]#:#{exp_firstName;STRING;/expert/__firstName},{exp_middleName;STRING;/expert/__middleName},{exp_lastName;STRING;/expert/__lastName},{bank_title;STRING;/expert/__expertData/__bank/__title},{bank_headTitle;STRING;/expert/__expertData/__bank/__headTitle},{bank_inn;STRING;/expert/__expertData/__bank/__inn},{bank_account;STRING;/expert/__expertData/__bank/__account},{bank_bik;STRING;/expert/__expertData/__bank/__bik},{documentNumber;STRING;/task/__agreement/__documentNumber},{inspector_fioInAgreement;STRING;/task/__agreement/__inspector/__fioInAgreement},{inspector_signature;STRING;/task/__agreement/__inspector/__signature},{beginDate;DATE;/task/__beginDate},{demand_declension;STRING;/demand__declension},{endDate;DATE;/task/__endDate},{lotNumber;STRING;/lot__code},{cost;STRING;/task/__cost},{addr_postalCode;STRING;/expert/__address/__postalCode},{addr_houseNumber;STRING;/expert/__address/__houseNumber},{addr_houseUnitNumber;STRING;/expert/__address/__houseUnitNumber},{addr_flatNumber;STRING;/expert/__address/__flatNumber},{addr_street;STRING;/expert/__address/__street/__title},{addr_street_type;STRING;/expert/__address/__street/__type},{addr_city;STRING;/expert/__address/__city/__title},{addr_city_type;STRING;/expert/__address/__city/__type},{addr_region;STRING;/expert/__address/__region/__title},{addr_federalRegion;STRING;/expert/__address/__federalRegion/__title},{passport_series;STRING;/expert/__passportData/__series},{passport_number;STRING;/expert/__passportData/__number},{passport_issuer;STRING;/expert/__passportData/__issuer},{passport_issuerInfo;STRING;/expert/__passportData/__issuerInfo},{passport_issueDate;DATE;/expert/__passportData/__issueDate},{exp_inn;STRING;/expert/__inn},{exp_dateOfBirth;DATE;/expert/__dateOfBirth},{bank_personalAccount;STRING;/expert/__expertData/__personalAccount},{exp_pensionInsuranceNumber;STRING;/expert/__pensionInsuranceNumber},{task_identifier;STRING;/task/__identifier},{bank_city;STRING;/expert/__expertData/__bank/__city},{exp_sex;STRING;/expert/__sex/__code/__value},{documentDate;DATE;/task/__agreement/__documentDate}]]></xml-property>
+            <xml-property name="designerValues"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<model:DesignValues xmlns:design="http://www.eclipse.org/datatools/connectivity/oda/design" xmlns:model="http://www.eclipse.org/birt/report/model/adapter/odaModel">
+  <Version>2.0</Version>
+  <design:ResultSets derivedMetaData="true">
+    <design:resultSetDefinitions>
+      <design:resultSetColumns>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>exp_firstName</design:name>
+              <design:position>1</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>exp_firstName</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>exp_middleName</design:name>
+              <design:position>2</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>exp_middleName</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>exp_lastName</design:name>
+              <design:position>3</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>exp_lastName</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+      </design:resultSetColumns>
+      <design:criteria/>
+    </design:resultSetDefinitions>
+  </design:ResultSets>
+</model:DesignValues>]]></xml-property>
+            <list-property name="privateDriverProperties">
+                <ex-property>
+                    <name>MAX_ROW</name>
+                    <value>-1</value>
+                </ex-property>
+                <ex-property>
+                    <name>XML_FILE</name>
+                </ex-property>
+            </list-property>
+        </oda-data-set>
+        <oda-data-set extensionID="org.eclipse.datatools.enablement.oda.xml.dataSet" name="demands" id="128">
+            <property name="nullsOrdering">nulls lowest</property>
+            <list-property name="columnHints">
+                <structure>
+                    <property name="columnName">demand_title</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="heading">demand_title</text-property>
+                </structure>
+            </list-property>
+            <list-property name="parameters"/>
+            <structure name="cachedMetaData">
+                <list-property name="resultSet">
+                    <structure>
+                        <property name="position">1</property>
+                        <property name="name">demand_title</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                </list-property>
+            </structure>
+            <property name="dataSource">Data Source</property>
+            <list-property name="resultSet">
+                <structure>
+                    <property name="position">1</property>
+                    <property name="name">demand_title</property>
+                    <property name="nativeName">demand_title</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+            </list-property>
+            <xml-property name="queryText"><![CDATA[table0#-TNAME-#table0#:#[/datasource/variables/demands/string]#:#{demand_title;STRING;}]]></xml-property>
+            <xml-property name="designerValues"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<model:DesignValues xmlns:design="http://www.eclipse.org/datatools/connectivity/oda/design" xmlns:model="http://www.eclipse.org/birt/report/model/adapter/odaModel">
+  <Version>2.0</Version>
+  <design:ResultSets derivedMetaData="true">
+    <design:resultSetDefinitions>
+      <design:resultSetColumns>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>demand_title</design:name>
+              <design:position>1</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>demand_title</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+      </design:resultSetColumns>
+      <design:criteria/>
+    </design:resultSetDefinitions>
+  </design:ResultSets>
+</model:DesignValues>]]></xml-property>
+            <list-property name="privateDriverProperties">
+                <ex-property>
+                    <name>MAX_ROW</name>
+                    <value>-1</value>
+                </ex-property>
+                <ex-property>
+                    <name>XML_FILE</name>
+                </ex-property>
+            </list-property>
+        </oda-data-set>
+    </data-sets>
+    <styles>
+        <style name="report" id="4">
+            <property name="fontFamily">sans-serif</property>
+            <property name="fontSize">10pt</property>
+        </style>
+        <style name="crosstab-cell" id="5">
+            <property name="borderBottomColor">#CCCCCC</property>
+            <property name="borderBottomStyle">solid</property>
+            <property name="borderBottomWidth">1pt</property>
+            <property name="borderLeftColor">#CCCCCC</property>
+            <property name="borderLeftStyle">solid</property>
+            <property name="borderLeftWidth">1pt</property>
+            <property name="borderRightColor">#CCCCCC</property>
+            <property name="borderRightStyle">solid</property>
+            <property name="borderRightWidth">1pt</property>
+            <property name="borderTopColor">#CCCCCC</property>
+            <property name="borderTopStyle">solid</property>
+            <property name="borderTopWidth">1pt</property>
+        </style>
+        <style name="crosstab" id="6">
+            <property name="borderBottomColor">#CCCCCC</property>
+            <property name="borderBottomStyle">solid</property>
+            <property name="borderBottomWidth">1pt</property>
+            <property name="borderLeftColor">#CCCCCC</property>
+            <property name="borderLeftStyle">solid</property>
+            <property name="borderLeftWidth">1pt</property>
+            <property name="borderRightColor">#CCCCCC</property>
+            <property name="borderRightStyle">solid</property>
+            <property name="borderRightWidth">1pt</property>
+            <property name="borderTopColor">#CCCCCC</property>
+            <property name="borderTopStyle">solid</property>
+            <property name="borderTopWidth">1pt</property>
+        </style>
+    </styles>
+    <page-setup>
+        <simple-master-page name="Simple MasterPage" id="2">
+            <property name="leftMargin">0.4166666666666667in</property>
+            <property name="bottomMargin">0.05in</property>
+            <property name="rightMargin">0.4166666666666667in</property>
+            <page-footer>
+                <grid id="171">
+                    <property name="width">7.833333333333333in</property>
+                    <column id="172">
+                        <property name="width">7.395833333333333in</property>
+                    </column>
+                    <column id="173">
+                        <property name="width">0.4375in</property>
+                    </column>
+                    <row id="174">
+                        <cell id="175">
+                            <text id="176">
+                                <property name="fontFamily">"Times New Roman"</property>
+                                <property name="color">#808080</property>
+                                <property name="paddingTop">1pt</property>
+                                <property name="textAlign">right</property>
+                                <property name="dataSet">vars</property>
+                                <list-property name="boundDataColumns">
+                                    <structure>
+                                        <property name="name">documentNumber</property>
+                                        <text-property name="displayName">documentNumber</text-property>
+                                        <expression name="expression" type="javascript">dataSetRow["documentNumber"]</expression>
+                                        <property name="dataType">string</property>
+                                        <property name="allowExport">true</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="name">task_identifier</property>
+                                        <text-property name="displayName">task_identifier</text-property>
+                                        <expression name="expression" type="javascript">dataSetRow["task_identifier"]</expression>
+                                        <property name="dataType">string</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="name">documentDate</property>
+                                        <text-property name="displayName">documentDate</text-property>
+                                        <expression name="expression" type="javascript">dataSetRow["documentDate"]</expression>
+                                        <property name="dataType">date</property>
+                                        <property name="allowExport">true</property>
+                                    </structure>
+                                </list-property>
+                                <property name="contentType">html</property>
+                                <text-property name="content"><![CDATA[Договор&amp;nbsp;№&amp;nbsp; <VALUE-OF>row["documentNumber"]</VALUE-OF>, &amp;nbsp;от&amp;nbsp;<VALUE-OF format="dd.MM.yyyy">row["documentDate"]</VALUE-OF>,&amp;nbsp;задание&amp;nbsp;№&amp;nbsp; <VALUE-OF>row["task_identifier"]</VALUE-OF>.&amp;nbsp;стр.]]></text-property>
+                            </text>
+                        </cell>
+                        <cell id="177">
+                            <auto-text id="178">
+                                <property name="fontFamily">"Times New Roman"</property>
+                                <property name="color">#808080</property>
+                                <property name="textAlign">left</property>
+                                <property name="type">page-number</property>
+                            </auto-text>
+                        </cell>
+                    </row>
+                </grid>
+            </page-footer>
+        </simple-master-page>
+    </page-setup>
+    <body>
+        <text id="7">
+            <property name="fontFamily">"Times New Roman"</property>
+            <property name="fontWeight">bold</property>
+            <property name="textAlign">center</property>
+            <property name="dataSet">vars</property>
+            <list-property name="boundDataColumns">
+                <structure>
+                    <property name="name">documentNumber</property>
+                    <text-property name="displayName">documentNumber</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["documentNumber"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+            </list-property>
+            <property name="contentType">html</property>
+            <text-property name="content"><![CDATA[<H4><CENTER>Договор № <VALUE-OF>row["documentNumber"]</VALUE-OF><BR>
+на оказание услуг по проведению независимой экспертизы заявок<BR>
+на участие в конкурсах</CENTER></H4>]]></text-property>
+        </text>
+        <label id="22"/>
+        <grid id="96">
+            <column id="97"/>
+            <column id="98"/>
+            <row id="99">
+                <cell id="100">
+                    <label id="140">
+                        <property name="fontFamily">"Times New Roman"</property>
+                        <property name="fontSize">10pt</property>
+                        <property name="marginLeft">60pt</property>
+                        <property name="textAlign">left</property>
+                        <text-property name="text">г. Москва</text-property>
+                    </label>
+                </cell>
+                <cell id="101">
+                    <data id="141">
+                        <property name="fontFamily">"Times New Roman"</property>
+                        <property name="marginRight">60pt</property>
+                        <structure name="dateTimeFormat">
+                            <property name="category">Long Date</property>
+                            <property name="pattern">Long Date</property>
+                        </structure>
+                        <property name="textAlign">right</property>
+                        <property name="dataSet">vars</property>
+                        <list-property name="boundDataColumns">
+                            <structure>
+                                <property name="name">beginDate</property>
+                                <text-property name="displayName">beginDate</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["beginDate"]</expression>
+                                <property name="dataType">date</property>
+                                <property name="allowExport">true</property>
+                            </structure>
+                        </list-property>
+                        <property name="resultSetColumn">beginDate</property>
+                    </data>
+                </cell>
+            </row>
+        </grid>
+        <text id="70">
+            <property name="fontFamily">"Times New Roman"</property>
+            <property name="dataSet">vars</property>
+            <list-property name="boundDataColumns">
+                <structure>
+                    <property name="name">exp_firstName</property>
+                    <text-property name="displayName">exp_firstName</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["exp_firstName"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">exp_middleName</property>
+                    <text-property name="displayName">exp_middleName</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["exp_middleName"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">exp_lastName</property>
+                    <text-property name="displayName">exp_lastName</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["exp_lastName"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">inspector_fioInAgreement</property>
+                    <text-property name="displayName">inspector_fioInAgreement</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["inspector_fioInAgreement"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">exp_sex</property>
+                    <text-property name="displayName">exp_sex</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["exp_sex"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+            </list-property>
+            <property name="contentType">html</property>
+            <text-property name="content"><![CDATA[Некоммерческая организация «Фонд информационного обеспечения науки» (ФИОН),  именуемая в дальнейшем «Заказчик», в лице <VALUE-OF>row["inspector_fioInAgreement"]</VALUE-OF>, с одной стороны, и <VALUE-OF>row["exp_lastName"]+" "+row["exp_firstName"]+" "+row["exp_middleName"]</VALUE-OF>, <VALUE-OF>if(row["exp_sex"].equals("male")){
+"именуемый"
+}else{
+"именуемая"
+}</VALUE-OF> в дальнейшем «Эксперт», с другой стороны, заключили настоящий договор о нижеследующем:]]></text-property>
+        </text>
+        <label id="71"/>
+        <label id="73">
+            <property name="fontFamily">"Times New Roman"</property>
+            <property name="fontWeight">bold</property>
+            <property name="textAlign">center</property>
+            <text-property name="text">1. Предмет Договора.</text-property>
+        </label>
+        <text id="74">
+            <property name="fontFamily">"Times New Roman"</property>
+            <property name="textAlign">justify</property>
+            <property name="contentType">auto</property>
+            <text-property name="content"><![CDATA[1.1 Предметом настоящего Договора является проведение по заданию Заказчика независимой экспертизы заявок на участие в конкурсах в рамках федеральной целевой программы «Исследования и разработки по приоритетным направлениям развития научно-технологического комплекса России на 2014-2020 годы», утвержденной постановлением Правительства Российской Федерации от 21.05.2013 г. № 426.]]></text-property>
+        </text>
+        <text id="167">
+            <property name="dataSet">demands</property>
+            <list-property name="visibility">
+                <structure>
+                    <property name="format">all</property>
+                    <expression name="valueExpr" type="javascript">true</expression>
+                </structure>
+            </list-property>
+            <list-property name="boundDataColumns">
+                <structure>
+                    <property name="name">demand_title</property>
+                    <text-property name="displayName">demand_title</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["demand_title"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+            </list-property>
+            <property name="contentType">html</property>
+            <text-property name="content"><![CDATA[<VALUE-OF>reportContext.setGlobalVariable("demandsCount", Total.count())</VALUE-OF> ]]></text-property>
+        </text>
+        <text id="123">
+            <property name="fontFamily">"Times New Roman"</property>
+            <property name="fontSize">10pt</property>
+            <property name="textAlign">justify</property>
+            <property name="dataSet">vars</property>
+            <list-property name="boundDataColumns">
+                <structure>
+                    <property name="name">beginDate</property>
+                    <text-property name="displayName">beginDate</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["beginDate"]</expression>
+                    <property name="dataType">date</property>
+                </structure>
+                <structure>
+                    <property name="name">demand_declension</property>
+                    <text-property name="displayName">demand_declension</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["demand_declension"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">endDate</property>
+                    <text-property name="displayName">endDate</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["endDate"]</expression>
+                    <property name="dataType">date</property>
+                </structure>
+                <structure>
+                    <property name="name">lotNumber</property>
+                    <text-property name="displayName">lotNumber</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["lotNumber"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+            </list-property>
+            <property name="contentType">html</property>
+            <text-property name="content"><![CDATA[1.2. Эксперт обязуется провести с  <VALUE-OF format="dd.MM.yyyy">row["beginDate"]</VALUE-OF> г. по <VALUE-OF format="dd.MM.yyyy">row["endDate"]</VALUE-OF> г. научно-техническую экспертизу следующих заявок по лоту <VALUE-OF>row["lotNumber"]</VALUE-OF>
+(<VALUE-OF>reportContext.getGlobalVariable("demandsCount")</VALUE-OF>&amp;nbsp;<VALUE-OF>row["demand_declension"]</VALUE-OF>):]]></text-property>
+        </text>
+        <list id="142">
+            <property name="fontFamily">"Times New Roman"</property>
+            <property name="textAlign">justify</property>
+            <property name="dataSet">demands</property>
+            <list-property name="boundDataColumns">
+                <structure>
+                    <property name="name">demand_title</property>
+                    <text-property name="displayName">demand_title</text-property>
+                    <expression name="expression" type="javascript">(row.__rownum+1)+") "+dataSetRow["demand_title"].substring(8)+";"</expression>
+                    <property name="dataType">string</property>
+                    <property name="allowExport">true</property>
+                </structure>
+            </list-property>
+            <group id="94">
+                <property name="groupName">NewListGroup1</property>
+                <expression name="keyExpr" type="javascript">row["demand_title"]</expression>
+                <structure name="toc">
+                    <expression name="expressionValue" type="javascript">row["demand_title"]</expression>
+                </structure>
+                <property name="hideDetail">false</property>
+                <header>
+                    <data id="95">
+                        <property name="resultSetColumn">demand_title</property>
+                    </data>
+                </header>
+            </group>
+        </list>
+        <text id="168">
+            <property name="fontFamily">"Times New Roman"</property>
+            <property name="contentType">auto</property>
+            <text-property name="content"><![CDATA[и дать экспертные заключения по указанным заявкам и обобщенное экспертное заключение.]]></text-property>
+        </text>
+        <label id="75"/>
+        <label id="76">
+            <property name="fontFamily">"Times New Roman"</property>
+            <property name="fontWeight">bold</property>
+            <property name="textAlign">center</property>
+            <text-property name="text">2. Права и обязанности сторон.</text-property>
+        </label>
+        <text id="77">
+            <property name="fontFamily">"Times New Roman"</property>
+            <property name="textAlign">justify</property>
+            <property name="contentType">auto</property>
+            <text-property name="content"><![CDATA[2.1. В соответствии с настоящим Договором Заказчик обязуется:
+2.1.1. Предоставить Эксперту всю необходимую для проведения независимой экспертизы информацию и документацию.
+2.1.2. Оплатить услуги Эксперта в порядке, предусмотренном разделом 4 настоящего Договора.
+2.1.3. Обеспечить анонимность при проведении независимой экспертизы.
+2.2. Заказчик вправе осуществлять проверку полноты и соответствия установленной форме поступивших от Эксперта заключений.
+2.3. В соответствии с настоящим Договором Эксперт обязуется:
+2.3.1. Проводить независимую экспертизу лично, в соответствии с действующими нормативными правовыми актами.
+2.3.2. Соблюдать конфиденциальность информации, содержащейся в передаваемых на экспертизу материалах и подготовленных на их основе заключений.
+2.3.3. Отказаться от проведения экспертизы материалов, поступивших от организаций, с которыми Эксперт находится в зависимых отношениях.
+2.3.4. Проводить независимую экспертизу и представлять заключения в сроки, установленные разделом 1 настоящего Договора.
+2.3.5. Письменно уведомлять Заказчика об изменении личных данных о себе, необходимых для исполнения настоящего Договора (адрес проживания, место работы, банковские реквизиты и т.п.), в течение 3 дней с момента их изменения. Изменение фамилии, имени или отчества Исполнителя оформляется дополнительным соглашением к настоящему Договору.
+2.3.6. Не вступать в личные контакты с третьими лицами по вопросам, связанным с проведением экспертизы, если это может поставить под сомнение объективность проведения экспертизы.
+2.3.7. Обеспечивать сохранность предоставленных Заказчиком для проведения независимой экспертизы документов и материалов.
+2.4. Эксперт вправе:
+2.4.1. Запросить у Заказчика дополнительные материалы, необходимые для проведения экспертизы, не менее чем за 2 дня до истечения срока, установленного для проведения экспертизы.]]></text-property>
+        </text>
+        <label id="78"/>
+        <label id="79">
+            <property name="fontFamily">"Times New Roman"</property>
+            <property name="fontWeight">bold</property>
+            <property name="textAlign">center</property>
+            <text-property name="text">3. Порядок передачи материалов и приемки оказанных услуг.</text-property>
+        </label>
+        <text id="80">
+            <property name="fontFamily">"Times New Roman"</property>
+            <property name="textAlign">justify</property>
+            <property name="contentType">auto</property>
+            <text-property name="content"><![CDATA[3.1. Документы, необходимые для проведения независимой экспертизы, направляются Эксперту в электронном виде.
+3.2. В случае необходимости Эксперт может ознакомиться с направленными в электронном виде для проведения экспертизы документами в оригинале по месту нахождения Заказчика, либо получить их копию на бумажном носителе.
+3.3. По окончании проведения независимой экспертизы Эксперт направляет Заказчику подписанные им заключения, составленные по установленной форме, в двух экземплярах.
+3.4. Экспертиза считается выполненной после получения Заказчиком подписанных Экспертом заключений не позднее срока, установленного разделом 1 настоящего Договора.
+3.5. По окончании проведения экспертизы всех заявок Эксперт направляет Заказчику два экземпляра подписанного со своей стороны акта сдачи-приемки оказанных услуг.
+3.6. В случае направления заключений и акта сдачи-приемки оказанных услуг по почте, Эксперт должен учитывать время на почтовую пересылку.]]></text-property>
+        </text>
+        <label id="81"/>
+        <label id="82">
+            <property name="fontFamily">"Times New Roman"</property>
+            <property name="fontWeight">bold</property>
+            <property name="textAlign">center</property>
+            <text-property name="text">4. Порядок расчетов.</text-property>
+        </label>
+        <text id="83">
+            <property name="fontFamily">"Times New Roman"</property>
+            <property name="dataSet">vars</property>
+            <list-property name="boundDataColumns">
+                <structure>
+                    <property name="name">cost</property>
+                    <text-property name="displayName">cost</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["cost"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+            </list-property>
+            <property name="contentType">html</property>
+            <text-property name="content"><![CDATA[4.1. Стоимость экспертизы по настоящему Договору составляет <VALUE-OF>
+var pos = row["cost"].indexOf(".")
+row["cost"].substring(0,pos)</VALUE-OF>&amp;nbsp;<VALUE-OF>var source = NaumenCategory.StartWithCapitalLetter(NaumenCategory.MoneyAsString(row["cost"]))
+var pos = source.indexOf("руб")
+var pos1 = source.indexOf("коп")
+"("+source.substring(0,pos-1)+")"+source.substring(pos-1, pos1)+" копеек"
+</VALUE-OF>.<br>
+4.2. Услуги Эксперта оплачиваются Заказчиком после подписания Сторонами акта сдачи-приемки оказанных услуг из средств, поступающих по договору от 14 февраля 2014 г. №2014-01 с ФГБНУ "Дирекция НТП".<br>
+4.3. Оплата производится путем перечисления денежных средств на расчетный счет Эксперта либо по соглашению сторон наличными через кассу Заказчика.]]></text-property>
+        </text>
+        <label id="84"/>
+        <label id="85">
+            <property name="fontFamily">"Times New Roman"</property>
+            <property name="fontWeight">bold</property>
+            <property name="textAlign">center</property>
+            <text-property name="text">5. Ответственность сторон.</text-property>
+        </label>
+        <text id="86">
+            <property name="fontFamily">"Times New Roman"</property>
+            <property name="textAlign">justify</property>
+            <property name="contentType">auto</property>
+            <text-property name="content"><![CDATA[5.1. В случае не исполнения Экспертом обязательств по настоящему Договору, Заказчик вправе расторгнуть Договор в одностороннем порядке.
+5.2. В случае досрочного расторжения настоящего Договора по требованию одной из Сторон, Заказчик производит расчет с Экспертом за фактически оказанные услуги, с учетом п.п. 3.4.-3.5. настоящего Договора.
+5.3. Стороны несут ответственность за неисполнение или ненадлежащее исполнение обязательств по настоящему Договору в соответствии с законодательством Российской Федерации.]]></text-property>
+        </text>
+        <label id="87"/>
+        <label id="88">
+            <property name="fontFamily">"Times New Roman"</property>
+            <property name="fontWeight">bold</property>
+            <property name="textAlign">center</property>
+            <text-property name="text">6. Заключительные положения.</text-property>
+        </label>
+        <text id="89">
+            <property name="fontFamily">"Times New Roman"</property>
+            <property name="textAlign">justify</property>
+            <property name="contentType">auto</property>
+            <text-property name="content"><![CDATA[6.1. Срок действия настоящего Договора устанавливается с момента его подписания до полного исполнения Сторонами принятых на себя обязательств по настоящему Договору.
+6.2. Настоящий Договор составлен в 2-х экземплярах, по одному для каждой из Сторон.]]></text-property>
+        </text>
+        <label id="91"/>
+        <label id="92">
+            <property name="fontFamily">"Times New Roman"</property>
+            <property name="fontWeight">bold</property>
+            <property name="textAlign">center</property>
+            <text-property name="text">7. Адреса и реквизиты сторон.</text-property>
+        </label>
+        <text id="105">
+            <property name="fontFamily">"Times New Roman"</property>
+            <property name="contentType">auto</property>
+            <text-property name="content"><![CDATA[7.1. Заказчик:
+Некоммерческая организация «Фонд информационного обеспечения науки» (ФИОН)
+Адрес: 119021, г. Москва, Олсуфьевский пер., д.8, стр. 2
+Тел./факс (495) 917-98-09/99-57
+ИНН 7728246620, КПП 770401001
+р/с 40703810300110000190
+кор/с 30101810500000000219
+ОАО «Банк Москвы», г. Москва
+БИК 044525219
+]]></text-property>
+        </text>
+        <label id="106"/>
+        <text id="122">
+            <property name="fontFamily">"Times New Roman"</property>
+            <property name="fontSize">10pt</property>
+            <property name="textAlign">justify</property>
+            <property name="dataSet">vars</property>
+            <list-property name="boundDataColumns">
+                <structure>
+                    <property name="name">exp_firstName</property>
+                    <text-property name="displayName">exp_firstName</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["exp_firstName"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">exp_middleName</property>
+                    <text-property name="displayName">exp_middleName</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["exp_middleName"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">exp_lastName</property>
+                    <text-property name="displayName">exp_lastName</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["exp_lastName"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+            </list-property>
+            <property name="contentType">html</property>
+            <text-property name="content"><![CDATA[7.2. Эксперт:<br>
+ФИО: <VALUE-OF>row["exp_lastName"]+ " " + row["exp_firstName"]+ " " + row["exp_middleName"]</VALUE-OF>]]></text-property>
+        </text>
+        <text id="125">
+            <property name="fontFamily">"Times New Roman"</property>
+            <property name="fontSize">10pt</property>
+            <property name="textAlign">justify</property>
+            <property name="dataSet">vars</property>
+            <list-property name="boundDataColumns">
+                <structure>
+                    <property name="name">addr_postalCode</property>
+                    <text-property name="displayName">addr_postalCode</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["addr_postalCode"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">addr_houseNumber</property>
+                    <text-property name="displayName">addr_houseNumber</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["addr_houseNumber"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">addr_houseUnitNumber</property>
+                    <text-property name="displayName">addr_houseUnitNumber</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["addr_houseUnitNumber"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">addr_flatNumber</property>
+                    <text-property name="displayName">addr_flatNumber</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["addr_flatNumber"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">addr_street</property>
+                    <text-property name="displayName">addr_street</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["addr_street"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">addr_street_type</property>
+                    <text-property name="displayName">addr_street_type</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["addr_street_type"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">addr_city</property>
+                    <text-property name="displayName">addr_city</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["addr_city"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">addr_city_type</property>
+                    <text-property name="displayName">addr_city_type</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["addr_city_type"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">addr_region</property>
+                    <text-property name="displayName">addr_region</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["addr_region"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">addr_federalRegion</property>
+                    <text-property name="displayName">addr_federalRegion</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["addr_federalRegion"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+            </list-property>
+            <property name="contentType">html</property>
+            <text-property name="content"><![CDATA[Адрес регистрации (с указанием индекса): <VALUE-OF>row["addr_postalCode"]</VALUE-OF>, <VALUE-OF>row["addr_region"]</VALUE-OF>., 
+<VALUE-OF>if(row["addr_city"].length>0){
+row["addr_city_type"]+".&amp;nbsp"+row["addr_city"]+",&amp;nbsp;"
+}</VALUE-OF> 
+<VALUE-OF>row["addr_street_type"]+".&amp;nbsp;"+row["addr_street"]</VALUE-OF>, дом <VALUE-OF>row["addr_houseNumber"]</VALUE-OF>
+<VALUE-OF>if(row["addr_houseUnitNumber"].length>0){
+", корпус "+row["addr_houseUnitNumber"]
+}</VALUE-OF>
+
+<VALUE-OF>if(row["addr_flatNumber"].length>0){
+", кв. "+row["addr_flatNumber"]
+}</VALUE-OF>
+]]></text-property>
+        </text>
+        <text id="121">
+            <property name="fontFamily">"Times New Roman"</property>
+            <property name="fontSize">10pt</property>
+            <property name="textAlign">justify</property>
+            <property name="dataSet">vars</property>
+            <list-property name="boundDataColumns">
+                <structure>
+                    <property name="name">passport_series</property>
+                    <text-property name="displayName">passport_series</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["passport_series"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">passport_number</property>
+                    <text-property name="displayName">passport_number</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["passport_number"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">passport_issuer</property>
+                    <text-property name="displayName">passport_issuer</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["passport_issuer"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">passport_issuerInfo</property>
+                    <text-property name="displayName">passport_issuerInfo</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["passport_issuerInfo"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">passport_issueDate</property>
+                    <text-property name="displayName">passport_issueDate</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["passport_issueDate"]</expression>
+                    <property name="dataType">date</property>
+                </structure>
+                <structure>
+                    <property name="name">exp_inn</property>
+                    <text-property name="displayName">exp_inn</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["exp_inn"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">exp_dateOfBirth</property>
+                    <text-property name="displayName">exp_dateOfBirth</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["exp_dateOfBirth"]</expression>
+                    <property name="dataType">date</property>
+                </structure>
+                <structure>
+                    <property name="name">exp_pensionInsuranceNumber</property>
+                    <text-property name="displayName">exp_pensionInsuranceNumber</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["exp_pensionInsuranceNumber"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+            </list-property>
+            <property name="contentType">html</property>
+            <text-property name="content"><![CDATA[Паспортные данные: <VALUE-OF>row["passport_series"]</VALUE-OF>-<VALUE-OF>row["passport_number"]</VALUE-OF>, выдан <VALUE-OF format="dd MMMM yyyy">row["passport_issueDate"]</VALUE-OF> г., код подразделения <VALUE-OF>row["passport_issuer"]</VALUE-OF><br>
+Дата рождения: <VALUE-OF format="dd MMMM yyyy">row["exp_dateOfBirth"]</VALUE-OF> г.<br>
+ИНН: <VALUE-OF>row["exp_inn"]</VALUE-OF><br>
+№ страхового свид-ва: <VALUE-OF>row["exp_pensionInsuranceNumber"]</VALUE-OF>]]></text-property>
+        </text>
+        <text id="124">
+            <property name="fontFamily">"Times New Roman"</property>
+            <property name="fontSize">10pt</property>
+            <property name="textAlign">justify</property>
+            <property name="pageBreakAfter">avoid</property>
+            <property name="dataSet">vars</property>
+            <list-property name="boundDataColumns">
+                <structure>
+                    <property name="name">bank_title</property>
+                    <text-property name="displayName">bank_title</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["bank_title"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">bank_headTitle</property>
+                    <text-property name="displayName">bank_headTitle</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["bank_headTitle"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">bank_inn</property>
+                    <text-property name="displayName">bank_inn</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["bank_inn"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">bank_account</property>
+                    <text-property name="displayName">bank_account</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["bank_account"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">bank_bik</property>
+                    <text-property name="displayName">bank_bik</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["bank_bik"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">bank_personalAccount</property>
+                    <text-property name="displayName">bank_personalAccount</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["bank_personalAccount"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">bank_city</property>
+                    <text-property name="displayName">bank_city</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["bank_city"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+            </list-property>
+            <property name="contentType">html</property>
+            <text-property name="content"><![CDATA[Банковские реквизиты:<br>
+Банк: <VALUE-OF>row["bank_headTitle"]</VALUE-OF>&amp;nbsp;г.&amp;nbsp;<VALUE-OF>row["bank_city"]</VALUE-OF><br>
+ИНН: <VALUE-OF>row["bank_inn"]</VALUE-OF><br>
+БИК: <VALUE-OF>row["bank_bik"]</VALUE-OF><br>
+корр/с: <VALUE-OF>row["bank_account"]</VALUE-OF><br>
+лиц/с: <VALUE-OF>row["bank_personalAccount"]</VALUE-OF><br>]]></text-property>
+        </text>
+        <label id="109"/>
+        <label id="108"/>
+        <grid id="179">
+            <column id="180"/>
+            <column id="181"/>
+            <row id="182">
+                <cell id="183">
+                    <label id="194">
+                        <property name="fontFamily">"Times New Roman"</property>
+                        <property name="fontSize">10pt</property>
+                        <property name="fontWeight">bold</property>
+                        <property name="textAlign">left</property>
+                        <property name="pageBreakAfter">avoid</property>
+                        <property name="pageBreakBefore">avoid</property>
+                        <text-property name="text">Эксперт</text-property>
+                    </label>
+                </cell>
+                <cell id="184">
+                    <label id="195">
+                        <property name="fontFamily">"Times New Roman"</property>
+                        <property name="fontSize">10pt</property>
+                        <property name="fontWeight">bold</property>
+                        <property name="textAlign">left</property>
+                        <text-property name="text">От Заказчика</text-property>
+                    </label>
+                </cell>
+            </row>
+            <row id="185">
+                <cell id="186"/>
+                <cell id="187"/>
+            </row>
+            <row id="188">
+                <property name="verticalAlign">bottom</property>
+                <cell id="189">
+                    <text id="198">
+                        <property name="fontFamily">"Times New Roman"</property>
+                        <property name="fontSize">10pt</property>
+                        <property name="dataSet">vars</property>
+                        <list-property name="boundDataColumns">
+                            <structure>
+                                <property name="name">exp_firstName</property>
+                                <text-property name="displayName">exp_firstName</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["exp_firstName"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                            <structure>
+                                <property name="name">exp_middleName</property>
+                                <text-property name="displayName">exp_middleName</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["exp_middleName"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                            <structure>
+                                <property name="name">exp_lastName</property>
+                                <text-property name="displayName">exp_lastName</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["exp_lastName"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                        </list-property>
+                        <property name="contentType">html</property>
+                        <text-property name="content"><![CDATA[<br>
+<br>
+________________________<VALUE-OF>row["exp_firstName"].charAt(0)</VALUE-OF>. <VALUE-OF>row["exp_middleName"].charAt(0)</VALUE-OF>. <VALUE-OF>row["exp_lastName"]</VALUE-OF>]]></text-property>
+                    </text>
+                    <label id="199">
+                        <property name="fontFamily">"Times New Roman"</property>
+                        <property name="fontSize">10pt</property>
+                        <text-property name="text">подпись</text-property>
+                    </label>
+                </cell>
+                <cell id="190">
+                    <text id="196">
+                        <property name="fontFamily">"Times New Roman"</property>
+                        <property name="fontSize">10pt</property>
+                        <property name="display">block</property>
+                        <property name="pageBreakInside">auto</property>
+                        <property name="dataSet">vars</property>
+                        <list-property name="boundDataColumns">
+                            <structure>
+                                <property name="name">inspector_signature</property>
+                                <text-property name="displayName">inspector_signature</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["inspector_signature"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                        </list-property>
+                        <property name="contentType">html</property>
+                        <text-property name="content"><![CDATA[<VALUE-OF>row["inspector_signature"].substring(0, row["inspector_signature"].indexOf("__"))</VALUE-OF><br><br>
+
+<VALUE-OF>row["inspector_signature"].substring(row["inspector_signature"].indexOf("__"))</VALUE-OF>]]></text-property>
+                    </text>
+                    <label id="197">
+                        <property name="fontFamily">"Times New Roman"</property>
+                        <property name="fontSize">10pt</property>
+                        <text-property name="text">М.П.</text-property>
+                    </label>
+                </cell>
+            </row>
+        </grid>
+    </body>
+</report>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Meta>
+    <id>Текстовые шаблоны/EKBR/AgreementGenerator/Шаблон для генерации договора в заявке (birt)/test_birt_demand_6</id>
+    <title>Шаблон для генерации договора в заявке (birt)</title>
+    <titleEn></titleEn>
+    <groovyId>Текстовые шаблоны/FCNTP_2012/RequirementAgreementGenerator/Шаблон для генерации договора в предложении/test_birt_demand_4</groovyId>
+    <keywords>Шаблон для генерации договора в заявке (birt)</keywords>
+    <keywords>AgreementGenerator</keywords>
+    <keywords>EKBR</keywords>
+    <keywords>Текстовые шаблоны</keywords>
+    <uuid>txttmpfs000080000k1omuepjdmop2ck</uuid>
+</Meta>

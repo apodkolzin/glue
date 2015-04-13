@@ -1,0 +1,1989 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<report xmlns="http://www.eclipse.org/birt/2005/design" version="3.2.23" id="1">
+    <property name="createdBy">Eclipse BIRT Designer Version 3.7.2.v20120213 Build &lt;3.7.2.v20120214-1408></property>
+    <property name="units">in</property>
+    <text-property name="displayName">exam</text-property>
+    <property name="bidiLayoutOrientation">ltr</property>
+    <property name="imageDPI">96</property>
+    <data-sources>
+        <oda-data-source extensionID="org.eclipse.datatools.enablement.oda.xml" name="Data Source" id="7">
+            <property name="FILELIST">D:\work\birt_templates\demand_exam\exam_test.xml</property>
+        </oda-data-source>
+    </data-sources>
+    <data-sets>
+        <oda-data-set extensionID="org.eclipse.datatools.enablement.oda.xml.dataSet" name="answers" id="10">
+            <list-property name="columnHints">
+                <structure>
+                    <property name="columnName">question_index</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="heading">question_index</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">title</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="heading">title</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">max</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="heading">max</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">mark</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="heading">mark</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">wmark</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="heading">wmark</text-property>
+                </structure>
+            </list-property>
+            <list-property name="parameters"/>
+            <structure name="cachedMetaData">
+                <list-property name="resultSet">
+                    <structure>
+                        <property name="position">1</property>
+                        <property name="name">question_index</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">2</property>
+                        <property name="name">title</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">3</property>
+                        <property name="name">max</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">4</property>
+                        <property name="name">mark</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">5</property>
+                        <property name="name">wmark</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                </list-property>
+            </structure>
+            <property name="dataSource">Data Source</property>
+            <list-property name="resultSet">
+                <structure>
+                    <property name="position">1</property>
+                    <property name="name">question_index</property>
+                    <property name="nativeName">question_index</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">2</property>
+                    <property name="name">title</property>
+                    <property name="nativeName">title</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">3</property>
+                    <property name="name">max</property>
+                    <property name="nativeName">max</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">4</property>
+                    <property name="name">mark</property>
+                    <property name="nativeName">mark</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">5</property>
+                    <property name="name">wmark</property>
+                    <property name="nativeName">wmark</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+            </list-property>
+            <xml-property name="queryText"><![CDATA[table0#-TNAME-#table0#:#[/datasource/tables/answers/record]#:#{question_index;STRING;/question__id},{title;STRING;/title},{max;STRING;/max},{mark;STRING;/mark},{wmark;STRING;/wmark}]]></xml-property>
+            <xml-property name="designerValues"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<model:DesignValues xmlns:design="http://www.eclipse.org/datatools/connectivity/oda/design" xmlns:model="http://www.eclipse.org/birt/report/model/adapter/odaModel">
+  <Version>2.0</Version>
+  <design:ResultSets derivedMetaData="true">
+    <design:resultSetDefinitions>
+      <design:resultSetColumns>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>group_index</design:name>
+              <design:position>1</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>group_index</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>question_index</design:name>
+              <design:position>2</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>question_index</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>title</design:name>
+              <design:position>3</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>title</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>max</design:name>
+              <design:position>4</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>max</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>mark</design:name>
+              <design:position>5</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>mark</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>wmark</design:name>
+              <design:position>6</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>wmark</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+      </design:resultSetColumns>
+      <design:criteria/>
+    </design:resultSetDefinitions>
+  </design:ResultSets>
+</model:DesignValues>]]></xml-property>
+            <list-property name="privateDriverProperties">
+                <ex-property>
+                    <name>MAX_ROW</name>
+                    <value>-1</value>
+                </ex-property>
+                <ex-property>
+                    <name>XML_FILE</name>
+                </ex-property>
+            </list-property>
+        </oda-data-set>
+        <oda-data-set extensionID="org.eclipse.datatools.enablement.oda.xml.dataSet" name="questions" id="569">
+            <list-property name="columnHints">
+                <structure>
+                    <property name="columnName">index</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="heading">index</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">group__index</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="heading">group__index</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">title</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="heading">title</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">max</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="heading">max</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">mark</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="heading">mark</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">wmark</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="heading">wmark</text-property>
+                </structure>
+            </list-property>
+            <list-property name="parameters"/>
+            <structure name="cachedMetaData">
+                <list-property name="resultSet">
+                    <structure>
+                        <property name="position">1</property>
+                        <property name="name">index</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">2</property>
+                        <property name="name">group__index</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">3</property>
+                        <property name="name">title</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">4</property>
+                        <property name="name">max</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">5</property>
+                        <property name="name">mark</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">6</property>
+                        <property name="name">wmark</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                </list-property>
+            </structure>
+            <property name="dataSource">Data Source</property>
+            <list-property name="resultSet">
+                <structure>
+                    <property name="position">1</property>
+                    <property name="name">index</property>
+                    <property name="nativeName">index</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">2</property>
+                    <property name="name">group__index</property>
+                    <property name="nativeName">group__index</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">3</property>
+                    <property name="name">title</property>
+                    <property name="nativeName">title</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">4</property>
+                    <property name="name">max</property>
+                    <property name="nativeName">max</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">5</property>
+                    <property name="name">mark</property>
+                    <property name="nativeName">mark</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">6</property>
+                    <property name="name">wmark</property>
+                    <property name="nativeName">wmark</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+            </list-property>
+            <xml-property name="queryText"><![CDATA[table0#-TNAME-#table0#:#[/datasource/tables/questions/record]#:#{index;STRING;/qindex},{group__index;STRING;/group__index},{title;STRING;/title},{max;STRING;/max},{mark;STRING;/mark},{wmark;STRING;/wmark}]]></xml-property>
+            <xml-property name="designerValues"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<model:DesignValues xmlns:design="http://www.eclipse.org/datatools/connectivity/oda/design" xmlns:model="http://www.eclipse.org/birt/report/model/adapter/odaModel">
+  <Version>2.0</Version>
+  <design:ResultSets derivedMetaData="true">
+    <design:resultSetDefinitions>
+      <design:resultSetColumns>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>group__index</design:name>
+              <design:position>1</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>group__index</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>title</design:name>
+              <design:position>2</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>title</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>max</design:name>
+              <design:position>3</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>max</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>mark</design:name>
+              <design:position>4</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>mark</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>wmark</design:name>
+              <design:position>5</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>wmark</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+      </design:resultSetColumns>
+      <design:criteria/>
+    </design:resultSetDefinitions>
+  </design:ResultSets>
+</model:DesignValues>]]></xml-property>
+            <list-property name="privateDriverProperties">
+                <ex-property>
+                    <name>MAX_ROW</name>
+                    <value>-1</value>
+                </ex-property>
+                <ex-property>
+                    <name>XML_FILE</name>
+                </ex-property>
+            </list-property>
+        </oda-data-set>
+        <oda-data-set extensionID="org.eclipse.datatools.enablement.oda.xml.dataSet" name="groups" id="570">
+            <property name="nullsOrdering">nulls lowest</property>
+            <list-property name="computedColumns">
+                <structure>
+                    <property name="name">mark_summ</property>
+                    <property name="dataType">string</property>
+                    <property name="aggregateFunction">SUM</property>
+                    <list-property name="arguments">
+                        <structure>
+                            <property name="name">Expression</property>
+                            <expression name="value">row["wmark"]</expression>
+                        </structure>
+                    </list-property>
+                </structure>
+            </list-property>
+            <list-property name="columnHints">
+                <structure>
+                    <property name="columnName">group_index</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">group_index</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">title</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">title</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">max</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">max</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">mark</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">mark</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">wmark</property>
+                    <property name="analysis">measure</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">wmark</text-property>
+                </structure>
+            </list-property>
+            <list-property name="parameters"/>
+            <structure name="cachedMetaData">
+                <list-property name="resultSet">
+                    <structure>
+                        <property name="position">1</property>
+                        <property name="name">group_index</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">2</property>
+                        <property name="name">title</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">3</property>
+                        <property name="name">max</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">4</property>
+                        <property name="name">mark</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">5</property>
+                        <property name="name">wmark</property>
+                        <property name="dataType">float</property>
+                    </structure>
+                    <structure>
+                        <property name="position">6</property>
+                        <property name="name">mark_summ</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                </list-property>
+            </structure>
+            <property name="dataSource">Data Source</property>
+            <list-property name="resultSet">
+                <structure>
+                    <property name="position">1</property>
+                    <property name="name">group_index</property>
+                    <property name="nativeName">group_index</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">2</property>
+                    <property name="name">title</property>
+                    <property name="nativeName">title</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">3</property>
+                    <property name="name">max</property>
+                    <property name="nativeName">max</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">4</property>
+                    <property name="name">mark</property>
+                    <property name="nativeName">mark</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">5</property>
+                    <property name="name">wmark</property>
+                    <property name="nativeName">wmark</property>
+                    <property name="dataType">float</property>
+                    <property name="nativeDataType">8</property>
+                </structure>
+            </list-property>
+            <xml-property name="queryText"><![CDATA[table0#-TNAME-#table0#:#[/datasource/tables/groups/record]#:#{group_index;STRING;/group__index},{title;STRING;/title},{max;STRING;/max},{mark;STRING;/mark},{wmark;DOUBLE;/wmark}]]></xml-property>
+            <xml-property name="designerValues"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<model:DesignValues xmlns:design="http://www.eclipse.org/datatools/connectivity/oda/design" xmlns:model="http://www.eclipse.org/birt/report/model/adapter/odaModel">
+  <Version>2.0</Version>
+  <design:ResultSets derivedMetaData="true">
+    <design:resultSetDefinitions>
+      <design:resultSetColumns>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>group_index</design:name>
+              <design:position>1</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>group_index</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>title</design:name>
+              <design:position>2</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>title</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>max</design:name>
+              <design:position>3</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>max</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>mark</design:name>
+              <design:position>4</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>mark</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>wmark</design:name>
+              <design:position>5</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>wmark</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+      </design:resultSetColumns>
+      <design:criteria/>
+    </design:resultSetDefinitions>
+  </design:ResultSets>
+</model:DesignValues>]]></xml-property>
+            <list-property name="privateDriverProperties">
+                <ex-property>
+                    <name>MAX_ROW</name>
+                    <value>-1</value>
+                </ex-property>
+                <ex-property>
+                    <name>XML_FILE</name>
+                </ex-property>
+            </list-property>
+        </oda-data-set>
+        <joint-data-set name="questions_and_answers" id="571">
+            <list-property name="columnHints">
+                <structure>
+                    <property name="columnName">questions::index</property>
+                    <property name="alias">index</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">questions::index</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">questions::wmark</property>
+                    <property name="alias">questions::wmark</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">questions::wmark</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">answers::title</property>
+                    <property name="alias">answers::title</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">answers::title</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">answers::question_index</property>
+                    <property name="alias">question_index</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">answers::question_index</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">answers::max</property>
+                    <property name="alias">answers::max</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">answers::max</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">questions::group__index</property>
+                    <property name="alias">group__index</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">questions::group__index</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">questions::title</property>
+                    <property name="alias">questions::title</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">questions::title</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">answers::mark</property>
+                    <property name="alias">answers::mark</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">answers::mark</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">questions::max</property>
+                    <property name="alias">questions::max</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">questions::max</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">questions::mark</property>
+                    <property name="alias">questions::mark</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">questions::mark</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">answers::wmark</property>
+                    <property name="alias">answers::wmark</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">answers::wmark</text-property>
+                </structure>
+            </list-property>
+            <structure name="cachedMetaData">
+                <list-property name="resultSet">
+                    <structure>
+                        <property name="position">1</property>
+                        <property name="name">answers::question_index</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">2</property>
+                        <property name="name">answers::title</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">3</property>
+                        <property name="name">answers::max</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">4</property>
+                        <property name="name">answers::mark</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">5</property>
+                        <property name="name">answers::wmark</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">6</property>
+                        <property name="name">questions::index</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">7</property>
+                        <property name="name">questions::group__index</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">8</property>
+                        <property name="name">questions::title</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">9</property>
+                        <property name="name">questions::max</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">10</property>
+                        <property name="name">questions::mark</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">11</property>
+                        <property name="name">questions::wmark</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                </list-property>
+            </structure>
+            <simple-property-list name="dataSets">
+                <value>answers</value>
+                <value>questions</value>
+            </simple-property-list>
+            <list-property name="joinConditions">
+                <structure>
+                    <property name="joinType">full-out</property>
+                    <property name="joinOperator">eq</property>
+                    <property name="leftDataSet">answers</property>
+                    <property name="rightDataSet">questions</property>
+                    <expression name="leftExpression">dataSetRow["question_index"]</expression>
+                    <expression name="rightExpression">dataSetRow["index"]</expression>
+                </structure>
+            </list-property>
+        </joint-data-set>
+        <joint-data-set name="all" id="572">
+            <list-property name="columnHints">
+                <structure>
+                    <property name="columnName">questions_and_answers::questions::wmark</property>
+                    <property name="alias">questions::wmark</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">questions_and_answers::questions::wmark</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">groups::max</property>
+                    <property name="alias">max</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">groups::max</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">groups::wmark</property>
+                    <property name="alias">wmark</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">groups::wmark</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">groups::mark</property>
+                    <property name="alias">mark</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">groups::mark</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">questions_and_answers::questions::index</property>
+                    <property name="alias">questions::index</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">questions_and_answers::questions::index</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">questions_and_answers::answers::title</property>
+                    <property name="alias">answers::title</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">questions_and_answers::answers::title</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">groups::title</property>
+                    <property name="alias">title</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">groups::title</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">questions_and_answers::answers::question_index</property>
+                    <property name="alias">answers::question_index</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">questions_and_answers::answers::question_index</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">questions_and_answers::answers::max</property>
+                    <property name="alias">answers::max</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">questions_and_answers::answers::max</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">questions_and_answers::answers::mark</property>
+                    <property name="alias">answers::mark</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">questions_and_answers::answers::mark</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">questions_and_answers::questions::title</property>
+                    <property name="alias">questions::title</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">questions_and_answers::questions::title</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">questions_and_answers::questions::mark</property>
+                    <property name="alias">questions::mark</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">questions_and_answers::questions::mark</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">questions_and_answers::questions::max</property>
+                    <property name="alias">questions::max</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">questions_and_answers::questions::max</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">questions_and_answers::questions::group__index</property>
+                    <property name="alias">questions::group__index</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">questions_and_answers::questions::group__index</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">groups::group_index</property>
+                    <property name="alias">group_index</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">groups::group_index</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">questions_and_answers::answers::wmark</property>
+                    <property name="alias">answers::wmark</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">questions_and_answers::answers::wmark</text-property>
+                </structure>
+            </list-property>
+            <structure name="cachedMetaData">
+                <list-property name="resultSet">
+                    <structure>
+                        <property name="position">1</property>
+                        <property name="name">groups::group_index</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">2</property>
+                        <property name="name">groups::title</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">3</property>
+                        <property name="name">groups::max</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">4</property>
+                        <property name="name">groups::mark</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">5</property>
+                        <property name="name">groups::wmark</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">6</property>
+                        <property name="name">questions_and_answers::answers::question_index</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">7</property>
+                        <property name="name">questions_and_answers::answers::title</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">8</property>
+                        <property name="name">questions_and_answers::answers::max</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">9</property>
+                        <property name="name">questions_and_answers::answers::mark</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">10</property>
+                        <property name="name">questions_and_answers::answers::wmark</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">11</property>
+                        <property name="name">questions_and_answers::questions::index</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">12</property>
+                        <property name="name">questions_and_answers::questions::group__index</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">13</property>
+                        <property name="name">questions_and_answers::questions::title</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">14</property>
+                        <property name="name">questions_and_answers::questions::max</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">15</property>
+                        <property name="name">questions_and_answers::questions::mark</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">16</property>
+                        <property name="name">questions_and_answers::questions::wmark</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                </list-property>
+            </structure>
+            <simple-property-list name="dataSets">
+                <value>groups</value>
+                <value>questions_and_answers</value>
+            </simple-property-list>
+            <list-property name="joinConditions">
+                <structure>
+                    <property name="joinType">full-out</property>
+                    <property name="joinOperator">eq</property>
+                    <property name="leftDataSet">groups</property>
+                    <property name="rightDataSet">questions_and_answers</property>
+                    <expression name="leftExpression">dataSetRow["group_index"]</expression>
+                    <expression name="rightExpression">dataSetRow["questions::group__index"]</expression>
+                </structure>
+            </list-property>
+        </joint-data-set>
+        <oda-data-set extensionID="org.eclipse.datatools.enablement.oda.xml.dataSet" name="vars" id="8">
+            <list-property name="columnHints">
+                <structure>
+                    <property name="columnName">task_id</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">task_id</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">object_id</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">object_id</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">lot_id</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">lot_id</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">firstName</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">firstName</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">middleName</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">middleName</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">lastName</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">lastName</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">comment</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">comment</text-property>
+                </structure>
+            </list-property>
+            <list-property name="parameters"/>
+            <structure name="cachedMetaData">
+                <list-property name="resultSet">
+                    <structure>
+                        <property name="position">1</property>
+                        <property name="name">task_id</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">2</property>
+                        <property name="name">object_id</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">3</property>
+                        <property name="name">lot_id</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">4</property>
+                        <property name="name">firstName</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">5</property>
+                        <property name="name">middleName</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">6</property>
+                        <property name="name">lastName</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">7</property>
+                        <property name="name">comment</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                </list-property>
+            </structure>
+            <property name="dataSource">Data Source</property>
+            <list-property name="resultSet">
+                <structure>
+                    <property name="position">1</property>
+                    <property name="name">task_id</property>
+                    <property name="nativeName">task_id</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">2</property>
+                    <property name="name">object_id</property>
+                    <property name="nativeName">object_id</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">3</property>
+                    <property name="name">lot_id</property>
+                    <property name="nativeName">lot_id</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">4</property>
+                    <property name="name">firstName</property>
+                    <property name="nativeName">firstName</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">5</property>
+                    <property name="name">middleName</property>
+                    <property name="nativeName">middleName</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">6</property>
+                    <property name="name">lastName</property>
+                    <property name="nativeName">lastName</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">7</property>
+                    <property name="name">comment</property>
+                    <property name="nativeName">comment</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+            </list-property>
+            <xml-property name="queryText"><![CDATA[table0#-TNAME-#table0#:#[/datasource/variables]#:#{task_id;STRING;/task__id},{object_id;STRING;/object__id},{lot_id;STRING;/lot__id},{firstName;STRING;/expert/__firstName},{middleName;STRING;/expert/__middleName},{lastName;STRING;/expert/__lastName},{comment;STRING;/comment}]]></xml-property>
+            <xml-property name="designerValues"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<model:DesignValues xmlns:design="http://www.eclipse.org/datatools/connectivity/oda/design" xmlns:model="http://www.eclipse.org/birt/report/model/adapter/odaModel">
+  <Version>2.0</Version>
+  <design:ResultSets derivedMetaData="true">
+    <design:resultSetDefinitions>
+      <design:resultSetColumns>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>task_id</design:name>
+              <design:position>1</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>task_id</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>object_id</design:name>
+              <design:position>2</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>object_id</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>lot_id</design:name>
+              <design:position>3</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>lot_id</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+      </design:resultSetColumns>
+      <design:criteria/>
+    </design:resultSetDefinitions>
+  </design:ResultSets>
+</model:DesignValues>]]></xml-property>
+            <list-property name="privateDriverProperties">
+                <ex-property>
+                    <name>MAX_ROW</name>
+                    <value>-1</value>
+                </ex-property>
+                <ex-property>
+                    <name>XML_FILE</name>
+                </ex-property>
+            </list-property>
+        </oda-data-set>
+    </data-sets>
+    <styles>
+        <style name="report" id="4">
+            <property name="fontFamily">sans-serif</property>
+            <property name="fontSize">10pt</property>
+        </style>
+        <style name="crosstab-cell" id="5">
+            <property name="borderBottomColor">#CCCCCC</property>
+            <property name="borderBottomStyle">solid</property>
+            <property name="borderBottomWidth">1pt</property>
+            <property name="borderLeftColor">#CCCCCC</property>
+            <property name="borderLeftStyle">solid</property>
+            <property name="borderLeftWidth">1pt</property>
+            <property name="borderRightColor">#CCCCCC</property>
+            <property name="borderRightStyle">solid</property>
+            <property name="borderRightWidth">1pt</property>
+            <property name="borderTopColor">#CCCCCC</property>
+            <property name="borderTopStyle">solid</property>
+            <property name="borderTopWidth">1pt</property>
+        </style>
+        <style name="crosstab" id="6">
+            <property name="borderBottomColor">#CCCCCC</property>
+            <property name="borderBottomStyle">solid</property>
+            <property name="borderBottomWidth">1pt</property>
+            <property name="borderLeftColor">#CCCCCC</property>
+            <property name="borderLeftStyle">solid</property>
+            <property name="borderLeftWidth">1pt</property>
+            <property name="borderRightColor">#CCCCCC</property>
+            <property name="borderRightStyle">solid</property>
+            <property name="borderRightWidth">1pt</property>
+            <property name="borderTopColor">#CCCCCC</property>
+            <property name="borderTopStyle">solid</property>
+            <property name="borderTopWidth">1pt</property>
+        </style>
+    </styles>
+    <page-setup>
+        <simple-master-page name="Simple MasterPage" id="2"/>
+    </page-setup>
+    <body>
+        <text id="9">
+            <property name="fontFamily">"Times New Roman"</property>
+            <property name="fontSize">16pt</property>
+            <property name="fontWeight">bold</property>
+            <property name="textAlign">center</property>
+            <property name="dataSet">vars</property>
+            <list-property name="boundDataColumns">
+                <structure>
+                    <property name="name">task_id</property>
+                    <text-property name="displayName">task_id</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["task_id"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">object_id</property>
+                    <text-property name="displayName">object_id</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["object_id"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">lot_id</property>
+                    <text-property name="displayName">lot_id</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["lot_id"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+            </list-property>
+            <property name="contentType">html</property>
+            <text-property name="content"><![CDATA[<b><i>Этот документ сгенерирован с помощью birt-шаблона на сливочном масле</i></b>
+
+Экспертное заключение №<VALUE-OF>row["task_id"]</VALUE-OF>]]></text-property>
+        </text>
+        <text id="662">
+            <property name="fontFamily">"Times New Roman"</property>
+            <property name="fontSize">12pt</property>
+            <property name="fontWeight">bold</property>
+            <property name="textAlign">center</property>
+            <property name="dataSet">vars</property>
+            <list-property name="boundDataColumns">
+                <structure>
+                    <property name="name">task_id</property>
+                    <text-property name="displayName">task_id</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["task_id"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">object_id</property>
+                    <text-property name="displayName">object_id</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["object_id"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">lot_id</property>
+                    <text-property name="displayName">lot_id</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["lot_id"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+            </list-property>
+            <property name="contentType">html</property>
+            <text-property name="content"><![CDATA[по заявке №<VALUE-OF>row["object_id"]</VALUE-OF> лота №<VALUE-OF>row["lot_id"]</VALUE-OF>
+]]></text-property>
+        </text>
+        <text id="661">
+            <property name="fontFamily">"Times New Roman"</property>
+            <property name="contentType">html</property>
+            <text-property name="content"><![CDATA[Экспертиза проводилась по следующим критериям:]]></text-property>
+        </text>
+        <table id="599">
+            <property name="borderBottomColor">#000000</property>
+            <property name="borderBottomStyle">solid</property>
+            <property name="borderBottomWidth">1px</property>
+            <property name="borderLeftColor">#000000</property>
+            <property name="borderLeftStyle">solid</property>
+            <property name="borderLeftWidth">1px</property>
+            <property name="borderRightColor">#000000</property>
+            <property name="borderRightStyle">solid</property>
+            <property name="borderRightWidth">1px</property>
+            <property name="borderTopColor">#000000</property>
+            <property name="borderTopStyle">solid</property>
+            <property name="borderTopWidth">1px</property>
+            <property name="width">7.947916666666667in</property>
+            <property name="dataSet">all</property>
+            <list-property name="boundDataColumns">
+                <structure>
+                    <property name="name">groups::group_index</property>
+                    <text-property name="displayName">group_title</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["groups::group_index"] + ". " + dataSetRow["groups::title"]</expression>
+                    <property name="dataType">string</property>
+                    <property name="allowExport">true</property>
+                </structure>
+                <structure>
+                    <property name="name">groups::title</property>
+                    <text-property name="displayName">groups::title</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["groups::title"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">groups::max</property>
+                    <text-property name="displayName">groups::max</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["groups::max"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">groups::mark</property>
+                    <text-property name="displayName">groups::mark</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["groups::mark"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">groups::wmark</property>
+                    <text-property name="displayName">groups::wmark</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["groups::wmark"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">questions_and_answers::answers::question_index</property>
+                    <text-property name="displayName">question_title</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["questions_and_answers::answers::question_index"] + ". " + dataSetRow["questions_and_answers::questions::title"]</expression>
+                    <property name="dataType">string</property>
+                    <property name="allowExport">true</property>
+                </structure>
+                <structure>
+                    <property name="name">questions_and_answers::answers::title</property>
+                    <text-property name="displayName">questions_and_answers::answers::title</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["questions_and_answers::answers::title"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">questions_and_answers::answers::max</property>
+                    <text-property name="displayName">questions_and_answers::answers::max</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["questions_and_answers::answers::max"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">questions_and_answers::answers::mark</property>
+                    <text-property name="displayName">questions_and_answers::answers::mark</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["questions_and_answers::answers::mark"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">questions_and_answers::answers::wmark</property>
+                    <text-property name="displayName">questions_and_answers::answers::wmark</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["questions_and_answers::answers::wmark"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">questions_and_answers::questions::index</property>
+                    <text-property name="displayName">questions_and_answers::questions::index</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["questions_and_answers::questions::index"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">questions_and_answers::questions::group__index</property>
+                    <text-property name="displayName">questions_and_answers::questions::group__index</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["questions_and_answers::questions::group__index"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">questions_and_answers::questions::title</property>
+                    <text-property name="displayName">questions_and_answers::questions::title</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["questions_and_answers::questions::title"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">questions_and_answers::questions::max</property>
+                    <text-property name="displayName">questions_and_answers::questions::max</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["questions_and_answers::questions::max"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">questions_and_answers::questions::mark</property>
+                    <text-property name="displayName">questions_and_answers::questions::mark</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["questions_and_answers::questions::mark"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">questions_and_answers::questions::wmark</property>
+                    <text-property name="displayName">questions_and_answers::questions::wmark</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["questions_and_answers::questions::wmark"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">zz1</property>
+                    <text-property name="displayName">group_max</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["groups::max"]</expression>
+                    <property name="dataType">string</property>
+                    <property name="allowExport">true</property>
+                </structure>
+                <structure>
+                    <property name="name">zz2</property>
+                    <text-property name="displayName">group_mark</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["groups::mark"]</expression>
+                    <property name="dataType">string</property>
+                    <property name="allowExport">true</property>
+                </structure>
+                <structure>
+                    <property name="name">zz3</property>
+                    <text-property name="displayName">group_wmark</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["groups::wmark"]</expression>
+                    <property name="dataType">string</property>
+                    <property name="allowExport">true</property>
+                </structure>
+                <structure>
+                    <property name="name">xx1</property>
+                    <text-property name="displayName">question_max</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["questions_and_answers::questions::max"]</expression>
+                    <property name="dataType">string</property>
+                    <property name="allowExport">true</property>
+                </structure>
+                <structure>
+                    <property name="name">xx2</property>
+                    <text-property name="displayName">question_mark</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["questions_and_answers::questions::mark"]</expression>
+                    <property name="dataType">string</property>
+                    <property name="allowExport">true</property>
+                </structure>
+                <structure>
+                    <property name="name">xx3</property>
+                    <text-property name="displayName">question_wmark</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["questions_and_answers::questions::wmark"]</expression>
+                    <property name="dataType">string</property>
+                    <property name="allowExport">true</property>
+                </structure>
+            </list-property>
+            <column id="618">
+                <property name="width">0.4791666666666667in</property>
+            </column>
+            <column id="619">
+                <property name="width">2.7083333333333335in</property>
+            </column>
+            <column id="620">
+                <property name="width">1.59375in</property>
+            </column>
+            <column id="621">
+                <property name="width">1.5833333333333333in</property>
+            </column>
+            <column id="622">
+                <property name="width">1.5833333333333333in</property>
+            </column>
+            <header>
+                <row id="600">
+                    <cell id="601">
+                        <property name="colSpan">2</property>
+                        <property name="rowSpan">1</property>
+                        <property name="borderBottomColor">#000000</property>
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">1px</property>
+                        <property name="borderLeftColor">#000000</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">1px</property>
+                        <property name="borderRightColor">#000000</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">1px</property>
+                        <property name="borderTopColor">#000000</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">1px</property>
+                        <label id="478">
+                            <property name="fontFamily">"Times New Roman"</property>
+                            <text-property name="text">Критерии</text-property>
+                        </label>
+                    </cell>
+                    <cell id="603">
+                        <property name="borderBottomColor">#000000</property>
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">1px</property>
+                        <property name="borderLeftColor">#000000</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">1px</property>
+                        <property name="borderRightColor">#000000</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">1px</property>
+                        <property name="borderTopColor">#000000</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">1px</property>
+                        <label id="472">
+                            <property name="fontFamily">"Times New Roman"</property>
+                            <text-property name="text">Максимальное значение критерия, в баллах</text-property>
+                        </label>
+                    </cell>
+                    <cell id="604">
+                        <property name="borderBottomColor">#000000</property>
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">1px</property>
+                        <property name="borderLeftColor">#000000</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">1px</property>
+                        <property name="borderRightColor">#000000</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">1px</property>
+                        <property name="borderTopColor">#000000</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">1px</property>
+                        <label id="474">
+                            <property name="fontFamily">"Times New Roman"</property>
+                            <text-property name="text">Экспертная оценка, в баллах</text-property>
+                        </label>
+                    </cell>
+                    <cell id="605">
+                        <property name="borderBottomColor">#000000</property>
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">1px</property>
+                        <property name="borderLeftColor">#000000</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">1px</property>
+                        <property name="borderRightColor">#000000</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">1px</property>
+                        <property name="borderTopColor">#000000</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">1px</property>
+                        <label id="476">
+                            <property name="fontFamily">"Times New Roman"</property>
+                            <text-property name="text">Экспертная оценка, с учетом значимости критерия</text-property>
+                        </label>
+                    </cell>
+                </row>
+            </header>
+            <group id="623">
+                <property name="groupName">by_group</property>
+                <expression name="keyExpr" type="javascript">row["groups::group_index"]</expression>
+                <structure name="toc">
+                    <expression name="expressionValue" type="javascript">row["groups::group_index"]</expression>
+                </structure>
+                <property name="hideDetail">false</property>
+                <list-property name="sort">
+                    <structure>
+                        <expression name="key" type="javascript">row["groups::group_index"]</expression>
+                        <property name="direction">asc</property>
+                        <property name="strength">-1</property>
+                    </structure>
+                </list-property>
+                <header>
+                    <row id="624">
+                        <cell id="625">
+                            <property name="colSpan">2</property>
+                            <property name="rowSpan">1</property>
+                            <property name="borderBottomColor">#000000</property>
+                            <property name="borderBottomStyle">solid</property>
+                            <property name="borderBottomWidth">1px</property>
+                            <property name="borderLeftColor">#000000</property>
+                            <property name="borderLeftStyle">solid</property>
+                            <property name="borderLeftWidth">1px</property>
+                            <property name="borderRightColor">#000000</property>
+                            <property name="borderRightStyle">solid</property>
+                            <property name="borderRightWidth">1px</property>
+                            <property name="borderTopColor">#000000</property>
+                            <property name="borderTopStyle">solid</property>
+                            <property name="borderTopWidth">1px</property>
+                            <data id="636">
+                                <property name="fontFamily">"Times New Roman"</property>
+                                <property name="fontWeight">bold</property>
+                                <property name="resultSetColumn">groups::group_index</property>
+                            </data>
+                        </cell>
+                        <cell id="627">
+                            <property name="borderBottomColor">#000000</property>
+                            <property name="borderBottomStyle">solid</property>
+                            <property name="borderBottomWidth">1px</property>
+                            <property name="borderLeftColor">#000000</property>
+                            <property name="borderLeftStyle">solid</property>
+                            <property name="borderLeftWidth">1px</property>
+                            <property name="borderRightColor">#000000</property>
+                            <property name="borderRightStyle">solid</property>
+                            <property name="borderRightWidth">1px</property>
+                            <property name="borderTopColor">#000000</property>
+                            <property name="borderTopStyle">solid</property>
+                            <property name="borderTopWidth">1px</property>
+                            <data id="637">
+                                <property name="fontFamily">"Times New Roman"</property>
+                                <property name="fontWeight">bold</property>
+                                <property name="resultSetColumn">zz1</property>
+                            </data>
+                        </cell>
+                        <cell id="628">
+                            <property name="borderBottomColor">#000000</property>
+                            <property name="borderBottomStyle">solid</property>
+                            <property name="borderBottomWidth">1px</property>
+                            <property name="borderLeftColor">#000000</property>
+                            <property name="borderLeftStyle">solid</property>
+                            <property name="borderLeftWidth">1px</property>
+                            <property name="borderRightColor">#000000</property>
+                            <property name="borderRightStyle">solid</property>
+                            <property name="borderRightWidth">1px</property>
+                            <property name="borderTopColor">#000000</property>
+                            <property name="borderTopStyle">solid</property>
+                            <property name="borderTopWidth">1px</property>
+                            <data id="638">
+                                <property name="fontFamily">"Times New Roman"</property>
+                                <property name="fontWeight">bold</property>
+                                <property name="resultSetColumn">zz2</property>
+                            </data>
+                        </cell>
+                        <cell id="629">
+                            <property name="borderBottomColor">#000000</property>
+                            <property name="borderBottomStyle">solid</property>
+                            <property name="borderBottomWidth">1px</property>
+                            <property name="borderLeftColor">#000000</property>
+                            <property name="borderLeftStyle">solid</property>
+                            <property name="borderLeftWidth">1px</property>
+                            <property name="borderRightColor">#000000</property>
+                            <property name="borderRightStyle">solid</property>
+                            <property name="borderRightWidth">1px</property>
+                            <property name="borderTopColor">#000000</property>
+                            <property name="borderTopStyle">solid</property>
+                            <property name="borderTopWidth">1px</property>
+                            <data id="639">
+                                <property name="fontFamily">"Times New Roman"</property>
+                                <property name="fontWeight">bold</property>
+                                <property name="resultSetColumn">zz3</property>
+                            </data>
+                        </cell>
+                    </row>
+                </header>
+            </group>
+            <group id="640">
+                <property name="groupName">by_question</property>
+                <expression name="keyExpr" type="javascript">row["questions_and_answers::answers::question_index"]</expression>
+                <structure name="toc">
+                    <expression name="expressionValue" type="javascript">row["questions_and_answers::answers::question_index"]</expression>
+                </structure>
+                <property name="hideDetail">false</property>
+                <list-property name="sort">
+                    <structure>
+                        <expression name="key" type="javascript">row["questions_and_answers::answers::question_index"]</expression>
+                        <property name="direction">asc</property>
+                        <property name="strength">-1</property>
+                    </structure>
+                </list-property>
+                <header>
+                    <row id="641">
+                        <cell id="642">
+                            <property name="colSpan">2</property>
+                            <property name="rowSpan">1</property>
+                            <property name="borderBottomColor">#000000</property>
+                            <property name="borderBottomStyle">solid</property>
+                            <property name="borderBottomWidth">1px</property>
+                            <property name="borderLeftColor">#000000</property>
+                            <property name="borderLeftStyle">solid</property>
+                            <property name="borderLeftWidth">1px</property>
+                            <property name="borderRightColor">#000000</property>
+                            <property name="borderRightStyle">solid</property>
+                            <property name="borderRightWidth">1px</property>
+                            <property name="borderTopColor">#000000</property>
+                            <property name="borderTopStyle">solid</property>
+                            <property name="borderTopWidth">1px</property>
+                            <data id="653">
+                                <property name="fontFamily">"Times New Roman"</property>
+                                <property name="resultSetColumn">questions_and_answers::answers::question_index</property>
+                            </data>
+                        </cell>
+                        <cell id="644">
+                            <property name="borderBottomColor">#000000</property>
+                            <property name="borderBottomStyle">solid</property>
+                            <property name="borderBottomWidth">1px</property>
+                            <property name="borderLeftColor">#000000</property>
+                            <property name="borderLeftStyle">solid</property>
+                            <property name="borderLeftWidth">1px</property>
+                            <property name="borderRightColor">#000000</property>
+                            <property name="borderRightStyle">solid</property>
+                            <property name="borderRightWidth">1px</property>
+                            <property name="borderTopColor">#000000</property>
+                            <property name="borderTopStyle">solid</property>
+                            <property name="borderTopWidth">1px</property>
+                            <data id="654">
+                                <property name="fontFamily">"Times New Roman"</property>
+                                <property name="resultSetColumn">xx1</property>
+                            </data>
+                        </cell>
+                        <cell id="645">
+                            <property name="borderBottomColor">#000000</property>
+                            <property name="borderBottomStyle">solid</property>
+                            <property name="borderBottomWidth">1px</property>
+                            <property name="borderLeftColor">#000000</property>
+                            <property name="borderLeftStyle">solid</property>
+                            <property name="borderLeftWidth">1px</property>
+                            <property name="borderRightColor">#000000</property>
+                            <property name="borderRightStyle">solid</property>
+                            <property name="borderRightWidth">1px</property>
+                            <property name="borderTopColor">#000000</property>
+                            <property name="borderTopStyle">solid</property>
+                            <property name="borderTopWidth">1px</property>
+                            <data id="655">
+                                <property name="fontFamily">"Times New Roman"</property>
+                                <property name="resultSetColumn">xx2</property>
+                            </data>
+                        </cell>
+                        <cell id="646">
+                            <property name="borderBottomColor">#000000</property>
+                            <property name="borderBottomStyle">solid</property>
+                            <property name="borderBottomWidth">1px</property>
+                            <property name="borderLeftColor">#000000</property>
+                            <property name="borderLeftStyle">solid</property>
+                            <property name="borderLeftWidth">1px</property>
+                            <property name="borderRightColor">#000000</property>
+                            <property name="borderRightStyle">solid</property>
+                            <property name="borderRightWidth">1px</property>
+                            <property name="borderTopColor">#000000</property>
+                            <property name="borderTopStyle">solid</property>
+                            <property name="borderTopWidth">1px</property>
+                            <data id="656">
+                                <property name="fontFamily">"Times New Roman"</property>
+                                <property name="resultSetColumn">xx3</property>
+                            </data>
+                        </cell>
+                    </row>
+                </header>
+            </group>
+            <detail>
+                <row id="606">
+                    <cell id="607"/>
+                    <cell id="608">
+                        <property name="borderBottomColor">#000000</property>
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">1px</property>
+                        <property name="borderLeftColor">#000000</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">1px</property>
+                        <property name="borderRightColor">#000000</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">1px</property>
+                        <property name="borderTopColor">#000000</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">1px</property>
+                        <data id="657">
+                            <property name="fontFamily">"Times New Roman"</property>
+                            <property name="resultSetColumn">questions_and_answers::answers::title</property>
+                        </data>
+                    </cell>
+                    <cell id="609">
+                        <property name="borderBottomColor">#000000</property>
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">1px</property>
+                        <property name="borderLeftColor">#000000</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">1px</property>
+                        <property name="borderRightColor">#000000</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">1px</property>
+                        <property name="borderTopColor">#000000</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">1px</property>
+                        <data id="658">
+                            <property name="fontFamily">"Times New Roman"</property>
+                            <property name="resultSetColumn">questions_and_answers::answers::max</property>
+                        </data>
+                    </cell>
+                    <cell id="610">
+                        <property name="borderBottomColor">#000000</property>
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">1px</property>
+                        <property name="borderLeftColor">#000000</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">1px</property>
+                        <property name="borderRightColor">#000000</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">1px</property>
+                        <property name="borderTopColor">#000000</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">1px</property>
+                        <data id="659">
+                            <property name="fontFamily">"Times New Roman"</property>
+                            <property name="resultSetColumn">questions_and_answers::answers::mark</property>
+                        </data>
+                    </cell>
+                    <cell id="611">
+                        <property name="borderBottomColor">#000000</property>
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">1px</property>
+                        <property name="borderLeftColor">#000000</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">1px</property>
+                        <property name="borderRightColor">#000000</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">1px</property>
+                        <property name="borderTopColor">#000000</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">1px</property>
+                        <data id="660">
+                            <property name="fontFamily">"Times New Roman"</property>
+                            <property name="resultSetColumn">questions_and_answers::answers::wmark</property>
+                        </data>
+                    </cell>
+                </row>
+            </detail>
+        </table>
+        <label id="89"/>
+        <text id="34">
+            <property name="fontFamily">"Times New Roman"</property>
+            <property name="fontSize">12pt</property>
+            <property name="dataSet">groups</property>
+            <list-property name="boundDataColumns">
+                <structure>
+                    <property name="name">group_index</property>
+                    <text-property name="displayName">group_index</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["group_index"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">title</property>
+                    <text-property name="displayName">title</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["title"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">max</property>
+                    <text-property name="displayName">max</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["max"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">mark</property>
+                    <text-property name="displayName">mark</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["mark"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">wmark</property>
+                    <text-property name="displayName">wmark</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["wmark"]</expression>
+                    <property name="dataType">float</property>
+                </structure>
+                <structure>
+                    <property name="name">mark_summ</property>
+                    <text-property name="displayName">mark_summ</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["mark_summ"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+            </list-property>
+            <property name="contentType">html</property>
+            <text-property name="content"><![CDATA[Общее количество баллов по заявке - <VALUE-OF>row["mark_summ"]</VALUE-OF> (из 100 возможных)]]></text-property>
+        </text>
+        <text id="35">
+            <property name="fontFamily">"Times New Roman"</property>
+            <property name="fontSize">12pt</property>
+            <property name="fontWeight">bold</property>
+            <property name="textAlign">left</property>
+            <property name="contentType">auto</property>
+            <text-property name="content"><![CDATA[Выводы и рекомендации эксперта по результатам оценки заявки на участие в конкурсе]]></text-property>
+        </text>
+        <text id="523">
+            <property name="fontFamily">"Times New Roman"</property>
+            <property name="fontSize">12pt</property>
+            <property name="textAlign">justify</property>
+            <property name="dataSet">vars</property>
+            <list-property name="boundDataColumns">
+                <structure>
+                    <property name="name">task_id</property>
+                    <text-property name="displayName">task_id</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["task_id"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">object_id</property>
+                    <text-property name="displayName">object_id</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["object_id"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">lot_id</property>
+                    <text-property name="displayName">lot_id</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["lot_id"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">firstName</property>
+                    <text-property name="displayName">firstName</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["firstName"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">middleName</property>
+                    <text-property name="displayName">middleName</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["middleName"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">lastName</property>
+                    <text-property name="displayName">lastName</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["lastName"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">comment</property>
+                    <text-property name="displayName">comment</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["comment"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+            </list-property>
+            <property name="contentType">html</property>
+            <text-property name="content"><![CDATA[<VALUE-OF>row["comment"]</VALUE-OF>]]></text-property>
+        </text>
+        <label id="524"/>
+        <text id="37">
+            <property name="fontFamily">"Times New Roman"</property>
+            <property name="fontSize">12pt</property>
+            <property name="dataSet">vars</property>
+            <list-property name="boundDataColumns">
+                <structure>
+                    <property name="name">task_id</property>
+                    <text-property name="displayName">task_id</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["task_id"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">object_id</property>
+                    <text-property name="displayName">object_id</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["object_id"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">lot_id</property>
+                    <text-property name="displayName">lot_id</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["lot_id"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">firstName</property>
+                    <text-property name="displayName">firstName</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["firstName"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">middleName</property>
+                    <text-property name="displayName">middleName</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["middleName"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">lastName</property>
+                    <text-property name="displayName">lastName</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["lastName"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+            </list-property>
+            <property name="contentType">html</property>
+            <text-property name="content"><![CDATA[Подпись эксперта: ________________________<VALUE-OF>row["firstName"].charAt(0)</VALUE-OF>. <VALUE-OF>row["middleName"].charAt(0)</VALUE-OF>. <VALUE-OF>row["lastName"]</VALUE-OF>]]></text-property>
+        </text>
+    </body>
+</report>

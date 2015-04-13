@@ -1,0 +1,1301 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<report xmlns="http://www.eclipse.org/birt/2005/design" version="3.2.23" id="1">
+    <property name="createdBy">Eclipse BIRT Designer Version 3.7.2.v20120213 Build &lt;3.7.2.v20120214-1408></property>
+    <property name="units">in</property>
+    <property name="iconFile">/templates/blank_report.gif</property>
+    <property name="bidiLayoutOrientation">ltr</property>
+    <property name="imageDPI">96</property>
+    <data-sources>
+        <oda-data-source extensionID="org.eclipse.datatools.enablement.oda.xml" name="Data Source" id="7">
+            <property name="FILELIST">D:\work\birt_templates\demand_exam\new_data_for_agg_conclusion.xml</property>
+        </oda-data-source>
+    </data-sources>
+    <data-sets>
+        <oda-data-set extensionID="org.eclipse.datatools.enablement.oda.xml.dataSet" name="demands" id="8">
+            <list-property name="columnHints">
+                <structure>
+                    <property name="columnName">place</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="heading">place</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">index</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="heading">index</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">title</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="heading">title</text-property>
+                </structure>
+            </list-property>
+            <list-property name="parameters"/>
+            <structure name="cachedMetaData">
+                <list-property name="resultSet">
+                    <structure>
+                        <property name="position">1</property>
+                        <property name="name">place</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">2</property>
+                        <property name="name">index</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">3</property>
+                        <property name="name">title</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                </list-property>
+            </structure>
+            <property name="dataSource">Data Source</property>
+            <list-property name="resultSet">
+                <structure>
+                    <property name="position">1</property>
+                    <property name="name">place</property>
+                    <property name="nativeName">place</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">2</property>
+                    <property name="name">index</property>
+                    <property name="nativeName">index</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">3</property>
+                    <property name="name">title</property>
+                    <property name="nativeName">title</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+            </list-property>
+            <xml-property name="queryText"><![CDATA[table0#-TNAME-#table0#:#[/datasource/tables/demands/record]#:#{place;STRING;/place},{index;STRING;/@index},{title;STRING;/title}]]></xml-property>
+            <xml-property name="designerValues"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<model:DesignValues xmlns:design="http://www.eclipse.org/datatools/connectivity/oda/design" xmlns:model="http://www.eclipse.org/birt/report/model/adapter/odaModel">
+  <Version>2.0</Version>
+  <design:ResultSets derivedMetaData="true">
+    <design:resultSetDefinitions>
+      <design:resultSetColumns>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>demand</design:name>
+              <design:position>1</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>demand</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>marks</design:name>
+              <design:position>2</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>marks</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>place</design:name>
+              <design:position>3</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>place</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+      </design:resultSetColumns>
+      <design:criteria/>
+    </design:resultSetDefinitions>
+  </design:ResultSets>
+</model:DesignValues>]]></xml-property>
+            <list-property name="privateDriverProperties">
+                <ex-property>
+                    <name>MAX_ROW</name>
+                    <value>-1</value>
+                </ex-property>
+                <ex-property>
+                    <name>XML_FILE</name>
+                </ex-property>
+            </list-property>
+        </oda-data-set>
+        <oda-data-set extensionID="org.eclipse.datatools.enablement.oda.xml.dataSet" name="groups" id="421">
+            <list-property name="columnHints">
+                <structure>
+                    <property name="columnName">index</property>
+                    <text-property name="heading">index</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">title</property>
+                    <text-property name="heading">title</text-property>
+                </structure>
+            </list-property>
+            <structure name="cachedMetaData">
+                <list-property name="resultSet">
+                    <structure>
+                        <property name="position">1</property>
+                        <property name="name">index</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">2</property>
+                        <property name="name">title</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                </list-property>
+            </structure>
+            <property name="dataSource">Data Source</property>
+            <list-property name="resultSet">
+                <structure>
+                    <property name="position">1</property>
+                    <property name="name">index</property>
+                    <property name="nativeName">index</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">2</property>
+                    <property name="name">title</property>
+                    <property name="nativeName">title</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+            </list-property>
+            <xml-property name="queryText"><![CDATA[table0#-TNAME-#table0#:#[/datasource/tables/groups/record]#:#{index;STRING;/@index},{title;STRING;/title}]]></xml-property>
+            <xml-property name="designerValues"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<model:DesignValues xmlns:design="http://www.eclipse.org/datatools/connectivity/oda/design" xmlns:model="http://www.eclipse.org/birt/report/model/adapter/odaModel">
+  <Version>2.0</Version>
+  <design:ResultSets derivedMetaData="true">
+    <design:resultSetDefinitions>
+      <design:resultSetColumns>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>index</design:name>
+              <design:position>1</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>index</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>title</design:name>
+              <design:position>2</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>title</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+      </design:resultSetColumns>
+      <design:criteria/>
+    </design:resultSetDefinitions>
+  </design:ResultSets>
+</model:DesignValues>]]></xml-property>
+            <list-property name="privateDriverProperties">
+                <ex-property>
+                    <name>MAX_ROW</name>
+                    <value>-1</value>
+                </ex-property>
+                <ex-property>
+                    <name>XML_FILE</name>
+                </ex-property>
+            </list-property>
+        </oda-data-set>
+        <oda-data-set extensionID="org.eclipse.datatools.enablement.oda.xml.dataSet" name="vars" id="425">
+            <list-property name="columnHints">
+                <structure>
+                    <property name="columnName">firstName</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">firstName</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">middleName</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">middleName</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">lastName</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">lastName</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">comment</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">comment</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">object__id</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">object__id</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">theme</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">theme</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">doc_number</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="heading">doc_number</text-property>
+                </structure>
+            </list-property>
+            <list-property name="parameters"/>
+            <structure name="cachedMetaData">
+                <list-property name="resultSet">
+                    <structure>
+                        <property name="position">1</property>
+                        <property name="name">firstName</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">2</property>
+                        <property name="name">middleName</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">3</property>
+                        <property name="name">lastName</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">4</property>
+                        <property name="name">comment</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">5</property>
+                        <property name="name">object__id</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">6</property>
+                        <property name="name">theme</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">7</property>
+                        <property name="name">doc_number</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                </list-property>
+            </structure>
+            <property name="dataSource">Data Source</property>
+            <list-property name="resultSet">
+                <structure>
+                    <property name="position">1</property>
+                    <property name="name">firstName</property>
+                    <property name="nativeName">firstName</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">2</property>
+                    <property name="name">middleName</property>
+                    <property name="nativeName">middleName</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">3</property>
+                    <property name="name">lastName</property>
+                    <property name="nativeName">lastName</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">4</property>
+                    <property name="name">comment</property>
+                    <property name="nativeName">comment</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">5</property>
+                    <property name="name">object__id</property>
+                    <property name="nativeName">object__id</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">6</property>
+                    <property name="name">theme</property>
+                    <property name="nativeName">theme</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">7</property>
+                    <property name="name">doc_number</property>
+                    <property name="nativeName">doc_number</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+            </list-property>
+            <xml-property name="queryText"><![CDATA[table0#-TNAME-#table0#:#[/datasource/variables]#:#{firstName;STRING;/expert/__firstName},{middleName;STRING;/expert/__middleName},{lastName;STRING;/expert/__lastName},{comment;STRING;/comment},{object__id;STRING;/object__id},{theme;STRING;/theme},{doc_number;STRING;/doc__number}]]></xml-property>
+            <xml-property name="designerValues"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<model:DesignValues xmlns:design="http://www.eclipse.org/datatools/connectivity/oda/design" xmlns:model="http://www.eclipse.org/birt/report/model/adapter/odaModel">
+  <Version>2.0</Version>
+  <design:ResultSets derivedMetaData="true">
+    <design:resultSetDefinitions>
+      <design:resultSetColumns>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>firstName</design:name>
+              <design:position>1</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>firstName</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>middleName</design:name>
+              <design:position>2</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>middleName</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>lastName</design:name>
+              <design:position>3</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>lastName</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+      </design:resultSetColumns>
+      <design:criteria/>
+    </design:resultSetDefinitions>
+  </design:ResultSets>
+</model:DesignValues>]]></xml-property>
+            <list-property name="privateDriverProperties">
+                <ex-property>
+                    <name>MAX_ROW</name>
+                    <value>-1</value>
+                </ex-property>
+                <ex-property>
+                    <name>XML_FILE</name>
+                </ex-property>
+            </list-property>
+        </oda-data-set>
+        <oda-data-set extensionID="org.eclipse.datatools.enablement.oda.xml.dataSet" name="marks" id="427">
+            <list-property name="computedColumns">
+                <structure>
+                    <property name="name">summ</property>
+                    <property name="dataType">float</property>
+                    <property name="aggregateFunction">SUM</property>
+                    <list-property name="arguments">
+                        <structure>
+                            <property name="name">Expression</property>
+                            <expression name="value">row["mark"]</expression>
+                        </structure>
+                    </list-property>
+                </structure>
+            </list-property>
+            <list-property name="columnHints">
+                <structure>
+                    <property name="columnName">mark</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">mark</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">criterion</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="heading">criterion</text-property>
+                </structure>
+            </list-property>
+            <list-property name="parameters">
+                <structure>
+                    <property name="name">p1</property>
+                    <property name="nativeName">p1</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                    <property name="position">1</property>
+                    <expression name="defaultValue" type="javascript">1</expression>
+                    <property name="isOptional">false</property>
+                    <property name="isInput">true</property>
+                    <property name="isOutput">false</property>
+                </structure>
+            </list-property>
+            <structure name="cachedMetaData">
+                <list-property name="resultSet">
+                    <structure>
+                        <property name="position">1</property>
+                        <property name="name">mark</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">2</property>
+                        <property name="name">criterion</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">3</property>
+                        <property name="name">summ</property>
+                        <property name="dataType">float</property>
+                    </structure>
+                </list-property>
+            </structure>
+            <property name="dataSource">Data Source</property>
+            <list-property name="resultSet">
+                <structure>
+                    <property name="position">1</property>
+                    <property name="name">mark</property>
+                    <property name="nativeName">mark</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">2</property>
+                    <property name="name">criterion</property>
+                    <property name="nativeName">criterion</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+            </list-property>
+            <xml-property name="queryText"><![CDATA[table0#-TNAME-#table0#:#[/datasource/tables/demands/record[@index="{?p1?}"]/marks/ru.naumen.core.reports.RXObject]#:#{mark;STRING;/mark},{criterion;STRING;/criterion}]]></xml-property>
+            <xml-property name="designerValues"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<model:DesignValues xmlns:design="http://www.eclipse.org/datatools/connectivity/oda/design" xmlns:model="http://www.eclipse.org/birt/report/model/adapter/odaModel">
+  <Version>2.0</Version>
+  <DataSetParameters>
+    <parameter>
+      <design:ParameterDefinition>
+        <design:inOutMode>In</design:inOutMode>
+        <design:attributes>
+          <design:identifier>
+            <design:name>p1</design:name>
+            <design:position>1</design:position>
+          </design:identifier>
+          <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+          <design:precision>-1</design:precision>
+          <design:scale>-1</design:scale>
+          <design:nullability>Unknown</design:nullability>
+        </design:attributes>
+      </design:ParameterDefinition>
+    </parameter>
+  </DataSetParameters>
+  <design:ResultSets derivedMetaData="true">
+    <design:resultSetDefinitions>
+      <design:resultSetColumns>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>mark</design:name>
+              <design:position>1</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>mark</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>code</design:name>
+              <design:position>2</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>code</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>criterion</design:name>
+              <design:position>3</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>criterion</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+      </design:resultSetColumns>
+      <design:criteria/>
+    </design:resultSetDefinitions>
+  </design:ResultSets>
+</model:DesignValues>]]></xml-property>
+            <list-property name="privateDriverProperties">
+                <ex-property>
+                    <name>MAX_ROW</name>
+                    <value>-1</value>
+                </ex-property>
+                <ex-property>
+                    <name>XML_FILE</name>
+                </ex-property>
+            </list-property>
+        </oda-data-set>
+    </data-sets>
+    <styles>
+        <style name="report" id="4">
+            <property name="fontFamily">sans-serif</property>
+            <property name="fontSize">10pt</property>
+        </style>
+        <style name="crosstab-cell" id="5">
+            <property name="borderBottomColor">#CCCCCC</property>
+            <property name="borderBottomStyle">solid</property>
+            <property name="borderBottomWidth">1pt</property>
+            <property name="borderLeftColor">#CCCCCC</property>
+            <property name="borderLeftStyle">solid</property>
+            <property name="borderLeftWidth">1pt</property>
+            <property name="borderRightColor">#CCCCCC</property>
+            <property name="borderRightStyle">solid</property>
+            <property name="borderRightWidth">1pt</property>
+            <property name="borderTopColor">#CCCCCC</property>
+            <property name="borderTopStyle">solid</property>
+            <property name="borderTopWidth">1pt</property>
+        </style>
+        <style name="crosstab" id="6">
+            <property name="borderBottomColor">#CCCCCC</property>
+            <property name="borderBottomStyle">solid</property>
+            <property name="borderBottomWidth">1pt</property>
+            <property name="borderLeftColor">#CCCCCC</property>
+            <property name="borderLeftStyle">solid</property>
+            <property name="borderLeftWidth">1pt</property>
+            <property name="borderRightColor">#CCCCCC</property>
+            <property name="borderRightStyle">solid</property>
+            <property name="borderRightWidth">1pt</property>
+            <property name="borderTopColor">#CCCCCC</property>
+            <property name="borderTopStyle">solid</property>
+            <property name="borderTopWidth">1pt</property>
+        </style>
+    </styles>
+    <page-setup>
+        <simple-master-page name="Simple MasterPage" id="2"/>
+    </page-setup>
+    <body>
+        <text id="419">
+            <property name="fontFamily">"Times New Roman"</property>
+            <property name="fontSize">14pt</property>
+            <property name="fontWeight">bold</property>
+            <property name="textAlign">center</property>
+            <property name="dataSet">vars</property>
+            <list-property name="boundDataColumns">
+                <structure>
+                    <property name="name">firstName</property>
+                    <text-property name="displayName">firstName</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["firstName"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">middleName</property>
+                    <text-property name="displayName">middleName</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["middleName"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">lastName</property>
+                    <text-property name="displayName">lastName</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["lastName"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">comment</property>
+                    <text-property name="displayName">comment</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["comment"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">object__id</property>
+                    <text-property name="displayName">object__id</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["object__id"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">theme</property>
+                    <text-property name="displayName">theme</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["theme"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">doc_number</property>
+                    <text-property name="displayName">doc_number</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["doc_number"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+            </list-property>
+            <property name="contentType">html</property>
+            <text-property name="content"><![CDATA[Экспертное заключение №<VALUE-OF>row["doc_number"]</VALUE-OF>]]></text-property>
+        </text>
+        <text id="420">
+            <property name="fontFamily">"Times New Roman"</property>
+            <property name="fontSize">10pt</property>
+            <property name="fontWeight">bold</property>
+            <property name="textAlign">center</property>
+            <property name="dataSet">vars</property>
+            <list-property name="boundDataColumns">
+                <structure>
+                    <property name="name">firstName</property>
+                    <text-property name="displayName">firstName</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["firstName"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">middleName</property>
+                    <text-property name="displayName">middleName</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["middleName"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">lastName</property>
+                    <text-property name="displayName">lastName</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["lastName"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">comment</property>
+                    <text-property name="displayName">comment</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["comment"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">object__id</property>
+                    <text-property name="displayName">object__id</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["object__id"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">theme</property>
+                    <text-property name="displayName">theme</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["theme"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+            </list-property>
+            <property name="contentType">html</property>
+            <text-property name="content"><![CDATA[по лоту №<VALUE-OF>row["object__id"]</VALUE-OF> «<VALUE-OF>row["theme"]</VALUE-OF>»]]></text-property>
+        </text>
+        <text id="9">
+            <property name="fontFamily">"Times New Roman"</property>
+            <property name="fontSize">12pt</property>
+            <property name="contentType">auto</property>
+            <text-property name="content"><![CDATA[Экспертиза проводилась по следующим критериям:]]></text-property>
+        </text>
+        <list id="422">
+            <property name="dataSet">groups</property>
+            <list-property name="boundDataColumns">
+                <structure>
+                    <property name="name">index</property>
+                    <text-property name="displayName">zzz</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["index"]+". "+dataSetRow["title"]</expression>
+                    <property name="dataType">string</property>
+                    <property name="allowExport">true</property>
+                </structure>
+                <structure>
+                    <property name="name">title</property>
+                    <text-property name="displayName">title</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["title"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+            </list-property>
+            <detail>
+                <data id="423">
+                    <property name="fontFamily">"Times New Roman"</property>
+                    <property name="resultSetColumn">index</property>
+                </data>
+            </detail>
+        </list>
+        <text id="426">
+            <property name="fontFamily">"Times New Roman"</property>
+            <property name="fontSize">12pt</property>
+            <property name="contentType">auto</property>
+            <text-property name="content"><![CDATA[Максимально возможное количество баллов по каждой заявке - 100.]]></text-property>
+        </text>
+        <text id="364"/>
+        <text id="10">
+            <property name="fontFamily">"Times New Roman"</property>
+            <property name="fontSize">12pt</property>
+            <property name="fontWeight">bold</property>
+            <property name="contentType">auto</property>
+            <text-property name="content"><![CDATA[Сводная таблица результатов экспертизы заявок:]]></text-property>
+        </text>
+        <table id="366">
+            <property name="dataSet">demands</property>
+            <list-property name="boundDataColumns">
+                <structure>
+                    <property name="name">place</property>
+                    <text-property name="displayName">place</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["place"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">index</property>
+                    <text-property name="displayName">index</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["index"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">title</property>
+                    <text-property name="displayName">title</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["title"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+            </list-property>
+            <column id="414"/>
+            <column id="415"/>
+            <column id="416"/>
+            <column id="417"/>
+            <header>
+                <row id="367">
+                    <cell id="368">
+                        <property name="borderBottomColor">#000000</property>
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">1px</property>
+                        <property name="borderLeftColor">#000000</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">1px</property>
+                        <property name="borderRightColor">#000000</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">1px</property>
+                        <property name="borderTopColor">#000000</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">1px</property>
+                        <property name="paddingTop">0pt</property>
+                        <property name="paddingLeft">0pt</property>
+                        <property name="paddingBottom">0pt</property>
+                        <property name="paddingRight">0pt</property>
+                        <label id="369">
+                            <property name="fontFamily">"Times New Roman"</property>
+                            <property name="paddingTop">0pt</property>
+                            <property name="paddingLeft">0pt</property>
+                            <property name="paddingBottom">0pt</property>
+                            <property name="paddingRight">0pt</property>
+                            <text-property name="text">Номер заявки&#13;
+</text-property>
+                        </label>
+                    </cell>
+                    <cell id="370">
+                        <property name="borderBottomColor">#000000</property>
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">1px</property>
+                        <property name="borderLeftColor">#000000</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">1px</property>
+                        <property name="borderRightColor">#000000</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">1px</property>
+                        <property name="borderTopColor">#000000</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">1px</property>
+                        <property name="paddingTop">0pt</property>
+                        <property name="paddingLeft">0pt</property>
+                        <property name="paddingBottom">0pt</property>
+                        <property name="paddingRight">0pt</property>
+                        <grid id="371">
+                            <column id="372"/>
+                            <column id="373"/>
+                            <row id="374">
+                                <cell id="375">
+                                    <property name="colSpan">2</property>
+                                    <property name="rowSpan">1</property>
+                                    <property name="paddingTop">0pt</property>
+                                    <property name="paddingLeft">0pt</property>
+                                    <property name="paddingBottom">0pt</property>
+                                    <property name="paddingRight">0pt</property>
+                                    <text id="376">
+                                        <property name="fontFamily">"Times New Roman"</property>
+                                        <property name="contentType">html</property>
+                                        <text-property name="content"><![CDATA[Баллы&amp;nbsp;по&amp;nbsp;критериям]]></text-property>
+                                    </text>
+                                </cell>
+                            </row>
+                            <row id="377">
+                                <cell id="378">
+                                    <property name="paddingTop">0pt</property>
+                                    <property name="paddingLeft">0pt</property>
+                                    <property name="paddingBottom">0pt</property>
+                                    <property name="paddingRight">0pt</property>
+                                    <label id="379">
+                                        <property name="fontFamily">"Times New Roman"</property>
+                                        <property name="borderRightColor">#000000</property>
+                                        <property name="borderRightStyle">solid</property>
+                                        <property name="borderRightWidth">1px</property>
+                                        <property name="borderTopColor">#000000</property>
+                                        <property name="borderTopStyle">solid</property>
+                                        <property name="borderTopWidth">1px</property>
+                                        <text-property name="text">Критерии</text-property>
+                                    </label>
+                                </cell>
+                                <cell id="380">
+                                    <property name="paddingTop">0pt</property>
+                                    <property name="paddingLeft">0pt</property>
+                                    <property name="paddingBottom">0pt</property>
+                                    <property name="paddingRight">0pt</property>
+                                    <label id="381">
+                                        <property name="fontFamily">"Times New Roman"</property>
+                                        <property name="borderTopColor">#000000</property>
+                                        <property name="borderTopStyle">solid</property>
+                                        <property name="borderTopWidth">1px</property>
+                                        <text-property name="text">Баллы</text-property>
+                                    </label>
+                                </cell>
+                            </row>
+                        </grid>
+                    </cell>
+                    <cell id="382">
+                        <property name="borderBottomColor">#000000</property>
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">1px</property>
+                        <property name="borderLeftColor">#000000</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">1px</property>
+                        <property name="borderRightColor">#000000</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">1px</property>
+                        <property name="borderTopColor">#000000</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">1px</property>
+                        <property name="paddingTop">0pt</property>
+                        <property name="paddingLeft">0pt</property>
+                        <property name="paddingBottom">0pt</property>
+                        <property name="paddingRight">0pt</property>
+                        <grid id="383">
+                            <column id="384"/>
+                            <row id="385">
+                                <cell id="386">
+                                    <property name="paddingTop">0pt</property>
+                                    <property name="paddingLeft">0pt</property>
+                                    <property name="paddingBottom">0pt</property>
+                                    <property name="paddingRight">0pt</property>
+                                    <label id="387">
+                                        <property name="fontFamily">"Times New Roman"</property>
+                                        <property name="paddingTop">0pt</property>
+                                        <property name="paddingLeft">0pt</property>
+                                        <property name="paddingBottom">0pt</property>
+                                        <property name="paddingRight">0pt</property>
+                                        <text-property name="text">Итого, баллов</text-property>
+                                    </label>
+                                </cell>
+                            </row>
+                            <row id="388">
+                                <cell id="389">
+                                    <property name="borderTopColor">#000000</property>
+                                    <property name="borderTopStyle">solid</property>
+                                    <property name="borderTopWidth">1px</property>
+                                    <property name="paddingTop">0pt</property>
+                                    <property name="paddingLeft">0pt</property>
+                                    <property name="paddingBottom">0pt</property>
+                                    <property name="paddingRight">0pt</property>
+                                </cell>
+                            </row>
+                        </grid>
+                    </cell>
+                    <cell id="390">
+                        <property name="borderBottomColor">#000000</property>
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">1px</property>
+                        <property name="borderLeftColor">#000000</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">1px</property>
+                        <property name="borderRightColor">#000000</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">1px</property>
+                        <property name="borderTopColor">#000000</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">1px</property>
+                        <property name="paddingTop">0pt</property>
+                        <property name="paddingLeft">0pt</property>
+                        <property name="paddingBottom">0pt</property>
+                        <property name="paddingRight">0pt</property>
+                        <grid id="391">
+                            <column id="392"/>
+                            <row id="393">
+                                <cell id="394">
+                                    <property name="paddingTop">0pt</property>
+                                    <property name="paddingLeft">0pt</property>
+                                    <property name="paddingBottom">0pt</property>
+                                    <property name="paddingRight">0pt</property>
+                                    <label id="395">
+                                        <property name="fontFamily">"Times New Roman"</property>
+                                        <property name="paddingTop">0pt</property>
+                                        <property name="paddingLeft">0pt</property>
+                                        <property name="paddingBottom">0pt</property>
+                                        <property name="paddingRight">0pt</property>
+                                        <text-property name="text">Место заявки</text-property>
+                                    </label>
+                                </cell>
+                            </row>
+                            <row id="396">
+                                <cell id="397">
+                                    <property name="borderTopColor">#000000</property>
+                                    <property name="borderTopStyle">solid</property>
+                                    <property name="borderTopWidth">1px</property>
+                                    <property name="paddingTop">0pt</property>
+                                    <property name="paddingLeft">0pt</property>
+                                    <property name="paddingBottom">0pt</property>
+                                    <property name="paddingRight">0pt</property>
+                                </cell>
+                            </row>
+                        </grid>
+                    </cell>
+                </row>
+            </header>
+            <detail>
+                <row id="398">
+                    <property name="borderBottomColor">#000000</property>
+                    <property name="borderBottomStyle">solid</property>
+                    <property name="borderBottomWidth">1px</property>
+                    <property name="borderLeftColor">#000000</property>
+                    <property name="borderLeftStyle">solid</property>
+                    <property name="borderLeftWidth">1px</property>
+                    <property name="borderRightColor">#000000</property>
+                    <property name="borderRightStyle">solid</property>
+                    <property name="borderRightWidth">1px</property>
+                    <property name="borderTopColor">#000000</property>
+                    <property name="borderTopStyle">solid</property>
+                    <property name="borderTopWidth">1px</property>
+                    <cell id="399">
+                        <property name="borderBottomColor">#000000</property>
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">1px</property>
+                        <property name="borderLeftColor">#000000</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">1px</property>
+                        <property name="borderRightColor">#000000</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">1px</property>
+                        <property name="borderTopColor">#000000</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">1px</property>
+                        <property name="paddingTop">0pt</property>
+                        <property name="paddingLeft">0pt</property>
+                        <property name="paddingBottom">0pt</property>
+                        <property name="paddingRight">0pt</property>
+                        <data id="428">
+                            <property name="resultSetColumn">title</property>
+                        </data>
+                    </cell>
+                    <cell id="401">
+                        <property name="borderBottomColor">#000000</property>
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">1px</property>
+                        <property name="borderLeftColor">#000000</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">1px</property>
+                        <property name="borderRightColor">#000000</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">1px</property>
+                        <property name="borderTopColor">#000000</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">1px</property>
+                        <property name="paddingTop">0pt</property>
+                        <property name="paddingLeft">0pt</property>
+                        <property name="paddingBottom">0pt</property>
+                        <property name="paddingRight">0pt</property>
+                        <table id="402">
+                            <property name="dataSet">marks</property>
+                            <list-property name="paramBindings">
+                                <structure>
+                                    <property name="paramName">p1</property>
+                                    <simple-property-list name="expression">
+                                        <value type="javascript">row["index"]</value>
+                                    </simple-property-list>
+                                </structure>
+                            </list-property>
+                            <list-property name="boundDataColumns">
+                                <structure>
+                                    <property name="name">mark</property>
+                                    <text-property name="displayName">mark</text-property>
+                                    <expression name="expression" type="javascript">dataSetRow["mark"]</expression>
+                                    <property name="dataType">string</property>
+                                </structure>
+                                <structure>
+                                    <property name="name">criterion</property>
+                                    <text-property name="displayName">criterion</text-property>
+                                    <expression name="expression" type="javascript">dataSetRow["criterion"]</expression>
+                                    <property name="dataType">string</property>
+                                </structure>
+                                <structure>
+                                    <property name="name">summ</property>
+                                    <text-property name="displayName">summ</text-property>
+                                    <expression name="expression" type="javascript">dataSetRow["summ"]</expression>
+                                    <property name="dataType">float</property>
+                                </structure>
+                            </list-property>
+                            <column id="408"/>
+                            <column id="409"/>
+                            <detail>
+                                <row id="403">
+                                    <cell id="404">
+                                        <property name="borderBottomColor">#000000</property>
+                                        <property name="borderBottomStyle">solid</property>
+                                        <property name="borderBottomWidth">1px</property>
+                                        <property name="borderRightColor">#000000</property>
+                                        <property name="borderRightStyle">solid</property>
+                                        <property name="borderRightWidth">1px</property>
+                                        <property name="paddingTop">0pt</property>
+                                        <property name="paddingLeft">0pt</property>
+                                        <property name="paddingBottom">0pt</property>
+                                        <property name="paddingRight">0pt</property>
+                                        <data id="405">
+                                            <property name="fontFamily">"Times New Roman"</property>
+                                            <property name="paddingTop">0pt</property>
+                                            <property name="paddingLeft">0pt</property>
+                                            <property name="paddingBottom">0pt</property>
+                                            <property name="paddingRight">0pt</property>
+                                            <property name="resultSetColumn">criterion</property>
+                                        </data>
+                                    </cell>
+                                    <cell id="406">
+                                        <property name="borderBottomColor">#000000</property>
+                                        <property name="borderBottomStyle">solid</property>
+                                        <property name="borderBottomWidth">1px</property>
+                                        <property name="paddingTop">0pt</property>
+                                        <property name="paddingLeft">0pt</property>
+                                        <property name="paddingBottom">0pt</property>
+                                        <property name="paddingRight">0pt</property>
+                                        <data id="407">
+                                            <property name="fontFamily">"Times New Roman"</property>
+                                            <property name="paddingTop">0pt</property>
+                                            <property name="paddingLeft">0pt</property>
+                                            <property name="paddingBottom">0pt</property>
+                                            <property name="paddingRight">0pt</property>
+                                            <property name="resultSetColumn">mark</property>
+                                        </data>
+                                    </cell>
+                                </row>
+                            </detail>
+                        </table>
+                    </cell>
+                    <cell id="410">
+                        <property name="borderBottomColor">#000000</property>
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">1px</property>
+                        <property name="borderLeftColor">#000000</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">1px</property>
+                        <property name="borderRightColor">#000000</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">1px</property>
+                        <property name="borderTopColor">#000000</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">1px</property>
+                        <property name="paddingTop">0pt</property>
+                        <property name="paddingLeft">0pt</property>
+                        <property name="paddingBottom">0pt</property>
+                        <property name="paddingRight">0pt</property>
+                        <data id="418">
+                            <property name="fontFamily">"Times New Roman"</property>
+                            <property name="textAlign">center</property>
+                            <property name="dataSet">marks</property>
+                            <list-property name="paramBindings">
+                                <structure>
+                                    <property name="paramName">p1</property>
+                                    <simple-property-list name="expression">
+                                        <value type="javascript">row["index"]</value>
+                                    </simple-property-list>
+                                </structure>
+                            </list-property>
+                            <list-property name="boundDataColumns">
+                                <structure>
+                                    <property name="name">mark</property>
+                                    <text-property name="displayName">mark</text-property>
+                                    <expression name="expression" type="javascript">dataSetRow["mark"]</expression>
+                                    <property name="dataType">string</property>
+                                </structure>
+                                <structure>
+                                    <property name="name">criterion</property>
+                                    <text-property name="displayName">criterion</text-property>
+                                    <expression name="expression" type="javascript">dataSetRow["criterion"]</expression>
+                                    <property name="dataType">string</property>
+                                </structure>
+                                <structure>
+                                    <property name="name">summ</property>
+                                    <text-property name="displayName">summ</text-property>
+                                    <expression name="expression" type="javascript">dataSetRow["summ"]</expression>
+                                    <property name="dataType">float</property>
+                                </structure>
+                                <structure>
+                                    <property name="name">Column Binding</property>
+                                    <expression name="expression" type="javascript">dataSetRow["summ"]</expression>
+                                    <property name="dataType">string</property>
+                                    <property name="allowExport">true</property>
+                                </structure>
+                            </list-property>
+                            <property name="resultSetColumn">Column Binding</property>
+                        </data>
+                    </cell>
+                    <cell id="412">
+                        <property name="borderBottomColor">#000000</property>
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">1px</property>
+                        <property name="borderLeftColor">#000000</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">1px</property>
+                        <property name="borderRightColor">#000000</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">1px</property>
+                        <property name="borderTopColor">#000000</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">1px</property>
+                        <property name="paddingTop">0pt</property>
+                        <property name="paddingLeft">0pt</property>
+                        <property name="paddingBottom">0pt</property>
+                        <property name="paddingRight">0pt</property>
+                        <data id="413">
+                            <property name="fontFamily">"Times New Roman"</property>
+                            <property name="textAlign">center</property>
+                            <property name="resultSetColumn">place</property>
+                        </data>
+                    </cell>
+                </row>
+            </detail>
+        </table>
+        <text id="35">
+            <property name="fontFamily">"Times New Roman"</property>
+            <property name="fontSize">12pt</property>
+            <property name="fontWeight">bold</property>
+            <property name="contentType">auto</property>
+            <text-property name="content"><![CDATA[Обоснование выбора победителя:]]></text-property>
+        </text>
+        <text id="36">
+            <property name="fontFamily">"Times New Roman"</property>
+            <property name="fontSize">12pt</property>
+            <property name="textAlign">justify</property>
+            <property name="dataSet">vars</property>
+            <list-property name="boundDataColumns">
+                <structure>
+                    <property name="name">firstName</property>
+                    <text-property name="displayName">firstName</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["firstName"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">middleName</property>
+                    <text-property name="displayName">middleName</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["middleName"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">lastName</property>
+                    <text-property name="displayName">lastName</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["lastName"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">comment</property>
+                    <text-property name="displayName">comment</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["comment"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">object__id</property>
+                    <text-property name="displayName">object__id</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["object__id"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+            </list-property>
+            <property name="contentType">html</property>
+            <text-property name="content"><![CDATA[<VALUE-OF>row["comment"]</VALUE-OF>]]></text-property>
+        </text>
+        <text id="37">
+            <property name="fontFamily">"Times New Roman"</property>
+            <property name="fontSize">12pt</property>
+            <property name="dataSet">vars</property>
+            <list-property name="boundDataColumns">
+                <structure>
+                    <property name="name">firstName</property>
+                    <text-property name="displayName">firstName</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["firstName"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">middleName</property>
+                    <text-property name="displayName">middleName</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["middleName"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">lastName</property>
+                    <text-property name="displayName">lastName</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["lastName"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+            </list-property>
+            <property name="contentType">html</property>
+            <text-property name="content"><![CDATA[Подпись эксперта: ________________________<VALUE-OF>row["firstName"].charAt(0)</VALUE-OF>. <VALUE-OF>row["middleName"].charAt(0)</VALUE-OF>. <VALUE-OF>row["lastName"]</VALUE-OF>]]></text-property>
+        </text>
+    </body>
+</report>

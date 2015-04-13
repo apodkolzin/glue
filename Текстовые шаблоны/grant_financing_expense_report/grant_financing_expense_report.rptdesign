@@ -1,0 +1,820 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<report xmlns="http://www.eclipse.org/birt/2005/design" version="3.2.23" id="1">
+    <property name="createdBy">Eclipse BIRT Designer Version 3.7.2.v20120213 Build &lt;3.7.2.v20120214-1408></property>
+    <property name="units">in</property>
+    <property name="iconFile">/templates/blank_report.gif</property>
+    <property name="bidiLayoutOrientation">ltr</property>
+    <property name="imageDPI">96</property>
+    <data-sources>
+        <oda-data-source extensionID="org.eclipse.datatools.enablement.oda.xml" name="Data Source" id="163">
+            <property name="FILELIST">D:\work\birt_templates\grant_new_data1.xml</property>
+        </oda-data-source>
+    </data-sources>
+    <data-sets>
+        <oda-data-set extensionID="org.eclipse.datatools.enablement.oda.xml.dataSet" name="Data Set" id="164">
+            <list-property name="columnHints">
+                <structure>
+                    <property name="columnName">contract_number</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">contract_number</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">stage_number</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">stage_number</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">beginDate</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">beginDate</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">chief_title</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="heading">chief_title</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">chief_firstName</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="heading">chief_firstName</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">chief_middleName</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="heading">chief_middleName</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">chief_lastName</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="heading">chief_lastName</text-property>
+                </structure>
+            </list-property>
+            <list-property name="parameters"/>
+            <structure name="cachedMetaData">
+                <list-property name="resultSet">
+                    <structure>
+                        <property name="position">1</property>
+                        <property name="name">contract_number</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">2</property>
+                        <property name="name">stage_number</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">3</property>
+                        <property name="name">beginDate</property>
+                        <property name="dataType">date</property>
+                    </structure>
+                    <structure>
+                        <property name="position">4</property>
+                        <property name="name">chief_title</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">5</property>
+                        <property name="name">chief_firstName</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">6</property>
+                        <property name="name">chief_middleName</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">7</property>
+                        <property name="name">chief_lastName</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                </list-property>
+            </structure>
+            <property name="dataSource">Data Source</property>
+            <list-property name="resultSet">
+                <structure>
+                    <property name="position">1</property>
+                    <property name="name">contract_number</property>
+                    <property name="nativeName">contract_number</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">2</property>
+                    <property name="name">stage_number</property>
+                    <property name="nativeName">stage_number</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">3</property>
+                    <property name="name">beginDate</property>
+                    <property name="nativeName">beginDate</property>
+                    <property name="dataType">date</property>
+                    <property name="nativeDataType">91</property>
+                </structure>
+                <structure>
+                    <property name="position">4</property>
+                    <property name="name">chief_title</property>
+                    <property name="nativeName">chief_title</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">5</property>
+                    <property name="name">chief_firstName</property>
+                    <property name="nativeName">chief_firstName</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">6</property>
+                    <property name="name">chief_middleName</property>
+                    <property name="nativeName">chief_middleName</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">7</property>
+                    <property name="name">chief_lastName</property>
+                    <property name="nativeName">chief_lastName</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+            </list-property>
+            <xml-property name="queryText"><![CDATA[table0#-TNAME-#table0#:#[/datasource/variables]#:#{contract_number;STRING;/contract/__identifier},{stage_number;STRING;/stage/__identifier},{beginDate;DATE;/contract/__planDateRange/beginDate},{chief_title;STRING;/performer__chief/__title},{chief_firstName;STRING;/performer__chief/__firstName},{chief_middleName;STRING;/performer__chief/__middleName},{chief_lastName;STRING;/performer__chief/__lastName}]]></xml-property>
+            <xml-property name="designerValues"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<model:DesignValues xmlns:design="http://www.eclipse.org/datatools/connectivity/oda/design" xmlns:model="http://www.eclipse.org/birt/report/model/adapter/odaModel">
+  <Version>2.0</Version>
+  <design:ResultSets derivedMetaData="true">
+    <design:resultSetDefinitions>
+      <design:resultSetColumns>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>number</design:name>
+              <design:position>1</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>number</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+      </design:resultSetColumns>
+      <design:criteria/>
+    </design:resultSetDefinitions>
+  </design:ResultSets>
+</model:DesignValues>]]></xml-property>
+            <list-property name="privateDriverProperties">
+                <ex-property>
+                    <name>MAX_ROW</name>
+                    <value>-1</value>
+                </ex-property>
+                <ex-property>
+                    <name>XML_FILE</name>
+                </ex-property>
+            </list-property>
+        </oda-data-set>
+        <oda-data-set extensionID="org.eclipse.datatools.enablement.oda.xml.dataSet" name="box" id="165">
+            <list-property name="columnHints">
+                <structure>
+                    <property name="columnName">xcoord__id</property>
+                    <property name="analysis">measure</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">xcoord__id</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">ycoord__id</property>
+                    <property name="analysis">measure</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">ycoord__id</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">xcoord__title</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">xcoord__title</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">ycoord__title</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">ycoord__title</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">value</property>
+                    <property name="analysis">measure</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">value</text-property>
+                </structure>
+            </list-property>
+            <list-property name="parameters"/>
+            <structure name="cachedMetaData">
+                <list-property name="resultSet">
+                    <structure>
+                        <property name="position">1</property>
+                        <property name="name">xcoord__id</property>
+                        <property name="dataType">integer</property>
+                    </structure>
+                    <structure>
+                        <property name="position">2</property>
+                        <property name="name">ycoord__id</property>
+                        <property name="dataType">integer</property>
+                    </structure>
+                    <structure>
+                        <property name="position">3</property>
+                        <property name="name">xcoord__title</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">4</property>
+                        <property name="name">ycoord__title</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">5</property>
+                        <property name="name">value</property>
+                        <property name="dataType">decimal</property>
+                    </structure>
+                </list-property>
+            </structure>
+            <property name="dataSource">Data Source</property>
+            <list-property name="resultSet">
+                <structure>
+                    <property name="position">1</property>
+                    <property name="name">xcoord__id</property>
+                    <property name="nativeName">xcoord__id</property>
+                    <property name="dataType">integer</property>
+                    <property name="nativeDataType">4</property>
+                </structure>
+                <structure>
+                    <property name="position">2</property>
+                    <property name="name">ycoord__id</property>
+                    <property name="nativeName">ycoord__id</property>
+                    <property name="dataType">integer</property>
+                    <property name="nativeDataType">4</property>
+                </structure>
+                <structure>
+                    <property name="position">3</property>
+                    <property name="name">xcoord__title</property>
+                    <property name="nativeName">xcoord__title</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">4</property>
+                    <property name="name">ycoord__title</property>
+                    <property name="nativeName">ycoord__title</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">5</property>
+                    <property name="name">value</property>
+                    <property name="nativeName">value</property>
+                    <property name="dataType">decimal</property>
+                    <property name="nativeDataType">2</property>
+                </structure>
+            </list-property>
+            <xml-property name="queryText"><![CDATA[table0#-TNAME-#table0#:#[/datasource/variables/box/BoxEntry]#:#{xcoord__id;INT;/xcoord__id},{ycoord__id;INT;/ycoord__id},{xcoord__title;STRING;/xcoord__title},{ycoord__title;STRING;/ycoord__title},{value;BIGDECIMAL;/value}]]></xml-property>
+            <xml-property name="designerValues"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<model:DesignValues xmlns:design="http://www.eclipse.org/datatools/connectivity/oda/design" xmlns:model="http://www.eclipse.org/birt/report/model/adapter/odaModel">
+  <Version>2.0</Version>
+  <design:ResultSets derivedMetaData="true">
+    <design:resultSetDefinitions>
+      <design:resultSetColumns>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>xcoord__id</design:name>
+              <design:position>1</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>xcoord__id</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>ycoord__id</design:name>
+              <design:position>2</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>ycoord__id</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>xcoord__title</design:name>
+              <design:position>3</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>xcoord__title</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>ycoord__title</design:name>
+              <design:position>4</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>ycoord__title</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>value</design:name>
+              <design:position>5</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>4</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>value</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+      </design:resultSetColumns>
+      <design:criteria/>
+    </design:resultSetDefinitions>
+  </design:ResultSets>
+</model:DesignValues>]]></xml-property>
+            <list-property name="privateDriverProperties">
+                <ex-property>
+                    <name>MAX_ROW</name>
+                    <value>-1</value>
+                </ex-property>
+                <ex-property>
+                    <name>XML_FILE</name>
+                </ex-property>
+            </list-property>
+        </oda-data-set>
+    </data-sets>
+    <cubes>
+        <tabular-cube name="Data Cube" id="166">
+            <property name="dimensions">
+                <tabular-dimension name="Group" id="167">
+                    <property name="defaultHierarchy">NewTabularHierarchy</property>
+                    <property name="hierarchies">
+                        <tabular-hierarchy name="NewTabularHierarchy" id="168">
+                            <property name="levels">
+                                <tabular-level name="xcoord__id" id="169">
+                                    <property name="dataType">integer</property>
+                                    <property name="levelType">dynamic</property>
+                                    <property name="columnName">xcoord__id</property>
+                                    <expression name="displayColumnName" type="javascript">dataSetRow["xcoord__id"]</expression>
+                                </tabular-level>
+                                <tabular-level name="xcoord__title" id="286">
+                                    <property name="dataType">string</property>
+                                    <property name="columnName">xcoord__title</property>
+                                </tabular-level>
+                            </property>
+                        </tabular-hierarchy>
+                    </property>
+                </tabular-dimension>
+                <tabular-dimension name="Group1" id="171">
+                    <property name="defaultHierarchy">NewTabularHierarchy1</property>
+                    <property name="hierarchies">
+                        <tabular-hierarchy name="NewTabularHierarchy1" id="172">
+                            <property name="levels">
+                                <tabular-level name="ycoord__id" id="173">
+                                    <property name="dataType">integer</property>
+                                    <property name="levelType">dynamic</property>
+                                    <property name="columnName">ycoord__id</property>
+                                    <expression name="displayColumnName" type="javascript">dataSetRow["ycoord__id"]</expression>
+                                </tabular-level>
+                                <tabular-level name="ycoord__title" id="327">
+                                    <property name="dataType">string</property>
+                                    <property name="columnName">ycoord__title</property>
+                                </tabular-level>
+                            </property>
+                        </tabular-hierarchy>
+                    </property>
+                </tabular-dimension>
+            </property>
+            <property name="measureGroups">
+                <tabular-measure-group name="Summary Field" id="174">
+                    <property name="measures">
+                        <tabular-measure name="value" id="175">
+                            <property name="function">first</property>
+                            <property name="isCalculated">false</property>
+                            <expression name="measureExpression" type="javascript">dataSetRow["value"]/1000000</expression>
+                            <property name="dataType">decimal</property>
+                            <property name="isVisible">true</property>
+                        </tabular-measure>
+                    </property>
+                </tabular-measure-group>
+            </property>
+            <property name="dataSet">box</property>
+        </tabular-cube>
+    </cubes>
+    <styles>
+        <style name="report" id="4">
+            <property name="fontFamily">sans-serif</property>
+            <property name="fontSize">10pt</property>
+        </style>
+    </styles>
+    <page-setup>
+        <simple-master-page name="Simple MasterPage" id="2"/>
+    </page-setup>
+    <body>
+        <text id="7">
+            <property name="fontFamily">"Times New Roman"</property>
+            <property name="paddingLeft">300pt</property>
+            <property name="textAlign">right</property>
+            <property name="contentType">html</property>
+            <text-property name="content"><![CDATA[<B>Приложение №2 </B>
+к порядку приёмки выполненных работ (этапов работ),
+оказанных услуг по соглашениям на предоставление гранта, 
+заключенным в рамках реализации мероприятий федеральной 
+целевой программы «Научные и научно-педагогические кадры 
+инновационной России» на 2009-2013 годы
+]]></text-property>
+        </text>
+        <label id="8"/>
+        <label id="9"/>
+        <text id="10">
+            <property name="fontFamily">"Times New Roman"</property>
+            <property name="fontWeight">bold</property>
+            <property name="textAlign">center</property>
+            <property name="dataSet">Data Set</property>
+            <list-property name="boundDataColumns">
+                <structure>
+                    <property name="name">contract_number</property>
+                    <text-property name="displayName">contract_number</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["contract_number"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">stage_number</property>
+                    <text-property name="displayName">stage_number</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["stage_number"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">beginDate</property>
+                    <text-property name="displayName">beginDate</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["beginDate"]</expression>
+                    <property name="dataType">date</property>
+                </structure>
+            </list-property>
+            <property name="contentType">html</property>
+            <text-property name="content"><![CDATA[Отчет
+о расходовании средств гранта из федерального бюджета при выполнении <VALUE-OF>row["stage_number"]</VALUE-OF> этапа научно-исследовательской работы в <VALUE-OF format="yyyy">row["beginDate"]</VALUE-OF> году по соглашению от <VALUE-OF format="dd.MM.yyyy">row["beginDate"]</VALUE-OF> № <VALUE-OF>row["contract_number"]</VALUE-OF>
+]]></text-property>
+        </text>
+        <label id="11"/>
+        <label id="12"/>
+        <label id="258"/>
+        <label id="73"/>
+        <extended-item extensionName="Crosstab" extensionVersion="2.5.0" id="365">
+            <property name="cube">Data Cube</property>
+            <property name="measures">
+                <extended-item extensionName="MeasureView" id="382">
+                    <property name="measure">value</property>
+                    <property name="detail">
+                        <extended-item extensionName="AggregationCell" id="383">
+                            <property name="aggregationOnRow">Group/xcoord__title</property>
+                            <property name="aggregationOnColumn">Group1/ycoord__title</property>
+                            <property name="borderTopStyle">solid</property>
+                            <property name="borderTopWidth">1px</property>
+                            <property name="borderTopColor">#000000</property>
+                            <property name="borderLeftStyle">solid</property>
+                            <property name="borderLeftWidth">1px</property>
+                            <property name="borderLeftColor">#000000</property>
+                            <property name="borderBottomStyle">solid</property>
+                            <property name="borderBottomWidth">1px</property>
+                            <property name="borderBottomColor">#000000</property>
+                            <property name="borderRightStyle">solid</property>
+                            <property name="borderRightWidth">1px</property>
+                            <property name="borderRightColor">#000000</property>
+                            <property name="paddingTop">0pt</property>
+                            <property name="paddingLeft">0pt</property>
+                            <property name="paddingBottom">0pt</property>
+                            <property name="paddingRight">0pt</property>
+                            <property name="content">
+                                <data id="384">
+                                    <property name="fontFamily">"Times New Roman"</property>
+                                    <property name="resultSetColumn">value_Group/xcoord__title_Group1/ycoord__title</property>
+                                </data>
+                            </property>
+                        </extended-item>
+                    </property>
+                    <property name="aggregations">
+                        <extended-item extensionName="AggregationCell" id="390">
+                            <property name="aggregationOnColumn">Group1/ycoord__title</property>
+                            <property name="paddingTop">0pt</property>
+                            <property name="paddingLeft">0pt</property>
+                            <property name="paddingBottom">0pt</property>
+                            <property name="paddingRight">0pt</property>
+                            <property name="height">0in</property>
+                        </extended-item>
+                    </property>
+                    <property name="header">
+                        <extended-item extensionName="CrosstabCell" id="385">
+                            <property name="height">0px</property>
+                        </extended-item>
+                    </property>
+                </extended-item>
+            </property>
+            <property name="rows">
+                <extended-item extensionName="CrosstabView" id="367">
+                    <property name="grandTotal">
+                        <extended-item extensionName="CrosstabCell" id="389">
+                            <property name="borderTopWidth">1px</property>
+                            <property name="borderTopColor">#000000</property>
+                            <property name="borderLeftWidth">1px</property>
+                            <property name="borderLeftColor">#000000</property>
+                            <property name="borderBottomWidth">1px</property>
+                            <property name="borderBottomColor">#000000</property>
+                            <property name="borderRightWidth">1px</property>
+                            <property name="borderRightColor">#000000</property>
+                            <property name="paddingTop">0pt</property>
+                            <property name="paddingLeft">0pt</property>
+                            <property name="paddingBottom">0pt</property>
+                            <property name="paddingRight">0pt</property>
+                        </extended-item>
+                    </property>
+                    <property name="views">
+                        <extended-item extensionName="DimensionView" id="368">
+                            <property name="dimension">Group</property>
+                            <property name="levels">
+                                <extended-item extensionName="LevelView" name="NewLevel View" id="369">
+                                    <property name="level">Group/xcoord__id</property>
+                                    <property name="member">
+                                        <extended-item extensionName="CrosstabCell" id="370">
+                                            <property name="content">
+                                                <data name="xcoord__title1" id="374">
+                                                    <property name="fontFamily">"Times New Roman"</property>
+                                                    <property name="resultSetColumn">xcoord__title</property>
+                                                </data>
+                                            </property>
+                                            <property name="borderTopStyle">solid</property>
+                                            <property name="borderTopWidth">1px</property>
+                                            <property name="borderTopColor">#000000</property>
+                                            <property name="borderLeftStyle">solid</property>
+                                            <property name="borderLeftWidth">1px</property>
+                                            <property name="borderLeftColor">#000000</property>
+                                            <property name="borderBottomStyle">solid</property>
+                                            <property name="borderBottomWidth">1px</property>
+                                            <property name="borderBottomColor">#000000</property>
+                                            <property name="borderRightStyle">solid</property>
+                                            <property name="borderRightWidth">1px</property>
+                                            <property name="borderRightColor">#000000</property>
+                                            <property name="paddingTop">0pt</property>
+                                            <property name="paddingLeft">0pt</property>
+                                            <property name="paddingBottom">0pt</property>
+                                            <property name="paddingRight">0pt</property>
+                                        </extended-item>
+                                    </property>
+                                </extended-item>
+                                <extended-item extensionName="LevelView" name="NewLevel View1" id="372">
+                                    <property name="level">Group/xcoord__title</property>
+                                    <property name="member">
+                                        <extended-item extensionName="CrosstabCell" id="373">
+                                            <property name="paddingTop">0pt</property>
+                                            <property name="paddingLeft">0pt</property>
+                                            <property name="paddingBottom">0pt</property>
+                                            <property name="paddingRight">0pt</property>
+                                            <property name="width">0px</property>
+                                        </extended-item>
+                                    </property>
+                                </extended-item>
+                            </property>
+                        </extended-item>
+                    </property>
+                </extended-item>
+            </property>
+            <property name="columns">
+                <extended-item extensionName="CrosstabView" id="387">
+                    <property name="views">
+                        <extended-item extensionName="DimensionView" id="375">
+                            <property name="dimension">Group1</property>
+                            <property name="levels">
+                                <extended-item extensionName="LevelView" name="NewLevel View6" id="376">
+                                    <property name="level">Group1/ycoord__id</property>
+                                    <property name="member">
+                                        <extended-item extensionName="CrosstabCell" id="377">
+                                            <property name="content">
+                                                <data name="ycoord__title1" id="381">
+                                                    <property name="fontFamily">"Times New Roman"</property>
+                                                    <property name="resultSetColumn">ycoord__title</property>
+                                                </data>
+                                            </property>
+                                            <property name="borderTopStyle">solid</property>
+                                            <property name="borderTopWidth">1px</property>
+                                            <property name="borderTopColor">#000000</property>
+                                            <property name="borderLeftStyle">solid</property>
+                                            <property name="borderLeftWidth">1px</property>
+                                            <property name="borderLeftColor">#000000</property>
+                                            <property name="borderRightStyle">solid</property>
+                                            <property name="borderRightWidth">1px</property>
+                                            <property name="borderRightColor">#000000</property>
+                                        </extended-item>
+                                    </property>
+                                </extended-item>
+                                <extended-item extensionName="LevelView" name="NewLevel View7" id="379">
+                                    <property name="level">Group1/ycoord__title</property>
+                                    <property name="member">
+                                        <extended-item extensionName="CrosstabCell" id="380">
+                                            <property name="paddingTop">0pt</property>
+                                            <property name="paddingLeft">0pt</property>
+                                            <property name="paddingBottom">0pt</property>
+                                            <property name="paddingRight">0pt</property>
+                                            <property name="height">0px</property>
+                                        </extended-item>
+                                    </property>
+                                </extended-item>
+                            </property>
+                        </extended-item>
+                    </property>
+                </extended-item>
+            </property>
+            <property name="header">
+                <extended-item extensionName="CrosstabCell" id="366">
+                    <property name="content">
+                        <label id="388">
+                            <property name="fontFamily">"Times New Roman"</property>
+                            <property name="paddingTop">0pt</property>
+                            <property name="paddingLeft">0pt</property>
+                            <property name="paddingBottom">0pt</property>
+                            <property name="paddingRight">0pt</property>
+                            <text-property name="text">Наименование статей затрат</text-property>
+                        </label>
+                    </property>
+                    <property name="paddingTop">0pt</property>
+                    <property name="paddingLeft">0pt</property>
+                    <property name="paddingBottom">0pt</property>
+                    <property name="paddingRight">0pt</property>
+                </extended-item>
+            </property>
+            <property name="hideMeasureHeader">true</property>
+            <property name="borderTopStyle">solid</property>
+            <property name="borderTopWidth">1px</property>
+            <property name="borderTopColor">#000000</property>
+            <property name="borderLeftStyle">solid</property>
+            <property name="borderLeftWidth">1px</property>
+            <property name="borderLeftColor">#000000</property>
+            <property name="borderBottomStyle">solid</property>
+            <property name="borderBottomWidth">1px</property>
+            <property name="borderBottomColor">#000000</property>
+            <property name="borderRightStyle">solid</property>
+            <property name="borderRightWidth">1px</property>
+            <property name="borderRightColor">#000000</property>
+            <list-property name="boundDataColumns">
+                <structure>
+                    <property name="name">xcoord__id</property>
+                    <expression name="expression">dimension["Group"]["xcoord__id"]["DisplayName"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">xcoord__title</property>
+                    <expression name="expression">dimension["Group"]["xcoord__title"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">ycoord__id</property>
+                    <expression name="expression">dimension["Group1"]["ycoord__id"]["DisplayName"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">ycoord__title</property>
+                    <expression name="expression">dimension["Group1"]["ycoord__title"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">value_Group1/ycoord__title</property>
+                    <expression name="expression">measure["value"]</expression>
+                    <property name="dataType">float</property>
+                    <simple-property-list name="aggregateOn">
+                        <value>Group1/ycoord__title</value>
+                    </simple-property-list>
+                    <property name="aggregateFunction">sum</property>
+                </structure>
+                <structure>
+                    <property name="name">value_Group/xcoord__title</property>
+                    <expression name="expression">measure["value"]</expression>
+                    <property name="dataType">decimal</property>
+                    <simple-property-list name="aggregateOn">
+                        <value>Group/xcoord__title</value>
+                    </simple-property-list>
+                    <property name="aggregateFunction">FIRST</property>
+                </structure>
+                <structure>
+                    <property name="name">value_Group/xcoord__title_Group1/ycoord__title</property>
+                    <expression name="expression">measure["value"]</expression>
+                    <property name="dataType">decimal</property>
+                    <simple-property-list name="aggregateOn">
+                        <value>Group/xcoord__title</value>
+                        <value>Group1/ycoord__title</value>
+                    </simple-property-list>
+                    <property name="aggregateFunction">FIRST</property>
+                </structure>
+            </list-property>
+        </extended-item>
+        <label id="74"/>
+        <grid id="130">
+            <property name="fontFamily">"Times New Roman"</property>
+            <column id="131"/>
+            <column id="132"/>
+            <row id="133">
+                <cell id="134">
+                    <text id="141">
+                        <property name="contentType">auto</property>
+                        <text-property name="content"><![CDATA[Руководитель организации-получателя гранта с 
+указанием наименования Получателя гранта
+«____»___________ 20__ г.
+М.П.]]></text-property>
+                    </text>
+                </cell>
+                <cell id="135">
+                    <text id="139">
+                        <property name="dataSet">Data Set</property>
+                        <list-property name="boundDataColumns">
+                            <structure>
+                                <property name="name">contract_number</property>
+                                <text-property name="displayName">contract_number</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["contract_number"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                            <structure>
+                                <property name="name">stage_number</property>
+                                <text-property name="displayName">stage_number</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["stage_number"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                            <structure>
+                                <property name="name">beginDate</property>
+                                <text-property name="displayName">beginDate</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["beginDate"]</expression>
+                                <property name="dataType">date</property>
+                            </structure>
+                            <structure>
+                                <property name="name">chief_title</property>
+                                <text-property name="displayName">chief_title</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["chief_title"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                            <structure>
+                                <property name="name">chief_firstName</property>
+                                <text-property name="displayName">chief_firstName</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["chief_firstName"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                            <structure>
+                                <property name="name">chief_middleName</property>
+                                <text-property name="displayName">chief_middleName</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["chief_middleName"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                            <structure>
+                                <property name="name">chief_lastName</property>
+                                <text-property name="displayName">chief_lastName</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["chief_lastName"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                        </list-property>
+                        <property name="contentType">html</property>
+                        <text-property name="content"><![CDATA[________________________<VALUE-OF>row["chief_lastName"]</VALUE-OF>&amp;nbsp;<VALUE-OF>row["chief_firstName"].charAt(0)</VALUE-OF>.&amp;nbsp;<VALUE-OF>row["chief_middleName"].charAt(0)</VALUE-OF>.]]></text-property>
+                    </text>
+                </cell>
+            </row>
+        </grid>
+    </body>
+</report>

@@ -1,0 +1,2621 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<report xmlns="http://www.eclipse.org/birt/2005/design" version="3.2.23" id="1">
+    <property name="createdBy">Eclipse BIRT Designer Version 3.7.2.v20120213 Build &lt;3.7.2.v20120214-1408></property>
+    <property name="units">in</property>
+    <property name="iconFile">/templates/blank_report.gif</property>
+    <property name="bidiLayoutOrientation">ltr</property>
+    <property name="imageDPI">96</property>
+    <data-sources>
+        <oda-data-source extensionID="org.eclipse.datatools.enablement.oda.xml" name="Data Source" id="86">
+            <property name="FILELIST">/home/ayakovlev/Downloads/data111.xml</property>
+        </oda-data-source>
+    </data-sources>
+    <data-sets>
+        <oda-data-set extensionID="org.eclipse.datatools.enablement.oda.xml.dataSet" name="vars" id="88">
+            <list-property name="columnHints">
+                <structure>
+                    <property name="columnName">firstName</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">firstName</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">middleName</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">middleName</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">lastName</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">lastName</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">documentNumber</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">documentNumber</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">documentDate</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">documentDate</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">beginDate</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">beginDate</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">endDate</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">endDate</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">passport_series</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">passport_series</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">passport_number</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">passport_number</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">passport_issuer</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">passport_issuer</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">passport_issuerInfo</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">passport_issuerInfo</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">passport_issueDate</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">passport_issueDate</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">dateOfBirth</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">dateOfBirth</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">inn</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">inn</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">cost</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">cost</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">addr_federalRegion</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">addr_federalRegion</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">addr_region</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">addr_region</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">addr_street</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">addr_street</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">addr_postalCode</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">addr_postalCode</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">addr_houseNumber</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">addr_houseNumber</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">addr_houseUnitNumber</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">addr_houseUnitNumber</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">addr_flatNumber</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">addr_flatNumber</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">task</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">task</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">bank_title</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">bank_title</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">bank_headTitle</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">bank_headTitle</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">bank_number</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">bank_number</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">bank_city</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">bank_city</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">bank_inn</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">bank_inn</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">bank_korr_schet</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">bank_korr_schet</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">bank_bik</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">bank_bik</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">bank_rasch_schet</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">bank_rasch_schet</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">bank_personalAccount</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">bank_personalAccount</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">bank_additional</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">bank_additional</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">pensionInsuranceNumber</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">pensionInsuranceNumber</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">contract__id</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">contract__id</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">contract__sign__date</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">contract__sign__date</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">addr_street_deskr</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">addr_street_deskr</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">addr_city</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">addr_city</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">addr_type_city</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">addr_type_city</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">stage__id</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">stage__id</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">object__finalmid</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="heading">object__finalmid</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">object__id</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="heading">object__id</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">inspector_fioInAct</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="heading">inspector_fioInAct</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">inspector_signature</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="heading">inspector_signature</text-property>
+                </structure>
+            </list-property>
+            <list-property name="parameters"/>
+            <structure name="cachedMetaData">
+                <list-property name="resultSet">
+                    <structure>
+                        <property name="position">1</property>
+                        <property name="name">firstName</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">2</property>
+                        <property name="name">middleName</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">3</property>
+                        <property name="name">lastName</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">4</property>
+                        <property name="name">documentNumber</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">5</property>
+                        <property name="name">documentDate</property>
+                        <property name="dataType">date</property>
+                    </structure>
+                    <structure>
+                        <property name="position">6</property>
+                        <property name="name">beginDate</property>
+                        <property name="dataType">date</property>
+                    </structure>
+                    <structure>
+                        <property name="position">7</property>
+                        <property name="name">endDate</property>
+                        <property name="dataType">date</property>
+                    </structure>
+                    <structure>
+                        <property name="position">8</property>
+                        <property name="name">passport_series</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">9</property>
+                        <property name="name">passport_number</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">10</property>
+                        <property name="name">passport_issuer</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">11</property>
+                        <property name="name">passport_issuerInfo</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">12</property>
+                        <property name="name">passport_issueDate</property>
+                        <property name="dataType">date-time</property>
+                    </structure>
+                    <structure>
+                        <property name="position">13</property>
+                        <property name="name">dateOfBirth</property>
+                        <property name="dataType">date-time</property>
+                    </structure>
+                    <structure>
+                        <property name="position">14</property>
+                        <property name="name">inn</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">15</property>
+                        <property name="name">cost</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">16</property>
+                        <property name="name">addr_federalRegion</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">17</property>
+                        <property name="name">addr_region</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">18</property>
+                        <property name="name">addr_street</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">19</property>
+                        <property name="name">addr_postalCode</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">20</property>
+                        <property name="name">addr_houseNumber</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">21</property>
+                        <property name="name">addr_houseUnitNumber</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">22</property>
+                        <property name="name">addr_flatNumber</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">23</property>
+                        <property name="name">task</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">24</property>
+                        <property name="name">bank_title</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">25</property>
+                        <property name="name">bank_headTitle</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">26</property>
+                        <property name="name">bank_number</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">27</property>
+                        <property name="name">bank_city</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">28</property>
+                        <property name="name">bank_inn</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">29</property>
+                        <property name="name">bank_korr_schet</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">30</property>
+                        <property name="name">bank_bik</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">31</property>
+                        <property name="name">bank_rasch_schet</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">32</property>
+                        <property name="name">bank_personalAccount</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">33</property>
+                        <property name="name">bank_additional</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">34</property>
+                        <property name="name">pensionInsuranceNumber</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">35</property>
+                        <property name="name">contract__id</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">36</property>
+                        <property name="name">contract__sign__date</property>
+                        <property name="dataType">date-time</property>
+                    </structure>
+                    <structure>
+                        <property name="position">37</property>
+                        <property name="name">addr_street_deskr</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">38</property>
+                        <property name="name">addr_city</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">39</property>
+                        <property name="name">addr_type_city</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">40</property>
+                        <property name="name">stage__id</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">41</property>
+                        <property name="name">object__finalmid</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">42</property>
+                        <property name="name">object__id</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">43</property>
+                        <property name="name">inspector_fioInAct</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">44</property>
+                        <property name="name">inspector_signature</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                </list-property>
+            </structure>
+            <property name="dataSource">Data Source</property>
+            <list-property name="resultSet">
+                <structure>
+                    <property name="position">1</property>
+                    <property name="name">firstName</property>
+                    <property name="nativeName">firstName</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">2</property>
+                    <property name="name">middleName</property>
+                    <property name="nativeName">middleName</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">3</property>
+                    <property name="name">lastName</property>
+                    <property name="nativeName">lastName</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">4</property>
+                    <property name="name">documentNumber</property>
+                    <property name="nativeName">documentNumber</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">5</property>
+                    <property name="name">documentDate</property>
+                    <property name="nativeName">documentDate</property>
+                    <property name="dataType">date</property>
+                    <property name="nativeDataType">91</property>
+                </structure>
+                <structure>
+                    <property name="position">6</property>
+                    <property name="name">beginDate</property>
+                    <property name="nativeName">beginDate</property>
+                    <property name="dataType">date</property>
+                    <property name="nativeDataType">91</property>
+                </structure>
+                <structure>
+                    <property name="position">7</property>
+                    <property name="name">endDate</property>
+                    <property name="nativeName">endDate</property>
+                    <property name="dataType">date</property>
+                    <property name="nativeDataType">91</property>
+                </structure>
+                <structure>
+                    <property name="position">8</property>
+                    <property name="name">passport_series</property>
+                    <property name="nativeName">passport_series</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">9</property>
+                    <property name="name">passport_number</property>
+                    <property name="nativeName">passport_number</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">10</property>
+                    <property name="name">passport_issuer</property>
+                    <property name="nativeName">passport_issuer</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">11</property>
+                    <property name="name">passport_issuerInfo</property>
+                    <property name="nativeName">passport_issuerInfo</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">12</property>
+                    <property name="name">passport_issueDate</property>
+                    <property name="nativeName">passport_issueDate</property>
+                    <property name="dataType">date-time</property>
+                    <property name="nativeDataType">93</property>
+                </structure>
+                <structure>
+                    <property name="position">13</property>
+                    <property name="name">dateOfBirth</property>
+                    <property name="nativeName">dateOfBirth</property>
+                    <property name="dataType">date-time</property>
+                    <property name="nativeDataType">93</property>
+                </structure>
+                <structure>
+                    <property name="position">14</property>
+                    <property name="name">inn</property>
+                    <property name="nativeName">inn</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">15</property>
+                    <property name="name">cost</property>
+                    <property name="nativeName">cost</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">16</property>
+                    <property name="name">addr_federalRegion</property>
+                    <property name="nativeName">addr_federalRegion</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">17</property>
+                    <property name="name">addr_region</property>
+                    <property name="nativeName">addr_region</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">18</property>
+                    <property name="name">addr_street</property>
+                    <property name="nativeName">addr_street</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">19</property>
+                    <property name="name">addr_postalCode</property>
+                    <property name="nativeName">addr_postalCode</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">20</property>
+                    <property name="name">addr_houseNumber</property>
+                    <property name="nativeName">addr_houseNumber</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">21</property>
+                    <property name="name">addr_houseUnitNumber</property>
+                    <property name="nativeName">addr_houseUnitNumber</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">22</property>
+                    <property name="name">addr_flatNumber</property>
+                    <property name="nativeName">addr_flatNumber</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">23</property>
+                    <property name="name">task</property>
+                    <property name="nativeName">task</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">24</property>
+                    <property name="name">bank_title</property>
+                    <property name="nativeName">bank_title</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">25</property>
+                    <property name="name">bank_headTitle</property>
+                    <property name="nativeName">bank_headTitle</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">26</property>
+                    <property name="name">bank_number</property>
+                    <property name="nativeName">bank_number</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">27</property>
+                    <property name="name">bank_city</property>
+                    <property name="nativeName">bank_city</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">28</property>
+                    <property name="name">bank_inn</property>
+                    <property name="nativeName">bank_inn</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">29</property>
+                    <property name="name">bank_korr_schet</property>
+                    <property name="nativeName">bank_korr_schet</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">30</property>
+                    <property name="name">bank_bik</property>
+                    <property name="nativeName">bank_bik</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">31</property>
+                    <property name="name">bank_rasch_schet</property>
+                    <property name="nativeName">bank_rasch_schet</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">32</property>
+                    <property name="name">bank_personalAccount</property>
+                    <property name="nativeName">bank_personalAccount</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">33</property>
+                    <property name="name">bank_additional</property>
+                    <property name="nativeName">bank_additional</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">34</property>
+                    <property name="name">pensionInsuranceNumber</property>
+                    <property name="nativeName">pensionInsuranceNumber</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">35</property>
+                    <property name="name">contract__id</property>
+                    <property name="nativeName">contract__id</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">36</property>
+                    <property name="name">contract__sign__date</property>
+                    <property name="nativeName">contract__sign__date</property>
+                    <property name="dataType">date-time</property>
+                    <property name="nativeDataType">93</property>
+                </structure>
+                <structure>
+                    <property name="position">37</property>
+                    <property name="name">addr_street_deskr</property>
+                    <property name="nativeName">addr_street_deskr</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">38</property>
+                    <property name="name">addr_city</property>
+                    <property name="nativeName">addr_city</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">39</property>
+                    <property name="name">addr_type_city</property>
+                    <property name="nativeName">addr_type_city</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">40</property>
+                    <property name="name">stage__id</property>
+                    <property name="nativeName">stage__id</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">41</property>
+                    <property name="name">object__finalmid</property>
+                    <property name="nativeName">object__finalmid</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">42</property>
+                    <property name="name">object__id</property>
+                    <property name="nativeName">object__id</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">43</property>
+                    <property name="name">inspector_fioInAct</property>
+                    <property name="nativeName">inspector_fioInAct</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">44</property>
+                    <property name="name">inspector_signature</property>
+                    <property name="nativeName">inspector_signature</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+            </list-property>
+            <xml-property name="queryText"><![CDATA[table0#-TNAME-#table0#:#[/datasource/variables]#:#{firstName;STRING;/expert/__firstName},{middleName;STRING;/expert/__middleName},{lastName;STRING;/expert/__lastName},{documentNumber;STRING;/task/__agreement/__documentNumber},{documentDate;DATE;/task/__agreement/__documentDate},{beginDate;DATE;/task/__beginDate},{endDate;DATE;/task/__endDate},{passport_series;STRING;/expert/__passportData/__series},{passport_number;STRING;/expert/__passportData/__number},{passport_issuer;STRING;/expert/__passportData/__issuer},{passport_issuerInfo;STRING;/expert/__passportData/__issuerInfo},{passport_issueDate;TIMESTAMP;/expert/__passportData/__issueDate},{dateOfBirth;TIMESTAMP;/expert/__dateOfBirth},{inn;STRING;/expert/__inn},{cost;STRING;/task/__cost},{addr_federalRegion;STRING;/expert/__address/__federalRegion/__title},{addr_region;STRING;/expert/__address/__region/__title},{addr_street;STRING;/expert/__address/__street/__title},{addr_postalCode;STRING;/expert/__address/__postalCode},{addr_houseNumber;STRING;/expert/__address/__houseNumber},{addr_houseUnitNumber;STRING;/expert/__address/__houseUnitNumber},{addr_flatNumber;STRING;/expert/__address/__flatNumber},{task;STRING;/task},{bank_title;STRING;/expert/__expertData/__bank/__title},{bank_headTitle;STRING;/expert/__expertData/__bank/__headTitle},{bank_number;STRING;/expert/__expertData/__structNumber},{bank_city;STRING;/expert/__expertData/__bank/__city},{bank_inn;STRING;/expert/__expertData/__bank/__inn},{bank_korr_schet;STRING;/expert/__expertData/__bank/__account},{bank_bik;STRING;/expert/__expertData/__bank/__bik},{bank_rasch_schet;STRING;/expert/__expertData/__bankAccount},{bank_personalAccount;STRING;/expert/__expertData/__personalAccount},{bank_additional;STRING;/expert/__expertData/__other},{pensionInsuranceNumber;STRING;/expert/__pensionInsuranceNumber},{contract__id;STRING;/contract__id},{contract__sign__date;TIMESTAMP;/contract__sign__date},{addr_street_deskr;STRING;/expert/__address/__street/__type},{addr_city;STRING;/expert/__address/__city/__title},{addr_type_city;STRING;/expert/__address/__city/__type},{stage__id;STRING;/stage__id},{object__finalmid;STRING;/object__finalmid},{object__id;STRING;/object__id},{inspector_fioInAct;STRING;/task/__agreement/__inspector/__fioInAct},{inspector_signature;STRING;/task/__agreement/__inspector/__signature}]]></xml-property>
+            <xml-property name="designerValues"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<model:DesignValues xmlns:design="http://www.eclipse.org/datatools/connectivity/oda/design" xmlns:model="http://www.eclipse.org/birt/report/model/adapter/odaModel">
+  <Version>2.0</Version>
+  <design:ResultSets derivedMetaData="true">
+    <design:resultSetDefinitions>
+      <design:resultSetColumns>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>firstName</design:name>
+              <design:position>1</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>firstName</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>middleName</design:name>
+              <design:position>2</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>middleName</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>lastName</design:name>
+              <design:position>3</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>lastName</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+      </design:resultSetColumns>
+      <design:criteria/>
+    </design:resultSetDefinitions>
+  </design:ResultSets>
+</model:DesignValues>]]></xml-property>
+            <list-property name="privateDriverProperties">
+                <ex-property>
+                    <name>MAX_ROW</name>
+                    <value>-1</value>
+                </ex-property>
+                <ex-property>
+                    <name>XML_FILE</name>
+                </ex-property>
+            </list-property>
+        </oda-data-set>
+        <oda-data-set extensionID="org.eclipse.datatools.enablement.oda.xml.dataSet" name="GeneralDataSet" id="157">
+            <list-property name="columnHints">
+                <structure>
+                    <property name="columnName">contractIdentifier</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">contractIdentifier</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">contractAppendSignatureDate</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">contractAppendSignatureDate</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">actUpdatedAt</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">actUpdatedAt</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">demandFullNumber</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">demandFullNumber</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">contractFullTitle</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">contractFullTitle</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">planEndDate</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">planEndDate</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">performer</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">performer</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">projectInitiator</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">projectInitiator</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">budget</property>
+                    <property name="analysis">measure</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">budget</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">offbudget</property>
+                    <property name="analysis">measure</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">offbudget</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">fileCreationDate</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">fileCreationDate</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">delay</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">delay</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">acceptanceCommissionFullNumber</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">acceptanceCommissionFullNumber</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">stageNumber</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">stageNumber</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">stageTitle</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">stageTitle</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">managerTitle</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">managerTitle</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">managerPost</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">managerPost</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">programActionNumber</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">programActionNumber</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">fileCreationDate_1</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">fileCreationDate_1</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">managerLastName</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="heading">managerLastName</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">managerMiddleName</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="heading">managerMiddleName</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">managerFirstName</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="heading">managerFirstName</text-property>
+                </structure>
+            </list-property>
+            <list-property name="parameters"/>
+            <structure name="cachedMetaData">
+                <list-property name="resultSet">
+                    <structure>
+                        <property name="position">1</property>
+                        <property name="name">contractIdentifier</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">2</property>
+                        <property name="name">contractAppendSignatureDate</property>
+                        <property name="dataType">date</property>
+                    </structure>
+                    <structure>
+                        <property name="position">3</property>
+                        <property name="name">actUpdatedAt</property>
+                        <property name="dataType">date</property>
+                    </structure>
+                    <structure>
+                        <property name="position">4</property>
+                        <property name="name">demandFullNumber</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">5</property>
+                        <property name="name">contractFullTitle</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">6</property>
+                        <property name="name">planEndDate</property>
+                        <property name="dataType">date</property>
+                    </structure>
+                    <structure>
+                        <property name="position">7</property>
+                        <property name="name">performer</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">8</property>
+                        <property name="name">projectInitiator</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">9</property>
+                        <property name="name">budget</property>
+                        <property name="dataType">decimal</property>
+                    </structure>
+                    <structure>
+                        <property name="position">10</property>
+                        <property name="name">offbudget</property>
+                        <property name="dataType">decimal</property>
+                    </structure>
+                    <structure>
+                        <property name="position">11</property>
+                        <property name="name">fileCreationDate</property>
+                        <property name="dataType">date</property>
+                    </structure>
+                    <structure>
+                        <property name="position">12</property>
+                        <property name="name">delay</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">13</property>
+                        <property name="name">acceptanceCommissionFullNumber</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">14</property>
+                        <property name="name">stageNumber</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">15</property>
+                        <property name="name">stageTitle</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">16</property>
+                        <property name="name">managerTitle</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">17</property>
+                        <property name="name">managerPost</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">18</property>
+                        <property name="name">programActionNumber</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">19</property>
+                        <property name="name">fileCreationDate_1</property>
+                        <property name="dataType">date</property>
+                    </structure>
+                    <structure>
+                        <property name="position">20</property>
+                        <property name="name">managerLastName</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">21</property>
+                        <property name="name">managerMiddleName</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">22</property>
+                        <property name="name">managerFirstName</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                </list-property>
+            </structure>
+            <property name="dataSource">Data Source</property>
+            <list-property name="resultSet">
+                <structure>
+                    <property name="position">1</property>
+                    <property name="name">contractIdentifier</property>
+                    <property name="nativeName">contractIdentifier</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">2</property>
+                    <property name="name">contractAppendSignatureDate</property>
+                    <property name="nativeName">contractAppendSignatureDate</property>
+                    <property name="dataType">date</property>
+                    <property name="nativeDataType">91</property>
+                </structure>
+                <structure>
+                    <property name="position">3</property>
+                    <property name="name">actUpdatedAt</property>
+                    <property name="nativeName">actUpdatedAt</property>
+                    <property name="dataType">date</property>
+                    <property name="nativeDataType">91</property>
+                </structure>
+                <structure>
+                    <property name="position">4</property>
+                    <property name="name">demandFullNumber</property>
+                    <property name="nativeName">demandFullNumber</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">5</property>
+                    <property name="name">contractFullTitle</property>
+                    <property name="nativeName">contractFullTitle</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">6</property>
+                    <property name="name">planEndDate</property>
+                    <property name="nativeName">planEndDate</property>
+                    <property name="dataType">date</property>
+                    <property name="nativeDataType">91</property>
+                </structure>
+                <structure>
+                    <property name="position">7</property>
+                    <property name="name">performer</property>
+                    <property name="nativeName">performer</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">8</property>
+                    <property name="name">projectInitiator</property>
+                    <property name="nativeName">projectInitiator</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">9</property>
+                    <property name="name">budget</property>
+                    <property name="nativeName">budget</property>
+                    <property name="dataType">decimal</property>
+                    <property name="nativeDataType">2</property>
+                </structure>
+                <structure>
+                    <property name="position">10</property>
+                    <property name="name">offbudget</property>
+                    <property name="nativeName">offbudget</property>
+                    <property name="dataType">decimal</property>
+                    <property name="nativeDataType">2</property>
+                </structure>
+                <structure>
+                    <property name="position">11</property>
+                    <property name="name">fileCreationDate</property>
+                    <property name="nativeName">fileCreationDate</property>
+                    <property name="dataType">date</property>
+                    <property name="nativeDataType">91</property>
+                </structure>
+                <structure>
+                    <property name="position">12</property>
+                    <property name="name">delay</property>
+                    <property name="nativeName">delay</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">13</property>
+                    <property name="name">acceptanceCommissionFullNumber</property>
+                    <property name="nativeName">acceptanceCommissionFullNumber</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">14</property>
+                    <property name="name">stageNumber</property>
+                    <property name="nativeName">stageNumber</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">15</property>
+                    <property name="name">stageTitle</property>
+                    <property name="nativeName">stageTitle</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">16</property>
+                    <property name="name">managerTitle</property>
+                    <property name="nativeName">managerTitle</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">17</property>
+                    <property name="name">managerPost</property>
+                    <property name="nativeName">managerPost</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">18</property>
+                    <property name="name">programActionNumber</property>
+                    <property name="nativeName">programActionNumber</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">19</property>
+                    <property name="name">fileCreationDate_1</property>
+                    <property name="nativeName">fileCreationDate_1</property>
+                    <property name="dataType">date</property>
+                    <property name="nativeDataType">91</property>
+                </structure>
+                <structure>
+                    <property name="position">20</property>
+                    <property name="name">managerLastName</property>
+                    <property name="nativeName">managerLastName</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">21</property>
+                    <property name="name">managerMiddleName</property>
+                    <property name="nativeName">managerMiddleName</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">22</property>
+                    <property name="name">managerFirstName</property>
+                    <property name="nativeName">managerFirstName</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+            </list-property>
+            <xml-property name="queryText"><![CDATA[table0#-TNAME-#table0#:#[/datasource/variables]#:#{contractIdentifier;STRING;/contractIdentifier},{contractAppendSignatureDate;DATE;/contractAppendSignatureDate},{actUpdatedAt;DATE;/actUpdatedAt},{demandFullNumber;STRING;/demandFullNumber},{contractFullTitle;STRING;/contractFullTitle},{planEndDate;DATE;/planEndDate},{performer;STRING;/performer},{projectInitiator;STRING;/projectInitiator},{budget;BIGDECIMAL;/budget},{offbudget;BIGDECIMAL;/offbudget},{fileCreationDate;DATE;/fileCreationDate},{delay;STRING;/delay},{acceptanceCommissionFullNumber;STRING;/acceptanceCommissionFullNumber},{stageNumber;STRING;/stageNumber},{stageTitle;STRING;/stageTitle},{managerTitle;STRING;/manager/__title},{managerPost;STRING;/posts},{programActionNumber;STRING;/programActionNumber},{fileCreationDate_1;DATE;/fileCreationDate},{managerLastName;STRING;/manager/__lastName},{managerMiddleName;STRING;/manager/__middleName},{managerFirstName;STRING;/manager/__firstName}]]></xml-property>
+            <xml-property name="designerValues"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<model:DesignValues xmlns:design="http://www.eclipse.org/datatools/connectivity/oda/design" xmlns:model="http://www.eclipse.org/birt/report/model/adapter/odaModel">
+  <Version>2.0</Version>
+  <design:ResultSets derivedMetaData="true">
+    <design:resultSetDefinitions>
+      <design:resultSetColumns>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>contractIdentifier</design:name>
+              <design:position>1</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>contractIdentifier</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>contractAppendSignatureDate</design:name>
+              <design:position>2</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>contractAppendSignatureDate</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>actUpdatedAt</design:name>
+              <design:position>3</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>actUpdatedAt</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>demandFullNumber</design:name>
+              <design:position>4</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>demandFullNumber</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>contractFullTitle</design:name>
+              <design:position>5</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>contractFullTitle</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>planEndDate</design:name>
+              <design:position>6</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>91</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>planEndDate</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>performer</design:name>
+              <design:position>7</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>performer</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>projectInitiator</design:name>
+              <design:position>8</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>projectInitiator</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>budget</design:name>
+              <design:position>9</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>2</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>budget</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>offbudget</design:name>
+              <design:position>10</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>2</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>offbudget</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>fileCreationDate</design:name>
+              <design:position>11</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>91</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>fileCreationDate</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>delay</design:name>
+              <design:position>12</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>delay</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>acceptanceCommissionFullNumber</design:name>
+              <design:position>13</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>acceptanceCommissionFullNumber</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+      </design:resultSetColumns>
+      <design:criteria/>
+    </design:resultSetDefinitions>
+  </design:ResultSets>
+</model:DesignValues>]]></xml-property>
+            <list-property name="privateDriverProperties">
+                <ex-property>
+                    <name>MAX_ROW</name>
+                    <value>-1</value>
+                </ex-property>
+                <ex-property>
+                    <name>XML_FILE</name>
+                </ex-property>
+            </list-property>
+        </oda-data-set>
+    </data-sets>
+    <styles>
+        <style name="report" id="4">
+            <property name="fontFamily">sans-serif</property>
+            <property name="fontSize">10pt</property>
+        </style>
+        <style name="crosstab-cell" id="5">
+            <property name="borderBottomColor">#CCCCCC</property>
+            <property name="borderBottomStyle">solid</property>
+            <property name="borderBottomWidth">1pt</property>
+            <property name="borderLeftColor">#CCCCCC</property>
+            <property name="borderLeftStyle">solid</property>
+            <property name="borderLeftWidth">1pt</property>
+            <property name="borderRightColor">#CCCCCC</property>
+            <property name="borderRightStyle">solid</property>
+            <property name="borderRightWidth">1pt</property>
+            <property name="borderTopColor">#CCCCCC</property>
+            <property name="borderTopStyle">solid</property>
+            <property name="borderTopWidth">1pt</property>
+        </style>
+        <style name="crosstab" id="6">
+            <property name="borderBottomColor">#CCCCCC</property>
+            <property name="borderBottomStyle">solid</property>
+            <property name="borderBottomWidth">1pt</property>
+            <property name="borderLeftColor">#CCCCCC</property>
+            <property name="borderLeftStyle">solid</property>
+            <property name="borderLeftWidth">1pt</property>
+            <property name="borderRightColor">#CCCCCC</property>
+            <property name="borderRightStyle">solid</property>
+            <property name="borderRightWidth">1pt</property>
+            <property name="borderTopColor">#CCCCCC</property>
+            <property name="borderTopStyle">solid</property>
+            <property name="borderTopWidth">1pt</property>
+        </style>
+    </styles>
+    <page-setup>
+        <simple-master-page name="Simple MasterPage" id="2">
+            <property name="leftMargin">0.90625in</property>
+            <property name="rightMargin">0.6666666666666666in</property>
+            <page-footer>
+                <text id="3">
+                    <property name="fontSize">9pt</property>
+                    <property name="fontStyle">italic</property>
+                    <property name="paddingTop">15pt</property>
+                    <property name="dataSet">GeneralDataSet</property>
+                    <list-property name="boundDataColumns">
+                        <structure>
+                            <property name="name">contractIdentifier</property>
+                            <text-property name="displayName">contractIdentifier</text-property>
+                            <expression name="expression" type="javascript">dataSetRow["contractIdentifier"]</expression>
+                            <property name="dataType">string</property>
+                        </structure>
+                        <structure>
+                            <property name="name">contractAppendSignatureDate</property>
+                            <text-property name="displayName">contractAppendSignatureDate</text-property>
+                            <expression name="expression" type="javascript">dataSetRow["contractAppendSignatureDate"]</expression>
+                            <property name="dataType">date</property>
+                        </structure>
+                        <structure>
+                            <property name="name">actUpdatedAt</property>
+                            <text-property name="displayName">actUpdatedAt</text-property>
+                            <expression name="expression" type="javascript">dataSetRow["actUpdatedAt"]</expression>
+                            <property name="dataType">date</property>
+                        </structure>
+                        <structure>
+                            <property name="name">demandFullNumber</property>
+                            <text-property name="displayName">demandFullNumber</text-property>
+                            <expression name="expression" type="javascript">dataSetRow["demandFullNumber"]</expression>
+                            <property name="dataType">string</property>
+                        </structure>
+                        <structure>
+                            <property name="name">contractFullTitle</property>
+                            <text-property name="displayName">contractFullTitle</text-property>
+                            <expression name="expression" type="javascript">dataSetRow["contractFullTitle"]</expression>
+                            <property name="dataType">string</property>
+                        </structure>
+                        <structure>
+                            <property name="name">planEndDate</property>
+                            <text-property name="displayName">planEndDate</text-property>
+                            <expression name="expression" type="javascript">dataSetRow["planEndDate"]</expression>
+                            <property name="dataType">date</property>
+                        </structure>
+                        <structure>
+                            <property name="name">performer</property>
+                            <text-property name="displayName">performer</text-property>
+                            <expression name="expression" type="javascript">dataSetRow["performer"]</expression>
+                            <property name="dataType">string</property>
+                        </structure>
+                        <structure>
+                            <property name="name">projectInitiator</property>
+                            <text-property name="displayName">projectInitiator</text-property>
+                            <expression name="expression" type="javascript">dataSetRow["projectInitiator"]</expression>
+                            <property name="dataType">string</property>
+                        </structure>
+                        <structure>
+                            <property name="name">budget</property>
+                            <text-property name="displayName">budget</text-property>
+                            <expression name="expression" type="javascript">dataSetRow["budget"]</expression>
+                            <property name="dataType">decimal</property>
+                        </structure>
+                        <structure>
+                            <property name="name">offbudget</property>
+                            <text-property name="displayName">offbudget</text-property>
+                            <expression name="expression" type="javascript">dataSetRow["offbudget"]</expression>
+                            <property name="dataType">decimal</property>
+                        </structure>
+                        <structure>
+                            <property name="name">fileCreationDate</property>
+                            <text-property name="displayName">fileCreationDate</text-property>
+                            <expression name="expression" type="javascript">dataSetRow["fileCreationDate"]</expression>
+                            <property name="dataType">date</property>
+                        </structure>
+                        <structure>
+                            <property name="name">delay</property>
+                            <text-property name="displayName">delay</text-property>
+                            <expression name="expression" type="javascript">dataSetRow["delay"]</expression>
+                            <property name="dataType">string</property>
+                        </structure>
+                        <structure>
+                            <property name="name">acceptanceCommissionFullNumber</property>
+                            <text-property name="displayName">acceptanceCommissionFullNumber</text-property>
+                            <expression name="expression" type="javascript">dataSetRow["acceptanceCommissionFullNumber"]</expression>
+                            <property name="dataType">string</property>
+                        </structure>
+                        <structure>
+                            <property name="name">stageNumber</property>
+                            <text-property name="displayName">stageNumber</text-property>
+                            <expression name="expression" type="javascript">dataSetRow["stageNumber"]</expression>
+                            <property name="dataType">string</property>
+                        </structure>
+                        <structure>
+                            <property name="name">stageTitle</property>
+                            <text-property name="displayName">stageTitle</text-property>
+                            <expression name="expression" type="javascript">dataSetRow["stageTitle"]</expression>
+                            <property name="dataType">string</property>
+                        </structure>
+                        <structure>
+                            <property name="name">managerTitle</property>
+                            <text-property name="displayName">managerTitle</text-property>
+                            <expression name="expression" type="javascript">dataSetRow["managerTitle"]</expression>
+                            <property name="dataType">string</property>
+                        </structure>
+                        <structure>
+                            <property name="name">managerPost</property>
+                            <text-property name="displayName">managerPost</text-property>
+                            <expression name="expression" type="javascript">dataSetRow["managerPost"]</expression>
+                            <property name="dataType">string</property>
+                        </structure>
+                    </list-property>
+                    <property name="contentType">html</property>
+                    <text-property name="content"><![CDATA[Заключение Дирекции по отчетным материалам  Этап № <VALUE-OF>row["stageNumber"]</VALUE-OF> по государственному контракту № <VALUE-OF>row["contractIdentifier"]</VALUE-OF> ]]></text-property>
+                </text>
+            </page-footer>
+        </simple-master-page>
+    </page-setup>
+    <body>
+        <text id="90">
+            <property name="fontFamily">"Times New Roman"</property>
+            <property name="fontSize">14pt</property>
+            <property name="fontStyle">normal</property>
+            <property name="contentType">html</property>
+            <text-property name="content"><![CDATA[<H4><CENTER> Федеральное государственное бюджетное научное учреждение <br> 
+«Дирекция научно-технических программ» <br>
+ЗАКЛЮЧЕНИЕ </CENTER></H4>
+]]></text-property>
+        </text>
+        <label id="149"/>
+        <text id="146">
+            <property name="fontFamily">"Times New Roman"</property>
+            <property name="fontSize">14pt</property>
+            <property name="dataSet">GeneralDataSet</property>
+            <list-property name="boundDataColumns">
+                <structure>
+                    <property name="name">contractIdentifier</property>
+                    <text-property name="displayName">contractIdentifier</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["contractIdentifier"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">contractAppendSignatureDate</property>
+                    <text-property name="displayName">contractAppendSignatureDate</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["contractAppendSignatureDate"]</expression>
+                    <property name="dataType">date</property>
+                </structure>
+                <structure>
+                    <property name="name">actUpdatedAt</property>
+                    <text-property name="displayName">actUpdatedAt</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["actUpdatedAt"]</expression>
+                    <property name="dataType">date</property>
+                </structure>
+                <structure>
+                    <property name="name">demandFullNumber</property>
+                    <text-property name="displayName">demandFullNumber</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["demandFullNumber"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">contractFullTitle</property>
+                    <text-property name="displayName">contractFullTitle</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["contractFullTitle"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">planEndDate</property>
+                    <text-property name="displayName">planEndDate</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["planEndDate"]</expression>
+                    <property name="dataType">date</property>
+                </structure>
+                <structure>
+                    <property name="name">performer</property>
+                    <text-property name="displayName">performer</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["performer"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">projectInitiator</property>
+                    <text-property name="displayName">projectInitiator</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["projectInitiator"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">budget</property>
+                    <text-property name="displayName">budget</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["budget"]</expression>
+                    <property name="dataType">decimal</property>
+                </structure>
+                <structure>
+                    <property name="name">offbudget</property>
+                    <text-property name="displayName">offbudget</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["offbudget"]</expression>
+                    <property name="dataType">decimal</property>
+                </structure>
+                <structure>
+                    <property name="name">fileCreationDate</property>
+                    <text-property name="displayName">fileCreationDate</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["fileCreationDate"]</expression>
+                    <property name="dataType">date</property>
+                </structure>
+                <structure>
+                    <property name="name">delay</property>
+                    <text-property name="displayName">delay</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["delay"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">acceptanceCommissionFullNumber</property>
+                    <text-property name="displayName">acceptanceCommissionFullNumber</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["acceptanceCommissionFullNumber"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">stageNumber</property>
+                    <text-property name="displayName">stageNumber</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["stageNumber"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">stageTitle</property>
+                    <text-property name="displayName">stageTitle</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["stageTitle"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">managerTitle</property>
+                    <text-property name="displayName">managerTitle</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["managerTitle"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">managerPost</property>
+                    <text-property name="displayName">managerPost</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["managerPost"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">programActionNumber</property>
+                    <text-property name="displayName">programActionNumber</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["programActionNumber"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">fileCreationDate_1</property>
+                    <text-property name="displayName">fileCreationDate_1</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["fileCreationDate_1"]</expression>
+                    <property name="dataType">date</property>
+                </structure>
+                <structure>
+                    <property name="name">managerLastName</property>
+                    <text-property name="displayName">managerLastName</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["managerLastName"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">managerMiddleName</property>
+                    <text-property name="displayName">managerMiddleName</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["managerMiddleName"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">managerFirstName</property>
+                    <text-property name="displayName">managerFirstName</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["managerFirstName"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+            </list-property>
+            <property name="contentType">html</property>
+            <text-property name="content"><![CDATA[&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;<VALUE-OF format="Long Date">if (row["actUpdatedAt"] != null)
+	row["actUpdatedAt"]
+	else
+	row["fileCreationDate"]</VALUE-OF>
+
+
+
+
+
+
+
+]]></text-property>
+        </text>
+        <label id="150"/>
+        <grid id="91">
+            <property name="fontFamily">"Times New Roman"</property>
+            <property name="fontSize">14pt</property>
+            <property name="dataSet">GeneralDataSet</property>
+            <list-property name="boundDataColumns">
+                <structure>
+                    <property name="name">contractIdentifier</property>
+                    <text-property name="displayName">contractIdentifier</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["contractIdentifier"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">contractAppendSignatureDate</property>
+                    <text-property name="displayName">contractAppendSignatureDate</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["contractAppendSignatureDate"]</expression>
+                    <property name="dataType">date</property>
+                </structure>
+                <structure>
+                    <property name="name">actUpdatedAt</property>
+                    <text-property name="displayName">actUpdatedAt</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["actUpdatedAt"]</expression>
+                    <property name="dataType">date</property>
+                </structure>
+                <structure>
+                    <property name="name">demandFullNumber</property>
+                    <text-property name="displayName">demandFullNumber</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["demandFullNumber"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">contractFullTitle</property>
+                    <text-property name="displayName">contractFullTitle</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["contractFullTitle"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">planEndDate</property>
+                    <text-property name="displayName">planEndDate</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["planEndDate"]</expression>
+                    <property name="dataType">date</property>
+                </structure>
+                <structure>
+                    <property name="name">performer</property>
+                    <text-property name="displayName">performer</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["performer"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">projectInitiator</property>
+                    <text-property name="displayName">projectInitiator</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["projectInitiator"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">budget</property>
+                    <text-property name="displayName">budget</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["budget"]/1000000</expression>
+                    <property name="dataType">decimal</property>
+                    <property name="allowExport">true</property>
+                </structure>
+                <structure>
+                    <property name="name">offbudget</property>
+                    <text-property name="displayName">offbudget</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["offbudget"]/1000000</expression>
+                    <property name="dataType">decimal</property>
+                    <property name="allowExport">true</property>
+                </structure>
+                <structure>
+                    <property name="name">fileCreationDate</property>
+                    <text-property name="displayName">fileCreationDate</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["fileCreationDate"]</expression>
+                    <property name="dataType">date</property>
+                </structure>
+                <structure>
+                    <property name="name">delay</property>
+                    <text-property name="displayName">delay</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["delay"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">acceptanceCommissionFullNumber</property>
+                    <text-property name="displayName">acceptanceCommissionFullNumber</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["acceptanceCommissionFullNumber"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">stageNumber</property>
+                    <text-property name="displayName">stageNumber</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["stageNumber"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">stageTitle</property>
+                    <text-property name="displayName">stageTitle</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["stageTitle"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">managerTitle</property>
+                    <text-property name="displayName">managerTitle</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["managerTitle"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">managerPost</property>
+                    <text-property name="displayName">managerPost</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["managerPost"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">programActionNumber</property>
+                    <text-property name="displayName">programActionNumber</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["programActionNumber"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+            </list-property>
+            <column id="92"/>
+            <column id="93"/>
+            <row id="94">
+                <cell id="95">
+                    <text id="116">
+                        <property name="contentType">auto</property>
+                        <text-property name="content"><![CDATA[Объект Заключения:]]></text-property>
+                    </text>
+                </cell>
+                <cell id="96">
+                    <text id="147">
+                        <property name="dataSet">GeneralDataSet</property>
+                        <list-property name="boundDataColumns">
+                            <structure>
+                                <property name="name">contractIdentifier</property>
+                                <text-property name="displayName">contractIdentifier</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["contractIdentifier"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                            <structure>
+                                <property name="name">contractAppendSignatureDate</property>
+                                <text-property name="displayName">contractAppendSignatureDate</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["contractAppendSignatureDate"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                            <structure>
+                                <property name="name">actUpdatedAt</property>
+                                <text-property name="displayName">actUpdatedAt</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["actUpdatedAt"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                            <structure>
+                                <property name="name">demandFullNumber</property>
+                                <text-property name="displayName">demandFullNumber</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["demandFullNumber"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                            <structure>
+                                <property name="name">contractFullTitle</property>
+                                <text-property name="displayName">contractFullTitle</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["contractFullTitle"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                            <structure>
+                                <property name="name">planEndDate</property>
+                                <text-property name="displayName">planEndDate</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["planEndDate"]</expression>
+                                <property name="dataType">date</property>
+                            </structure>
+                            <structure>
+                                <property name="name">performer</property>
+                                <text-property name="displayName">performer</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["performer"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                            <structure>
+                                <property name="name">projectInitiator</property>
+                                <text-property name="displayName">projectInitiator</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["projectInitiator"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                            <structure>
+                                <property name="name">budget</property>
+                                <text-property name="displayName">budget</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["budget"]</expression>
+                                <property name="dataType">decimal</property>
+                            </structure>
+                            <structure>
+                                <property name="name">offbudget</property>
+                                <text-property name="displayName">offbudget</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["offbudget"]</expression>
+                                <property name="dataType">decimal</property>
+                            </structure>
+                            <structure>
+                                <property name="name">fileCreationDate</property>
+                                <text-property name="displayName">fileCreationDate</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["fileCreationDate"]</expression>
+                                <property name="dataType">date</property>
+                            </structure>
+                            <structure>
+                                <property name="name">delay</property>
+                                <text-property name="displayName">delay</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["delay"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                            <structure>
+                                <property name="name">acceptanceCommissionFullNumber</property>
+                                <text-property name="displayName">acceptanceCommissionFullNumber</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["acceptanceCommissionFullNumber"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                            <structure>
+                                <property name="name">stageNumber</property>
+                                <text-property name="displayName">stageNumber</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["stageNumber"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                            <structure>
+                                <property name="name">stageTitle</property>
+                                <text-property name="displayName">stageTitle</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["stageTitle"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                        </list-property>
+                        <property name="contentType">html</property>
+                        <text-property name="content"><![CDATA[<div align="justify">Материалы этапа № <VALUE-OF>row._outer["stageNumber"]</VALUE-OF>
+"<VALUE-OF>row._outer["stageTitle"]</VALUE-OF>"</div>]]></text-property>
+                    </text>
+                </cell>
+            </row>
+            <row id="97">
+                <cell id="98">
+                    <text id="117">
+                        <property name="contentType">auto</property>
+                        <text-property name="content"><![CDATA[Государственный контракт с Министерством образования и науки Российской Федерации:]]></text-property>
+                    </text>
+                </cell>
+                <cell id="99">
+                    <text id="148">
+                        <property name="contentType">html</property>
+                        <text-property name="content"><![CDATA[<div align="justify">От <VALUE-OF format="Long Date">row["contractAppendSignatureDate"]</VALUE-OF> № <VALUE-OF>row["contractIdentifier"]</VALUE-OF></div>]]></text-property>
+                    </text>
+                </cell>
+            </row>
+            <row id="100">
+                <cell id="101">
+                    <text id="118">
+                        <property name="contentType">auto</property>
+                        <text-property name="content"><![CDATA[Шифр:]]></text-property>
+                    </text>
+                </cell>
+                <cell id="102">
+                    <data id="158">
+                        <property name="resultSetColumn">demandFullNumber</property>
+                    </data>
+                </cell>
+            </row>
+            <row id="103">
+                <cell id="104">
+                    <text id="119">
+                        <property name="fontSize">14pt</property>
+                        <property name="contentType">auto</property>
+                        <text-property name="content"><![CDATA[Тема:]]></text-property>
+                    </text>
+                </cell>
+                <cell id="105">
+                    <data id="159">
+                        <property name="resultSetColumn">contractFullTitle</property>
+                    </data>
+                </cell>
+            </row>
+            <row id="106">
+                <cell id="107">
+                    <text id="120">
+                        <property name="fontFamily">"Times New Roman"</property>
+                        <property name="fontSize">14pt</property>
+                        <property name="contentType">auto</property>
+                        <text-property name="content"><![CDATA[Плановый срок окончания этапа:]]></text-property>
+                    </text>
+                </cell>
+                <cell id="108">
+                    <text id="165">
+                        <property name="contentType">html</property>
+                        <text-property name="content"><![CDATA[<VALUE-OF format="Long Date">row["planEndDate"]</VALUE-OF>]]></text-property>
+                    </text>
+                </cell>
+            </row>
+            <row id="109">
+                <list-property name="visibility"/>
+                <cell id="110">
+                    <text id="121">
+                        <property name="contentType">auto</property>
+                        <text-property name="content"><![CDATA[Исполнитель:]]></text-property>
+                    </text>
+                </cell>
+                <cell id="111">
+                    <data id="161">
+                        <property name="resultSetColumn">performer</property>
+                    </data>
+                </cell>
+            </row>
+            <row id="123">
+                <list-property name="visibility">
+                    <structure>
+                        <property name="format">all</property>
+                        <expression name="valueExpr" type="javascript">if (row["programActionNumber"] != "2.7")
+	true
+else
+	false</expression>
+                    </structure>
+                </list-property>
+                <cell id="124">
+                    <text id="126">
+                        <property name="contentType">auto</property>
+                        <text-property name="content"><![CDATA[Инициатор проекта:]]></text-property>
+                    </text>
+                </cell>
+                <cell id="125">
+                    <data id="162">
+                        <property name="resultSetColumn">projectInitiator</property>
+                    </data>
+                </cell>
+            </row>
+            <row id="112">
+                <cell id="113">
+                    <text id="122">
+                        <property name="contentType">auto</property>
+                        <text-property name="content"><![CDATA[Цена этапа (средства федерального бюджета), млн. руб.:]]></text-property>
+                    </text>
+                </cell>
+                <cell id="114">
+                    <data id="163">
+                        <property name="resultSetColumn">budget</property>
+                    </data>
+                </cell>
+            </row>
+            <row id="127">
+                <cell id="128">
+                    <text id="130">
+                        <property name="contentType">auto</property>
+                        <text-property name="content"><![CDATA[Плановый объем внебюджетных средств этапа, млн. руб.:]]></text-property>
+                    </text>
+                </cell>
+                <cell id="129">
+                    <data id="164">
+                        <property name="resultSetColumn">offbudget</property>
+                    </data>
+                </cell>
+            </row>
+        </grid>
+        <label id="151"/>
+        <text id="131">
+            <property name="fontFamily">"Times New Roman"</property>
+            <property name="fontSize">14pt</property>
+            <property name="textAlign">justify</property>
+            <property name="dataSet">GeneralDataSet</property>
+            <list-property name="boundDataColumns">
+                <structure>
+                    <property name="name">contractIdentifier</property>
+                    <text-property name="displayName">contractIdentifier</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["contractIdentifier"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">contractAppendSignatureDate</property>
+                    <text-property name="displayName">contractAppendSignatureDate</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["contractAppendSignatureDate"]</expression>
+                    <property name="dataType">date</property>
+                </structure>
+                <structure>
+                    <property name="name">actUpdatedAt</property>
+                    <text-property name="displayName">actUpdatedAt</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["actUpdatedAt"]</expression>
+                    <property name="dataType">date</property>
+                </structure>
+                <structure>
+                    <property name="name">demandFullNumber</property>
+                    <text-property name="displayName">demandFullNumber</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["demandFullNumber"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">contractFullTitle</property>
+                    <text-property name="displayName">contractFullTitle</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["contractFullTitle"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">planEndDate</property>
+                    <text-property name="displayName">planEndDate</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["planEndDate"]</expression>
+                    <property name="dataType">date</property>
+                </structure>
+                <structure>
+                    <property name="name">performer</property>
+                    <text-property name="displayName">performer</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["performer"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">projectInitiator</property>
+                    <text-property name="displayName">projectInitiator</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["projectInitiator"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">budget</property>
+                    <text-property name="displayName">budget</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["budget"]</expression>
+                    <property name="dataType">decimal</property>
+                </structure>
+                <structure>
+                    <property name="name">offbudget</property>
+                    <text-property name="displayName">offbudget</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["offbudget"]</expression>
+                    <property name="dataType">decimal</property>
+                </structure>
+                <structure>
+                    <property name="name">fileCreationDate</property>
+                    <text-property name="displayName">fileCreationDate</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["fileCreationDate"]</expression>
+                    <property name="dataType">date</property>
+                </structure>
+                <structure>
+                    <property name="name">delay</property>
+                    <text-property name="displayName">delay</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["delay"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">acceptanceCommissionFullNumber</property>
+                    <text-property name="displayName">acceptanceCommissionFullNumber</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["acceptanceCommissionFullNumber"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">stageNumber</property>
+                    <text-property name="displayName">stageNumber</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["stageNumber"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">stageTitle</property>
+                    <text-property name="displayName">stageTitle</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["stageTitle"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">managerTitle</property>
+                    <text-property name="displayName">managerTitle</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["managerTitle"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">managerPost</property>
+                    <text-property name="displayName">managerPost</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["managerPost"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">programActionNumber</property>
+                    <text-property name="displayName">programActionNumber</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["programActionNumber"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+            </list-property>
+            <property name="contentType">html</property>
+            <text-property name="content"><![CDATA[&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;1. Исполнителем <VALUE-OF format="Long Date">row["fileCreationDate"]</VALUE-OF> в информационной системе размещена итоговая версия отчетных документов в составе:<br>
+Документы, подтверждающие выполнение внебюджета,<br>
+Документы, подтверждающие выполнение индикаторов,<br>
+Копии договоров с соисполнителями работ (при наличии соисполнителей в контракте) и дополнительных соглашений к ним,<br>
+Отчет о научно-исследовательской работе,<br>
+Отчет о патентных исследованиях,<br>
+Приложение 02 Уведомление о готовности этапа работы к сдаче,<br>
+Приложение 03 Заключение Монитора на отчетную документацию,<br>
+Приложение 05 Справка об устранении замечаний Монитора и Дирекции,<br>
+Приложение 06 Ведомость соответствия результатов работы требованиям ТЗ или задания на выполнение работ,<br>
+Приложение 07 Акт приемки исполненных обязательств,<br>
+Приложение 08 Акт сдачи-приемки  исполненных обязательств (финансовый) для НИР и ОКР/ОТР,<br>
+Приложение 14 Резюме проекта,<br>
+Приложение 17 Отчет о затратах внебюджетных средств, фактически произведенных при выполнении этапа контракта,<br>
+Приложение 17.1 Распределение внебюджетных расходов по видам работ, произведенных при выполнении этапа контракта,<br>
+Приложение 18 Отчет о достижении заданных значений программных индикаторов на этапе выполнения работ по государственному контракту,<br>
+Приложение 18.1 Справка о числе публикаций,<br>
+Приложение 18.2 Справка о числе патентов и поданных заявок,<br>
+Приложение 18.4 Справка о численности молодых специалистов,<br>
+Приложение 19 Сведения о численности и качественном составе исполнителей работ по государственному контракту,<br>
+Форма 1 по учету сведений о результате научно-технической деятельности (объекте учета).<br>
+Форма 2 по актуализации сведений о зарегистрированном в БД РНТД объекте учета.<br>
+Уведомление о РИД.<br>
+Прочие материалы.<br>
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;2. Комплектность предъявленной отчетной документации соответствует требованиям государственного контракта, в том числе технического задания и календарного плана выполнения работ, а также нормативной документации.<br>
+<B><I>(Или указываются имеющиеся отклонения от заданных требований)</I></B> <br>
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;3. Оформление предъявленной отчетной документации соответствует требованиям государственного контракта и нормативной документации.<br>
+<B><I>(Или указываются имеющиеся отклонения от заданных требований)</I></B> <br>
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;4. Достигнутые значения программных индикаторов соответствуют требованиям государственного контракта. <br>
+<B><I>(Или указываются имеющиеся отклонения от заданных требований, включая основания, в соответствии с которыми  значения индикаторов не могут быть зачтены)</I></B> <br>
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;5. Исполнение работ за счет внебюджетных средств соответствует условиям государственного контракта. (Раздел включается в Заключение, если привлечение внебюджетных средств, предусмотрено государственным контрактом)<br>
+<B><I>(Или указываются имеющиеся отклонения от заданных требований, включая основания, в соответствии с которыми  привлеченные внебюджетные средства  не могут быть зачтены)</I></B> <br>
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Работы этапа № <VALUE-OF>row["stageNumber"]</VALUE-OF> государственного контракта  от <VALUE-OF format="Long Date">row["contractAppendSignatureDate"]</VALUE-OF> и № <VALUE-OF>row["contractIdentifier"]</VALUE-OF>  выполнены и предъявлены  <B><VALUE-OF>if (row["delay"] == "0")
+	"в установленные сроки"
+else "с нарушением установленных сроков " + row["delay"] + "(день/дня/дней)"</VALUE-OF></B> и могут быть рассмотрены Комиссией Министерства образования и науки Российской Федерации по приемке работ, выполняемых по мероприятию <VALUE-OF>row["programActionNumber"]</VALUE-OF> федеральной целевой программы «Исследования и разработки по приоритетным направлениям развития научно-технологического комплекса России на 2007-2013 годы».
+]]></text-property>
+        </text>
+        <label id="156"/>
+        <grid id="133">
+            <property name="fontFamily">"Times New Roman"</property>
+            <property name="fontSize">14pt</property>
+            <column id="134"/>
+            <column id="135"/>
+            <row id="136">
+                <cell id="137">
+                    <text id="142">
+                        <property name="dataSet">GeneralDataSet</property>
+                        <list-property name="boundDataColumns">
+                            <structure>
+                                <property name="name">contractIdentifier</property>
+                                <text-property name="displayName">contractIdentifier</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["contractIdentifier"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                            <structure>
+                                <property name="name">contractAppendSignatureDate</property>
+                                <text-property name="displayName">contractAppendSignatureDate</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["contractAppendSignatureDate"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                            <structure>
+                                <property name="name">actUpdatedAt</property>
+                                <text-property name="displayName">actUpdatedAt</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["actUpdatedAt"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                            <structure>
+                                <property name="name">demandFullNumber</property>
+                                <text-property name="displayName">demandFullNumber</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["demandFullNumber"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                            <structure>
+                                <property name="name">contractFullTitle</property>
+                                <text-property name="displayName">contractFullTitle</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["contractFullTitle"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                            <structure>
+                                <property name="name">planEndDate</property>
+                                <text-property name="displayName">planEndDate</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["planEndDate"]</expression>
+                                <property name="dataType">date</property>
+                            </structure>
+                            <structure>
+                                <property name="name">performer</property>
+                                <text-property name="displayName">performer</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["performer"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                            <structure>
+                                <property name="name">projectInitiator</property>
+                                <text-property name="displayName">projectInitiator</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["projectInitiator"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                            <structure>
+                                <property name="name">budget</property>
+                                <text-property name="displayName">budget</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["budget"]</expression>
+                                <property name="dataType">decimal</property>
+                            </structure>
+                            <structure>
+                                <property name="name">offbudget</property>
+                                <text-property name="displayName">offbudget</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["offbudget"]</expression>
+                                <property name="dataType">decimal</property>
+                            </structure>
+                            <structure>
+                                <property name="name">fileCreationDate</property>
+                                <text-property name="displayName">fileCreationDate</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["fileCreationDate"]</expression>
+                                <property name="dataType">date</property>
+                            </structure>
+                            <structure>
+                                <property name="name">delay</property>
+                                <text-property name="displayName">delay</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["delay"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                            <structure>
+                                <property name="name">acceptanceCommissionFullNumber</property>
+                                <text-property name="displayName">acceptanceCommissionFullNumber</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["acceptanceCommissionFullNumber"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                            <structure>
+                                <property name="name">stageNumber</property>
+                                <text-property name="displayName">stageNumber</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["stageNumber"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                            <structure>
+                                <property name="name">stageTitle</property>
+                                <text-property name="displayName">stageTitle</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["stageTitle"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                            <structure>
+                                <property name="name">managerTitle</property>
+                                <text-property name="displayName">managerTitle</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["managerTitle"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                            <structure>
+                                <property name="name">managerPost</property>
+                                <text-property name="displayName">managerPost</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["managerPost"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                        </list-property>
+                        <property name="contentType">html</property>
+                        <text-property name="content"><![CDATA[<VALUE-OF>row["managerPost"]</VALUE-OF> <br>
+Отдела сопровождения проектов <br>
+ФГБНУ «Дирекция НТП»
+]]></text-property>
+                    </text>
+                </cell>
+                <cell id="138">
+                    <text id="143">
+                        <property name="textAlign">center</property>
+                        <property name="dataSet">GeneralDataSet</property>
+                        <list-property name="boundDataColumns">
+                            <structure>
+                                <property name="name">contractIdentifier</property>
+                                <text-property name="displayName">contractIdentifier</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["contractIdentifier"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                            <structure>
+                                <property name="name">contractAppendSignatureDate</property>
+                                <text-property name="displayName">contractAppendSignatureDate</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["contractAppendSignatureDate"]</expression>
+                                <property name="dataType">date</property>
+                            </structure>
+                            <structure>
+                                <property name="name">actUpdatedAt</property>
+                                <text-property name="displayName">actUpdatedAt</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["actUpdatedAt"]</expression>
+                                <property name="dataType">date</property>
+                            </structure>
+                            <structure>
+                                <property name="name">demandFullNumber</property>
+                                <text-property name="displayName">demandFullNumber</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["demandFullNumber"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                            <structure>
+                                <property name="name">contractFullTitle</property>
+                                <text-property name="displayName">contractFullTitle</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["contractFullTitle"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                            <structure>
+                                <property name="name">planEndDate</property>
+                                <text-property name="displayName">planEndDate</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["planEndDate"]</expression>
+                                <property name="dataType">date</property>
+                            </structure>
+                            <structure>
+                                <property name="name">performer</property>
+                                <text-property name="displayName">performer</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["performer"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                            <structure>
+                                <property name="name">projectInitiator</property>
+                                <text-property name="displayName">projectInitiator</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["projectInitiator"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                            <structure>
+                                <property name="name">budget</property>
+                                <text-property name="displayName">budget</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["budget"]</expression>
+                                <property name="dataType">decimal</property>
+                            </structure>
+                            <structure>
+                                <property name="name">offbudget</property>
+                                <text-property name="displayName">offbudget</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["offbudget"]</expression>
+                                <property name="dataType">decimal</property>
+                            </structure>
+                            <structure>
+                                <property name="name">fileCreationDate</property>
+                                <text-property name="displayName">fileCreationDate</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["fileCreationDate"]</expression>
+                                <property name="dataType">date</property>
+                            </structure>
+                            <structure>
+                                <property name="name">delay</property>
+                                <text-property name="displayName">delay</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["delay"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                            <structure>
+                                <property name="name">acceptanceCommissionFullNumber</property>
+                                <text-property name="displayName">acceptanceCommissionFullNumber</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["acceptanceCommissionFullNumber"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                            <structure>
+                                <property name="name">stageNumber</property>
+                                <text-property name="displayName">stageNumber</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["stageNumber"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                            <structure>
+                                <property name="name">stageTitle</property>
+                                <text-property name="displayName">stageTitle</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["stageTitle"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                            <structure>
+                                <property name="name">managerTitle</property>
+                                <text-property name="displayName">managerTitle</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["managerTitle"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                            <structure>
+                                <property name="name">managerPost</property>
+                                <text-property name="displayName">managerPost</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["managerPost"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                            <structure>
+                                <property name="name">programActionNumber</property>
+                                <text-property name="displayName">programActionNumber</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["programActionNumber"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                            <structure>
+                                <property name="name">fileCreationDate_1</property>
+                                <text-property name="displayName">fileCreationDate_1</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["fileCreationDate_1"]</expression>
+                                <property name="dataType">date</property>
+                            </structure>
+                            <structure>
+                                <property name="name">managerLastName</property>
+                                <text-property name="displayName">managerLastName</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["managerLastName"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                            <structure>
+                                <property name="name">managerMiddleName</property>
+                                <text-property name="displayName">managerMiddleName</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["managerMiddleName"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                            <structure>
+                                <property name="name">managerFirstName</property>
+                                <text-property name="displayName">managerFirstName</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["managerFirstName"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                        </list-property>
+                        <property name="contentType">html</property>
+                        <text-property name="content"><![CDATA[<div align="right"><VALUE-OF>row["managerFirstName"][0] + "." + row["managerMiddleName"][0] + "." + row["managerLastName"]</VALUE-OF></div>]]></text-property>
+                    </text>
+                </cell>
+            </row>
+            <row id="139">
+                <cell id="140">
+                    <text id="144">
+                        <property name="contentType">html</property>
+                        <text-property name="content"><![CDATA[Руководитель <br>
+Отдела сопровождения проектов <br>
+ФГБНУ «Дирекция НТП»
+]]></text-property>
+                    </text>
+                </cell>
+                <cell id="141">
+                    <text id="145">
+                        <property name="textAlign">center</property>
+                        <property name="contentType">html</property>
+                        <text-property name="content"><![CDATA[<div align="right">М.Н.Букатова</div>]]></text-property>
+                    </text>
+                </cell>
+            </row>
+        </grid>
+    </body>
+</report>

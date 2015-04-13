@@ -1,0 +1,1 @@
+new ru.naumen.fcntp.bobject.contract.workflow.CoreBOSubDocumentOnEnterStateScript().execute( workflowInstance, oldState, newState, session);

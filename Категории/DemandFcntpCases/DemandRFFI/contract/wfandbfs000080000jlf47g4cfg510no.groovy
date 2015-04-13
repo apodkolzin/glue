@@ -1,0 +1,1 @@
+(new ru.naumen.fcntp.bobject.demand.workflow.CreateContractScript("LOT_PROPORTIONAL")).create(workflowInstance, oldState, newState, session);

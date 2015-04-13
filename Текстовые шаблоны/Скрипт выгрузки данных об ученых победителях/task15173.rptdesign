@@ -1,0 +1,1171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<report xmlns="http://www.eclipse.org/birt/2005/design" version="3.2.23" id="1">
+    <property name="createdBy">Eclipse BIRT Designer Version 3.7.2.v20120213 Build &lt;3.7.2.v20120214-1408></property>
+    <property name="units">in</property>
+    <property name="iconFile">/templates/blank_report.gif</property>
+    <property name="layoutPreference">auto layout</property>
+    <property name="bidiLayoutOrientation">ltr</property>
+    <property name="imageDPI">96</property>
+    <data-sources>
+        <oda-data-source extensionID="org.eclipse.datatools.enablement.oda.xml" name="Data Source" id="7">
+            <property name="FILELIST">D:\work\birt_templates\scients_2013_07_04\scients6.xml</property>
+        </oda-data-source>
+    </data-sources>
+    <data-sets>
+        <oda-data-set extensionID="org.eclipse.datatools.enablement.oda.xml.dataSet" name="data" id="8">
+            <list-property name="computedColumns">
+                <structure>
+                    <property name="name">fio</property>
+                    <expression name="expression">row["lastName"]+" "+row["firstName"]+" "+row["middleName"]</expression>
+                    <property name="dataType">string</property>
+                    <list-property name="arguments">
+                        <structure>
+                            <property name="name">Expression</property>
+                            <expression name="value">row["lastName"]+" "+row["firstName"]+" "+row["middleName"]</expression>
+                        </structure>
+                    </list-property>
+                </structure>
+                <structure>
+                    <property name="name">fio_eng</property>
+                    <expression name="expression">row["lastNameEn"]+" "+row["firstNameEn"]+" "+row["middleNameEn"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+            </list-property>
+            <list-property name="columnHints">
+                <structure>
+                    <property name="columnName">firstName</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">firstName</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">firstNameEn</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">firstNameEn</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">middleName</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">middleName</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">middleNameEn</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">middleNameEn</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">lastName</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">lastName</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">lastNameEn</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">lastNameEn</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">citizenship</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">citizenship</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">status</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">status</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">dateOfBirth</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">dateOfBirth</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">education</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">education</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">residenceAddress</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">residenceAddress</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">privatePhone</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">privatePhone</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">privateEmail</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">privateEmail</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">residenceCountry</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">residenceCountry</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">post</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">post</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">workEmail</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">workEmail</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">hirshIndex</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">hirshIndex</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">citingIndex</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">citingIndex</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">numberOfPublication20082012</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">numberOfPublication20082012</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">workPlace</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">workPlace</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">workPhone</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">workPhone</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">workFax</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">workFax</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">workAddress</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">workAddress</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">degree</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">degree</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">workCountry</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">workCountry</text-property>
+                </structure>
+            </list-property>
+            <list-property name="parameters"/>
+            <structure name="cachedMetaData">
+                <list-property name="resultSet">
+                    <structure>
+                        <property name="position">1</property>
+                        <property name="name">firstName</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">2</property>
+                        <property name="name">firstNameEn</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">3</property>
+                        <property name="name">middleName</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">4</property>
+                        <property name="name">middleNameEn</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">5</property>
+                        <property name="name">lastName</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">6</property>
+                        <property name="name">lastNameEn</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">7</property>
+                        <property name="name">citizenship</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">8</property>
+                        <property name="name">status</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">9</property>
+                        <property name="name">dateOfBirth</property>
+                        <property name="dataType">date</property>
+                    </structure>
+                    <structure>
+                        <property name="position">10</property>
+                        <property name="name">education</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">11</property>
+                        <property name="name">residenceAddress</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">12</property>
+                        <property name="name">privatePhone</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">13</property>
+                        <property name="name">privateEmail</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">14</property>
+                        <property name="name">residenceCountry</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">15</property>
+                        <property name="name">post</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">16</property>
+                        <property name="name">workEmail</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">17</property>
+                        <property name="name">hirshIndex</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">18</property>
+                        <property name="name">citingIndex</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">19</property>
+                        <property name="name">numberOfPublication20082012</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">20</property>
+                        <property name="name">workPlace</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">21</property>
+                        <property name="name">workPhone</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">22</property>
+                        <property name="name">workFax</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">23</property>
+                        <property name="name">workAddress</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">24</property>
+                        <property name="name">degree</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">25</property>
+                        <property name="name">workCountry</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">26</property>
+                        <property name="name">fio</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">27</property>
+                        <property name="name">fio_eng</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                </list-property>
+            </structure>
+            <property name="dataSource">Data Source</property>
+            <list-property name="resultSet">
+                <structure>
+                    <property name="position">1</property>
+                    <property name="name">firstName</property>
+                    <property name="nativeName">firstName</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">2</property>
+                    <property name="name">firstNameEn</property>
+                    <property name="nativeName">firstNameEn</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">3</property>
+                    <property name="name">middleName</property>
+                    <property name="nativeName">middleName</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">4</property>
+                    <property name="name">middleNameEn</property>
+                    <property name="nativeName">middleNameEn</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">5</property>
+                    <property name="name">lastName</property>
+                    <property name="nativeName">lastName</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">6</property>
+                    <property name="name">lastNameEn</property>
+                    <property name="nativeName">lastNameEn</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">7</property>
+                    <property name="name">citizenship</property>
+                    <property name="nativeName">citizenship</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">8</property>
+                    <property name="name">status</property>
+                    <property name="nativeName">status</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">9</property>
+                    <property name="name">dateOfBirth</property>
+                    <property name="nativeName">dateOfBirth</property>
+                    <property name="dataType">date</property>
+                    <property name="nativeDataType">91</property>
+                </structure>
+                <structure>
+                    <property name="position">10</property>
+                    <property name="name">education</property>
+                    <property name="nativeName">education</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">11</property>
+                    <property name="name">residenceAddress</property>
+                    <property name="nativeName">residenceAddress</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">12</property>
+                    <property name="name">privatePhone</property>
+                    <property name="nativeName">privatePhone</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">13</property>
+                    <property name="name">privateEmail</property>
+                    <property name="nativeName">privateEmail</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">14</property>
+                    <property name="name">residenceCountry</property>
+                    <property name="nativeName">residenceCountry</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">15</property>
+                    <property name="name">post</property>
+                    <property name="nativeName">post</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">16</property>
+                    <property name="name">workEmail</property>
+                    <property name="nativeName">workEmail</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">17</property>
+                    <property name="name">hirshIndex</property>
+                    <property name="nativeName">hirshIndex</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">18</property>
+                    <property name="name">citingIndex</property>
+                    <property name="nativeName">citingIndex</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">19</property>
+                    <property name="name">numberOfPublication20082012</property>
+                    <property name="nativeName">numberOfPublication20082012</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">20</property>
+                    <property name="name">workPlace</property>
+                    <property name="nativeName">workPlace</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">21</property>
+                    <property name="name">workPhone</property>
+                    <property name="nativeName">workPhone</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">22</property>
+                    <property name="name">workFax</property>
+                    <property name="nativeName">workFax</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">23</property>
+                    <property name="name">workAddress</property>
+                    <property name="nativeName">workAddress</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">24</property>
+                    <property name="name">degree</property>
+                    <property name="nativeName">degree</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">25</property>
+                    <property name="name">workCountry</property>
+                    <property name="nativeName">workCountry</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+            </list-property>
+            <xml-property name="queryText"><![CDATA[table0#-TNAME-#table0#:#[/datasource/variables/scients/ru.naumen.fcntp.bobject.demand.LeadScientistForm]#:#{firstName;STRING;/__leadScientistFirstName},{firstNameEn;STRING;/__leadScientistFirstNameEn},{middleName;STRING;/__leadScientistMiddleName},{middleNameEn;STRING;/__leadScientistMiddleNameEn},{lastName;STRING;/__leadScientistLastName},{lastNameEn;STRING;/__leadScientistLastNameEn},{citizenship;STRING;/__citizenship},{status;STRING;/__status},{dateOfBirth;DATE;/__dateOfBirth},{education;STRING;/__education},{residenceAddress;STRING;/__residenceAddress},{privatePhone;STRING;/__privatePhone},{privateEmail;STRING;/__privateEmail},{residenceCountry;STRING;/__residenceCountry/__title},{post;STRING;/__post},{workEmail;STRING;/__workEmail},{hirshIndex;STRING;/__hirshIndex},{citingIndex;STRING;/__citingIndex},{numberOfPublication20082012;STRING;/__numberOfPublication20082012},{workPlace;STRING;/__workPlace},{workPhone;STRING;/__workPhone},{workFax;STRING;/__workFax},{workAddress;STRING;/__workAddress},{degree;STRING;/__degree},{workCountry;STRING;/__workCountry/__title}]]></xml-property>
+            <xml-property name="designerValues"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<model:DesignValues xmlns:design="http://www.eclipse.org/datatools/connectivity/oda/design" xmlns:model="http://www.eclipse.org/birt/report/model/adapter/odaModel">
+  <Version>2.0</Version>
+  <design:ResultSets derivedMetaData="true">
+    <design:resultSetDefinitions>
+      <design:resultSetColumns>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>firstName</design:name>
+              <design:position>1</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>firstName</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>firstNameEn</design:name>
+              <design:position>2</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>firstNameEn</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>middleName</design:name>
+              <design:position>3</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>middleName</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>middleNameEn</design:name>
+              <design:position>4</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>middleNameEn</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>lastName</design:name>
+              <design:position>5</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>lastName</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>lastNameEn</design:name>
+              <design:position>6</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>lastNameEn</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+      </design:resultSetColumns>
+      <design:criteria/>
+    </design:resultSetDefinitions>
+  </design:ResultSets>
+</model:DesignValues>]]></xml-property>
+            <list-property name="privateDriverProperties">
+                <ex-property>
+                    <name>MAX_ROW</name>
+                    <value>-1</value>
+                </ex-property>
+                <ex-property>
+                    <name>XML_FILE</name>
+                </ex-property>
+            </list-property>
+        </oda-data-set>
+    </data-sets>
+    <styles>
+        <style name="report" id="4">
+            <property name="fontFamily">sans-serif</property>
+            <property name="fontSize">10pt</property>
+        </style>
+        <style name="crosstab-cell" id="5">
+            <property name="borderBottomColor">#CCCCCC</property>
+            <property name="borderBottomStyle">solid</property>
+            <property name="borderBottomWidth">1pt</property>
+            <property name="borderLeftColor">#CCCCCC</property>
+            <property name="borderLeftStyle">solid</property>
+            <property name="borderLeftWidth">1pt</property>
+            <property name="borderRightColor">#CCCCCC</property>
+            <property name="borderRightStyle">solid</property>
+            <property name="borderRightWidth">1pt</property>
+            <property name="borderTopColor">#CCCCCC</property>
+            <property name="borderTopStyle">solid</property>
+            <property name="borderTopWidth">1pt</property>
+        </style>
+        <style name="crosstab" id="6">
+            <property name="borderBottomColor">#CCCCCC</property>
+            <property name="borderBottomStyle">solid</property>
+            <property name="borderBottomWidth">1pt</property>
+            <property name="borderLeftColor">#CCCCCC</property>
+            <property name="borderLeftStyle">solid</property>
+            <property name="borderLeftWidth">1pt</property>
+            <property name="borderRightColor">#CCCCCC</property>
+            <property name="borderRightStyle">solid</property>
+            <property name="borderRightWidth">1pt</property>
+            <property name="borderTopColor">#CCCCCC</property>
+            <property name="borderTopStyle">solid</property>
+            <property name="borderTopWidth">1pt</property>
+        </style>
+    </styles>
+    <page-setup>
+        <simple-master-page name="Simple MasterPage" id="2">
+            <page-footer>
+                <text id="3">
+                    <property name="contentType">html</property>
+                    <text-property name="content"><![CDATA[<value-of>new Date()</value-of>]]></text-property>
+                </text>
+            </page-footer>
+        </simple-master-page>
+    </page-setup>
+    <body>
+        <table id="9">
+            <property name="width">17.90625in</property>
+            <property name="dataSet">data</property>
+            <list-property name="boundDataColumns">
+                <structure>
+                    <property name="name">firstName</property>
+                    <text-property name="displayName">firstName</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["firstName"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">firstNameEn</property>
+                    <text-property name="displayName">firstNameEn</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["firstNameEn"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">middleName</property>
+                    <text-property name="displayName">middleName</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["middleName"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">middleNameEn</property>
+                    <text-property name="displayName">middleNameEn</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["middleNameEn"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">lastName</property>
+                    <text-property name="displayName">lastName</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["lastName"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">lastNameEn</property>
+                    <text-property name="displayName">lastNameEn</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["lastNameEn"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">citizenship</property>
+                    <text-property name="displayName">citizenship</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["citizenship"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">status</property>
+                    <text-property name="displayName">status</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["status"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">dateOfBirth</property>
+                    <text-property name="displayName">dateOfBirth</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["dateOfBirth"]</expression>
+                    <property name="dataType">date</property>
+                </structure>
+                <structure>
+                    <property name="name">education</property>
+                    <text-property name="displayName">education</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["education"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">residenceAddress</property>
+                    <text-property name="displayName">residenceAddress</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["residenceAddress"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">privatePhone</property>
+                    <text-property name="displayName">privatePhone</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["privatePhone"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">privateEmail</property>
+                    <text-property name="displayName">privateEmail</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["privateEmail"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">residenceCountry</property>
+                    <text-property name="displayName">residenceCountry</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["residenceCountry"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">post</property>
+                    <text-property name="displayName">post</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["post"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">workEmail</property>
+                    <text-property name="displayName">workEmail</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["workEmail"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">hirshIndex</property>
+                    <text-property name="displayName">hirshIndex</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["hirshIndex"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">citingIndex</property>
+                    <text-property name="displayName">citingIndex</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["citingIndex"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">numberOfPublication20082012</property>
+                    <text-property name="displayName">numberOfPublication20082012</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["numberOfPublication20082012"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">workPlace</property>
+                    <text-property name="displayName">workPlace</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["workPlace"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">workPhone</property>
+                    <text-property name="displayName">workPhone</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["workPhone"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">workFax</property>
+                    <text-property name="displayName">workFax</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["workFax"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">workAddress</property>
+                    <text-property name="displayName">workAddress</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["workAddress"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">workCountry</property>
+                    <text-property name="displayName">workCountry</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["workCountry"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">degree</property>
+                    <text-property name="displayName">degree</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["degree"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">fio</property>
+                    <text-property name="displayName">fio</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["fio"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">fio_eng</property>
+                    <text-property name="displayName">fio_eng</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["fio_eng"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">Column Binding</property>
+                    <text-property name="displayName">wc</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["workCountry"]</expression>
+                    <property name="dataType">string</property>
+                    <property name="allowExport">true</property>
+                </structure>
+            </list-property>
+            <column id="148">
+                <property name="width">0.4375in</property>
+            </column>
+            <column id="149">
+                <property name="width">0.6145833333333334in</property>
+            </column>
+            <column id="154">
+                <property name="width">0.8645833333333334in</property>
+            </column>
+            <column id="155">
+                <property name="width">0.5833333333333334in</property>
+            </column>
+            <column id="156">
+                <property name="width">0.5729166666666666in</property>
+            </column>
+            <column id="157">
+                <property name="width">0.8333333333333334in</property>
+            </column>
+            <column id="158">
+                <property name="width">0.8645833333333334in</property>
+            </column>
+            <column id="159">
+                <property name="width">1.1979166666666667in</property>
+            </column>
+            <column id="160">
+                <property name="width">0.9270833333333334in</property>
+            </column>
+            <column id="161">
+                <property name="width">0.90625in</property>
+            </column>
+            <column id="162">
+                <property name="width">1.1770833333333333in</property>
+            </column>
+            <column id="163">
+                <property name="width">0.8541666666666666in</property>
+            </column>
+            <column id="164">
+                <property name="width">0.75in</property>
+            </column>
+            <column id="165">
+                <property name="width">0.90625in</property>
+            </column>
+            <column id="166">
+                <property name="width">0.7708333333333334in</property>
+            </column>
+            <column id="167">
+                <property name="width">0.8854166666666666in</property>
+            </column>
+            <column id="168">
+                <property name="width">1.28125in</property>
+            </column>
+            <column id="169">
+                <property name="width">1.0104166666666667in</property>
+            </column>
+            <column id="170">
+                <property name="width">0.8125in</property>
+            </column>
+            <column id="171">
+                <property name="width">0.6458333333333334in</property>
+            </column>
+            <column id="172">
+                <property name="width">1.0104166666666667in</property>
+            </column>
+            <header>
+                <row id="10">
+                    <cell id="11">
+                        <label id="62">
+                            <property name="fontFamily">"Times New Roman"</property>
+                            <text-property name="text">ФИО (рус)</text-property>
+                        </label>
+                    </cell>
+                    <cell id="13">
+                        <label id="64">
+                            <property name="fontFamily">"Times New Roman"</property>
+                            <text-property name="text">ФИО (англ)</text-property>
+                        </label>
+                    </cell>
+                    <cell id="23">
+                        <label id="24">
+                            <property name="fontFamily">"Times New Roman"</property>
+                            <text-property name="text">Гражданство</text-property>
+                        </label>
+                    </cell>
+                    <cell id="25">
+                        <label id="26">
+                            <property name="fontFamily">"Times New Roman"</property>
+                            <text-property name="text">Ученая степень</text-property>
+                        </label>
+                    </cell>
+                    <cell id="27">
+                        <label id="28">
+                            <property name="fontFamily">"Times New Roman"</property>
+                            <text-property name="text">Ученое звание</text-property>
+                        </label>
+                    </cell>
+                    <cell id="29">
+                        <label id="30">
+                            <property name="fontFamily">"Times New Roman"</property>
+                            <text-property name="text">Дата рождения</text-property>
+                        </label>
+                    </cell>
+                    <cell id="31">
+                        <label id="32">
+                            <property name="fontFamily">"Times New Roman"</property>
+                            <text-property name="text">Образование</text-property>
+                        </label>
+                    </cell>
+                    <cell id="33">
+                        <label id="34">
+                            <property name="fontFamily">"Times New Roman"</property>
+                            <text-property name="text">Почтовый адрес места жительства</text-property>
+                        </label>
+                    </cell>
+                    <cell id="35">
+                        <label id="36">
+                            <property name="fontFamily">"Times New Roman"</property>
+                            <text-property name="text">Личный телефон</text-property>
+                        </label>
+                    </cell>
+                    <cell id="37">
+                        <label id="38">
+                            <property name="fontFamily">"Times New Roman"</property>
+                            <text-property name="text">Личный адрес электронной почты</text-property>
+                        </label>
+                    </cell>
+                    <cell id="39">
+                        <label id="40">
+                            <property name="fontFamily">"Times New Roman"</property>
+                            <text-property name="text">Место жительства. Страна</text-property>
+                        </label>
+                    </cell>
+                    <cell id="41">
+                        <label id="42">
+                            <property name="fontFamily">"Times New Roman"</property>
+                            <text-property name="text">Место работы. Страна</text-property>
+                        </label>
+                    </cell>
+                    <cell id="43">
+                        <label id="44">
+                            <property name="fontFamily">"Times New Roman"</property>
+                            <text-property name="text">Должность</text-property>
+                        </label>
+                    </cell>
+                    <cell id="45">
+                        <label id="46">
+                            <property name="fontFamily">"Times New Roman"</property>
+                            <text-property name="text">Рабочий адрес электронной почты</text-property>
+                        </label>
+                    </cell>
+                    <cell id="47">
+                        <label id="48">
+                            <property name="fontFamily">"Times New Roman"</property>
+                            <text-property name="text">Индекс Хирша ведущего ученого на момент подачи заявки</text-property>
+                        </label>
+                    </cell>
+                    <cell id="49">
+                        <label id="50">
+                            <property name="fontFamily">"Times New Roman"</property>
+                            <text-property name="text">Индекс цитирования</text-property>
+                        </label>
+                    </cell>
+                    <cell id="51">
+                        <label id="52">
+                            <property name="fontFamily">"Times New Roman"</property>
+                            <text-property name="text">Число публикаций за последние пять лет (2008-2012)</text-property>
+                        </label>
+                    </cell>
+                    <cell id="53">
+                        <label id="54">
+                            <property name="fontFamily">"Times New Roman"</property>
+                            <text-property name="text">Место работы. Полное наименование организации</text-property>
+                        </label>
+                    </cell>
+                    <cell id="55">
+                        <label id="56">
+                            <property name="fontFamily">"Times New Roman"</property>
+                            <text-property name="text">Рабочий телефон</text-property>
+                        </label>
+                    </cell>
+                    <cell id="57">
+                        <label id="58">
+                            <property name="fontFamily">"Times New Roman"</property>
+                            <text-property name="text">Рабочий факс</text-property>
+                        </label>
+                    </cell>
+                    <cell id="59">
+                        <label id="60">
+                            <property name="fontFamily">"Times New Roman"</property>
+                            <text-property name="text">Почтовый адрес места работы</text-property>
+                        </label>
+                    </cell>
+                </row>
+            </header>
+            <detail>
+                <row id="65">
+                    <cell id="66">
+                        <data id="117">
+                            <property name="fontFamily">"Times New Roman"</property>
+                            <property name="resultSetColumn">fio</property>
+                        </data>
+                    </cell>
+                    <cell id="68">
+                        <data id="119">
+                            <property name="fontFamily">"Times New Roman"</property>
+                            <property name="resultSetColumn">fio_eng</property>
+                        </data>
+                    </cell>
+                    <cell id="78">
+                        <data id="79">
+                            <property name="fontFamily">"Times New Roman"</property>
+                            <property name="resultSetColumn">citizenship</property>
+                        </data>
+                    </cell>
+                    <cell id="80">
+                        <data id="81">
+                            <property name="fontFamily">"Times New Roman"</property>
+                            <property name="resultSetColumn">degree</property>
+                        </data>
+                    </cell>
+                    <cell id="82">
+                        <data id="83">
+                            <property name="fontFamily">"Times New Roman"</property>
+                            <property name="resultSetColumn">status</property>
+                        </data>
+                    </cell>
+                    <cell id="84">
+                        <data id="85">
+                            <property name="fontFamily">"Times New Roman"</property>
+                            <structure name="dateTimeFormat">
+                                <property name="category">Long Date</property>
+                                <property name="pattern">Long Date</property>
+                            </structure>
+                            <property name="resultSetColumn">dateOfBirth</property>
+                        </data>
+                    </cell>
+                    <cell id="86">
+                        <data id="87">
+                            <property name="fontFamily">"Times New Roman"</property>
+                            <property name="resultSetColumn">education</property>
+                        </data>
+                    </cell>
+                    <cell id="88">
+                        <data id="89">
+                            <property name="fontFamily">"Times New Roman"</property>
+                            <property name="resultSetColumn">residenceAddress</property>
+                        </data>
+                    </cell>
+                    <cell id="90">
+                        <data id="91">
+                            <property name="fontFamily">"Times New Roman"</property>
+                            <property name="resultSetColumn">privatePhone</property>
+                        </data>
+                    </cell>
+                    <cell id="92">
+                        <data id="93">
+                            <property name="fontFamily">"Times New Roman"</property>
+                            <property name="resultSetColumn">privateEmail</property>
+                        </data>
+                    </cell>
+                    <cell id="94">
+                        <data id="95">
+                            <property name="fontFamily">"Times New Roman"</property>
+                            <property name="resultSetColumn">residenceCountry</property>
+                        </data>
+                    </cell>
+                    <cell id="96">
+                        <data id="97">
+                            <property name="fontFamily">"Times New Roman"</property>
+                            <property name="resultSetColumn">Column Binding</property>
+                        </data>
+                    </cell>
+                    <cell id="98">
+                        <data id="99">
+                            <property name="fontFamily">"Times New Roman"</property>
+                            <property name="resultSetColumn">post</property>
+                        </data>
+                    </cell>
+                    <cell id="100">
+                        <data id="101">
+                            <property name="fontFamily">"Times New Roman"</property>
+                            <property name="resultSetColumn">workEmail</property>
+                        </data>
+                    </cell>
+                    <cell id="102">
+                        <data id="103">
+                            <property name="fontFamily">"Times New Roman"</property>
+                            <property name="resultSetColumn">hirshIndex</property>
+                        </data>
+                    </cell>
+                    <cell id="104">
+                        <data id="105">
+                            <property name="fontFamily">"Times New Roman"</property>
+                            <property name="resultSetColumn">citingIndex</property>
+                        </data>
+                    </cell>
+                    <cell id="106">
+                        <data id="107">
+                            <property name="fontFamily">"Times New Roman"</property>
+                            <property name="resultSetColumn">numberOfPublication20082012</property>
+                        </data>
+                    </cell>
+                    <cell id="108">
+                        <data id="109">
+                            <property name="fontFamily">"Times New Roman"</property>
+                            <property name="resultSetColumn">workPlace</property>
+                        </data>
+                    </cell>
+                    <cell id="110">
+                        <data id="111">
+                            <property name="fontFamily">"Times New Roman"</property>
+                            <property name="resultSetColumn">workPhone</property>
+                        </data>
+                    </cell>
+                    <cell id="112">
+                        <data id="113">
+                            <property name="fontFamily">"Times New Roman"</property>
+                            <property name="resultSetColumn">workFax</property>
+                        </data>
+                    </cell>
+                    <cell id="114">
+                        <data id="115">
+                            <property name="fontFamily">"Times New Roman"</property>
+                            <property name="resultSetColumn">workAddress</property>
+                        </data>
+                    </cell>
+                </row>
+            </detail>
+        </table>
+    </body>
+</report>

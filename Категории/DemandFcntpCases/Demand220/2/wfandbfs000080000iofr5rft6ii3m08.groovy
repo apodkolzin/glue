@@ -1,0 +1,1 @@
+person = person =  helper.get('corebofs000080000i10kuvuiq7vjpao'); era = subject.extraResearchArea; new ru.naumen.fcntp.workflow.SendMailScript().execute(subject, user, "P220_2010/DemandLetter/Title", "P220_2010/DemandLetter/Body", ["person":person, "era":era, "state":newState]); 

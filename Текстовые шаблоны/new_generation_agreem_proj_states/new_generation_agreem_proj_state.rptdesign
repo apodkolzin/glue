@@ -1,0 +1,452 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<report xmlns="http://www.eclipse.org/birt/2005/design" version="3.2.23" id="1">
+    <property name="createdBy">Eclipse BIRT Designer Version 3.7.2.v20120213 Build &lt;3.7.2.v20120214-1408></property>
+    <property name="units">in</property>
+    <text-property name="displayName">zzz</text-property>
+    <property name="bidiLayoutOrientation">ltr</property>
+    <property name="imageDPI">96</property>
+    <data-sources>
+        <oda-data-source extensionID="org.eclipse.datatools.enablement.oda.xml" name="Data Source1" id="121">
+            <property name="FILELIST">D:\work\birt_templates\agreement_proj\zzzzzzz.xml</property>
+        </oda-data-source>
+    </data-sources>
+    <data-sets>
+        <oda-data-set extensionID="org.eclipse.datatools.enablement.oda.xml.dataSet" name="Data Set" id="122">
+            <list-property name="columnHints">
+                <structure>
+                    <property name="columnName">manager</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">manager</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">programAction</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">programAction</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">state</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">state</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">count</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">count</text-property>
+                </structure>
+            </list-property>
+            <list-property name="parameters"/>
+            <structure name="cachedMetaData">
+                <list-property name="resultSet">
+                    <structure>
+                        <property name="position">1</property>
+                        <property name="name">manager</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">2</property>
+                        <property name="name">programAction</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">3</property>
+                        <property name="name">state</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">4</property>
+                        <property name="name">count</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                </list-property>
+            </structure>
+            <property name="dataSource">Data Source1</property>
+            <list-property name="resultSet">
+                <structure>
+                    <property name="position">1</property>
+                    <property name="name">manager</property>
+                    <property name="nativeName">manager</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">2</property>
+                    <property name="name">programAction</property>
+                    <property name="nativeName">programAction</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">3</property>
+                    <property name="name">state</property>
+                    <property name="nativeName">state</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">4</property>
+                    <property name="name">count</property>
+                    <property name="nativeName">count</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+            </list-property>
+            <xml-property name="queryText"><![CDATA[table0#-TNAME-#table0#:#[/datasource/variables/states/Entry]#:#{manager;STRING;/manager},{programAction;STRING;/programAction},{state;STRING;/state},{count;STRING;/count}]]></xml-property>
+            <xml-property name="designerValues"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<model:DesignValues xmlns:design="http://www.eclipse.org/datatools/connectivity/oda/design" xmlns:model="http://www.eclipse.org/birt/report/model/adapter/odaModel">
+  <Version>2.0</Version>
+  <design:ResultSets derivedMetaData="true">
+    <design:resultSetDefinitions>
+      <design:resultSetColumns>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>manager</design:name>
+              <design:position>1</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>manager</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>programAction</design:name>
+              <design:position>2</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>programAction</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>state</design:name>
+              <design:position>3</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>state</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>count</design:name>
+              <design:position>4</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>count</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+      </design:resultSetColumns>
+      <design:criteria/>
+    </design:resultSetDefinitions>
+  </design:ResultSets>
+</model:DesignValues>]]></xml-property>
+            <list-property name="privateDriverProperties">
+                <ex-property>
+                    <name>MAX_ROW</name>
+                    <value>-1</value>
+                </ex-property>
+                <ex-property>
+                    <name>XML_FILE</name>
+                </ex-property>
+            </list-property>
+        </oda-data-set>
+    </data-sets>
+    <cubes>
+        <tabular-cube name="Data Cube1" id="124">
+            <property name="dimensions">
+                <tabular-dimension name="Group2" id="125">
+                    <property name="defaultHierarchy">NewTabularHierarchy2</property>
+                    <property name="hierarchies">
+                        <tabular-hierarchy name="NewTabularHierarchy2" id="126">
+                            <property name="levels">
+                                <tabular-level name="manager" id="127">
+                                    <property name="dataType">string</property>
+                                    <property name="columnName">manager</property>
+                                </tabular-level>
+                            </property>
+                        </tabular-hierarchy>
+                    </property>
+                </tabular-dimension>
+                <tabular-dimension name="Group3" id="128">
+                    <property name="defaultHierarchy">NewTabularHierarchy3</property>
+                    <property name="hierarchies">
+                        <tabular-hierarchy name="NewTabularHierarchy3" id="129">
+                            <property name="levels">
+                                <tabular-level name="programAction" id="130">
+                                    <property name="dataType">string</property>
+                                    <property name="columnName">programAction</property>
+                                </tabular-level>
+                            </property>
+                        </tabular-hierarchy>
+                    </property>
+                </tabular-dimension>
+                <tabular-dimension name="Group4" id="149">
+                    <property name="defaultHierarchy">NewTabularHierarchy4</property>
+                    <property name="hierarchies">
+                        <tabular-hierarchy name="NewTabularHierarchy4" id="150">
+                            <property name="levels">
+                                <tabular-level name="state" id="151">
+                                    <property name="dataType">string</property>
+                                    <property name="columnName">state</property>
+                                </tabular-level>
+                            </property>
+                        </tabular-hierarchy>
+                    </property>
+                </tabular-dimension>
+            </property>
+            <property name="measureGroups">
+                <tabular-measure-group name="Summary Field2" id="131">
+                    <property name="measures">
+                        <tabular-measure name="count" id="132">
+                            <property name="function">first</property>
+                            <property name="isCalculated">false</property>
+                            <expression name="measureExpression" type="javascript">dataSetRow["count"]</expression>
+                            <property name="dataType">integer</property>
+                            <property name="isVisible">true</property>
+                        </tabular-measure>
+                    </property>
+                </tabular-measure-group>
+            </property>
+            <property name="dataSet">Data Set</property>
+        </tabular-cube>
+    </cubes>
+    <styles>
+        <style name="report" id="4">
+            <property name="fontFamily">sans-serif</property>
+            <property name="fontSize">10pt</property>
+        </style>
+        <style name="crosstab-cell" id="5">
+            <property name="borderBottomColor">#CCCCCC</property>
+            <property name="borderBottomStyle">solid</property>
+            <property name="borderBottomWidth">1pt</property>
+            <property name="borderLeftColor">#CCCCCC</property>
+            <property name="borderLeftStyle">solid</property>
+            <property name="borderLeftWidth">1pt</property>
+            <property name="borderRightColor">#CCCCCC</property>
+            <property name="borderRightStyle">solid</property>
+            <property name="borderRightWidth">1pt</property>
+            <property name="borderTopColor">#CCCCCC</property>
+            <property name="borderTopStyle">solid</property>
+            <property name="borderTopWidth">1pt</property>
+        </style>
+        <style name="crosstab" id="6">
+            <property name="borderBottomColor">#CCCCCC</property>
+            <property name="borderBottomStyle">solid</property>
+            <property name="borderBottomWidth">1pt</property>
+            <property name="borderLeftColor">#CCCCCC</property>
+            <property name="borderLeftStyle">solid</property>
+            <property name="borderLeftWidth">1pt</property>
+            <property name="borderRightColor">#CCCCCC</property>
+            <property name="borderRightStyle">solid</property>
+            <property name="borderRightWidth">1pt</property>
+            <property name="borderTopColor">#CCCCCC</property>
+            <property name="borderTopStyle">solid</property>
+            <property name="borderTopWidth">1pt</property>
+        </style>
+    </styles>
+    <page-setup>
+        <simple-master-page name="Simple MasterPage" id="2">
+            <property name="orientation">landscape</property>
+            <page-footer>
+                <text id="3">
+                    <property name="contentType">html</property>
+                    <text-property name="content"><![CDATA[<value-of>new Date()</value-of>]]></text-property>
+                </text>
+            </page-footer>
+        </simple-master-page>
+    </page-setup>
+    <body>
+        <extended-item extensionName="Crosstab" extensionVersion="2.5.0" id="133">
+            <property name="cube">Data Cube1</property>
+            <property name="measures">
+                <extended-item extensionName="MeasureView" id="144">
+                    <property name="measure">count</property>
+                    <property name="detail">
+                        <extended-item extensionName="AggregationCell" id="145">
+                            <property name="aggregationOnRow">Group3/programAction</property>
+                            <property name="aggregationOnColumn">Group4/state</property>
+                            <property name="content">
+                                <data id="146">
+                                    <property name="fontFamily">"Times New Roman"</property>
+                                    <property name="resultSetColumn">count_Group3/programAction_Group4/state</property>
+                                </data>
+                            </property>
+                        </extended-item>
+                    </property>
+                    <property name="header">
+                        <extended-item extensionName="CrosstabCell" id="147">
+                            <property name="paddingTop">0pt</property>
+                            <property name="paddingLeft">0pt</property>
+                            <property name="paddingBottom">0pt</property>
+                            <property name="paddingRight">0pt</property>
+                        </extended-item>
+                    </property>
+                </extended-item>
+            </property>
+            <property name="rows">
+                <extended-item extensionName="CrosstabView" id="135">
+                    <property name="views">
+                        <extended-item extensionName="DimensionView" id="136">
+                            <property name="dimension">Group2</property>
+                            <property name="levels">
+                                <extended-item extensionName="LevelView" name="NewLevel View2" id="137">
+                                    <property name="level">Group2/manager</property>
+                                    <property name="member">
+                                        <extended-item extensionName="CrosstabCell" id="138">
+                                            <property name="content">
+                                                <data name="manager1" id="139">
+                                                    <property name="fontFamily">"Times New Roman"</property>
+                                                    <property name="resultSetColumn">manager</property>
+                                                </data>
+                                            </property>
+                                        </extended-item>
+                                    </property>
+                                </extended-item>
+                            </property>
+                        </extended-item>
+                        <extended-item extensionName="DimensionView" id="140">
+                            <property name="dimension">Group3</property>
+                            <property name="levels">
+                                <extended-item extensionName="LevelView" name="NewLevel View3" id="141">
+                                    <property name="level">Group3/programAction</property>
+                                    <property name="member">
+                                        <extended-item extensionName="CrosstabCell" id="142">
+                                            <property name="content">
+                                                <data name="programAction1" id="143">
+                                                    <property name="fontFamily">"Times New Roman"</property>
+                                                    <property name="resultSetColumn">programAction</property>
+                                                </data>
+                                            </property>
+                                        </extended-item>
+                                    </property>
+                                </extended-item>
+                            </property>
+                        </extended-item>
+                    </property>
+                </extended-item>
+            </property>
+            <property name="columns">
+                <extended-item extensionName="CrosstabView" id="152">
+                    <property name="views">
+                        <extended-item extensionName="DimensionView" id="153">
+                            <property name="dimension">Group4</property>
+                            <property name="levels">
+                                <extended-item extensionName="LevelView" name="NewLevel View4" id="154">
+                                    <property name="level">Group4/state</property>
+                                    <property name="member">
+                                        <extended-item extensionName="CrosstabCell" id="155">
+                                            <property name="content">
+                                                <data name="state" id="156">
+                                                    <property name="fontFamily">"Times New Roman"</property>
+                                                    <property name="paddingTop">0pt</property>
+                                                    <property name="paddingLeft">0pt</property>
+                                                    <property name="paddingBottom">0pt</property>
+                                                    <property name="paddingRight">0pt</property>
+                                                    <property name="resultSetColumn">state</property>
+                                                </data>
+                                            </property>
+                                            <property name="paddingTop">0pt</property>
+                                            <property name="paddingLeft">0pt</property>
+                                            <property name="paddingBottom">0pt</property>
+                                            <property name="paddingRight">0pt</property>
+                                        </extended-item>
+                                    </property>
+                                </extended-item>
+                            </property>
+                        </extended-item>
+                    </property>
+                </extended-item>
+            </property>
+            <property name="header">
+                <extended-item extensionName="CrosstabCell" id="134">
+                    <property name="content">
+                        <grid id="157">
+                            <column id="158"/>
+                            <column id="159"/>
+                            <row id="160">
+                                <cell id="161">
+                                    <label id="166">
+                                        <property name="fontFamily">"Times New Roman"</property>
+                                        <text-property name="text">ФИО куратора</text-property>
+                                    </label>
+                                </cell>
+                                <cell id="162">
+                                    <label id="165">
+                                        <property name="fontFamily">"Times New Roman"</property>
+                                        <text-property name="text">Номер мероприятия</text-property>
+                                    </label>
+                                </cell>
+                            </row>
+                        </grid>
+                    </property>
+                </extended-item>
+            </property>
+            <list-property name="boundDataColumns">
+                <structure>
+                    <property name="name">manager</property>
+                    <expression name="expression">dimension["Group2"]["manager"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">programAction</property>
+                    <expression name="expression">dimension["Group3"]["programAction"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">count_Group3/programAction</property>
+                    <expression name="expression">measure["count"]</expression>
+                    <property name="dataType">integer</property>
+                    <simple-property-list name="aggregateOn">
+                        <value>Group3/programAction</value>
+                    </simple-property-list>
+                    <property name="aggregateFunction">FIRST</property>
+                </structure>
+                <structure>
+                    <property name="name">state</property>
+                    <expression name="expression">dimension["Group4"]["state"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">count_Group3/programAction_Group4/state</property>
+                    <expression name="expression">measure["count"]</expression>
+                    <property name="dataType">integer</property>
+                    <simple-property-list name="aggregateOn">
+                        <value>Group3/programAction</value>
+                        <value>Group4/state</value>
+                    </simple-property-list>
+                    <property name="aggregateFunction">FIRST</property>
+                </structure>
+            </list-property>
+        </extended-item>
+    </body>
+</report>

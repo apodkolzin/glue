@@ -1,0 +1,1 @@
+(new ru.naumen.fcntp.examination.workflow.ChangeTaskStageScript( "ExamTaskExpertLetter/Title","ExamTaskExpertLetter/Body")).setFeedback(subject.curator.email).send(workflowInstance, oldState, newState, session);

@@ -1,0 +1,1547 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<report xmlns="http://www.eclipse.org/birt/2005/design" version="3.2.23" id="1">
+    <property name="createdBy">Eclipse BIRT Designer Version 3.7.2.v20120213 Build &lt;3.7.2.v20120214-1408></property>
+    <property name="units">in</property>
+    <property name="iconFile">/templates/blank_report.gif</property>
+    <property name="bidiLayoutOrientation">ltr</property>
+    <property name="imageDPI">96</property>
+    <data-sources>
+        <oda-data-source extensionID="org.eclipse.datatools.enablement.oda.xml" name="Data Source" id="90">
+            <property name="FILELIST">/home/anton/Downloads/data (48).xml</property>
+        </oda-data-source>
+    </data-sources>
+    <data-sets>
+        <oda-data-set extensionID="org.eclipse.datatools.enablement.oda.xml.dataSet" name="General" id="91">
+            <list-property name="columnHints">
+                <structure>
+                    <property name="columnName">programAction</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">programAction</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">queueNumber</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">queueNumber</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">inOfferNumber</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">inOfferNumber</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">theme</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">theme</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">fullNumber</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">fullNumber</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">leadingSubPriorityLine</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">leadingSubPriorityLine</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">curatorFIO</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="heading">curatorFIO</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">creationDays</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="heading">creationDays</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">registryStage</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="heading">registryStage</text-property>
+                </structure>
+            </list-property>
+            <list-property name="parameters"/>
+            <structure name="cachedMetaData">
+                <list-property name="resultSet">
+                    <structure>
+                        <property name="position">1</property>
+                        <property name="name">programAction</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">2</property>
+                        <property name="name">queueNumber</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">3</property>
+                        <property name="name">inOfferNumber</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">4</property>
+                        <property name="name">theme</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">5</property>
+                        <property name="name">fullNumber</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">6</property>
+                        <property name="name">leadingSubPriorityLine</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">7</property>
+                        <property name="name">curatorFIO</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">8</property>
+                        <property name="name">creationDays</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">9</property>
+                        <property name="name">registryStage</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                </list-property>
+            </structure>
+            <property name="dataSource">Data Source</property>
+            <list-property name="resultSet">
+                <structure>
+                    <property name="position">1</property>
+                    <property name="name">programAction</property>
+                    <property name="nativeName">programAction</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">2</property>
+                    <property name="name">queueNumber</property>
+                    <property name="nativeName">queueNumber</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">3</property>
+                    <property name="name">inOfferNumber</property>
+                    <property name="nativeName">inOfferNumber</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">4</property>
+                    <property name="name">theme</property>
+                    <property name="nativeName">theme</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">5</property>
+                    <property name="name">fullNumber</property>
+                    <property name="nativeName">fullNumber</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">6</property>
+                    <property name="name">leadingSubPriorityLine</property>
+                    <property name="nativeName">leadingSubPriorityLine</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">7</property>
+                    <property name="name">curatorFIO</property>
+                    <property name="nativeName">curatorFIO</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">8</property>
+                    <property name="name">creationDays</property>
+                    <property name="nativeName">creationDays</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">9</property>
+                    <property name="name">registryStage</property>
+                    <property name="nativeName">registryStage</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+            </list-property>
+            <xml-property name="queryText"><![CDATA[table0#-TNAME-#table0#:#[/datasource/variables]#:#{programAction;STRING;/programAction},{queueNumber;STRING;/queueNumber},{inOfferNumber;STRING;/inOfferNumber},{theme;STRING;/theme},{fullNumber;STRING;/fullNumber},{leadingSubPriorityLine;STRING;/leadingSubPriorityLine},{curatorFIO;STRING;/curatorFIO},{creationDays;STRING;/creationDays},{registryStage;STRING;/registryStage}]]></xml-property>
+            <xml-property name="designerValues"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<model:DesignValues xmlns:design="http://www.eclipse.org/datatools/connectivity/oda/design" xmlns:model="http://www.eclipse.org/birt/report/model/adapter/odaModel">
+  <Version>2.0</Version>
+  <design:ResultSets derivedMetaData="true">
+    <design:resultSetDefinitions>
+      <design:resultSetColumns>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>programAction</design:name>
+              <design:position>1</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>programAction</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>queueNumber</design:name>
+              <design:position>2</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>queueNumber</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>inOfferNumber</design:name>
+              <design:position>3</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>inOfferNumber</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>theme</design:name>
+              <design:position>4</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>theme</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>fullNumber</design:name>
+              <design:position>5</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>fullNumber</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>leadingSubPriorityLine</design:name>
+              <design:position>6</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>leadingSubPriorityLine</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>result</design:name>
+              <design:position>7</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>result</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+      </design:resultSetColumns>
+      <design:criteria/>
+    </design:resultSetDefinitions>
+  </design:ResultSets>
+</model:DesignValues>]]></xml-property>
+            <list-property name="privateDriverProperties">
+                <ex-property>
+                    <name>MAX_ROW</name>
+                    <value>-1</value>
+                </ex-property>
+                <ex-property>
+                    <name>XML_FILE</name>
+                </ex-property>
+            </list-property>
+        </oda-data-set>
+        <oda-data-set extensionID="org.eclipse.datatools.enablement.oda.xml.dataSet" name="persons" id="94">
+            <list-property name="columnHints">
+                <structure>
+                    <property name="columnName">fio</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">fio</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">academicDegrees</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">academicDegrees</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">academicStatuses</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">academicStatuses</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">organizations</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">organizations</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">note</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="heading">note</text-property>
+                </structure>
+            </list-property>
+            <list-property name="parameters"/>
+            <structure name="cachedMetaData">
+                <list-property name="resultSet">
+                    <structure>
+                        <property name="position">1</property>
+                        <property name="name">fio</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">2</property>
+                        <property name="name">academicDegrees</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">3</property>
+                        <property name="name">academicStatuses</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">4</property>
+                        <property name="name">organizations</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">5</property>
+                        <property name="name">note</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                </list-property>
+            </structure>
+            <property name="dataSource">Data Source</property>
+            <list-property name="resultSet">
+                <structure>
+                    <property name="position">1</property>
+                    <property name="name">fio</property>
+                    <property name="nativeName">fio</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">2</property>
+                    <property name="name">academicDegrees</property>
+                    <property name="nativeName">academicDegrees</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">3</property>
+                    <property name="name">academicStatuses</property>
+                    <property name="nativeName">academicStatuses</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">4</property>
+                    <property name="name">organizations</property>
+                    <property name="nativeName">organizations</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">5</property>
+                    <property name="name">note</property>
+                    <property name="nativeName">note</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+            </list-property>
+            <xml-property name="queryText"><![CDATA[table0#-TNAME-#table0#:#[/datasource/variables/persons/Person]#:#{fio;STRING;/fio},{academicDegrees;STRING;/academicDegrees},{academicStatuses;STRING;/academicStatuses},{organizations;STRING;/organizations},{note;STRING;/note}]]></xml-property>
+            <xml-property name="designerValues"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<model:DesignValues xmlns:design="http://www.eclipse.org/datatools/connectivity/oda/design" xmlns:model="http://www.eclipse.org/birt/report/model/adapter/odaModel">
+  <Version>2.0</Version>
+  <design:ResultSets derivedMetaData="true">
+    <design:resultSetDefinitions>
+      <design:resultSetColumns>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>fio</design:name>
+              <design:position>1</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>fio</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>academicDegrees</design:name>
+              <design:position>2</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>academicDegrees</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>academicStatuses</design:name>
+              <design:position>3</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>academicStatuses</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>organizations</design:name>
+              <design:position>4</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>organizations</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>stages</design:name>
+              <design:position>5</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>stages</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+      </design:resultSetColumns>
+      <design:criteria/>
+    </design:resultSetDefinitions>
+  </design:ResultSets>
+</model:DesignValues>]]></xml-property>
+            <list-property name="privateDriverProperties">
+                <ex-property>
+                    <name>MAX_ROW</name>
+                    <value>-1</value>
+                </ex-property>
+                <ex-property>
+                    <name>XML_FILE</name>
+                </ex-property>
+            </list-property>
+        </oda-data-set>
+    </data-sets>
+    <styles>
+        <style name="report" id="4">
+            <property name="fontFamily">sans-serif</property>
+            <property name="fontSize">10pt</property>
+        </style>
+        <style name="crosstab-cell" id="5">
+            <property name="borderBottomColor">#CCCCCC</property>
+            <property name="borderBottomStyle">solid</property>
+            <property name="borderBottomWidth">1pt</property>
+            <property name="borderLeftColor">#CCCCCC</property>
+            <property name="borderLeftStyle">solid</property>
+            <property name="borderLeftWidth">1pt</property>
+            <property name="borderRightColor">#CCCCCC</property>
+            <property name="borderRightStyle">solid</property>
+            <property name="borderRightWidth">1pt</property>
+            <property name="borderTopColor">#CCCCCC</property>
+            <property name="borderTopStyle">solid</property>
+            <property name="borderTopWidth">1pt</property>
+        </style>
+        <style name="crosstab" id="6">
+            <property name="borderBottomColor">#CCCCCC</property>
+            <property name="borderBottomStyle">solid</property>
+            <property name="borderBottomWidth">1pt</property>
+            <property name="borderLeftColor">#CCCCCC</property>
+            <property name="borderLeftStyle">solid</property>
+            <property name="borderLeftWidth">1pt</property>
+            <property name="borderRightColor">#CCCCCC</property>
+            <property name="borderRightStyle">solid</property>
+            <property name="borderRightWidth">1pt</property>
+            <property name="borderTopColor">#CCCCCC</property>
+            <property name="borderTopStyle">solid</property>
+            <property name="borderTopWidth">1pt</property>
+        </style>
+    </styles>
+    <page-setup>
+        <simple-master-page name="Simple MasterPage" id="2">
+            <property name="orientation">landscape</property>
+            <property name="leftMargin">0.5729166666666666in</property>
+            <property name="rightMargin">0.5104166666666666in</property>
+            <page-footer>
+                <text id="3">
+                    <property name="fontFamily">"Times New Roman"</property>
+                    <property name="fontSize">12pt</property>
+                    <property name="contentType">html</property>
+                    <text-property name="content"><![CDATA[Экз.1 - ФГБНУ "Дирекция НТП", Экз.2 - НО ФИОН]]></text-property>
+                </text>
+            </page-footer>
+        </simple-master-page>
+    </page-setup>
+    <body>
+        <grid id="26">
+            <property name="width">9.84375in</property>
+            <column id="27">
+                <property name="width">2.4583333333333335in</property>
+            </column>
+            <column id="28">
+                <property name="width">4.854166666666667in</property>
+            </column>
+            <column id="29">
+                <property name="width">2.53125in</property>
+            </column>
+            <row id="30">
+                <cell id="31"/>
+                <cell id="32"/>
+                <cell id="33">
+                    <text id="8">
+                        <property name="fontFamily">"Times New Roman"</property>
+                        <property name="fontSize">12pt</property>
+                        <property name="textAlign">left</property>
+                        <property name="contentType">auto</property>
+                        <text-property name="content"><![CDATA[СОГЛАСОВАНО
+Генеральный директор
+ФГБНУ "Дирекция НТП"
+___________ А.Н. Петров
+"__" ___________ 2014г.]]></text-property>
+                    </text>
+                </cell>
+            </row>
+        </grid>
+        <label id="36"/>
+        <label id="35"/>
+        <text id="34">
+            <property name="fontFamily">"Times New Roman"</property>
+            <property name="fontSize">12pt</property>
+            <property name="textAlign">center</property>
+            <property name="dataSet">General</property>
+            <list-property name="visibility">
+                <structure>
+                    <property name="format">all</property>
+                    <expression name="valueExpr" type="javascript">!row["registryStage"].equals("preliminaryExpertRegistry")</expression>
+                </structure>
+            </list-property>
+            <list-property name="boundDataColumns">
+                <structure>
+                    <property name="name">programAction</property>
+                    <text-property name="displayName">programAction</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["programAction"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">queueNumber</property>
+                    <text-property name="displayName">queueNumber</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["queueNumber"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">inOfferNumber</property>
+                    <text-property name="displayName">inOfferNumber</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["inOfferNumber"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">theme</property>
+                    <text-property name="displayName">theme</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["theme"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">fullNumber</property>
+                    <text-property name="displayName">fullNumber</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["fullNumber"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">leadingSubPriorityLine</property>
+                    <text-property name="displayName">leadingSubPriorityLine</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["leadingSubPriorityLine"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">curatorFIO</property>
+                    <text-property name="displayName">curatorFIO</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["curatorFIO"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">creationDays</property>
+                    <text-property name="displayName">creationDays</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["creationDays"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">registryStage</property>
+                    <text-property name="displayName">registryStage</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["registryStage"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+            </list-property>
+            <property name="contentType">html</property>
+            <text-property name="content"><![CDATA[ПРЕДВАРИТЕЛЬНЫЙ СПИСОК ЭКСПЕРТОВ]]></text-property>
+        </text>
+        <text id="2528">
+            <property name="fontFamily">"Times New Roman"</property>
+            <property name="fontSize">12pt</property>
+            <property name="textAlign">center</property>
+            <property name="dataSet">General</property>
+            <list-property name="visibility">
+                <structure>
+                    <property name="format">all</property>
+                    <expression name="valueExpr" type="javascript">!row["registryStage"].equals("intermediateExpertRegistry")</expression>
+                </structure>
+            </list-property>
+            <list-property name="boundDataColumns">
+                <structure>
+                    <property name="name">programAction</property>
+                    <text-property name="displayName">programAction</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["programAction"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">queueNumber</property>
+                    <text-property name="displayName">queueNumber</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["queueNumber"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">inOfferNumber</property>
+                    <text-property name="displayName">inOfferNumber</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["inOfferNumber"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">theme</property>
+                    <text-property name="displayName">theme</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["theme"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">fullNumber</property>
+                    <text-property name="displayName">fullNumber</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["fullNumber"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">leadingSubPriorityLine</property>
+                    <text-property name="displayName">leadingSubPriorityLine</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["leadingSubPriorityLine"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">curatorFIO</property>
+                    <text-property name="displayName">curatorFIO</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["curatorFIO"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">creationDays</property>
+                    <text-property name="displayName">creationDays</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["creationDays"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">registryStage</property>
+                    <text-property name="displayName">registryStage</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["registryStage"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+            </list-property>
+            <property name="contentType">auto</property>
+            <text-property name="content"><![CDATA[ПРОМЕЖУТОЧНЫЙ СПИСОК ЭКСПЕРТОВ]]></text-property>
+        </text>
+        <text id="2527">
+            <property name="fontFamily">"Times New Roman"</property>
+            <property name="fontSize">12pt</property>
+            <property name="textAlign">center</property>
+            <property name="dataSet">General</property>
+            <list-property name="visibility">
+                <structure>
+                    <property name="format">all</property>
+                    <expression name="valueExpr" type="javascript">!row["registryStage"].equals("finalExpertRegistry")</expression>
+                </structure>
+            </list-property>
+            <list-property name="boundDataColumns">
+                <structure>
+                    <property name="name">programAction</property>
+                    <text-property name="displayName">programAction</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["programAction"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">queueNumber</property>
+                    <text-property name="displayName">queueNumber</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["queueNumber"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">inOfferNumber</property>
+                    <text-property name="displayName">inOfferNumber</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["inOfferNumber"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">theme</property>
+                    <text-property name="displayName">theme</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["theme"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">fullNumber</property>
+                    <text-property name="displayName">fullNumber</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["fullNumber"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">leadingSubPriorityLine</property>
+                    <text-property name="displayName">leadingSubPriorityLine</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["leadingSubPriorityLine"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">curatorFIO</property>
+                    <text-property name="displayName">curatorFIO</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["curatorFIO"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">creationDays</property>
+                    <text-property name="displayName">creationDays</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["creationDays"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">registryStage</property>
+                    <text-property name="displayName">registryStage</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["registryStage"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+            </list-property>
+            <property name="contentType">auto</property>
+            <text-property name="content"><![CDATA[ИТОГОВЫЙ СПИСОК ЭКСПЕРТОВ]]></text-property>
+        </text>
+        <text id="37">
+            <property name="fontFamily">"Times New Roman"</property>
+            <property name="fontSize">12pt</property>
+            <property name="textAlign">center</property>
+            <property name="dataSet">General</property>
+            <list-property name="visibility">
+                <structure>
+                    <property name="format">all</property>
+                    <expression name="valueExpr" type="javascript">!row["registryStage"].equals("preliminaryExpertRegistry")</expression>
+                </structure>
+            </list-property>
+            <list-property name="boundDataColumns">
+                <structure>
+                    <property name="name">programAction</property>
+                    <text-property name="displayName">programAction</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["programAction"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">queueNumber</property>
+                    <text-property name="displayName">queueNumber</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["queueNumber"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">inOfferNumber</property>
+                    <text-property name="displayName">inOfferNumber</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["inOfferNumber"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">theme</property>
+                    <text-property name="displayName">theme</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["theme"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">fullNumber</property>
+                    <text-property name="displayName">fullNumber</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["fullNumber"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">leadingSubPriorityLine</property>
+                    <text-property name="displayName">leadingSubPriorityLine</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["leadingSubPriorityLine"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">curatorFIO</property>
+                    <text-property name="displayName">curatorFIO</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["curatorFIO"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">creationDays</property>
+                    <text-property name="displayName">creationDays</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["creationDays"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">registryStage</property>
+                    <text-property name="displayName">registryStage</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["registryStage"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+            </list-property>
+            <property name="contentType">html</property>
+            <text-property name="content"><![CDATA[планируемых к привлечению для проведения конкурсного отбора проектов по мероприятию 
+Программы <VALUE-OF>row["programAction"]</VALUE-OF>&amp;nbsp очередь <VALUE-OF>row["queueNumber"]</VALUE-OF>, Лот <VALUE-OF>row["inOfferNumber"]</VALUE-OF> по теме «<VALUE-OF>row["theme"]</VALUE-OF>» по приоритетному направлению 
+"<VALUE-OF>row["leadingSubPriorityLine"]</VALUE-OF>"  
+Шифр: <VALUE-OF>row["fullNumber"]</VALUE-OF>]]></text-property>
+        </text>
+        <text id="92">
+            <property name="fontFamily">"Times New Roman"</property>
+            <property name="fontSize">12pt</property>
+            <property name="textAlign">center</property>
+            <property name="dataSet">General</property>
+            <list-property name="visibility">
+                <structure>
+                    <property name="format">all</property>
+                    <expression name="valueExpr" type="javascript">!row["registryStage"].equals("intermediateExpertRegistry")</expression>
+                </structure>
+            </list-property>
+            <list-property name="boundDataColumns">
+                <structure>
+                    <property name="name">programAction</property>
+                    <text-property name="displayName">programAction</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["programAction"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">queueNumber</property>
+                    <text-property name="displayName">queueNumber</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["queueNumber"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">inOfferNumber</property>
+                    <text-property name="displayName">inOfferNumber</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["inOfferNumber"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">theme</property>
+                    <text-property name="displayName">theme</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["theme"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">fullNumber</property>
+                    <text-property name="displayName">fullNumber</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["fullNumber"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">leadingSubPriorityLine</property>
+                    <text-property name="displayName">leadingSubPriorityLine</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["leadingSubPriorityLine"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">curatorFIO</property>
+                    <text-property name="displayName">curatorFIO</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["curatorFIO"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">creationDays</property>
+                    <text-property name="displayName">creationDays</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["creationDays"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">registryStage</property>
+                    <text-property name="displayName">registryStage</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["registryStage"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+            </list-property>
+            <property name="contentType">html</property>
+            <text-property name="content"><![CDATA[планируемых к привлечению для проведения конкурсного отбора проектов по мероприятию 
+Программы <VALUE-OF>row["programAction"]</VALUE-OF>&amp;nbsp очередь <VALUE-OF>row["queueNumber"]</VALUE-OF>, Лот <VALUE-OF>row["inOfferNumber"]</VALUE-OF> по теме «<VALUE-OF>row["theme"]</VALUE-OF>»
+Шифр: <VALUE-OF>row["fullNumber"]</VALUE-OF>]]></text-property>
+        </text>
+        <text id="93">
+            <property name="fontFamily">"Times New Roman"</property>
+            <property name="fontSize">12pt</property>
+            <property name="textAlign">center</property>
+            <property name="dataSet">General</property>
+            <list-property name="visibility">
+                <structure>
+                    <property name="format">all</property>
+                    <expression name="valueExpr" type="javascript">!row["registryStage"].equals("finalExpertRegistry")</expression>
+                </structure>
+            </list-property>
+            <list-property name="boundDataColumns">
+                <structure>
+                    <property name="name">programAction</property>
+                    <text-property name="displayName">programAction</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["programAction"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">queueNumber</property>
+                    <text-property name="displayName">queueNumber</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["queueNumber"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">inOfferNumber</property>
+                    <text-property name="displayName">inOfferNumber</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["inOfferNumber"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">theme</property>
+                    <text-property name="displayName">theme</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["theme"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">fullNumber</property>
+                    <text-property name="displayName">fullNumber</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["fullNumber"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">leadingSubPriorityLine</property>
+                    <text-property name="displayName">leadingSubPriorityLine</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["leadingSubPriorityLine"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">curatorFIO</property>
+                    <text-property name="displayName">curatorFIO</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["curatorFIO"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">creationDays</property>
+                    <text-property name="displayName">creationDays</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["creationDays"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">registryStage</property>
+                    <text-property name="displayName">registryStage</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["registryStage"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+            </list-property>
+            <property name="contentType">html</property>
+            <text-property name="content"><![CDATA[привлекаемых для проведения конкурсного отбора проектов по мероприятию 
+Программы <VALUE-OF>row["programAction"]</VALUE-OF> очередь <VALUE-OF>row["queueNumber"]</VALUE-OF>, Лот <VALUE-OF>row["inOfferNumber"]</VALUE-OF> по теме «<VALUE-OF>row["theme"]</VALUE-OF>»
+Шифр: <VALUE-OF>row["fullNumber"]</VALUE-OF>]]></text-property>
+        </text>
+        <label id="2526"/>
+        <table id="95">
+            <property name="fontFamily">"Times New Roman"</property>
+            <property name="fontSize">12pt</property>
+            <property name="borderBottomColor">#000000</property>
+            <property name="borderBottomStyle">solid</property>
+            <property name="borderBottomWidth">thin</property>
+            <property name="borderLeftColor">#000000</property>
+            <property name="borderLeftStyle">solid</property>
+            <property name="borderLeftWidth">thin</property>
+            <property name="borderRightColor">#000000</property>
+            <property name="borderRightStyle">solid</property>
+            <property name="borderRightWidth">thin</property>
+            <property name="borderTopColor">#000000</property>
+            <property name="borderTopStyle">solid</property>
+            <property name="borderTopWidth">thin</property>
+            <property name="width">9.864583333333334in</property>
+            <property name="dataSet">persons</property>
+            <list-property name="boundDataColumns">
+                <structure>
+                    <property name="name">fio</property>
+                    <text-property name="displayName">fio</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["fio"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">academicDegrees</property>
+                    <text-property name="displayName">academicDegrees</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["academicDegrees"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">academicStatuses</property>
+                    <text-property name="displayName">academicStatuses</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["academicStatuses"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">organizations</property>
+                    <text-property name="displayName">organizations</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["organizations"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">note</property>
+                    <text-property name="displayName">note</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["note"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+            </list-property>
+            <column id="117">
+                <property name="width">0.78125in</property>
+            </column>
+            <column id="118">
+                <property name="width">2.5104166666666665in</property>
+            </column>
+            <column id="119">
+                <property name="width">1.6458333333333333in</property>
+            </column>
+            <column id="120">
+                <property name="width">1.6458333333333333in</property>
+            </column>
+            <column id="121">
+                <property name="width">1.6458333333333333in</property>
+            </column>
+            <column id="122">
+                <property name="width">1.6354166666666667in</property>
+            </column>
+            <header>
+                <row id="96">
+                    <property name="borderBottomColor">#000000</property>
+                    <property name="borderBottomStyle">solid</property>
+                    <property name="borderBottomWidth">thin</property>
+                    <property name="borderLeftColor">#000000</property>
+                    <property name="borderLeftStyle">solid</property>
+                    <property name="borderLeftWidth">thin</property>
+                    <property name="borderRightColor">#000000</property>
+                    <property name="borderRightStyle">solid</property>
+                    <property name="borderRightWidth">thin</property>
+                    <property name="borderTopColor">#000000</property>
+                    <property name="borderTopStyle">solid</property>
+                    <property name="borderTopWidth">thin</property>
+                    <cell id="97">
+                        <property name="borderBottomColor">#000000</property>
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">thin</property>
+                        <property name="borderLeftColor">#000000</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">thin</property>
+                        <property name="borderRightColor">#000000</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">thin</property>
+                        <property name="borderTopColor">#000000</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">thin</property>
+                        <label id="123">
+                            <text-property name="text">№ п/п</text-property>
+                        </label>
+                    </cell>
+                    <cell id="98">
+                        <property name="borderBottomColor">#000000</property>
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">thin</property>
+                        <property name="borderLeftColor">#000000</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">thin</property>
+                        <property name="borderRightColor">#000000</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">thin</property>
+                        <property name="borderTopColor">#000000</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">thin</property>
+                        <label id="57">
+                            <text-property name="text">ФИО</text-property>
+                        </label>
+                    </cell>
+                    <cell id="99">
+                        <property name="borderBottomColor">#000000</property>
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">thin</property>
+                        <property name="borderLeftColor">#000000</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">thin</property>
+                        <property name="borderRightColor">#000000</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">thin</property>
+                        <property name="borderTopColor">#000000</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">thin</property>
+                        <label id="58">
+                            <text-property name="text">Ученая степень</text-property>
+                        </label>
+                    </cell>
+                    <cell id="100">
+                        <property name="borderBottomColor">#000000</property>
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">thin</property>
+                        <property name="borderLeftColor">#000000</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">thin</property>
+                        <property name="borderRightColor">#000000</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">thin</property>
+                        <property name="borderTopColor">#000000</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">thin</property>
+                        <label id="59">
+                            <text-property name="text">Ученое звание</text-property>
+                        </label>
+                    </cell>
+                    <cell id="101">
+                        <property name="borderBottomColor">#000000</property>
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">thin</property>
+                        <property name="borderLeftColor">#000000</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">thin</property>
+                        <property name="borderRightColor">#000000</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">thin</property>
+                        <property name="borderTopColor">#000000</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">thin</property>
+                        <label id="60">
+                            <text-property name="text">Место работы</text-property>
+                        </label>
+                    </cell>
+                    <cell id="102">
+                        <property name="borderBottomColor">#000000</property>
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">thin</property>
+                        <property name="borderLeftColor">#000000</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">thin</property>
+                        <property name="borderRightColor">#000000</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">thin</property>
+                        <property name="borderTopColor">#000000</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">thin</property>
+                        <label id="64">
+                            <text-property name="text">Примечание</text-property>
+                        </label>
+                    </cell>
+                </row>
+            </header>
+            <detail>
+                <row id="103">
+                    <property name="borderBottomColor">#000000</property>
+                    <property name="borderBottomStyle">solid</property>
+                    <property name="borderBottomWidth">thin</property>
+                    <property name="borderLeftColor">#000000</property>
+                    <property name="borderLeftStyle">solid</property>
+                    <property name="borderLeftWidth">thin</property>
+                    <property name="borderRightColor">#000000</property>
+                    <property name="borderRightStyle">solid</property>
+                    <property name="borderRightWidth">thin</property>
+                    <property name="borderTopColor">#000000</property>
+                    <property name="borderTopStyle">solid</property>
+                    <property name="borderTopWidth">thin</property>
+                    <cell id="104">
+                        <property name="borderBottomColor">#000000</property>
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">thin</property>
+                        <property name="borderLeftColor">#000000</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">thin</property>
+                        <property name="borderRightColor">#000000</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">thin</property>
+                        <property name="borderTopColor">#000000</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">thin</property>
+                        <text id="2525">
+                            <property name="contentType">html</property>
+                            <text-property name="content"><![CDATA[<VALUE-OF>row.__rownum+1</VALUE-OF>]]></text-property>
+                        </text>
+                    </cell>
+                    <cell id="105">
+                        <property name="borderBottomColor">#000000</property>
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">thin</property>
+                        <property name="borderLeftColor">#000000</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">thin</property>
+                        <property name="borderRightColor">#000000</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">thin</property>
+                        <property name="borderTopColor">#000000</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">thin</property>
+                        <data id="124">
+                            <property name="resultSetColumn">fio</property>
+                        </data>
+                    </cell>
+                    <cell id="106">
+                        <property name="borderBottomColor">#000000</property>
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">thin</property>
+                        <property name="borderLeftColor">#000000</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">thin</property>
+                        <property name="borderRightColor">#000000</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">thin</property>
+                        <property name="borderTopColor">#000000</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">thin</property>
+                        <data id="125">
+                            <property name="resultSetColumn">academicDegrees</property>
+                        </data>
+                    </cell>
+                    <cell id="107">
+                        <property name="borderBottomColor">#000000</property>
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">thin</property>
+                        <property name="borderLeftColor">#000000</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">thin</property>
+                        <property name="borderRightColor">#000000</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">thin</property>
+                        <property name="borderTopColor">#000000</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">thin</property>
+                        <data id="126">
+                            <property name="resultSetColumn">academicStatuses</property>
+                        </data>
+                    </cell>
+                    <cell id="108">
+                        <property name="borderBottomColor">#000000</property>
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">thin</property>
+                        <property name="borderLeftColor">#000000</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">thin</property>
+                        <property name="borderRightColor">#000000</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">thin</property>
+                        <property name="borderTopColor">#000000</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">thin</property>
+                        <data id="127">
+                            <property name="resultSetColumn">organizations</property>
+                        </data>
+                    </cell>
+                    <cell id="109">
+                        <property name="borderBottomColor">#000000</property>
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">thin</property>
+                        <property name="borderLeftColor">#000000</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">thin</property>
+                        <property name="borderRightColor">#000000</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">thin</property>
+                        <property name="borderTopColor">#000000</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">thin</property>
+                        <data id="129">
+                            <property name="resultSetColumn">note</property>
+                        </data>
+                    </cell>
+                </row>
+            </detail>
+        </table>
+        <label id="70"/>
+        <label id="71"/>
+        <grid id="72">
+            <column id="73"/>
+            <column id="74"/>
+            <row id="75">
+                <cell id="76">
+                    <text id="81">
+                        <property name="fontFamily">"Times New Roman"</property>
+                        <property name="fontSize">12pt</property>
+                        <property name="dataSet">General</property>
+                        <list-property name="boundDataColumns">
+                            <structure>
+                                <property name="name">programAction</property>
+                                <text-property name="displayName">programAction</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["programAction"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                            <structure>
+                                <property name="name">queueNumber</property>
+                                <text-property name="displayName">queueNumber</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["queueNumber"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                            <structure>
+                                <property name="name">inOfferNumber</property>
+                                <text-property name="displayName">inOfferNumber</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["inOfferNumber"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                            <structure>
+                                <property name="name">theme</property>
+                                <text-property name="displayName">theme</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["theme"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                            <structure>
+                                <property name="name">fullNumber</property>
+                                <text-property name="displayName">fullNumber</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["fullNumber"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                            <structure>
+                                <property name="name">leadingSubPriorityLine</property>
+                                <text-property name="displayName">leadingSubPriorityLine</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["leadingSubPriorityLine"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                            <structure>
+                                <property name="name">curatorFIO</property>
+                                <text-property name="displayName">curatorFIO</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["curatorFIO"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                            <structure>
+                                <property name="name">creationDays</property>
+                                <text-property name="displayName">creationDays</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["creationDays"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                            <structure>
+                                <property name="name">registryStage</property>
+                                <text-property name="displayName">registryStage</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["registryStage"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                        </list-property>
+                        <property name="contentType">html</property>
+                        <text-property name="content"><![CDATA[Куратор по приоритетному направлению <VALUE-OF>row["leadingSubPriorityLine"]</VALUE-OF>]]></text-property>
+                    </text>
+                </cell>
+                <cell id="77">
+                    <text id="82">
+                        <property name="fontFamily">"Times New Roman"</property>
+                        <property name="fontSize">12pt</property>
+                        <property name="dataSet">General</property>
+                        <list-property name="boundDataColumns">
+                            <structure>
+                                <property name="name">programAction</property>
+                                <text-property name="displayName">programAction</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["programAction"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                            <structure>
+                                <property name="name">queueNumber</property>
+                                <text-property name="displayName">queueNumber</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["queueNumber"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                            <structure>
+                                <property name="name">inOfferNumber</property>
+                                <text-property name="displayName">inOfferNumber</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["inOfferNumber"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                            <structure>
+                                <property name="name">theme</property>
+                                <text-property name="displayName">theme</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["theme"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                            <structure>
+                                <property name="name">fullNumber</property>
+                                <text-property name="displayName">fullNumber</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["fullNumber"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                            <structure>
+                                <property name="name">leadingSubPriorityLine</property>
+                                <text-property name="displayName">leadingSubPriorityLine</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["leadingSubPriorityLine"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                            <structure>
+                                <property name="name">curatorFIO</property>
+                                <text-property name="displayName">curatorFIO</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["curatorFIO"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                            <structure>
+                                <property name="name">creationDays</property>
+                                <text-property name="displayName">creationDays</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["creationDays"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                            <structure>
+                                <property name="name">registryStage</property>
+                                <text-property name="displayName">registryStage</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["registryStage"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                        </list-property>
+                        <property name="contentType">html</property>
+                        <text-property name="content"><![CDATA[<VALUE-OF>row["curatorFIO"]</VALUE-OF>]]></text-property>
+                    </text>
+                </cell>
+            </row>
+            <row id="78">
+                <cell id="79">
+                    <text id="83">
+                        <property name="fontFamily">"Times New Roman"</property>
+                        <property name="fontSize">12pt</property>
+                        <property name="dataSet">General</property>
+                        <list-property name="boundDataColumns">
+                            <structure>
+                                <property name="name">programAction</property>
+                                <text-property name="displayName">programAction</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["programAction"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                            <structure>
+                                <property name="name">queueNumber</property>
+                                <text-property name="displayName">queueNumber</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["queueNumber"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                            <structure>
+                                <property name="name">inOfferNumber</property>
+                                <text-property name="displayName">inOfferNumber</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["inOfferNumber"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                            <structure>
+                                <property name="name">theme</property>
+                                <text-property name="displayName">theme</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["theme"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                            <structure>
+                                <property name="name">fullNumber</property>
+                                <text-property name="displayName">fullNumber</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["fullNumber"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                            <structure>
+                                <property name="name">leadingSubPriorityLine</property>
+                                <text-property name="displayName">leadingSubPriorityLine</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["leadingSubPriorityLine"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                            <structure>
+                                <property name="name">curatorFIO</property>
+                                <text-property name="displayName">curatorFIO</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["curatorFIO"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                            <structure>
+                                <property name="name">creationDays</property>
+                                <text-property name="displayName">creationDays</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["creationDays"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                            <structure>
+                                <property name="name">registryStage</property>
+                                <text-property name="displayName">registryStage</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["registryStage"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                        </list-property>
+                        <property name="contentType">html</property>
+                        <text-property name="content"><![CDATA[<VALUE-OF>row["creationDays"]</VALUE-OF>]]></text-property>
+                    </text>
+                </cell>
+                <cell id="80"/>
+            </row>
+        </grid>
+        <label id="84"/>
+        <label id="85"/>
+        <label id="86"/>
+        <label id="87"/>
+        <label id="88"/>
+    </body>
+</report>

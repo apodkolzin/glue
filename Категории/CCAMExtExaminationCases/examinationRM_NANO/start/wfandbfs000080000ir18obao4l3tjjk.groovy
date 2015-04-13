@@ -1,0 +1,2 @@
+/*if (!"corebofs000080000h0l05vl819hbmno".equals(subject.curator.UUID))
+(new ru.naumen.fcntp.examination.workflow.ChangeTaskStageScript( "ExamTaskRMExpertLetter/Title","ExamTaskRMExpertLetter/Body")).send(workflowInstance, oldState, newState, session); */

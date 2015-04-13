@@ -1,0 +1,1 @@
+(new ru.naumen.fcntp.examination.workflow.ChangeTaskStageScript( "ExamTaskExpertLetter/Title","ExamTaskExpertLetter/Body")).setFeedback("Anton Baukin <abaukin@mail.ru>").send(workflowInstance, oldState, newState, session);

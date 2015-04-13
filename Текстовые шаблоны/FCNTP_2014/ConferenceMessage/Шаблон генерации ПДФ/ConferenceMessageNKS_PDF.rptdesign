@@ -1,0 +1,1383 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<report xmlns="http://www.eclipse.org/birt/2005/design" version="3.2.23" id="1">
+    <property name="createdBy">Eclipse BIRT Designer Version 3.7.2.v20120213 Build &lt;3.7.2.v20120214-1408></property>
+    <property name="units">in</property>
+    <property name="iconFile">/templates/blank_report.gif</property>
+    <property name="bidiLayoutOrientation">ltr</property>
+    <property name="imageDPI">96</property>
+    <data-sources>
+        <oda-data-source extensionID="org.eclipse.datatools.enablement.oda.xml" name="Data Source" id="7">
+            <property name="FILELIST">/home/ayakovlev/Downloads/data2.xml</property>
+        </oda-data-source>
+    </data-sources>
+    <data-sets>
+        <oda-data-set extensionID="org.eclipse.datatools.enablement.oda.xml.dataSet" name="MainTable" id="8">
+            <list-property name="columnHints">
+                <structure>
+                    <property name="columnName">fullNumber</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">fullNumber</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">theme</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">theme</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">programAction</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">programAction</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">leadingSubPriorityLine</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">leadingSubPriorityLine</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">budgetRF2014</property>
+                    <property name="analysis">measure</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">budgetRF2014</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">budgetRF2015</property>
+                    <property name="analysis">measure</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">budgetRF2015</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">budgetRF2016</property>
+                    <property name="analysis">measure</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">budgetRF2016</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">budgetRFTotal</property>
+                    <property name="analysis">measure</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">budgetRFTotal</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">umbrellaType</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">umbrellaType</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">lotURL</property>
+                    <property name="analysis">dimension</property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">lotURL</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">contractNumberInLot</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="heading">contractNumberInLot</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">marginalProjectsCost</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="heading">marginalProjectsCost</text-property>
+                </structure>
+            </list-property>
+            <list-property name="parameters"/>
+            <structure name="cachedMetaData">
+                <list-property name="resultSet">
+                    <structure>
+                        <property name="position">1</property>
+                        <property name="name">fullNumber</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">2</property>
+                        <property name="name">theme</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">3</property>
+                        <property name="name">programAction</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">4</property>
+                        <property name="name">leadingSubPriorityLine</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">5</property>
+                        <property name="name">budgetRF2014</property>
+                        <property name="dataType">decimal</property>
+                    </structure>
+                    <structure>
+                        <property name="position">6</property>
+                        <property name="name">budgetRF2015</property>
+                        <property name="dataType">decimal</property>
+                    </structure>
+                    <structure>
+                        <property name="position">7</property>
+                        <property name="name">budgetRF2016</property>
+                        <property name="dataType">decimal</property>
+                    </structure>
+                    <structure>
+                        <property name="position">8</property>
+                        <property name="name">budgetRFTotal</property>
+                        <property name="dataType">decimal</property>
+                    </structure>
+                    <structure>
+                        <property name="position">9</property>
+                        <property name="name">umbrellaType</property>
+                        <property name="dataType">boolean</property>
+                    </structure>
+                    <structure>
+                        <property name="position">10</property>
+                        <property name="name">lotURL</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">11</property>
+                        <property name="name">contractNumberInLot</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">12</property>
+                        <property name="name">marginalProjectsCost</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                </list-property>
+            </structure>
+            <property name="dataSource">Data Source</property>
+            <list-property name="resultSet">
+                <structure>
+                    <property name="position">1</property>
+                    <property name="name">fullNumber</property>
+                    <property name="nativeName">fullNumber</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">2</property>
+                    <property name="name">theme</property>
+                    <property name="nativeName">theme</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">3</property>
+                    <property name="name">programAction</property>
+                    <property name="nativeName">programAction</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">4</property>
+                    <property name="name">leadingSubPriorityLine</property>
+                    <property name="nativeName">leadingSubPriorityLine</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">5</property>
+                    <property name="name">budgetRF2014</property>
+                    <property name="nativeName">budgetRF2014</property>
+                    <property name="dataType">decimal</property>
+                    <property name="nativeDataType">2</property>
+                </structure>
+                <structure>
+                    <property name="position">6</property>
+                    <property name="name">budgetRF2015</property>
+                    <property name="nativeName">budgetRF2015</property>
+                    <property name="dataType">decimal</property>
+                    <property name="nativeDataType">2</property>
+                </structure>
+                <structure>
+                    <property name="position">7</property>
+                    <property name="name">budgetRF2016</property>
+                    <property name="nativeName">budgetRF2016</property>
+                    <property name="dataType">decimal</property>
+                    <property name="nativeDataType">2</property>
+                </structure>
+                <structure>
+                    <property name="position">8</property>
+                    <property name="name">budgetRFTotal</property>
+                    <property name="nativeName">budgetRFTotal</property>
+                    <property name="dataType">decimal</property>
+                    <property name="nativeDataType">2</property>
+                </structure>
+                <structure>
+                    <property name="position">9</property>
+                    <property name="name">umbrellaType</property>
+                    <property name="nativeName">umbrellaType</property>
+                    <property name="dataType">boolean</property>
+                    <property name="nativeDataType">16</property>
+                </structure>
+                <structure>
+                    <property name="position">10</property>
+                    <property name="name">lotURL</property>
+                    <property name="nativeName">lotURL</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">11</property>
+                    <property name="name">contractNumberInLot</property>
+                    <property name="nativeName">contractNumberInLot</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">12</property>
+                    <property name="name">marginalProjectsCost</property>
+                    <property name="nativeName">marginalProjectsCost</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+            </list-property>
+            <xml-property name="queryText"><![CDATA[table0#-TNAME-#table0#:#[/datasource/variables/lots/LotEntry]#:#{fullNumber;STRING;/fullNumber},{theme;STRING;/theme},{programAction;STRING;/programAction},{leadingSubPriorityLine;STRING;/leadingSubPriorityLine},{budgetRF2014;BIGDECIMAL;/budgetRF2014},{budgetRF2015;BIGDECIMAL;/budgetRF2015},{budgetRF2016;BIGDECIMAL;/budgetRF2016},{budgetRFTotal;BIGDECIMAL;/budgetRFTotal},{umbrellaType;BOOLEAN;/umbrellaType},{lotURL;STRING;/lotURL},{contractNumberInLot;STRING;/contractNumberInLot},{marginalProjectsCost;STRING;/marginalProjectsCost}]]></xml-property>
+            <xml-property name="designerValues"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<model:DesignValues xmlns:design="http://www.eclipse.org/datatools/connectivity/oda/design" xmlns:model="http://www.eclipse.org/birt/report/model/adapter/odaModel">
+  <Version>2.0</Version>
+  <design:ResultSets derivedMetaData="true">
+    <design:resultSetDefinitions>
+      <design:resultSetColumns>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>fullNumber</design:name>
+              <design:position>1</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>fullNumber</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>theme</design:name>
+              <design:position>2</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>theme</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>programAction</design:name>
+              <design:position>3</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>programAction</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>leadingSubPriorityLine</design:name>
+              <design:position>4</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>leadingSubPriorityLine</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>budgetRF2014</design:name>
+              <design:position>5</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>budgetRF2014</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>budgetRF2015</design:name>
+              <design:position>6</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>budgetRF2015</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>budgetRF2016</design:name>
+              <design:position>7</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>budgetRF2016</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>budgetRFTotal</design:name>
+              <design:position>8</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>budgetRFTotal</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>umbrellaType</design:name>
+              <design:position>9</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>umbrellaType</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+      </design:resultSetColumns>
+      <design:criteria/>
+    </design:resultSetDefinitions>
+  </design:ResultSets>
+</model:DesignValues>]]></xml-property>
+            <list-property name="privateDriverProperties">
+                <ex-property>
+                    <name>MAX_ROW</name>
+                    <value>-1</value>
+                </ex-property>
+                <ex-property>
+                    <name>XML_FILE</name>
+                </ex-property>
+            </list-property>
+        </oda-data-set>
+        <oda-data-set extensionID="org.eclipse.datatools.enablement.oda.xml.dataSet" name="GeneralDataSet" id="68">
+            <list-property name="columnHints">
+                <structure>
+                    <property name="columnName">confIdentifier</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="heading">confIdentifier</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">confDate</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="heading">confDate</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">confComment</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="heading">confComment</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">confURL</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="heading">confURL</text-property>
+                </structure>
+            </list-property>
+            <list-property name="parameters"/>
+            <structure name="cachedMetaData">
+                <list-property name="resultSet">
+                    <structure>
+                        <property name="position">1</property>
+                        <property name="name">confIdentifier</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">2</property>
+                        <property name="name">confDate</property>
+                        <property name="dataType">date</property>
+                    </structure>
+                    <structure>
+                        <property name="position">3</property>
+                        <property name="name">confComment</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">4</property>
+                        <property name="name">confURL</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                </list-property>
+            </structure>
+            <property name="dataSource">Data Source</property>
+            <list-property name="resultSet">
+                <structure>
+                    <property name="position">1</property>
+                    <property name="name">confIdentifier</property>
+                    <property name="nativeName">confIdentifier</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">2</property>
+                    <property name="name">confDate</property>
+                    <property name="nativeName">confDate</property>
+                    <property name="dataType">date</property>
+                    <property name="nativeDataType">91</property>
+                </structure>
+                <structure>
+                    <property name="position">3</property>
+                    <property name="name">confComment</property>
+                    <property name="nativeName">confComment</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">4</property>
+                    <property name="name">confURL</property>
+                    <property name="nativeName">confURL</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+            </list-property>
+            <xml-property name="queryText"><![CDATA[table0#-TNAME-#table0#:#[/datasource/variables]#:#{confIdentifier;STRING;/confIdentifier},{confDate;DATE;/confDate},{confComment;STRING;/confComment},{confURL;STRING;/confURL}]]></xml-property>
+            <xml-property name="designerValues"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<model:DesignValues xmlns:design="http://www.eclipse.org/datatools/connectivity/oda/design" xmlns:model="http://www.eclipse.org/birt/report/model/adapter/odaModel">
+  <Version>2.0</Version>
+  <design:ResultSets derivedMetaData="true">
+    <design:resultSetDefinitions>
+      <design:resultSetColumns>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>confIdentifier</design:name>
+              <design:position>1</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>confIdentifier</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>confDate</design:name>
+              <design:position>2</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>confDate</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>confComment</design:name>
+              <design:position>3</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>confComment</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>confURL</design:name>
+              <design:position>4</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>confURL</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+      </design:resultSetColumns>
+      <design:criteria/>
+    </design:resultSetDefinitions>
+  </design:ResultSets>
+</model:DesignValues>]]></xml-property>
+            <list-property name="privateDriverProperties">
+                <ex-property>
+                    <name>MAX_ROW</name>
+                    <value>-1</value>
+                </ex-property>
+                <ex-property>
+                    <name>XML_FILE</name>
+                </ex-property>
+            </list-property>
+        </oda-data-set>
+    </data-sets>
+    <styles>
+        <style name="report" id="4">
+            <property name="fontFamily">sans-serif</property>
+            <property name="fontSize">10pt</property>
+        </style>
+        <style name="crosstab-cell" id="5">
+            <property name="borderBottomColor">#CCCCCC</property>
+            <property name="borderBottomStyle">solid</property>
+            <property name="borderBottomWidth">1pt</property>
+            <property name="borderLeftColor">#CCCCCC</property>
+            <property name="borderLeftStyle">solid</property>
+            <property name="borderLeftWidth">1pt</property>
+            <property name="borderRightColor">#CCCCCC</property>
+            <property name="borderRightStyle">solid</property>
+            <property name="borderRightWidth">1pt</property>
+            <property name="borderTopColor">#CCCCCC</property>
+            <property name="borderTopStyle">solid</property>
+            <property name="borderTopWidth">1pt</property>
+        </style>
+        <style name="crosstab" id="6">
+            <property name="borderBottomColor">#CCCCCC</property>
+            <property name="borderBottomStyle">solid</property>
+            <property name="borderBottomWidth">1pt</property>
+            <property name="borderLeftColor">#CCCCCC</property>
+            <property name="borderLeftStyle">solid</property>
+            <property name="borderLeftWidth">1pt</property>
+            <property name="borderRightColor">#CCCCCC</property>
+            <property name="borderRightStyle">solid</property>
+            <property name="borderRightWidth">1pt</property>
+            <property name="borderTopColor">#CCCCCC</property>
+            <property name="borderTopStyle">solid</property>
+            <property name="borderTopWidth">1pt</property>
+        </style>
+    </styles>
+    <page-setup>
+        <simple-master-page name="Simple MasterPage" id="2">
+            <property name="orientation">landscape</property>
+            <page-footer>
+                <text id="3">
+                    <property name="fontFamily">"Times New Roman"</property>
+                    <property name="contentType">html</property>
+                    <text-property name="content"><![CDATA[<value-of>new Date()</value-of>]]></text-property>
+                </text>
+            </page-footer>
+        </simple-master-page>
+    </page-setup>
+    <body>
+        <text id="67">
+            <property name="fontFamily">"Times New Roman"</property>
+            <property name="fontSize">16pt</property>
+            <property name="fontWeight">bold</property>
+            <property name="textAlign">center</property>
+            <property name="dataSet">GeneralDataSet</property>
+            <list-property name="boundDataColumns">
+                <structure>
+                    <property name="name">confIdentifier</property>
+                    <text-property name="displayName">confIdentifier</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["confIdentifier"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">confDate</property>
+                    <text-property name="displayName">confDate</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["confDate"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">confComment</property>
+                    <text-property name="displayName">confComment</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["confComment"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">confURL</property>
+                    <text-property name="displayName">confURL</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["confURL"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+            </list-property>
+            <property name="contentType">html</property>
+            <text-property name="content"><![CDATA[Заседание Научно - координационного совета № "<VALUE-OF>row["confIdentifier"]</VALUE-OF>"]]></text-property>
+        </text>
+        <label id="83">
+            <property name="fontFamily">"Times New Roman"</property>
+            <property name="fontSize">12pt</property>
+            <property name="textAlign">center</property>
+            <text-property name="text">ФЦП "Исследования и разработки по приоритетным направлениям развития научно-технологического комплекса России на 2014-2020 годы"</text-property>
+        </label>
+        <label id="80"/>
+        <text id="70">
+            <property name="fontFamily">"Times New Roman"</property>
+            <property name="fontSize">12pt</property>
+            <property name="dataSet">GeneralDataSet</property>
+            <list-property name="boundDataColumns">
+                <structure>
+                    <property name="name">confIdentifier</property>
+                    <text-property name="displayName">confIdentifier</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["confIdentifier"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">confDate</property>
+                    <text-property name="displayName">confDate</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["confDate"]</expression>
+                    <property name="dataType">date</property>
+                </structure>
+                <structure>
+                    <property name="name">confComment</property>
+                    <text-property name="displayName">confComment</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["confComment"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">confURL</property>
+                    <text-property name="displayName">confURL</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["confURL"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+            </list-property>
+            <property name="contentType">html</property>
+            <text-property name="content"><![CDATA[Дата заседания: <VALUE-OF format="Medium Date">row["confDate"]</VALUE-OF>]]></text-property>
+        </text>
+        <text id="71">
+            <property name="fontFamily">"Times New Roman"</property>
+            <property name="fontSize">12pt</property>
+            <property name="dataSet">GeneralDataSet</property>
+            <list-property name="boundDataColumns">
+                <structure>
+                    <property name="name">confIdentifier</property>
+                    <text-property name="displayName">confIdentifier</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["confIdentifier"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">confDate</property>
+                    <text-property name="displayName">confDate</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["confDate"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">confComment</property>
+                    <text-property name="displayName">confComment</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["confComment"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">confURL</property>
+                    <text-property name="displayName">confURL</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["confURL"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+            </list-property>
+            <property name="contentType">html</property>
+            <text-property name="content"><![CDATA[Повестка: <pre><font size="4" color="black" face="Times New Roman"><VALUE-OF>row["confComment"]</VALUE-OF></font></pre>]]></text-property>
+        </text>
+        <label id="81"/>
+        <text id="72">
+            <property name="fontFamily">"Times New Roman"</property>
+            <property name="fontSize">12pt</property>
+            <property name="dataSet">GeneralDataSet</property>
+            <list-property name="boundDataColumns">
+                <structure>
+                    <property name="name">confIdentifier</property>
+                    <text-property name="displayName">confIdentifier</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["confIdentifier"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">confDate</property>
+                    <text-property name="displayName">confDate</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["confDate"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">confComment</property>
+                    <text-property name="displayName">confComment</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["confComment"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">confURL</property>
+                    <text-property name="displayName">confURL</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["confURL"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+            </list-property>
+            <property name="contentType">html</property>
+            <text-property name="content"><![CDATA["<a href="<VALUE-OF>row["confURL"]</VALUE-OF>">Ссылка на заседание</a>"]]></text-property>
+        </text>
+        <label id="79"/>
+        <label id="82">
+            <property name="fontFamily">"Times New Roman"</property>
+            <property name="fontSize">12pt</property>
+            <property name="fontWeight">bold</property>
+            <property name="textAlign">center</property>
+            <text-property name="text">Материалы для рассмотрения</text-property>
+        </label>
+        <label id="94"/>
+        <label id="177"/>
+        <table id="96">
+            <property name="fontFamily">"Times New Roman"</property>
+            <property name="width">10.447916666666666in</property>
+            <property name="dataSet">MainTable</property>
+            <list-property name="boundDataColumns">
+                <structure>
+                    <property name="name">fullNumber</property>
+                    <text-property name="displayName">fullNumber</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["fullNumber"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">theme</property>
+                    <text-property name="displayName">theme</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["theme"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">programAction</property>
+                    <text-property name="displayName">programAction</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["programAction"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">leadingSubPriorityLine</property>
+                    <text-property name="displayName">leadingSubPriorityLine</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["leadingSubPriorityLine"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">budgetRF2014</property>
+                    <text-property name="displayName">budgetRF2014</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["budgetRF2014"]</expression>
+                    <property name="dataType">decimal</property>
+                </structure>
+                <structure>
+                    <property name="name">budgetRF2015</property>
+                    <text-property name="displayName">budgetRF2015</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["budgetRF2015"]</expression>
+                    <property name="dataType">decimal</property>
+                </structure>
+                <structure>
+                    <property name="name">budgetRF2016</property>
+                    <text-property name="displayName">budgetRF2016</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["budgetRF2016"]</expression>
+                    <property name="dataType">decimal</property>
+                </structure>
+                <structure>
+                    <property name="name">budgetRFTotal</property>
+                    <text-property name="displayName">budgetRFTotal</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["budgetRFTotal"]</expression>
+                    <property name="dataType">decimal</property>
+                </structure>
+                <structure>
+                    <property name="name">umbrellaType</property>
+                    <text-property name="displayName">umbrellaType</text-property>
+                    <expression name="expression" type="javascript">if (dataSetRow["umbrellaType"])
+"да"
+else
+"нет"</expression>
+                    <property name="dataType">string</property>
+                    <property name="allowExport">true</property>
+                </structure>
+                <structure>
+                    <property name="name">lotURL</property>
+                    <text-property name="displayName">lotURL</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["lotURL"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">contractNumberInLot</property>
+                    <text-property name="displayName">contractNumberInLot</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["contractNumberInLot"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">marginalProjectsCost</property>
+                    <text-property name="displayName">marginalProjectsCost</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["marginalProjectsCost"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+            </list-property>
+            <column id="147">
+                <property name="width">1.2395833333333333in</property>
+            </column>
+            <column id="148">
+                <property name="width">1.7291666666666667in</property>
+            </column>
+            <column id="149">
+                <property name="width">1.25in</property>
+            </column>
+            <column id="150">
+                <property name="width">1.1458333333333333in</property>
+            </column>
+            <column id="151">
+                <property name="width">0.4479166666666667in</property>
+            </column>
+            <column id="152">
+                <property name="width">0.40625in</property>
+            </column>
+            <column id="153">
+                <property name="width">0.4375in</property>
+            </column>
+            <column id="154">
+                <property name="width">0.4791666666666667in</property>
+            </column>
+            <column id="155">
+                <property name="width">0.8125in</property>
+            </column>
+            <column id="156">
+                <property name="width">0.875in</property>
+            </column>
+            <column id="157">
+                <property name="width">0.7708333333333334in</property>
+            </column>
+            <column id="158">
+                <property name="width">0.8541666666666666in</property>
+            </column>
+            <header>
+                <row id="97">
+                    <cell id="98">
+                        <property name="colSpan">1</property>
+                        <property name="rowSpan">2</property>
+                        <property name="borderBottomColor">#000000</property>
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">thin</property>
+                        <property name="borderLeftColor">#000000</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">thin</property>
+                        <property name="borderRightColor">#000000</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">thin</property>
+                        <property name="borderTopColor">#000000</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">thin</property>
+                        <label id="99">
+                            <property name="fontSize">9pt</property>
+                            <text-property name="text">Шифр</text-property>
+                        </label>
+                    </cell>
+                    <cell id="100">
+                        <property name="colSpan">1</property>
+                        <property name="rowSpan">2</property>
+                        <property name="borderBottomColor">#000000</property>
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">thin</property>
+                        <property name="borderLeftColor">#000000</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">thin</property>
+                        <property name="borderRightColor">#000000</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">thin</property>
+                        <property name="borderTopColor">#000000</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">thin</property>
+                        <label id="101">
+                            <property name="fontSize">9pt</property>
+                            <text-property name="text">Тема</text-property>
+                        </label>
+                    </cell>
+                    <cell id="102">
+                        <property name="colSpan">1</property>
+                        <property name="rowSpan">2</property>
+                        <property name="borderBottomColor">#000000</property>
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">thin</property>
+                        <property name="borderLeftColor">#000000</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">thin</property>
+                        <property name="borderRightColor">#000000</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">thin</property>
+                        <property name="borderTopColor">#000000</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">thin</property>
+                        <label id="103">
+                            <property name="fontSize">9pt</property>
+                            <text-property name="text">ПМ</text-property>
+                        </label>
+                    </cell>
+                    <cell id="104">
+                        <property name="colSpan">1</property>
+                        <property name="rowSpan">2</property>
+                        <property name="borderBottomColor">#000000</property>
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">thin</property>
+                        <property name="borderLeftColor">#000000</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">thin</property>
+                        <property name="borderRightColor">#000000</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">thin</property>
+                        <property name="borderTopColor">#000000</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">thin</property>
+                        <label id="105">
+                            <property name="fontSize">9pt</property>
+                            <text-property name="text">ПН</text-property>
+                        </label>
+                    </cell>
+                    <cell id="106">
+                        <property name="colSpan">4</property>
+                        <property name="rowSpan">1</property>
+                        <property name="borderBottomColor">#000000</property>
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">thin</property>
+                        <property name="borderLeftColor">#000000</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">thin</property>
+                        <property name="borderRightColor">#000000</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">thin</property>
+                        <property name="borderTopColor">#000000</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">thin</property>
+                        <label id="176">
+                            <property name="fontSize">9pt</property>
+                            <text-property name="text">Финансирование, млн.руб</text-property>
+                        </label>
+                    </cell>
+                    <cell id="114">
+                        <property name="colSpan">1</property>
+                        <property name="rowSpan">2</property>
+                        <property name="borderBottomColor">#000000</property>
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">thin</property>
+                        <property name="borderLeftColor">#000000</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">thin</property>
+                        <property name="borderRightColor">#000000</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">thin</property>
+                        <property name="borderTopColor">#000000</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">thin</property>
+                        <label id="115">
+                            <property name="fontSize">9pt</property>
+                            <text-property name="text">Зонтичный</text-property>
+                        </label>
+                    </cell>
+                    <cell id="116">
+                        <property name="colSpan">1</property>
+                        <property name="rowSpan">2</property>
+                        <property name="borderBottomColor">#000000</property>
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">thin</property>
+                        <property name="borderLeftColor">#000000</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">thin</property>
+                        <property name="borderRightColor">#000000</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">thin</property>
+                        <property name="borderTopColor">#000000</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">thin</property>
+                        <label id="117">
+                            <property name="fontSize">9pt</property>
+                            <text-property name="text">Планируемое количество контрактов</text-property>
+                        </label>
+                    </cell>
+                    <cell id="118">
+                        <property name="colSpan">1</property>
+                        <property name="rowSpan">2</property>
+                        <property name="borderBottomColor">#000000</property>
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">thin</property>
+                        <property name="borderLeftColor">#000000</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">thin</property>
+                        <property name="borderRightColor">#000000</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">thin</property>
+                        <property name="borderTopColor">#000000</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">thin</property>
+                        <label id="119">
+                            <property name="fontSize">9pt</property>
+                            <text-property name="text">Предельная стоимость проектов, млн.руб</text-property>
+                        </label>
+                    </cell>
+                    <cell id="120">
+                        <property name="colSpan">1</property>
+                        <property name="rowSpan">2</property>
+                        <property name="borderBottomColor">#000000</property>
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">thin</property>
+                        <property name="borderLeftColor">#000000</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">thin</property>
+                        <property name="borderRightColor">#000000</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">thin</property>
+                        <property name="borderTopColor">#000000</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">thin</property>
+                        <label id="121">
+                            <property name="fontSize">9pt</property>
+                            <text-property name="text">Обекты рассмотрения</text-property>
+                        </label>
+                    </cell>
+                </row>
+                <row id="159">
+                    <cell id="164">
+                        <property name="borderBottomColor">#000000</property>
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">thin</property>
+                        <property name="borderLeftColor">#000000</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">thin</property>
+                        <property name="borderRightColor">#000000</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">thin</property>
+                        <property name="borderTopColor">#000000</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">thin</property>
+                        <label id="172">
+                            <property name="fontSize">9pt</property>
+                            <text-property name="text">2014 </text-property>
+                        </label>
+                    </cell>
+                    <cell id="165">
+                        <property name="borderBottomColor">#000000</property>
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">thin</property>
+                        <property name="borderLeftColor">#000000</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">thin</property>
+                        <property name="borderRightColor">#000000</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">thin</property>
+                        <property name="borderTopColor">#000000</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">thin</property>
+                        <label id="173">
+                            <property name="fontSize">9pt</property>
+                            <text-property name="text">2015</text-property>
+                        </label>
+                    </cell>
+                    <cell id="166">
+                        <property name="borderBottomColor">#000000</property>
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">thin</property>
+                        <property name="borderLeftColor">#000000</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">thin</property>
+                        <property name="borderRightColor">#000000</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">thin</property>
+                        <property name="borderTopColor">#000000</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">thin</property>
+                        <label id="174">
+                            <property name="fontSize">9pt</property>
+                            <text-property name="text">2016</text-property>
+                        </label>
+                    </cell>
+                    <cell id="167">
+                        <property name="borderBottomColor">#000000</property>
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">thin</property>
+                        <property name="borderLeftColor">#000000</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">thin</property>
+                        <property name="borderRightColor">#000000</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">thin</property>
+                        <property name="borderTopColor">#000000</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">thin</property>
+                        <label id="175">
+                            <property name="fontSize">9pt</property>
+                            <text-property name="text">Итого</text-property>
+                        </label>
+                    </cell>
+                </row>
+            </header>
+            <detail>
+                <row id="122">
+                    <cell id="123">
+                        <property name="borderBottomColor">#000000</property>
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">thin</property>
+                        <property name="borderLeftColor">#000000</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">thin</property>
+                        <property name="borderRightColor">#000000</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">thin</property>
+                        <property name="borderTopColor">#000000</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">thin</property>
+                        <property name="textAlign">left</property>
+                        <data id="124">
+                            <property name="fontSize">9pt</property>
+                            <property name="resultSetColumn">fullNumber</property>
+                        </data>
+                    </cell>
+                    <cell id="125">
+                        <property name="borderBottomColor">#000000</property>
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">thin</property>
+                        <property name="borderLeftColor">#000000</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">thin</property>
+                        <property name="borderRightColor">#000000</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">thin</property>
+                        <property name="borderTopColor">#000000</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">thin</property>
+                        <property name="textAlign">left</property>
+                        <text id="179">
+                            <property name="fontSize">9pt</property>
+                            <property name="contentType">html</property>
+                            <text-property name="content"><![CDATA[<FONT style="word-wrap: break-word;"><VALUE-OF>row["theme"]</VALUE-OF></FONT>]]></text-property>
+                        </text>
+                    </cell>
+                    <cell id="127">
+                        <property name="borderBottomColor">#000000</property>
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">thin</property>
+                        <property name="borderLeftColor">#000000</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">thin</property>
+                        <property name="borderRightColor">#000000</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">thin</property>
+                        <property name="borderTopColor">#000000</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">thin</property>
+                        <property name="textAlign">left</property>
+                        <text id="180">
+                            <property name="fontSize">9pt</property>
+                            <property name="contentType">html</property>
+                            <text-property name="content"><![CDATA[<FONT style="word-wrap: break-word;"><VALUE-OF>row["programAction"]</VALUE-OF></FONT>]]></text-property>
+                        </text>
+                    </cell>
+                    <cell id="129">
+                        <property name="borderBottomColor">#000000</property>
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">thin</property>
+                        <property name="borderLeftColor">#000000</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">thin</property>
+                        <property name="borderRightColor">#000000</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">thin</property>
+                        <property name="borderTopColor">#000000</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">thin</property>
+                        <property name="textAlign">left</property>
+                        <text id="181">
+                            <property name="fontSize">9pt</property>
+                            <property name="contentType">html</property>
+                            <text-property name="content"><![CDATA[<FONT style="word-wrap: break-word;"><VALUE-OF>row["leadingSubPriorityLine"]</VALUE-OF></FONT>]]></text-property>
+                        </text>
+                    </cell>
+                    <cell id="131">
+                        <property name="borderBottomColor">#000000</property>
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">thin</property>
+                        <property name="borderLeftColor">#000000</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">thin</property>
+                        <property name="borderRightColor">#000000</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">thin</property>
+                        <property name="borderTopColor">#000000</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">thin</property>
+                        <property name="textAlign">center</property>
+                        <data id="132">
+                            <property name="fontSize">9pt</property>
+                            <property name="resultSetColumn">budgetRF2014</property>
+                        </data>
+                    </cell>
+                    <cell id="133">
+                        <property name="borderBottomColor">#000000</property>
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">thin</property>
+                        <property name="borderLeftColor">#000000</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">thin</property>
+                        <property name="borderRightColor">#000000</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">thin</property>
+                        <property name="borderTopColor">#000000</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">thin</property>
+                        <property name="textAlign">center</property>
+                        <data id="134">
+                            <property name="fontSize">9pt</property>
+                            <property name="resultSetColumn">budgetRF2015</property>
+                        </data>
+                    </cell>
+                    <cell id="135">
+                        <property name="borderBottomColor">#000000</property>
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">thin</property>
+                        <property name="borderLeftColor">#000000</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">thin</property>
+                        <property name="borderRightColor">#000000</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">thin</property>
+                        <property name="borderTopColor">#000000</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">thin</property>
+                        <property name="textAlign">center</property>
+                        <data id="136">
+                            <property name="fontSize">9pt</property>
+                            <property name="resultSetColumn">budgetRF2016</property>
+                        </data>
+                    </cell>
+                    <cell id="137">
+                        <property name="borderBottomColor">#000000</property>
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">thin</property>
+                        <property name="borderLeftColor">#000000</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">thin</property>
+                        <property name="borderRightColor">#000000</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">thin</property>
+                        <property name="borderTopColor">#000000</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">thin</property>
+                        <property name="textAlign">center</property>
+                        <data id="138">
+                            <property name="fontSize">9pt</property>
+                            <property name="resultSetColumn">budgetRFTotal</property>
+                        </data>
+                    </cell>
+                    <cell id="139">
+                        <property name="borderBottomColor">#000000</property>
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">thin</property>
+                        <property name="borderLeftColor">#000000</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">thin</property>
+                        <property name="borderRightColor">#000000</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">thin</property>
+                        <property name="borderTopColor">#000000</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">thin</property>
+                        <property name="textAlign">center</property>
+                        <data id="140">
+                            <property name="fontSize">9pt</property>
+                            <property name="resultSetColumn">umbrellaType</property>
+                        </data>
+                    </cell>
+                    <cell id="141">
+                        <property name="borderBottomColor">#000000</property>
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">thin</property>
+                        <property name="borderLeftColor">#000000</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">thin</property>
+                        <property name="borderRightColor">#000000</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">thin</property>
+                        <property name="borderTopColor">#000000</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">thin</property>
+                        <property name="textAlign">center</property>
+                        <data id="142">
+                            <property name="fontSize">9pt</property>
+                            <property name="resultSetColumn">contractNumberInLot</property>
+                        </data>
+                    </cell>
+                    <cell id="143">
+                        <property name="borderBottomColor">#000000</property>
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">thin</property>
+                        <property name="borderLeftColor">#000000</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">thin</property>
+                        <property name="borderRightColor">#000000</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">thin</property>
+                        <property name="borderTopColor">#000000</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">thin</property>
+                        <property name="textAlign">center</property>
+                        <data id="144">
+                            <property name="fontSize">9pt</property>
+                            <property name="resultSetColumn">marginalProjectsCost</property>
+                        </data>
+                    </cell>
+                    <cell id="145">
+                        <property name="borderBottomColor">#000000</property>
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">thin</property>
+                        <property name="borderLeftColor">#000000</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">thin</property>
+                        <property name="borderRightColor">#000000</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">thin</property>
+                        <property name="borderTopColor">#000000</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">thin</property>
+                        <text id="146">
+                            <property name="fontSize">9pt</property>
+                            <property name="contentType">html</property>
+                            <text-property name="content"><![CDATA[<a href="<VALUE-OF>row["lotURL"]</VALUE-OF>">ссылка</a>]]></text-property>
+                        </text>
+                    </cell>
+                </row>
+            </detail>
+        </table>
+    </body>
+</report>

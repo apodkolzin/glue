@@ -1,0 +1,1 @@
+new ru.naumen.fcntp.bobject.document.workflow.DeclineAdditionalAgreementScript().decline(workflowInstance ,oldState,newState,session);

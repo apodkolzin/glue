@@ -1,0 +1,1 @@
+/* new ru.naumen.fcntp.bobject.examination.workflow.ContractStageExaminationEndStateScript().changeState(workflowInstance ,oldState,newState,session); */

@@ -1,0 +1,1 @@
+ ru.naumen.fcntp.bobject.demand.workflow.CreateLotScript.create(workflowInstance, oldState, newState, session);

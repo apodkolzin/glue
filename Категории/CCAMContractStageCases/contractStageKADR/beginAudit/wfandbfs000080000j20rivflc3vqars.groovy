@@ -1,0 +1,1 @@
+new ru.naumen.fcntp.bobject.contractstage.workflow.UpdateFcntpDocumentStageScript().execute(subject, oldState, newState, session) 
