@@ -67,7 +67,7 @@ lots.each() {
     lot ->
         openingProtocolLotList.add(getOpeningProtocolLot(lot))
 
-        demands = DemandFcntpHibernateHandler.listDemands1(lot)
+        demands = DemandFcntpHibernateHandler.listDemands(lot)
         demands.addAll(DemandFcntpHibernateHandler.listRejectedDemands(lot))
 
         demands.each() {
