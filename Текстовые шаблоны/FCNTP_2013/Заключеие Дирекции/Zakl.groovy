@@ -59,7 +59,7 @@ else
 	report.vars.delay = 0
 report.vars.acceptanceCommissionFullNumber = stage?.acceptanceCommission?.fullNumber
 report.vars.posts = contract?.manager?.corePosts[0]?.title
-
+report.vars
   
   
 /*class MakingActScript {

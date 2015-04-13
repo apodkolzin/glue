@@ -132,6 +132,7 @@ lots.each() {
 
 report.vars.lots = openingProtocolLotList
 report.vars.demands = demandsToXML
+report.vars
 
 def getPostAddressWithIndexOnTheFirstPlace(def address) {
     if (address == null)
