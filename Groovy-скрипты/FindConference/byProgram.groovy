@@ -1,0 +1,1 @@
+helper.select("from Conference c where parent=$uuid")
