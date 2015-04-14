@@ -1,4 +1,4 @@
-//package resources.groovy.birt
+package ru.naumen.fcntp.groovy.birt
 
 import ru.naumen.ccam.bobject.stage.ContractStageHibernateHandler
 import ru.naumen.ccam.bobject.stage.ContractStageHibernateHandler
