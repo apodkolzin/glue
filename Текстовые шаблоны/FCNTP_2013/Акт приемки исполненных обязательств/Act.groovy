@@ -144,6 +144,7 @@ else
 	report.vars.delay = 0
 	
 report.vars.isLastStage = stage.isLastStage()
+report.vars
 
 class ContractValues{
 	def year
