@@ -1,1 +1,1 @@
-helper.select("select c, c.parent from Conference c ", 20).collect {[it[0], helper.get(it[1])]}
+helper.select("select c, c.parent from Conference c ", 20).collect {[it[0], helper.get(it[1].UUID)]}
