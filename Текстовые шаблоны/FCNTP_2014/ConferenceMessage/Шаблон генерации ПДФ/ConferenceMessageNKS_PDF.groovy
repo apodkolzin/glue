@@ -54,6 +54,8 @@ def lots = HibernateUtil.
  
  
  report.vars.lots = result
+
+ report.vars
  
 class LotEntry
 {
