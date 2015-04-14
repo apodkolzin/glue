@@ -1,0 +1,1 @@
+helper.select("select c, c.parent from Conference c ", 20)
