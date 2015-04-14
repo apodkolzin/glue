@@ -1,1 +1,1 @@
-helper.select("from Conference c where parent='$uuid'")
+helper.select("from Conference c where parent.id='$uuid'")
