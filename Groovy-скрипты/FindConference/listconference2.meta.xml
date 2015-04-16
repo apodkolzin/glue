@@ -2,7 +2,7 @@
 <Meta>
     <id>find_conference:listconrence2</id>
     <title>list conferences</title>
-	<groovyId>find_conference:list1</groovyId>
+	<groovyId>find_conference:listconrence</groovyId>
     <titleEn></titleEn>
     <keywords>list conferences2</keywords>
 	<keywords>FindConference2</keywords>
