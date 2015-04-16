@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <Meta>
-    <id>find_conference:listconrence</id>
+    <id>find_conference:listconrence1</id>
     <title>list conferences</title>
 	<groovyId>find_conference:list</groovyId>
     <titleEn></titleEn>
