@@ -1,0 +1,1 @@
+helper.select("select c, c.parent from ContractFcntp c ", 20)
