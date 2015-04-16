@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <Meta>
-    <id>find_conference:list</id>
+    <id>find_conference:listconrence</id>
     <title>list conferences</title>
+	<groovyId>find_conference:list</groovyId>
     <titleEn></titleEn>
-    <keywords>list conferences</keywords>
-	<keywords>FindConference</keywords>
+    <keywords>list conferences2</keywords>
+	<keywords>FindConference2</keywords>
     <keywords>Groovy-скрипты</keywords>
 </Meta>
